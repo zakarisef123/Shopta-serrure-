@@ -13,10 +13,22 @@
   status = 404
   force = true
 
+# CSS et JS : versionnés par ?v=<empreinte>, donc mis en cache longtemps sans risque
 [[headers]]
-  for = "/assets/*"
+  for = "/assets/css/*"
   [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+# Images : revalidées à chaque visite (un logo peut être remplacé sous le même nom)
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/*"

@@ -608,6 +608,16 @@ def footer():
 </footer>'''
 
 
+def asset_v(rel):
+    """Empreinte du fichier : change à chaque modification, force le rechargement chez les visiteurs."""
+    import hashlib
+    try:
+        with open(os.path.join(ROOT, rel), "rb") as f:
+            return hashlib.md5(f.read()).hexdigest()[:10]
+    except FileNotFoundError:
+        return TODAY
+
+
 def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og_type="website"):
     canonical = URL + path
     nav = "".join(f'<a href="{u}"{" aria-current=\"page\"" if u == active else ""}>{E(l)}</a>' for l, u in NAV)
@@ -643,7 +653,7 @@ def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="/assets/css/site.css?v={asset_v("assets/css/site.css")}">
 <script async src="https://www.googletagmanager.com/gtag/js?id={ga}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{ga}');{ads_js}</script>
 {ld_html}</head>
@@ -679,8 +689,8 @@ def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og
   <a class="btn btn-call pulse" href="{TEL_HREF}" data-track="call_sticky">{ico("i-phone")}Appeler · 24h/24</a>
   <a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener" aria-label="WhatsApp" data-track="wa_sticky"><svg class="ico" style="width:26px;height:26px"><use href="#i-wa"/></svg></a>
 </div>
-<script src="/assets/js/assureurs.js" defer></script>
-<script src="/assets/js/site.js" defer></script>
+<script src="/assets/js/assureurs.js?v={asset_v("assets/js/assureurs.js")}" defer></script>
+<script src="/assets/js/site.js?v={asset_v("assets/js/site.js")}" defer></script>
 </body>
 </html>
 '''
@@ -1412,6 +1422,7 @@ def build_seo_files():
 
 
 def main():
+    build_insurers_js()
     build_home()
     build_services()
     build_zones_pages()
