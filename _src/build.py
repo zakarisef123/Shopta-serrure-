@@ -180,6 +180,7 @@ PHOTO = process_photos()
 
 # Photos de fond d'en-tête : _src/images/headers/<nom>.(jpg|png|webp)
 HEADER_FILES = {
+    "tour-eiffel": "La tour Eiffel vue du Trocadéro au coucher du soleil",
     "pantheon": "Le Panthéon, Paris 5e",
     "notre-dame": "Notre-Dame de Paris et la Seine",
     "toits-de-paris": "Les toits de Paris, la Madeleine et la tour Eiffel",
@@ -193,7 +194,7 @@ HEADER_FILES = {
 # Photo propre à une page (slug de la zone) ; sinon rotation sur toutes les photos
 HEADER_BY_ZONE = {"paris-1": "conciergerie", "paris-2": "place-des-victoires", "paris-4": "notre-dame",
                   "paris-5": "pantheon", "paris-8": "toits-de-paris", "paris": "toits-de-paris",
-                  "paris-17": "avenue-etoile", "paris-18": "sacre-coeur", "paris-19": "vue-sacre-coeur"}
+                  "paris-17": "avenue-etoile", "paris-16": "tour-eiffel", "paris-18": "sacre-coeur", "paris-19": "vue-sacre-coeur"}
 
 
 def process_headers():
@@ -860,7 +861,8 @@ def build_home():
   <div class="body"><div class="meta"><b>{E(a["cat"])}</b><time datetime="{a["date"]}">{fr_date(a["date"])}</time></div>
   <h3><a href="/blog/{a["slug"]}/">{E(a["court"])}</a></h3><p>{E(a["desc"])}</p><a class="more" href="/blog/{a["slug"]}/">Lire l'article →</a></div>
 </article>''' for a in ARTICLES[:4])
-    body = f'''<section class="hero" aria-labelledby="hero-title">
+    body = f'''<section class="hero{" has-bg" if "tour-eiffel" in HEADERS else ""}" aria-labelledby="hero-title">
+  {hero_bg("tour-eiffel")}
   <div class="container">
     <div>
       <span class="badge"><span class="dot"></span> Un serrurier près de chez vous en ce moment</span>
