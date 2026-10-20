@@ -996,8 +996,8 @@ def build_home():
     ld = [ld_business(), ld_faq(HOME_FAQ),
           {"@context": "https://schema.org", "@type": "WebSite", "name": "Shopta Serrure", "url": URL + "/", "inLanguage": "fr-FR",
            "publisher": {"@id": BUSINESS_ID}}]
-    page("/", f"Serrurier Paris 24h/24 ☎ {TEL} | Shopta Serrure",
-         f"☎ {TEL} – Serrurier d'urgence à Paris et en Île-de-France 24h/24 et 7j/7. Intervention en 30 min, ouverture de porte à partir de 110 € TTC, prix annoncé avant déplacement, devis gratuit, facture remboursable par votre assurance.",
+    page("/", f"Serrurier Paris 24h/24 – {TEL} | Shopta Serrure",
+         f"{TEL} – Serrurier d'urgence à Paris et en Île-de-France 24h/24 et 7j/7. Intervention en 30 min, ouverture de porte à partir de 110 € TTC, prix annoncé avant déplacement, devis gratuit, facture remboursable par votre assurance.",
          body, ld)
 
 
@@ -1186,10 +1186,10 @@ def build_zones_pages():
         body += insurers_block() + reviews_section(title=f"Avis de nos clients", soft=True) + cta_final(f"Bloqué dehors {z['a']} ?", "Appelez-nous : prix annoncé au téléphone, serrurier en route immédiatement.",
                                                                                                                          source=path, ville=z["court"] if z["slug"] != "paris" else "")
         if z["slug"] == "paris":
-            title = f"Serrurier Paris 24h/24 – Tous arrondissements ☎ {TEL}"
+            title = f"Serrurier Paris 24h/24, tous arrondissements – {TEL}"
         else:
-            title = f'Serrurier {z["court"]} ({cp_short}) 24h/24 ☎ {TEL}'
-        desc = (f'☎ {TEL} – Serrurier {z["court"]} ({cp_short if z["slug"] != "paris" else "75"}) 24h/24 et 7j/7 : ouverture de porte à partir de 110 € TTC, serrure bloquée, '
+            title = f'Serrurier {z["court"]} ({cp_short}) 24h/24 – {TEL}'
+        desc = (f'{TEL} – Serrurier {z["court"]} ({cp_short if z["slug"] != "paris" else "75"}) 24h/24 et 7j/7 : ouverture de porte à partir de 110 € TTC, serrure bloquée, '
                 f'clé cassée, changement de serrure. Prix annoncé avant déplacement, facture remboursable par l\'assurance.')
         bc = [(c[0], c[1] if c[1] else path) for c in crumb_items]
         ld = [ld_business(False), ld_breadcrumb(bc), ld_faq(faq),
