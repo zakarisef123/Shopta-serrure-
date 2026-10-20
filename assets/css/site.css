@@ -581,3 +581,12 @@ footer .social + .social{margin-left:8px}
 }
 .page-hero.has-bg::after{background:linear-gradient(100deg,rgba(0,26,69,.9) 0%,rgba(0,26,69,.72) 45%,rgba(0,51,128,.3) 100%)}
 @media (max-width:760px){.page-hero.has-bg::after{background:linear-gradient(180deg,rgba(0,26,69,.85),rgba(0,26,69,.78))}}
+
+/* Villes principales (accueil) */
+.villes-strip{background:#fff;border-bottom:1px solid var(--line);padding:22px 0 0}
+.villes-strip .container{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 10px}
+.villes-strip span{font-family:var(--head);font-weight:700;color:var(--ink);margin-right:4px}
+.villes-strip a{padding:8px 14px;border-radius:999px;border:1px solid var(--line);font-size:14.5px;font-weight:500;color:var(--ink-2);transition:all .2s}
+.villes-strip a:hover{border-color:var(--blue);color:var(--blue);background:var(--blue-50)}
+.villes-strip a.all{border-color:transparent;color:var(--blue);font-weight:600}
+@media (max-width:720px){.villes-strip{padding-top:18px}.villes-strip .container{justify-content:flex-start}.villes-strip span{width:100%}}

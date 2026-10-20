@@ -13,7 +13,7 @@ import re
 import shutil
 import unicodedata
 
-from data import ARTICLE_PHOTOS, ARTICLES, BRANDS, DEPTS, HDS, INSURERS, PARIS_ARR, PHOTOS, SERVICES, TARIFS, VDO
+from data import ARTICLE_PHOTOS, ARTICLES, BRANDS, DEPTS, HDS, INSURERS, PARIS_ARR, PHOTOS, SERVICES, SSD, TARIFS, VDO
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "_src")
@@ -288,7 +288,7 @@ def build_zones():
             "a": f"dans le {n}{suf} arrondissement", "de": f"du {n}{suf} arrondissement",
             "cp": c["cp"], "pop": c["pop"], "groupes": [], "arr": n, "quartiers": quartiers, "lieux": lieux,
         })
-    for dep, lst in (("92", HDS), ("95", VDO)):
+    for dep, lst in (("92", HDS), ("93", SSD), ("95", VDO)):
         for nom, lat, lng in lst:
             code = by_name[(ALIAS.get(nom, nom), dep)]
             c = COMMUNES[code]
@@ -309,7 +309,7 @@ def build_zones():
         others = [o for o in zones if o is not z and o["slug"] != "paris"]
         z["voisins"] = sorted(others, key=lambda o: km((z["lat"], z["lng"]), (o["lat"], o["lng"])))[:8]
         z["url"] = f"/villes/{z['slug']}/"
-        z["proche"] = z["dep"] in ("75", "92")
+        z["proche"] = z["dep"] in ("75", "92", "93")
     return zones
 
 
@@ -642,9 +642,20 @@ def faq_html(faq):
 NAV = [("Dépannage", "/depannage/"), ("Tarifs", "/tarifs/"), ("Zones", "/villes/"), ("Avis", "/avis/"), ("Blog", "/blog/"), ("Contact", "/contact/")]
 
 
+# Villes mises en avant (accueil, pied de page) : signal fort pour les liens annexes de Google
+VILLES_PRIORITAIRES = ["paris", "clichy", "asnieres-sur-seine", "neuilly-sur-seine", "gennevilliers", "saint-ouen-sur-seine"]
+
+
+def villes_strip():
+    links = "".join(f'<a href="{ZONE_BY_SLUG[s]["url"]}">Serrurier {E(ZONE_BY_SLUG[s]["court"])}</a>' for s in VILLES_PRIORITAIRES)
+    return f'''<nav class="villes-strip" aria-label="Nos villes principales"><div class="container">
+  <span>Intervention rapide à</span>{links}<a href="/villes/" class="all">Toutes nos villes →</a>
+</div></nav>'''
+
+
 def footer():
     svc = "".join(f'<li><a href="/depannage/{s["slug"]}/">{E(s["court"])}</a></li>' for s in SERVICES)
-    top = ["paris", "clichy", "asnieres-sur-seine", "levallois-perret", "neuilly-sur-seine", "boulogne-billancourt", "nanterre", "argenteuil", "cergy"]
+    top = VILLES_PRIORITAIRES + ["levallois-perret", "boulogne-billancourt", "argenteuil"]
     zl = "".join(f'<li><a href="{ZONE_BY_SLUG[s]["url"]}">Serrurier {E(ZONE_BY_SLUG[s]["court"])}</a></li>' for s in top)
     arr = " · ".join(f'<a href="/villes/paris-{n}/">Paris {n}</a>' for n in range(1, 21))
     return f'''<footer>
@@ -883,6 +894,7 @@ def build_home():
     </div>
   </div>
 </div>
+{villes_strip()}
 {insurers_block()}
 <section id="services" aria-labelledby="services-title">
   <div class="container">
@@ -953,7 +965,7 @@ def build_home():
     <div class="section-head reveal">
       <span class="eyebrow">Zones d'intervention</span>
       <h2 id="zones-title">Paris et l'Île-de-France</h2>
-      <p>Nous intervenons dans les 20 arrondissements de Paris, tout le département des Hauts-de-Seine et une large partie du Val-d'Oise.</p>
+      <p>Nous intervenons dans les 20 arrondissements de Paris, tout le département des Hauts-de-Seine, à Saint-Ouen-sur-Seine et dans une large partie du Val-d'Oise.</p>
     </div>
     {zones_tabs()}
     <p class="zones-note">Votre ville n'est pas listée ? Appelez-nous : hors zone, des frais de déplacement supplémentaires peuvent s'appliquer et vous sont annoncés à l'avance.</p>
@@ -984,8 +996,8 @@ def build_home():
     ld = [ld_business(), ld_faq(HOME_FAQ),
           {"@context": "https://schema.org", "@type": "WebSite", "name": "Shopta Serrure", "url": URL + "/", "inLanguage": "fr-FR",
            "publisher": {"@id": BUSINESS_ID}}]
-    page("/", "Serrurier Paris 24h/24 – Intervention 30 min, à partir de 110 € | Shopta Serrure",
-         "Serrurier d'urgence à Paris et en Île-de-France 24h/24 et 7j/7. Ouverture de porte à partir de 110 € TTC, prix annoncé avant déplacement, devis gratuit, facture remboursable par votre assurance.",
+    page("/", f"Serrurier Paris 24h/24 ☎ {TEL} | Shopta Serrure",
+         f"☎ {TEL} – Serrurier d'urgence à Paris et en Île-de-France 24h/24 et 7j/7. Intervention en 30 min, ouverture de porte à partir de 110 € TTC, prix annoncé avant déplacement, devis gratuit, facture remboursable par votre assurance.",
          body, ld)
 
 
@@ -1174,10 +1186,10 @@ def build_zones_pages():
         body += insurers_block() + reviews_section(title=f"Avis de nos clients", soft=True) + cta_final(f"Bloqué dehors {z['a']} ?", "Appelez-nous : prix annoncé au téléphone, serrurier en route immédiatement.",
                                                                                                                          source=path, ville=z["court"] if z["slug"] != "paris" else "")
         if z["slug"] == "paris":
-            title = "Serrurier Paris 24h/24 – Tous arrondissements, à partir de 110 € | Shopta Serrure"
+            title = f"Serrurier Paris 24h/24 – Tous arrondissements ☎ {TEL}"
         else:
-            title = f'Serrurier {z["court"]} ({cp_short}) 24h/24 – à partir de 110 € | Shopta Serrure'
-        desc = (f'Serrurier {z["court"]} ({cp_short if z["slug"] != "paris" else "75"}) disponible 24h/24 et 7j/7 : ouverture de porte à partir de 110 € TTC, serrure bloquée, '
+            title = f'Serrurier {z["court"]} ({cp_short}) 24h/24 ☎ {TEL}'
+        desc = (f'☎ {TEL} – Serrurier {z["court"]} ({cp_short if z["slug"] != "paris" else "75"}) 24h/24 et 7j/7 : ouverture de porte à partir de 110 € TTC, serrure bloquée, '
                 f'clé cassée, changement de serrure. Prix annoncé avant déplacement, facture remboursable par l\'assurance.')
         bc = [(c[0], c[1] if c[1] else path) for c in crumb_items]
         ld = [ld_business(False), ld_breadcrumb(bc), ld_faq(faq),
