@@ -22,4 +22,4 @@ Allow: /
 Disallow: /_src/
 Disallow: /merci/
 
-Sitemap: https://shoptaserrure.netlify.app/sitemap.xml
+Sitemap: https://shopta-serrure.fr/sitemap.xml

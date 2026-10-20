@@ -22,7 +22,7 @@ SRC = os.path.join(ROOT, "_src")
 # Configuration : à vérifier avant mise en ligne
 # ---------------------------------------------------------------------------
 CONFIG = {
-    "site_url": "https://shoptaserrure.netlify.app",  # remplacer par le nom de domaine définitif, sans / final
+    "site_url": "https://shopta-serrure.fr",  # nom de domaine du site, sans / final
     "nom": "Shopta Serrure",
     "tel": "06 20 54 66 93",
     "tel_intl": "+33620546693",
