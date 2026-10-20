@@ -349,11 +349,16 @@ def insurers_block():
 </div>'''
 
 
+# Logos de marque réduits au symbole : le nom est écrit à côté
+BRAND_SANS_NOM = {"mul-t-lock"}
+
+
 def brands_block(soft=False):
     def chip(nom, slug):
         logo = BRAND_LOGOS.get(slug)
         if logo:
-            return f'<span class="ins has-logo" title="{E(nom)}"><img src="{logo}" alt="{E(nom)}" loading="lazy" decoding="async"></span>'
+            label = E(nom) if slug in BRAND_SANS_NOM else ""
+            return f'<span class="ins has-logo" title="{E(nom)}"><img src="{logo}" alt="{E(nom)}" loading="lazy" decoding="async">{label}</span>'
         return f'<span class="ins brand-name">{E(nom)}</span>'
     # marques avec logo en premier, puis les autres
     ordered = [b for b in BRANDS if b[1] in BRAND_LOGOS] + [b for b in BRANDS if b[1] not in BRAND_LOGOS]
