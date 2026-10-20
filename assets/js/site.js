@@ -136,5 +136,20 @@
     }, 5000);
   });
 
+  // Grille tarifaire : onglets Journée / Soirée / Nuit, présélection selon l'heure
+  document.querySelectorAll("[data-tarifs]").forEach(function(card){
+    var tabs = card.querySelectorAll(".tp-tabs button"), now = card.querySelector(".tp-now");
+    function show(slot){
+      tabs.forEach(function(t){ t.setAttribute("aria-selected", t.dataset.slot === slot ? "true" : "false"); });
+      card.querySelectorAll(".tp-val[data-slot]").forEach(function(v){ v.hidden = v.dataset.slot !== slot; });
+    }
+    tabs.forEach(function(t){ t.addEventListener("click", function(){ show(t.dataset.slot); }); });
+    var h = new Date().getHours(), slot = h >= 8 && h < 18 ? "jour" : (h >= 18 && h < 22 ? "soir" : "nuit");
+    show(slot);
+    var labels = {jour:"journée", soir:"soirée", nuit:"nuit"};
+    now.textContent = "Il est " + h + "h : vous voyez le tarif de " + labels[slot] + ".";
+    now.hidden = false;
+  });
+
   var y = document.getElementById("year"); if (y) y.textContent = new Date().getFullYear();
 })();

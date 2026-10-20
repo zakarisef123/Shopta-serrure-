@@ -201,14 +201,27 @@
         <p>Une urgence ne doit jamais être synonyme d'arnaque. Nos tarifs sont publics, par horaire d'intervention, et toujours confirmés par un devis signé.</p>
       </div>
     </div>
-    <div class="reveal"><div class="tarif-grid">
-  <header><div><h3>Grille tarifaire</h3><p>Prix TTC selon l&#x27;horaire d&#x27;intervention, 7j/7</p></div><span class="tg-badge"><svg class=""><use href="#i-shield"/></svg>Prix annoncé avant déplacement</span></header>
-  <div class="tg-scroll"><table class="tg">
-    <thead><tr><th scope="col">Prestation</th><th scope="col"><div class="tg-h"><svg class=""><use href="#i-sun"/></svg><span>Journée<small>08h–18h</small></span></div></th><th scope="col"><div class="tg-h"><svg class=""><use href="#i-sunset"/></svg><span>Soirée<small>18h–22h</small></span></div></th><th scope="col"><div class="tg-h"><svg class=""><use href="#i-moon"/></svg><span>Nuit<small>22h–08h</small></span></div></th></tr></thead>
-    <tbody><tr><th scope="row">Ouverture de porte claquée</th><td data-label="Journée 08h–18h"><b>110 €</b></td><td data-label="Soirée 18h–22h"><b>150 €</b></td><td data-label="Nuit 22h–08h"><b>220 €</b></td></tr><tr><th scope="row">Ouverture de porte fermée à clé</th><td data-label="Journée 08h–18h"><small>à partir de</small><b>180 €</b></td><td data-label="Soirée 18h–22h"><small>à partir de</small><b>240 €</b></td><td data-label="Nuit 22h–08h"><small>à partir de</small><b>280 €</b></td></tr><tr><th scope="row">Porte bloquée — clé qui ne tourne plus</th><td data-label="Journée 08h–18h"><b>180 €</b></td><td data-label="Soirée 18h–22h"><b>240 €</b></td><td data-label="Nuit 22h–08h"><b>280 €</b></td></tr><tr><th scope="row">Changement de cylindre</th><td data-label="Journée 08h–18h"><small>à partir de</small><b>160 €</b></td><td data-label="Soirée 18h–22h"><small>à partir de</small><b>200 €</b></td><td data-label="Nuit 22h–08h"><small>à partir de</small><b>230 €</b></td></tr><tr><th scope="row">Remplacement de serrure</th><td data-label="Journée 08h–18h"><small>à partir de</small><b>250 €</b></td><td data-label="Soirée 18h–22h" class="na"><small>sur devis</small></td><td data-label="Nuit 22h–08h" class="na"><small>sur devis</small></td></tr><tr><th scope="row">Blindage de porte</th><td data-label="Journée 08h–18h"><small>à partir de</small><b>2 300 €</b></td><td data-label="Soirée 18h–22h" class="na"><small>sur devis</small></td><td data-label="Nuit 22h–08h" class="na"><small>sur devis</small></td></tr><tr><th scope="row">Bloc-porte complet</th><td data-label="Journée 08h–18h"><small>à partir de</small><b>3 350 €</b></td><td data-label="Soirée 18h–22h" class="na"><small>sur devis</small></td><td data-label="Nuit 22h–08h" class="na"><small>sur devis</small></td></tr><tr><th scope="row">Bloc-porte de cave</th><td data-label="Journée 08h–18h"><small>à partir de</small><b>1 550 €</b></td><td data-label="Soirée 18h–22h" class="na"><small>sur devis</small></td><td data-label="Nuit 22h–08h" class="na"><small>sur devis</small></td></tr><tr><th scope="row">Serrure de boîte aux lettres — modèle basique</th><td data-label="Journée 08h–18h"><b>110 €</b></td><td data-label="Soirée 18h–22h" class="na"><small>sur devis</small></td><td data-label="Nuit 22h–08h" class="na"><small>sur devis</small></td></tr></tbody>
-  </table></div>
-  <div class="note"><svg class=""><use href="#i-info"/></svg><span>Tarifs TTC, main d'œuvre comprise. Le prix exact dépend de la porte et de la serrure : il vous est annoncé au téléphone, puis confirmé par un devis écrit et signé avant toute intervention. Devis gratuit.</span></div>
-</div></div>
+    <div class="reveal"><div class="tarifs-cards">
+  <article class="tp-card tp-urgence" data-tarifs>
+    <header>
+      <span class="tp-kicker">24h/24 · 7j/7</span>
+      <h3>Dépannage d'urgence</h3>
+      <p>Le tarif dépend de l'heure d'intervention.</p>
+    </header>
+    <div class="tp-tabs" role="tablist" aria-label="Horaire d'intervention"><button type="button" role="tab" data-slot="jour" aria-selected="true"><strong>Journée</strong><span>8h – 18h</span></button><button type="button" role="tab" data-slot="soir" aria-selected="false"><strong>Soirée</strong><span>18h – 22h</span></button><button type="button" role="tab" data-slot="nuit" aria-selected="false"><strong>Nuit</strong><span>22h – 8h</span></button></div>
+    <ul class="tp-list"><li><span class="tp-name">Ouverture de porte claquée</span><span class="tp-price"><span class="tp-val" data-slot="jour">110 €</span><span class="tp-val" data-slot="soir" hidden>150 €</span><span class="tp-val" data-slot="nuit" hidden>220 €</span></span></li><li><span class="tp-name">Ouverture de porte fermée à clé</span><span class="tp-price"><span class="tp-val" data-slot="jour"><small>à partir de</small>180 €</span><span class="tp-val" data-slot="soir" hidden><small>à partir de</small>240 €</span><span class="tp-val" data-slot="nuit" hidden><small>à partir de</small>280 €</span></span></li><li><span class="tp-name">Porte bloquée — clé qui ne tourne plus</span><span class="tp-price"><span class="tp-val" data-slot="jour">180 €</span><span class="tp-val" data-slot="soir" hidden>240 €</span><span class="tp-val" data-slot="nuit" hidden>280 €</span></span></li><li><span class="tp-name">Changement de cylindre</span><span class="tp-price"><span class="tp-val" data-slot="jour"><small>à partir de</small>160 €</span><span class="tp-val" data-slot="soir" hidden><small>à partir de</small>200 €</span><span class="tp-val" data-slot="nuit" hidden><small>à partir de</small>230 €</span></span></li></ul>
+    <p class="tp-now" hidden></p>
+  </article>
+  <article class="tp-card tp-travaux">
+    <header>
+      <span class="tp-kicker">Sur rendez-vous</span>
+      <h3>Travaux et installation</h3>
+      <p>Tarifs de départ en journée, devis détaillé offert.</p>
+    </header>
+    <ul class="tp-list"><li><span class="tp-name">Remplacement de serrure</span><span class="tp-price"><span class="tp-val"><small>à partir de</small>250 €</span></span></li><li><span class="tp-name">Blindage de porte</span><span class="tp-price"><span class="tp-val"><small>à partir de</small>2 300 €</span></span></li><li><span class="tp-name">Bloc-porte complet</span><span class="tp-price"><span class="tp-val"><small>à partir de</small>3 350 €</span></span></li><li><span class="tp-name">Bloc-porte de cave</span><span class="tp-price"><span class="tp-val"><small>à partir de</small>1 550 €</span></span></li><li><span class="tp-name">Serrure de boîte aux lettres — modèle basique</span><span class="tp-price"><span class="tp-val">110 €</span></span></li></ul>
+  </article>
+</div>
+<p class="tp-note">Tarifs TTC, main d'œuvre comprise. Le prix exact dépend de la porte et de la serrure : il vous est annoncé au téléphone, puis confirmé par un devis écrit et signé avant toute intervention.</p></div>
     <div class="reveal">
       <ul class="commit-list commit-row">
         <li><span class="ck"><svg class="ico"><use href="#i-check"/></svg></span><div><strong>Devis gratuit et détaillé</strong><span>Signé avant chaque intervention, conformément à la réglementation.</span></div></li>
