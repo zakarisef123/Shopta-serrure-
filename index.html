@@ -162,7 +162,12 @@ nav.main a:hover{background:var(--blue-50);color:var(--blue)}
 @keyframes scroll{to{transform:translateX(calc(-50% - 7px))}}
 .ins{display:flex;align-items:center;gap:10px;padding:12px 20px;border:1px solid var(--line);border-radius:14px;background:#fff;font-family:var(--head);font-weight:700;font-size:16px;color:#475569;white-space:nowrap;transition:color .2s,border-color .2s,box-shadow .2s}
 .ins:hover{color:var(--blue);border-color:#c7d4ee;box-shadow:var(--shadow)}
-.ins i{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;font-style:normal;font-size:12px;font-weight:800;color:#fff;background:var(--c,#003380)}
+.ins{padding:10px 20px 10px 10px}
+.ins .lg{position:relative;display:grid;place-items:center;width:40px;height:40px;flex:none;border-radius:10px;background:#fff;overflow:hidden}
+.ins .lg i{position:absolute;inset:0;display:grid;place-items:center;font-style:normal;font-size:13px;font-weight:800;color:#fff;background:var(--c,#003380);border-radius:10px}
+.ins .lg img{position:relative;width:32px;height:32px;object-fit:contain;opacity:0;transition:opacity .3s}
+.ins .lg.ok img{opacity:1}
+.ins .lg.ok i{display:none}
 
 /* ---------- Sections ---------- */
 section{padding:96px 0}
@@ -823,26 +828,39 @@ footer a:hover{color:#fff}
 <script>
 (function(){
   // Assureurs habitation présents en France
+  // Assureurs habitation présents en France : [nom, domaine du site officiel, couleur de secours]
+  // Pour utiliser votre propre fichier : remplacez le domaine par un chemin, ex. "logos/axa.svg"
   var insurers = [
-    ["AXA","#00008f"],["Allianz","#003781"],["MAIF","#c8102e"],["MACIF","#004b93"],["MAAF","#e30613"],
-    ["Groupama","#007a53"],["Generali","#c21b17"],["Matmut","#e2001a"],["GMF","#00529b"],["MMA","#e30613"],
-    ["Crédit Agricole Assurances","#007d8f"],["Pacifica","#00965e"],["BNP Paribas Cardif","#00915a"],["Société Générale Assurances","#e60028"],
-    ["LCL Assurances","#002f6c"],["Crédit Mutuel Assurances","#0060a9"],["CIC Assurances","#00a0e1"],["La Banque Postale Assurances","#003da5"],
-    ["Caisse d'Épargne Assurances","#e2001a"],["Banque Populaire","#0065b1"],["Covéa","#1d3f8f"],["Abeille Assurances","#ffb81c"],
-    ["Swiss Life","#d82034"],["AG2R La Mondiale","#0b3b8c"],["Thélem","#e4002b"],["GAN Assurances","#005eb8"],
-    ["MAE","#00a19a"],["MACSF","#004f9f"],["Mutuelle de Poitiers","#003f7d"],["Direct Assurance","#ff6a13"],
-    ["Amaguiz","#6ab023"],["Leocare","#1e1e50"],["Luko","#2d50e6"],["Lovys","#ff5a5f"],["Acheel","#6c3cff"],
-    ["L'olivier Assurance","#78a22f"],["Hiscox","#cc0000"],["April","#00a3e0"],["Assu 2000","#e4032e"],
-    ["Sogessur","#e60028"],["Mutuelle des Motards","#1a1a1a"],["MGEN","#00a3a6"],["Harmonie Mutuelle","#e5007d"],
-    ["Ornikar Assurance","#00b386"],["Groupe VYV","#ff5000"],["Euro-Assurance","#1b4f9c"]
+    ["AXA","axa.fr","#00008f"],["Allianz","allianz.fr","#003781"],["MAIF","maif.fr","#c8102e"],["MACIF","macif.fr","#004b93"],
+    ["MAAF","maaf.fr","#e30613"],["Groupama","groupama.fr","#007a53"],["Generali","generali.fr","#c21b17"],["Matmut","matmut.fr","#e2001a"],
+    ["GMF","gmf.fr","#00529b"],["MMA","mma.fr","#e30613"],["Crédit Agricole Assurances","credit-agricole.fr","#007d8f"],
+    ["BNP Paribas Cardif","cardif.fr","#00915a"],["Société Générale Assurances","societegenerale.fr","#e60028"],["LCL","lcl.fr","#002f6c"],
+    ["Crédit Mutuel","creditmutuel.fr","#0060a9"],["CIC","cic.fr","#00a0e1"],["La Banque Postale","labanquepostale.fr","#003da5"],
+    ["Caisse d'Épargne","caisse-epargne.fr","#e2001a"],["Banque Populaire","banquepopulaire.fr","#0065b1"],["Covéa","covea.com","#1d3f8f"],
+    ["Abeille Assurances","abeille-assurances.fr","#ffb81c"],["Swiss Life","swisslife.fr","#d82034"],["AG2R La Mondiale","ag2rlamondiale.fr","#0b3b8c"],
+    ["Thélem","thelem-assurances.fr","#e4002b"],["GAN Assurances","gan.fr","#005eb8"],["MAE","mae.fr","#00a19a"],["MACSF","macsf.fr","#004f9f"],
+    ["Mutuelle de Poitiers","assurance-mutuelle-poitiers.fr","#003f7d"],["Direct Assurance","direct-assurance.fr","#ff6a13"],
+    ["Amaguiz","amaguiz.com","#6ab023"],["Leocare","leocare.eu","#1e1e50"],["Luko","luko.eu","#2d50e6"],["Lovys","lovys.com","#ff5a5f"],
+    ["Acheel","acheel.com","#6c3cff"],["L'olivier Assurance","lolivier.fr","#78a22f"],["Hiscox","hiscox.fr","#cc0000"],["April","april.fr","#00a3e0"],
+    ["Assu 2000","assu2000.fr","#e4032e"],["Sogessur","sogessur.fr","#e60028"],["Allianz Direct","allianz-direct.fr","#003781"],
+    ["MGEN","mgen.fr","#00a3a6"],["Euro-Assurance","euro-assurance.com","#1b4f9c"]
   ];
+  function initials(n){
+    if (/^[A-Z0-9]{2,3}$/.test(n)) return n;
+    if (/^[A-Z0-9]{4,5}$/.test(n)) return n.slice(0,2);
+    return n.replace(/[^A-Za-zÀ-ÿ ]/g," ").split(" ").filter(Boolean).map(function(w){return w[0]}).join("").slice(0,2).toUpperCase();
+  }
   function chip(i){
-    var n = i[0], ini = n.replace(/[^A-Za-zÀ-ÿ ]/g,"").split(" ").filter(Boolean).map(function(w){return w[0]}).join("").slice(0,2).toUpperCase();
-    if (n.length <= 5 && /^[A-Z0-9]+$/.test(n)) ini = n.slice(0,2);
-    var el = document.createElement("span");
-    el.className = "ins";
-    el.innerHTML = '<i style="--c:'+i[1]+'">'+ini+'</i>';
-    el.appendChild(document.createTextNode(n));
+    var el = document.createElement("span"), lg = document.createElement("span"), ic = document.createElement("i"), img = new Image();
+    el.className = "ins"; lg.className = "lg";
+    ic.style.setProperty("--c", i[2]); ic.textContent = initials(i[0]);
+    img.alt = ""; img.loading = "lazy"; img.decoding = "async"; img.referrerPolicy = "no-referrer";
+    img.onload = function(){ if (img.naturalWidth > 16) lg.classList.add("ok"); };
+    img.src = i[1].indexOf("/") > -1 ? i[1] : "https://www.google.com/s2/favicons?sz=128&domain=" + i[1];
+    lg.appendChild(ic); lg.appendChild(img);
+    el.appendChild(lg);
+    el.appendChild(document.createTextNode(i[0]));
+    el.title = i[0];
     return el;
   }
   var half = Math.ceil(insurers.length/2);
