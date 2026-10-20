@@ -1,6 +1,6 @@
 # Shopta Serrure – informations complètes
 
-> Serrurier d'urgence 24h/24 et 7j/7 à Paris (75), dans les Hauts-de-Seine (92) et le Val-d'Oise (95). Téléphone : 06 20 54 66 93. Site : https://shoptaserrure.netlify.app/. Fiche Google : https://www.google.com/maps/place/Serrurier+-+Shopta+serrure/@48.910553,2.3087361,17z/data=!3m1!4b1!4m6!3m5!1s0xa8d45bcb80f455ff:0xa96d71eb2e26af41!8m2!3d48.910553!4d2.311311!16s%2Fg%2F11mz7xq9zy
+> Serrurier d'urgence 24h/24 et 7j/7 à Paris (75), dans les Hauts-de-Seine (92) et le Val-d'Oise (95). Téléphone : 06 20 54 66 93. Site : https://shopta-serrure.fr/. Fiche Google : https://www.google.com/maps/place/Serrurier+-+Shopta+serrure/@48.910553,2.3087361,17z/data=!3m1!4b1!4m6!3m5!1s0xa8d45bcb80f455ff:0xa96d71eb2e26af41!8m2!3d48.910553!4d2.311311!16s%2Fg%2F11mz7xq9zy
 
 ## Engagements
 - Prix annoncé au téléphone avant le déplacement
@@ -10,7 +10,7 @@
 - Paiement : carte bancaire, espèces, virement
 
 ## Ouverture de porte claquée – à partir de 49 € TTC
-Page : https://shoptaserrure.netlify.app/depannage/porte-claquee/
+Page : https://shopta-serrure.fr/depannage/porte-claquee/
 
 Une porte qui claque derrière vous, les clés restées à l'intérieur : c'est l'urgence la plus fréquente en serrurerie. Dans la grande majorité des cas, nos serruriers ouvrent une porte simplement claquée (non verrouillée à clé) sans rien abîmer, en quelques minutes, et sans remplacer la serrure.
 
@@ -29,7 +29,7 @@ Vérifiez qu'aucune fenêtre ou porte secondaire n'est accessible en sécurité,
 - **Combien de temps dure l'ouverture ?** Quelques minutes pour une porte simplement claquée, un peu plus pour une porte blindée ou fermée à clé.
 
 ## Déblocage de serrure – à partir de 49 € TTC
-Page : https://shoptaserrure.netlify.app/depannage/serrure-bloquee/
+Page : https://shopta-serrure.fr/depannage/serrure-bloquee/
 
 La clé entre mais ne tourne plus, la poignée force, la porte refuse de s'ouvrir ou de se fermer : une serrure bloquée peut vous laisser dehors ou vous empêcher de sécuriser votre logement. Nous diagnostiquons la cause sur place et débloquons le mécanisme, en réparant plutôt qu'en remplaçant chaque fois que c'est possible.
 
@@ -48,7 +48,7 @@ Un entretien une fois par an avec un lubrifiant sec (graphite ou PTFE) suffit à
 - **Le déblocage est-il remboursé par l'assurance ?** Cela dépend de votre contrat et de la cause (usure ou tentative d'effraction). Nous vous remettons une facture détaillée à transmettre à votre assureur.
 
 ## Extraction de clé cassée – à partir de 49 € TTC
-Page : https://shoptaserrure.netlify.app/depannage/cle-cassee/
+Page : https://shopta-serrure.fr/depannage/cle-cassee/
 
 Une clé fatiguée finit un jour par se casser dans le cylindre, souvent au pire moment. Bonne nouvelle : dans la plupart des cas, le morceau s'extrait sans changer la serrure, avec un outillage adapté.
 
@@ -67,7 +67,7 @@ Si vous avez une autre clé en bon état, le cylindre reste utilisable. Si c'ét
 - **Ma clé s'est cassée dans la serrure de ma voiture ou de ma boîte aux lettres** Nous intervenons aussi sur les boîtes aux lettres. Pour les véhicules, appelez-nous pour vérifier que nous pouvons vous aider.
 
 ## Changement de serrure et de cylindre – sur devis gratuit
-Page : https://shoptaserrure.netlify.app/depannage/changement-serrure/
+Page : https://shopta-serrure.fr/depannage/changement-serrure/
 
 Clés perdues ou volées, emménagement dans un logement dont vous ne connaissez pas les doubles, serrure usée ou trop facile à forcer : changer de cylindre ou de serrure est le moyen le plus sûr de reprendre le contrôle de vos accès.
 
@@ -86,7 +86,7 @@ Le serrurier vous présente plusieurs gammes (standard, haute sécurité, A2P) a
 - **Propriétaire ou locataire : qui paie ?** Le remplacement suite à la perte des clés est en général à la charge du locataire ; le remplacement d'une serrure vétuste incombe plutôt au propriétaire. Vérifiez votre bail.
 
 ## Serrure connectée (Smart Lock) – à partir de 49 € TTC
-Page : https://shoptaserrure.netlify.app/depannage/serrure-connectee/
+Page : https://shopta-serrure.fr/depannage/serrure-connectee/
 
 Les serrures connectées permettent d'ouvrir avec un smartphone, un code ou une empreinte, de donner un accès temporaire à un proche ou de suivre les passages. Nous les installons sur votre porte existante et intervenons en cas de panne ou de blocage.
 
@@ -105,7 +105,7 @@ Gardez toujours une clé mécanique de secours hors du logement, choisissez un m
 - **Combien coûte l'installation ?** Le dépannage commence à 49 € TTC. L'installation dépend du modèle choisi et fait l'objet d'un devis gratuit.
 
 ## Sécurisation après effraction – sur devis gratuit
-Page : https://shoptaserrure.netlify.app/depannage/effraction/
+Page : https://shopta-serrure.fr/depannage/effraction/
 
 Après un cambriolage ou une tentative d'effraction, la priorité est de refermer votre logement le jour même. Nous sécurisons la porte en urgence, puis vous proposons une remise en état durable, avec tous les documents nécessaires à votre déclaration d'assurance.
 
@@ -133,128 +133,128 @@ Selon les dégâts : nouvelle serrure multipoints A2P, cornières anti-pinces, p
 
 ## Zones d'intervention
 ### Paris (75)
-- [Serrurier Paris](https://shoptaserrure.netlify.app/villes/paris/)
-- [Serrurier Paris 1er](https://shoptaserrure.netlify.app/villes/paris-1/)
-- [Serrurier Paris 2e](https://shoptaserrure.netlify.app/villes/paris-2/)
-- [Serrurier Paris 3e](https://shoptaserrure.netlify.app/villes/paris-3/)
-- [Serrurier Paris 4e](https://shoptaserrure.netlify.app/villes/paris-4/)
-- [Serrurier Paris 5e](https://shoptaserrure.netlify.app/villes/paris-5/)
-- [Serrurier Paris 6e](https://shoptaserrure.netlify.app/villes/paris-6/)
-- [Serrurier Paris 7e](https://shoptaserrure.netlify.app/villes/paris-7/)
-- [Serrurier Paris 8e](https://shoptaserrure.netlify.app/villes/paris-8/)
-- [Serrurier Paris 9e](https://shoptaserrure.netlify.app/villes/paris-9/)
-- [Serrurier Paris 10e](https://shoptaserrure.netlify.app/villes/paris-10/)
-- [Serrurier Paris 11e](https://shoptaserrure.netlify.app/villes/paris-11/)
-- [Serrurier Paris 12e](https://shoptaserrure.netlify.app/villes/paris-12/)
-- [Serrurier Paris 13e](https://shoptaserrure.netlify.app/villes/paris-13/)
-- [Serrurier Paris 14e](https://shoptaserrure.netlify.app/villes/paris-14/)
-- [Serrurier Paris 15e](https://shoptaserrure.netlify.app/villes/paris-15/)
-- [Serrurier Paris 16e](https://shoptaserrure.netlify.app/villes/paris-16/)
-- [Serrurier Paris 17e](https://shoptaserrure.netlify.app/villes/paris-17/)
-- [Serrurier Paris 18e](https://shoptaserrure.netlify.app/villes/paris-18/)
-- [Serrurier Paris 19e](https://shoptaserrure.netlify.app/villes/paris-19/)
-- [Serrurier Paris 20e](https://shoptaserrure.netlify.app/villes/paris-20/)
+- [Serrurier Paris](https://shopta-serrure.fr/villes/paris/)
+- [Serrurier Paris 1er](https://shopta-serrure.fr/villes/paris-1/)
+- [Serrurier Paris 2e](https://shopta-serrure.fr/villes/paris-2/)
+- [Serrurier Paris 3e](https://shopta-serrure.fr/villes/paris-3/)
+- [Serrurier Paris 4e](https://shopta-serrure.fr/villes/paris-4/)
+- [Serrurier Paris 5e](https://shopta-serrure.fr/villes/paris-5/)
+- [Serrurier Paris 6e](https://shopta-serrure.fr/villes/paris-6/)
+- [Serrurier Paris 7e](https://shopta-serrure.fr/villes/paris-7/)
+- [Serrurier Paris 8e](https://shopta-serrure.fr/villes/paris-8/)
+- [Serrurier Paris 9e](https://shopta-serrure.fr/villes/paris-9/)
+- [Serrurier Paris 10e](https://shopta-serrure.fr/villes/paris-10/)
+- [Serrurier Paris 11e](https://shopta-serrure.fr/villes/paris-11/)
+- [Serrurier Paris 12e](https://shopta-serrure.fr/villes/paris-12/)
+- [Serrurier Paris 13e](https://shopta-serrure.fr/villes/paris-13/)
+- [Serrurier Paris 14e](https://shopta-serrure.fr/villes/paris-14/)
+- [Serrurier Paris 15e](https://shopta-serrure.fr/villes/paris-15/)
+- [Serrurier Paris 16e](https://shopta-serrure.fr/villes/paris-16/)
+- [Serrurier Paris 17e](https://shopta-serrure.fr/villes/paris-17/)
+- [Serrurier Paris 18e](https://shopta-serrure.fr/villes/paris-18/)
+- [Serrurier Paris 19e](https://shopta-serrure.fr/villes/paris-19/)
+- [Serrurier Paris 20e](https://shopta-serrure.fr/villes/paris-20/)
 
 ### Hauts-de-Seine (92)
-- [Serrurier Antony](https://shoptaserrure.netlify.app/villes/antony/)
-- [Serrurier Asnières-sur-Seine](https://shoptaserrure.netlify.app/villes/asnieres-sur-seine/)
-- [Serrurier Bagneux](https://shoptaserrure.netlify.app/villes/bagneux/)
-- [Serrurier Bois-Colombes](https://shoptaserrure.netlify.app/villes/bois-colombes/)
-- [Serrurier Boulogne-Billancourt](https://shoptaserrure.netlify.app/villes/boulogne-billancourt/)
-- [Serrurier Bourg-la-Reine](https://shoptaserrure.netlify.app/villes/bourg-la-reine/)
-- [Serrurier Châtenay-Malabry](https://shoptaserrure.netlify.app/villes/chatenay-malabry/)
-- [Serrurier Châtillon](https://shoptaserrure.netlify.app/villes/chatillon/)
-- [Serrurier Chaville](https://shoptaserrure.netlify.app/villes/chaville/)
-- [Serrurier Clamart](https://shoptaserrure.netlify.app/villes/clamart/)
-- [Serrurier Clichy](https://shoptaserrure.netlify.app/villes/clichy/)
-- [Serrurier Colombes](https://shoptaserrure.netlify.app/villes/colombes/)
-- [Serrurier Courbevoie](https://shoptaserrure.netlify.app/villes/courbevoie/)
-- [Serrurier Fontenay-aux-Roses](https://shoptaserrure.netlify.app/villes/fontenay-aux-roses/)
-- [Serrurier Garches](https://shoptaserrure.netlify.app/villes/garches/)
-- [Serrurier La Garenne-Colombes](https://shoptaserrure.netlify.app/villes/la-garenne-colombes/)
-- [Serrurier Gennevilliers](https://shoptaserrure.netlify.app/villes/gennevilliers/)
-- [Serrurier Issy-les-Moulineaux](https://shoptaserrure.netlify.app/villes/issy-les-moulineaux/)
-- [Serrurier Levallois-Perret](https://shoptaserrure.netlify.app/villes/levallois-perret/)
-- [Serrurier Malakoff](https://shoptaserrure.netlify.app/villes/malakoff/)
-- [Serrurier Marnes-la-Coquette](https://shoptaserrure.netlify.app/villes/marnes-la-coquette/)
-- [Serrurier Meudon](https://shoptaserrure.netlify.app/villes/meudon/)
-- [Serrurier Montrouge](https://shoptaserrure.netlify.app/villes/montrouge/)
-- [Serrurier Nanterre](https://shoptaserrure.netlify.app/villes/nanterre/)
-- [Serrurier Neuilly-sur-Seine](https://shoptaserrure.netlify.app/villes/neuilly-sur-seine/)
-- [Serrurier Le Plessis-Robinson](https://shoptaserrure.netlify.app/villes/le-plessis-robinson/)
-- [Serrurier Puteaux](https://shoptaserrure.netlify.app/villes/puteaux/)
-- [Serrurier Rueil-Malmaison](https://shoptaserrure.netlify.app/villes/rueil-malmaison/)
-- [Serrurier Saint-Cloud](https://shoptaserrure.netlify.app/villes/saint-cloud/)
-- [Serrurier Sceaux](https://shoptaserrure.netlify.app/villes/sceaux/)
-- [Serrurier Sèvres](https://shoptaserrure.netlify.app/villes/sevres/)
-- [Serrurier Suresnes](https://shoptaserrure.netlify.app/villes/suresnes/)
-- [Serrurier Vanves](https://shoptaserrure.netlify.app/villes/vanves/)
-- [Serrurier Vaucresson](https://shoptaserrure.netlify.app/villes/vaucresson/)
-- [Serrurier Ville-d'Avray](https://shoptaserrure.netlify.app/villes/ville-d-avray/)
-- [Serrurier Villeneuve-la-Garenne](https://shoptaserrure.netlify.app/villes/villeneuve-la-garenne/)
+- [Serrurier Antony](https://shopta-serrure.fr/villes/antony/)
+- [Serrurier Asnières-sur-Seine](https://shopta-serrure.fr/villes/asnieres-sur-seine/)
+- [Serrurier Bagneux](https://shopta-serrure.fr/villes/bagneux/)
+- [Serrurier Bois-Colombes](https://shopta-serrure.fr/villes/bois-colombes/)
+- [Serrurier Boulogne-Billancourt](https://shopta-serrure.fr/villes/boulogne-billancourt/)
+- [Serrurier Bourg-la-Reine](https://shopta-serrure.fr/villes/bourg-la-reine/)
+- [Serrurier Châtenay-Malabry](https://shopta-serrure.fr/villes/chatenay-malabry/)
+- [Serrurier Châtillon](https://shopta-serrure.fr/villes/chatillon/)
+- [Serrurier Chaville](https://shopta-serrure.fr/villes/chaville/)
+- [Serrurier Clamart](https://shopta-serrure.fr/villes/clamart/)
+- [Serrurier Clichy](https://shopta-serrure.fr/villes/clichy/)
+- [Serrurier Colombes](https://shopta-serrure.fr/villes/colombes/)
+- [Serrurier Courbevoie](https://shopta-serrure.fr/villes/courbevoie/)
+- [Serrurier Fontenay-aux-Roses](https://shopta-serrure.fr/villes/fontenay-aux-roses/)
+- [Serrurier Garches](https://shopta-serrure.fr/villes/garches/)
+- [Serrurier La Garenne-Colombes](https://shopta-serrure.fr/villes/la-garenne-colombes/)
+- [Serrurier Gennevilliers](https://shopta-serrure.fr/villes/gennevilliers/)
+- [Serrurier Issy-les-Moulineaux](https://shopta-serrure.fr/villes/issy-les-moulineaux/)
+- [Serrurier Levallois-Perret](https://shopta-serrure.fr/villes/levallois-perret/)
+- [Serrurier Malakoff](https://shopta-serrure.fr/villes/malakoff/)
+- [Serrurier Marnes-la-Coquette](https://shopta-serrure.fr/villes/marnes-la-coquette/)
+- [Serrurier Meudon](https://shopta-serrure.fr/villes/meudon/)
+- [Serrurier Montrouge](https://shopta-serrure.fr/villes/montrouge/)
+- [Serrurier Nanterre](https://shopta-serrure.fr/villes/nanterre/)
+- [Serrurier Neuilly-sur-Seine](https://shopta-serrure.fr/villes/neuilly-sur-seine/)
+- [Serrurier Le Plessis-Robinson](https://shopta-serrure.fr/villes/le-plessis-robinson/)
+- [Serrurier Puteaux](https://shopta-serrure.fr/villes/puteaux/)
+- [Serrurier Rueil-Malmaison](https://shopta-serrure.fr/villes/rueil-malmaison/)
+- [Serrurier Saint-Cloud](https://shopta-serrure.fr/villes/saint-cloud/)
+- [Serrurier Sceaux](https://shopta-serrure.fr/villes/sceaux/)
+- [Serrurier Sèvres](https://shopta-serrure.fr/villes/sevres/)
+- [Serrurier Suresnes](https://shopta-serrure.fr/villes/suresnes/)
+- [Serrurier Vanves](https://shopta-serrure.fr/villes/vanves/)
+- [Serrurier Vaucresson](https://shopta-serrure.fr/villes/vaucresson/)
+- [Serrurier Ville-d'Avray](https://shopta-serrure.fr/villes/ville-d-avray/)
+- [Serrurier Villeneuve-la-Garenne](https://shopta-serrure.fr/villes/villeneuve-la-garenne/)
 
 ### Val-d'Oise (95)
-- [Serrurier Argenteuil](https://shoptaserrure.netlify.app/villes/argenteuil/)
-- [Serrurier Arnouville](https://shoptaserrure.netlify.app/villes/arnouville/)
-- [Serrurier Auvers-sur-Oise](https://shoptaserrure.netlify.app/villes/auvers-sur-oise/)
-- [Serrurier Beauchamp](https://shoptaserrure.netlify.app/villes/beauchamp/)
-- [Serrurier Beaumont-sur-Oise](https://shoptaserrure.netlify.app/villes/beaumont-sur-oise/)
-- [Serrurier Bernes-sur-Oise](https://shoptaserrure.netlify.app/villes/bernes-sur-oise/)
-- [Serrurier Bessancourt](https://shoptaserrure.netlify.app/villes/bessancourt/)
-- [Serrurier Bezons](https://shoptaserrure.netlify.app/villes/bezons/)
-- [Serrurier Boisemont](https://shoptaserrure.netlify.app/villes/boisemont/)
-- [Serrurier Bonneuil-en-France](https://shoptaserrure.netlify.app/villes/bonneuil-en-france/)
-- [Serrurier Bouffémont](https://shoptaserrure.netlify.app/villes/bouffemont/)
-- [Serrurier Bruyères-sur-Oise](https://shoptaserrure.netlify.app/villes/bruyeres-sur-oise/)
-- [Serrurier Butry-sur-Oise](https://shoptaserrure.netlify.app/villes/butry-sur-oise/)
-- [Serrurier Cergy](https://shoptaserrure.netlify.app/villes/cergy/)
-- [Serrurier Champagne-sur-Oise](https://shoptaserrure.netlify.app/villes/champagne-sur-oise/)
-- [Serrurier Cormeilles-en-Parisis](https://shoptaserrure.netlify.app/villes/cormeilles-en-parisis/)
-- [Serrurier Courdimanche](https://shoptaserrure.netlify.app/villes/courdimanche/)
-- [Serrurier Deuil-la-Barre](https://shoptaserrure.netlify.app/villes/deuil-la-barre/)
-- [Serrurier Domont](https://shoptaserrure.netlify.app/villes/domont/)
-- [Serrurier Eaubonne](https://shoptaserrure.netlify.app/villes/eaubonne/)
-- [Serrurier Écouen](https://shoptaserrure.netlify.app/villes/ecouen/)
-- [Serrurier Enghien-les-Bains](https://shoptaserrure.netlify.app/villes/enghien-les-bains/)
-- [Serrurier Ennery](https://shoptaserrure.netlify.app/villes/ennery/)
-- [Serrurier Épiais-Rhus](https://shoptaserrure.netlify.app/villes/epiais-rhus/)
-- [Serrurier Épinay-Champlâtreux](https://shoptaserrure.netlify.app/villes/epinay-champlatreux/)
-- [Serrurier Éragny](https://shoptaserrure.netlify.app/villes/eragny/)
-- [Serrurier Ermont](https://shoptaserrure.netlify.app/villes/ermont/)
-- [Serrurier Ézanville](https://shoptaserrure.netlify.app/villes/ezanville/)
-- [Serrurier Fontenay-en-Parisis](https://shoptaserrure.netlify.app/villes/fontenay-en-parisis/)
-- [Serrurier Fosses](https://shoptaserrure.netlify.app/villes/fosses/)
-- [Serrurier Franconville](https://shoptaserrure.netlify.app/villes/franconville/)
-- [Serrurier Frépillon](https://shoptaserrure.netlify.app/villes/frepillon/)
-- [Serrurier Frouville](https://shoptaserrure.netlify.app/villes/frouville/)
-- [Serrurier Garges-lès-Gonesse](https://shoptaserrure.netlify.app/villes/garges-les-gonesse/)
-- [Serrurier Gonesse](https://shoptaserrure.netlify.app/villes/gonesse/)
-- [Serrurier Goussainville](https://shoptaserrure.netlify.app/villes/goussainville/)
-- [Serrurier Groslay](https://shoptaserrure.netlify.app/villes/groslay/)
-- [Serrurier Herblay-sur-Seine](https://shoptaserrure.netlify.app/villes/herblay-sur-seine/)
-- [Serrurier L'Isle-Adam](https://shoptaserrure.netlify.app/villes/l-isle-adam/)
-- [Serrurier Jouy-le-Moutier](https://shoptaserrure.netlify.app/villes/jouy-le-moutier/)
-- [Serrurier Louvres](https://shoptaserrure.netlify.app/villes/louvres/)
-- [Serrurier Marly-la-Ville](https://shoptaserrure.netlify.app/villes/marly-la-ville/)
-- [Serrurier Montigny-lès-Cormeilles](https://shoptaserrure.netlify.app/villes/montigny-les-cormeilles/)
-- [Serrurier Montmagny](https://shoptaserrure.netlify.app/villes/montmagny/)
-- [Serrurier Montmorency](https://shoptaserrure.netlify.app/villes/montmorency/)
-- [Serrurier Osny](https://shoptaserrure.netlify.app/villes/osny/)
-- [Serrurier Persan](https://shoptaserrure.netlify.app/villes/persan/)
-- [Serrurier Pierrelaye](https://shoptaserrure.netlify.app/villes/pierrelaye/)
-- [Serrurier Pontoise](https://shoptaserrure.netlify.app/villes/pontoise/)
-- [Serrurier Puiseux-Pontoise](https://shoptaserrure.netlify.app/villes/puiseux-pontoise/)
-- [Serrurier Saint-Brice-sous-Forêt](https://shoptaserrure.netlify.app/villes/saint-brice-sous-foret/)
-- [Serrurier Saint-Gratien](https://shoptaserrure.netlify.app/villes/saint-gratien/)
-- [Serrurier Saint-Leu-la-Forêt](https://shoptaserrure.netlify.app/villes/saint-leu-la-foret/)
-- [Serrurier Saint-Ouen-l'Aumône](https://shoptaserrure.netlify.app/villes/saint-ouen-l-aumone/)
-- [Serrurier Saint-Prix](https://shoptaserrure.netlify.app/villes/saint-prix/)
-- [Serrurier Sannois](https://shoptaserrure.netlify.app/villes/sannois/)
-- [Serrurier Sarcelles](https://shoptaserrure.netlify.app/villes/sarcelles/)
-- [Serrurier Soisy-sous-Montmorency](https://shoptaserrure.netlify.app/villes/soisy-sous-montmorency/)
-- [Serrurier Taverny](https://shoptaserrure.netlify.app/villes/taverny/)
-- [Serrurier Vauréal](https://shoptaserrure.netlify.app/villes/vaureal/)
-- [Serrurier Villiers-le-Bel](https://shoptaserrure.netlify.app/villes/villiers-le-bel/)
+- [Serrurier Argenteuil](https://shopta-serrure.fr/villes/argenteuil/)
+- [Serrurier Arnouville](https://shopta-serrure.fr/villes/arnouville/)
+- [Serrurier Auvers-sur-Oise](https://shopta-serrure.fr/villes/auvers-sur-oise/)
+- [Serrurier Beauchamp](https://shopta-serrure.fr/villes/beauchamp/)
+- [Serrurier Beaumont-sur-Oise](https://shopta-serrure.fr/villes/beaumont-sur-oise/)
+- [Serrurier Bernes-sur-Oise](https://shopta-serrure.fr/villes/bernes-sur-oise/)
+- [Serrurier Bessancourt](https://shopta-serrure.fr/villes/bessancourt/)
+- [Serrurier Bezons](https://shopta-serrure.fr/villes/bezons/)
+- [Serrurier Boisemont](https://shopta-serrure.fr/villes/boisemont/)
+- [Serrurier Bonneuil-en-France](https://shopta-serrure.fr/villes/bonneuil-en-france/)
+- [Serrurier Bouffémont](https://shopta-serrure.fr/villes/bouffemont/)
+- [Serrurier Bruyères-sur-Oise](https://shopta-serrure.fr/villes/bruyeres-sur-oise/)
+- [Serrurier Butry-sur-Oise](https://shopta-serrure.fr/villes/butry-sur-oise/)
+- [Serrurier Cergy](https://shopta-serrure.fr/villes/cergy/)
+- [Serrurier Champagne-sur-Oise](https://shopta-serrure.fr/villes/champagne-sur-oise/)
+- [Serrurier Cormeilles-en-Parisis](https://shopta-serrure.fr/villes/cormeilles-en-parisis/)
+- [Serrurier Courdimanche](https://shopta-serrure.fr/villes/courdimanche/)
+- [Serrurier Deuil-la-Barre](https://shopta-serrure.fr/villes/deuil-la-barre/)
+- [Serrurier Domont](https://shopta-serrure.fr/villes/domont/)
+- [Serrurier Eaubonne](https://shopta-serrure.fr/villes/eaubonne/)
+- [Serrurier Écouen](https://shopta-serrure.fr/villes/ecouen/)
+- [Serrurier Enghien-les-Bains](https://shopta-serrure.fr/villes/enghien-les-bains/)
+- [Serrurier Ennery](https://shopta-serrure.fr/villes/ennery/)
+- [Serrurier Épiais-Rhus](https://shopta-serrure.fr/villes/epiais-rhus/)
+- [Serrurier Épinay-Champlâtreux](https://shopta-serrure.fr/villes/epinay-champlatreux/)
+- [Serrurier Éragny](https://shopta-serrure.fr/villes/eragny/)
+- [Serrurier Ermont](https://shopta-serrure.fr/villes/ermont/)
+- [Serrurier Ézanville](https://shopta-serrure.fr/villes/ezanville/)
+- [Serrurier Fontenay-en-Parisis](https://shopta-serrure.fr/villes/fontenay-en-parisis/)
+- [Serrurier Fosses](https://shopta-serrure.fr/villes/fosses/)
+- [Serrurier Franconville](https://shopta-serrure.fr/villes/franconville/)
+- [Serrurier Frépillon](https://shopta-serrure.fr/villes/frepillon/)
+- [Serrurier Frouville](https://shopta-serrure.fr/villes/frouville/)
+- [Serrurier Garges-lès-Gonesse](https://shopta-serrure.fr/villes/garges-les-gonesse/)
+- [Serrurier Gonesse](https://shopta-serrure.fr/villes/gonesse/)
+- [Serrurier Goussainville](https://shopta-serrure.fr/villes/goussainville/)
+- [Serrurier Groslay](https://shopta-serrure.fr/villes/groslay/)
+- [Serrurier Herblay-sur-Seine](https://shopta-serrure.fr/villes/herblay-sur-seine/)
+- [Serrurier L'Isle-Adam](https://shopta-serrure.fr/villes/l-isle-adam/)
+- [Serrurier Jouy-le-Moutier](https://shopta-serrure.fr/villes/jouy-le-moutier/)
+- [Serrurier Louvres](https://shopta-serrure.fr/villes/louvres/)
+- [Serrurier Marly-la-Ville](https://shopta-serrure.fr/villes/marly-la-ville/)
+- [Serrurier Montigny-lès-Cormeilles](https://shopta-serrure.fr/villes/montigny-les-cormeilles/)
+- [Serrurier Montmagny](https://shopta-serrure.fr/villes/montmagny/)
+- [Serrurier Montmorency](https://shopta-serrure.fr/villes/montmorency/)
+- [Serrurier Osny](https://shopta-serrure.fr/villes/osny/)
+- [Serrurier Persan](https://shopta-serrure.fr/villes/persan/)
+- [Serrurier Pierrelaye](https://shopta-serrure.fr/villes/pierrelaye/)
+- [Serrurier Pontoise](https://shopta-serrure.fr/villes/pontoise/)
+- [Serrurier Puiseux-Pontoise](https://shopta-serrure.fr/villes/puiseux-pontoise/)
+- [Serrurier Saint-Brice-sous-Forêt](https://shopta-serrure.fr/villes/saint-brice-sous-foret/)
+- [Serrurier Saint-Gratien](https://shopta-serrure.fr/villes/saint-gratien/)
+- [Serrurier Saint-Leu-la-Forêt](https://shopta-serrure.fr/villes/saint-leu-la-foret/)
+- [Serrurier Saint-Ouen-l'Aumône](https://shopta-serrure.fr/villes/saint-ouen-l-aumone/)
+- [Serrurier Saint-Prix](https://shopta-serrure.fr/villes/saint-prix/)
+- [Serrurier Sannois](https://shopta-serrure.fr/villes/sannois/)
+- [Serrurier Sarcelles](https://shopta-serrure.fr/villes/sarcelles/)
+- [Serrurier Soisy-sous-Montmorency](https://shopta-serrure.fr/villes/soisy-sous-montmorency/)
+- [Serrurier Taverny](https://shopta-serrure.fr/villes/taverny/)
+- [Serrurier Vauréal](https://shopta-serrure.fr/villes/vaureal/)
+- [Serrurier Villiers-le-Bel](https://shopta-serrure.fr/villes/villiers-le-bel/)
 
 Hors zone, des frais de déplacement supplémentaires peuvent s'appliquer et sont annoncés à l'avance.
 
@@ -262,7 +262,7 @@ Hors zone, des frais de déplacement supplémentaires peuvent s'appliquer et son
 Fichet, Point Fort Fichet, Picard Serrures, Vachette, Bricard, Héraclès, Pollux, JPM, Thirard, Metalux, Laperche, Stremler, Mul-T-Lock, Abus, DOM, Mauer, EVVA, Kaba, Keso, Iseo, Cisa, Mottura, Tesa, Yale, Assa Abloy, Tordjman Métal, Bel'M, K•Line, Zilten, Lapeyre, Tryba, Dierre, Gardesa, Hörmann, Somfy, Netatmo, Linus by Yale, Nuki, Ultion, Danalock, Bold, Igloohome
 
 ## Porte claquée : que faire ? Le guide pour rentrer chez vous sans arnaque
-https://shoptaserrure.netlify.app/blog/porte-claquee-que-faire/ – publié le 12 octobre 2026
+https://shopta-serrure.fr/blog/porte-claquee-que-faire/ – publié le 12 octobre 2026
 
 Vous sortez sur le palier, un courant d'air, et la porte se referme derrière vous avec les clés à l'intérieur. Pas de panique : une porte claquée, c'est-à-dire non verrouillée à clé, s'ouvre presque toujours sans dégât et en quelques minutes.
 
@@ -292,7 +292,7 @@ Chez Shopta Serrure, l'ouverture d'une porte claquée commence à 49 € TTC. Le
 Profitez-en pour faire faire un double de vos clés et le confier à une personne de confiance. Si votre porte claque facilement, un groom réglable ou un réglage des paumelles évite que l'incident se reproduise.
 
 ## Arnaques au serrurier : 7 signaux d'alerte et comment les éviter
-https://shoptaserrure.netlify.app/blog/eviter-arnaques-serrurier/ – publié le 28 septembre 2026
+https://shopta-serrure.fr/blog/eviter-arnaques-serrurier/ – publié le 28 septembre 2026
 
 Chaque année, des particuliers paient des sommes exorbitantes pour une simple ouverture de porte. Ces abus ne sont pas une fatalité : quelques réflexes suffisent à les éviter.
 
@@ -319,7 +319,7 @@ Gardez tous les documents, contestez par écrit, et signalez les pratiques abusi
 Chez Shopta Serrure, le prix est annoncé au téléphone, confirmé par un devis signé, et la facture est détaillée et conforme pour votre assurance. Nos avis clients sont publics et vérifiables sur notre fiche Google.
 
 ## Comment sécuriser votre porte d'entrée ?
-https://shoptaserrure.netlify.app/blog/securiser-porte-entree/ – publié le 24 janvier 2026
+https://shopta-serrure.fr/blog/securiser-porte-entree/ – publié le 24 janvier 2026
 
 La porte d'entrée reste le premier point de passage des cambrioleurs. La plupart abandonnent au-delà de quelques minutes de résistance : chaque élément qui les ralentit compte.
 
@@ -345,7 +345,7 @@ Le blindage d'une porte existante renforce le vantail par une tôle d'acier. Les
 Nos serruriers peuvent évaluer votre porte gratuitement et vous proposer les renforts adaptés à votre budget.
 
 ## Que faire en cas de clé cassée dans la serrure ?
-https://shoptaserrure.netlify.app/blog/cle-cassee-dans-la-serrure/ – publié le 20 janvier 2026
+https://shopta-serrure.fr/blog/cle-cassee-dans-la-serrure/ – publié le 20 janvier 2026
 
 Un moment de précipitation et la clé casse dans le cylindre. Pas de panique, mais surtout : ne forcez pas.
 
@@ -364,7 +364,7 @@ Si le morceau dépasse nettement, tirez-le bien droit avec une pince plate fine,
 Si le morceau est entièrement dans le cylindre, un extracteur professionnel est nécessaire. L'opération prend en général quelques minutes et ne nécessite pas de changer la serrure. Chez Shopta Serrure, elle commence à 49 € TTC.
 
 ## L'importance de l'entretien de vos serrures
-https://shoptaserrure.netlify.app/blog/entretien-serrure/ – publié le 15 janvier 2026
+https://shopta-serrure.fr/blog/entretien-serrure/ – publié le 15 janvier 2026
 
 La poussière, l'humidité et l'usure sont les ennemis de vos cylindres. Une serrure entretenue dure plus longtemps et vous évite un blocage au pire moment.
 
@@ -385,7 +385,7 @@ Utilisez un lubrifiant sec : poudre de graphite ou spray PTFE. Évitez absolumen
 Une clé qui accroche, un pêne qui force, une porte qu'il faut pousser pour fermer : ces signes annoncent souvent un blocage prochain. Une intervention préventive coûte moins cher qu'un dépannage d'urgence.
 
 ## Comment choisir sa serrure haute sécurité ?
-https://shoptaserrure.netlify.app/blog/choisir-serrure-haute-securite/ – publié le 10 janvier 2026
+https://shopta-serrure.fr/blog/choisir-serrure-haute-securite/ – publié le 10 janvier 2026
 
 Le choix d'une serrure dépend de votre porte, de votre environnement et des exigences de votre assurance.
 
