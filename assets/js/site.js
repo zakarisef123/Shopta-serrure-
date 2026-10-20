@@ -71,6 +71,7 @@
   } else {
     document.querySelectorAll(".reveal").forEach(function(el){ el.classList.add("in"); });
   }
+  setTimeout(function(){ document.querySelectorAll(".reveal:not(.in)").forEach(function(el){ el.classList.add("in"); }); }, 3000);
 
   // Conversions Google Ads (actives si ads_id est renseigné dans _src/build.py)
   function adsConv(kind){
