@@ -398,21 +398,20 @@ INSURERS = [
 # ---------------------------------------------------------------------------
 BRANDS = [
     # Serrures et cylindres
-    ("Fichet", "fichet", "serrure"), ("Point Fort Fichet", "point-fort-fichet", "serrure"),
+    ("Point Fort Fichet", "point-fort-fichet", "serrure"),
     ("Picard Serrures", "picard", "serrure"), ("Vachette", "vachette", "serrure"), ("Bricard", "bricard", "serrure"),
     ("Héraclès", "heracles", "serrure"), ("Pollux", "pollux", "serrure"), ("JPM", "jpm", "serrure"),
     ("Thirard", "thirard", "serrure"), ("Metalux", "metalux", "serrure"), ("Laperche", "laperche", "serrure"),
     ("Stremler", "stremler", "serrure"), ("Mul-T-Lock", "mul-t-lock", "serrure"), ("Abus", "abus", "serrure"),
-    ("DOM", "dom", "serrure"), ("Mauer", "mauer", "serrure"), ("EVVA", "evva", "serrure"),
+    ("DOM", "dom", "serrure"), ("EVVA", "evva", "serrure"),
     ("dormakaba", "kaba", "serrure"), ("Keso", "keso", "serrure"), ("Iseo", "iseo", "serrure"), ("Cisa", "cisa", "serrure"),
     ("Mottura", "mottura", "serrure"), ("Tesa", "tesa", "serrure"), ("Yale", "yale", "serrure"),
-    ("Assa Abloy", "assa-abloy", "serrure"),
     # Portes blindées et portes d'entrée
     ("Tordjman Métal", "tordjman", "porte"), ("Bel'M", "belm", "porte"), ("K•Line", "kline", "porte"),
     ("Zilten", "zilten", "porte"), ("Lapeyre", "lapeyre", "porte"), ("Tryba", "tryba", "porte"),
     ("Dierre", "dierre", "porte"), ("Gardesa", "gardesa", "porte"), ("Hörmann", "hormann", "porte"),
     # Serrures connectées
-    ("Somfy", "somfy", "connectee"), ("Netatmo", "netatmo", "connectee"), ("Linus by Yale", "linus", "connectee"),
+    ("Somfy", "somfy", "connectee"), ("Netatmo", "netatmo", "connectee"), 
     ("Nuki", "nuki", "connectee"), ("Ultion", "ultion", "connectee"), ("Danalock", "danalock", "connectee"),
     ("Bold", "bold", "connectee"), ("Igloohome", "igloohome", "connectee"),
 ]
