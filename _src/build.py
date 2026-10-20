@@ -22,7 +22,7 @@ SRC = os.path.join(ROOT, "_src")
 # Configuration : à vérifier avant mise en ligne
 # ---------------------------------------------------------------------------
 CONFIG = {
-    "site_url": "https://www.shoptaserrure.fr",  # nom de domaine définitif, sans / final
+    "site_url": "https://shoptaserrure.netlify.app",  # remplacer par le nom de domaine définitif, sans / final
     "nom": "Shopta Serrure",
     "tel": "06 20 54 66 93",
     "tel_intl": "+33620546693",
@@ -37,6 +37,7 @@ CONFIG = {
     # Lien « Demander des avis » de la fiche Google Business Profile (ex. https://g.page/r/XXXX/review)
     "avis_url": "",
     "instagram": "https://www.instagram.com/shoptaserrure/",
+    "tiktok": "https://www.tiktok.com/@shopta.serrure",
     "ga_id": "G-0VFWJ86Y1C",
     "indexnow_key": "8f3c1a6e2b7d4f90a5c3e1b2d4f6a8c0",
     # Mentions légales
@@ -123,8 +124,10 @@ def process_photos():
         target = min(target, w * 3)
         if target != w:
             im = im.resize((target, round(h * target / w)), Image.LANCZOS)
-        if target > w:
+        if target > w * 1.6:
             im = im.filter(ImageFilter.UnsharpMask(radius=1.6, percent=90, threshold=2))
+        elif target > w:
+            im = im.filter(ImageFilter.UnsharpMask(radius=1.0, percent=45, threshold=2))
         else:
             im = im.filter(ImageFilter.UnsharpMask(radius=0.8, percent=50, threshold=2))
         im = ImageEnhance.Contrast(im).enhance(1.04)
@@ -307,7 +310,7 @@ def ld_business(full=True):
         "paymentAccepted": "Carte bancaire, Espèces, Virement",
         "geo": {"@type": "GeoCoordinates", "latitude": CONFIG["lat"], "longitude": CONFIG["lng"]},
         "hasMap": MAPS,
-        "sameAs": [MAPS, CONFIG["instagram"]],
+        "sameAs": [MAPS, CONFIG["instagram"], CONFIG["tiktok"]],
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -356,10 +359,16 @@ def reviews_section(title="Ce que disent nos clients", soft=False):
         score = f'<div class="score"><span class="stars">{STAR * 5}</span></div>'
     cards = ""
     if AVIS.get("avis"):
-        cards = '<div class="review-grid">' + "".join(
-            f'<article class="review reveal"><header><span class="av">{E(r["auteur"][:1])}</span><div><strong>{E(r["auteur"])}</strong>'
-            f'<small>{E(r.get("date", ""))} · Google</small></div></header><span class="stars">{STAR * int(r.get("note", 5))}</span>'
-            f'<p>{E(r["texte"])}</p></article>' for r in AVIS["avis"][:6]) + "</div>"
+        items = "".join(
+            f'<article class="review"><header><span class="av">{E(r["auteur"][:1].upper())}</span><div><strong>{E(r["auteur"])}</strong>'
+            f'<small>{E(r.get("date", ""))}</small></div><span class="g-mini">{GOOGLE}</span></header>'
+            f'<span class="stars" aria-label="{int(r.get("note", 5))} sur 5">{STAR * int(r.get("note", 5))}</span>'
+            f'<p>{E(r["texte"])}</p></article>' for r in AVIS["avis"])
+        cards = f'''<div class="carousel reveal" data-carousel>
+      <button class="car-btn prev" type="button" aria-label="Avis précédent">{ico("i-arrow")}</button>
+      <div class="car-track" tabindex="0" aria-label="Avis clients Google">{items}</div>
+      <button class="car-btn next" type="button" aria-label="Avis suivant">{ico("i-arrow")}</button>
+    </div>'''
     return f'''<section id="avis" class="{'soft' if soft else ''}" aria-labelledby="avis-title">
   <div class="container">
     <div class="section-head reveal">
@@ -382,13 +391,53 @@ def reviews_section(title="Ce que disent nos clients", soft=False):
 </section>'''
 
 
-def cta_final(titre="Bloqué dehors ? On arrive.", texte="Un serrurier qualifié chez vous rapidement, prix annoncé avant de partir."):
-    return f'''<section class="final" aria-label="Appel à l'action" style="padding-top:96px">
+FORM_COUNT = [0]
+
+
+def contact_form(source, service=None, titre="Demande de devis gratuit", sous_titre="Nous vous rappelons rapidement, 7j/7.", ville=""):
+    """Formulaire Netlify Forms (nom « contact »), identique sur toutes les pages."""
+    FORM_COUNT[0] += 1
+    n = FORM_COUNT[0]
+    opts = "".join(f'<option{" selected" if service and s["court"] == service else ""}>{E(s["court"])}</option>' for s in SERVICES)
+    return f'''<form class="card lead-form" name="contact" method="POST" action="/merci/" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="contact">
+  <input type="hidden" name="page" value="{E(source)}">
+  <p hidden><label>Ne pas remplir <input name="bot-field"></label></p>
+  <h3>{E(titre)}</h3>
+  <p>{E(sous_titre)}</p>
+  <div class="row2">
+    <div class="field"><label for="nom-{n}">Nom *</label><input id="nom-{n}" name="nom" autocomplete="name" required placeholder="Jean Dupont"></div>
+    <div class="field"><label for="tel-{n}">Téléphone *</label><input id="tel-{n}" name="telephone" type="tel" inputmode="tel" autocomplete="tel" required pattern="[0-9+ .()-]{{10,}}" placeholder="06 00 00 00 00"></div>
+  </div>
+  <div class="row2">
+    <div class="field"><label for="svc-{n}">Besoin</label><select id="svc-{n}" name="service">{opts}<option{" selected" if not service else ""}>Autre / je ne sais pas</option></select></div>
+    <div class="field"><label for="ville-{n}">Ville / arrondissement</label><input id="ville-{n}" name="ville" autocomplete="address-level2" value="{E(ville)}" placeholder="Paris 15e"></div>
+  </div>
+  <div class="field"><label for="mail-{n}">E-mail (facultatif)</label><input id="mail-{n}" name="email" type="email" autocomplete="email" placeholder="vous@exemple.fr"></div>
+  <div class="field"><label for="msg-{n}">Votre message</label><textarea id="msg-{n}" name="message" rows="3" placeholder="Type de porte, serrure, situation…"></textarea></div>
+  <button class="btn btn-blue btn-lg" type="submit">{ico("i-mail")}Envoyer ma demande</button>
+  <p class="legal">Urgence ? Appelez directement le <a href="{TEL_HREF}">{TEL}</a>. Vos données servent uniquement à traiter votre demande (<a href="/politique-confidentialite/">confidentialité</a>).</p>
+  <div class="form-ok" role="status" hidden>{ico("i-checkc", "")}<div><strong>Demande envoyée !</strong><span>Nous vous rappelons très vite. Pour une urgence, appelez le {TEL}.</span></div></div>
+</form>'''
+
+
+def cta_final(titre="Bloqué dehors ? On arrive.", texte="Un serrurier qualifié chez vous rapidement, prix annoncé avant de partir.",
+              source="/", service=None, ville=""):
+    form_titre = f"Devis gratuit : {service.lower()}" if service else "Demande de devis ou de rappel"
+    return f'''<section class="final" id="devis" aria-label="Contact" style="padding-top:96px">
   <div class="container">
-    <div class="box reveal">
-      <h2>{E(titre)}</h2>
-      <p>{E(texte)}</p>
-      <div class="ctas">{btn_call(cls="btn btn-call btn-lg pulse", track="call_final")}{btn_wa(cls="btn btn-ghost btn-lg", track="wa_final")}</div>
+    <div class="box final-grid reveal">
+      <div class="final-text">
+        <h2>{E(titre).replace(" ?", "&nbsp;?")}</h2>
+        <p>{E(texte)}</p>
+        <div class="ctas">{btn_call(cls="btn btn-call btn-lg pulse", track="call_final")}{btn_wa(cls="btn btn-ghost btn-lg", track="wa_final")}</div>
+        <ul class="final-list">
+          <li>{ico("i-check", "")}Prix annoncé avant le déplacement</li>
+          <li>{ico("i-check", "")}Devis gratuit, signé avant travaux</li>
+          <li>{ico("i-check", "")}Facture remboursable par votre assurance</li>
+        </ul>
+      </div>
+      {contact_form(source, service, form_titre, ville=ville)}
     </div>
   </div>
 </section>'''
@@ -401,6 +450,7 @@ def aside_card(titre="Besoin d'un serrurier ?", texte="Prix annoncé au téléph
   <p>{E(texte)}</p>
   {btn_call(cls="btn btn-call", track="call_aside")}
   {btn_wa(cls="btn btn-wa", label="Envoyer une photo", track="wa_aside")}
+  <a class="btn btn-wa" href="#devis">{ico("i-mail")}Demander un devis écrit</a>
   <ul>
     <li>{ico("i-check", "")}Devis gratuit et sans engagement</li>
     <li>{ico("i-check", "")}Ouverture sans dégât dans la majorité des cas</li>
@@ -442,7 +492,8 @@ def footer():
         <a href="/" class="logo"><svg><use href="#i-logo"/></svg><span>Shopta<b>Serrure</b><small>Serrurier d'urgence</small></span></a>
         <p>Serrurier d'urgence à Paris et en Île-de-France. Intervention rapide 24h/24 et 7j/7, prix annoncés avant déplacement, factures reconnues par les assurances.</p>
         <p style="margin-top:14px"><a href="{TEL_HREF}" style="color:#fff;font-family:var(--head);font-weight:700;font-size:20px">{TEL}</a><br><a href="mailto:{CONFIG['email']}">{CONFIG['email']}</a></p>
-        <p style="margin-top:14px"><a class="social" href="{CONFIG['instagram']}" target="_blank" rel="noopener me" aria-label="Instagram Shopta Serrure">{ico("i-insta", "")}@shoptaserrure</a></p>
+        <p style="margin-top:14px"><a class="social" href="{CONFIG['instagram']}" target="_blank" rel="noopener me" aria-label="Instagram Shopta Serrure">{ico("i-insta", "")}@shoptaserrure</a>
+        <a class="social" href="{CONFIG['tiktok']}" target="_blank" rel="noopener me" aria-label="TikTok Shopta Serrure">{ico("i-tiktok", "")}@shopta.serrure</a></p>
       </div>
       <div><h4>Dépannages</h4><ul>{svc}</ul></div>
       <div><h4>Zones</h4><ul>{zl}<li><a href="/villes/">Toutes nos zones →</a></li></ul></div>
@@ -537,9 +588,13 @@ def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og
         f.write(doc)
     if robots.startswith("index"):
         SITEMAP.append(path)
+        imgs = list(dict.fromkeys(re.findall(r'<img src="(/assets/img/photos/[^"]+)"', body)))
+        if imgs:
+            SITEMAP_IMAGES[path] = imgs
 
 
 SITEMAP = []
+SITEMAP_IMAGES = {}
 
 
 def page_hero(crumb_items, h1, lead, extra=""):
@@ -746,7 +801,7 @@ def build_home():
     <div class="blog-grid">{blog}</div>
   </div>
 </section>
-{cta_final()}'''
+{cta_final(source="/")}'''
     ld = [ld_business(), ld_faq(HOME_FAQ),
           {"@context": "https://schema.org", "@type": "WebSite", "name": "Shopta Serrure", "url": URL + "/", "inLanguage": "fr-FR",
            "publisher": {"@id": BUSINESS_ID}}]
@@ -778,7 +833,7 @@ def build_services():
     body = page_hero([("Dépannage", None)], "Dépannage serrurerie <em>24h/24</em> à Paris et en Île-de-France",
                      "Ouverture de porte, déblocage, clé cassée, changement de serrure, serrure connectée, sécurisation après effraction : toutes nos interventions, avec leurs prix de départ.")
     body += f'<section><div class="container layout"><div class="svc-list">{items}</div>{aside_card()}</div></section>'
-    body += insurers_block() + cta_final()
+    body += insurers_block() + cta_final(source="/depannage/")
     page("/depannage/", "Dépannage serrurerie 24h/24 Paris & IDF – Tous nos services | Shopta Serrure",
          "Tous nos dépannages de serrurerie à Paris et en Île-de-France : ouverture de porte à partir de 49 €, serrure bloquée, clé cassée, changement de serrure, après effraction.",
          body, [ld_business(False), ld_breadcrumb([("Dépannage", "/depannage/")])], active="/depannage/")
@@ -810,7 +865,9 @@ def build_services():
                          f'{E(s["resume"])} Intervention 24h/24, {"à partir de %d € TTC" % s["prix_num"] if s["prix_num"] else "devis gratuit"}.',
                          checks(["Prix annoncé avant déplacement", "Devis signé avant travaux", "Facture remboursable par l'assurance"]))
         body += f'<section><div class="container layout">{content}{aside_card()}</div></section>'
-        body += insurers_block() + reviews_section(soft=True) + cta_final()
+        body += insurers_block() + reviews_section(soft=True) + cta_final(
+            f"{s['court']} ? On s'en occupe.", "Appelez-nous ou laissez vos coordonnées : nous vous rappelons avec un prix clair.",
+            source=path, service=s["court"])
         title = f'{s["nom"]} Paris 24h/24 – {s["prix"].replace(" TTC", "").replace("sur devis gratuit", "Devis gratuit")} | Shopta Serrure'
         desc = f'{s["nom"]} à Paris et en Île-de-France, 24h/24 et 7j/7. {s["resume"]} Prix annoncé avant déplacement.'
         ld = [ld_business(False), ld_breadcrumb([("Dépannage", "/depannage/"), (s["court"], path)]), ld_faq(s["faq"]),
@@ -862,7 +919,7 @@ def build_zones_pages():
     body = page_hero([("Zones d'intervention", None)], "Nos zones d'intervention <em>en Île-de-France</em>",
                      f"Shopta Serrure intervient 24h/24 dans {len(ZONES) - 1} communes et arrondissements : Paris, Hauts-de-Seine et Val-d'Oise.")
     body += f'<section><div class="container layout"><div class="prose">{blocks}<p class="callout">Votre ville n\'est pas listée ? Appelez-nous au {TEL} : hors zone, des frais de déplacement supplémentaires peuvent s\'appliquer et vous sont annoncés à l\'avance.</p></div>{aside_card()}</div></section>'
-    body += reviews_section(soft=True)
+    body += reviews_section(soft=True) + cta_final(source="/villes/")
     page("/villes/", "Zones d'intervention – Serrurier Paris, 92 et 95 | Shopta Serrure",
          "Liste des villes et arrondissements où Shopta Serrure intervient 24h/24 : Paris 1 à 20, Hauts-de-Seine (92) et Val-d'Oise (95).",
          body, [ld_business(False), ld_breadcrumb([("Zones d'intervention", "/villes/")])], active="/villes/")
@@ -934,7 +991,8 @@ def build_zones_pages():
         crumb_items.append((f'Serrurier {z["court"]}', None))
         body = page_hero(crumb_items, h1, lead, checks(["Devis gratuit", "Sans frais cachés", "Nuit, week-end et jours fériés"]))
         body += f'<section><div class="container layout">{content}{aside_card(f"Serrurier {z["court"]}")}</div></section>'
-        body += insurers_block() + reviews_section(title=f"Avis de nos clients", soft=True) + cta_final(f"Bloqué dehors {z['a']} ?", "Appelez-nous : prix annoncé au téléphone, serrurier en route immédiatement.")
+        body += insurers_block() + reviews_section(title=f"Avis de nos clients", soft=True) + cta_final(f"Bloqué dehors {z['a']} ?", "Appelez-nous : prix annoncé au téléphone, serrurier en route immédiatement.",
+                                                                                                                         source=path, ville=z["court"] if z["slug"] != "paris" else "")
         if z["slug"] == "paris":
             title = "Serrurier Paris 24h/24 – Tous arrondissements, à partir de 49 € | Shopta Serrure"
         else:
@@ -974,7 +1032,7 @@ def build_static():
 <h2>Moyens de paiement</h2><p>Carte bancaire, espèces et virement.</p>''',
            "Tarifs serrurier Paris – Ouverture de porte à partir de 49 € TTC | Shopta Serrure",
            "Tarifs Shopta Serrure : ouverture de porte claquée à partir de 49 € TTC, déblocage, clé cassée, changement de serrure sur devis gratuit. Prix annoncé avant déplacement.",
-           active="/tarifs/", after=insurers_block() + cta_final())
+           active="/tarifs/", after=insurers_block() + cta_final(source="/tarifs/"))
 
     # Assurances
     simple("/assurances/", "Assurances", "Serrurier et assurance : <em>votre facture remboursable</em>",
@@ -990,7 +1048,7 @@ def build_static():
 <p class="callout">Shopta Serrure est une entreprise indépendante, sans partenariat avec les compagnies d'assurance. Nos factures sont conformes et reconnues par les assureurs ; le remboursement dépend des garanties de votre contrat.</p>''',
            "Serrurier et assurance habitation – Facture remboursable | Shopta Serrure",
            "Comment se faire rembourser un serrurier par son assurance habitation : garanties, documents, délais. Nos factures sont reconnues par les assureurs.",
-           active=None, after=insurers_block() + cta_final())
+           active=None, after=insurers_block() + cta_final(source="/assurances/"))
 
     # FAQ
     allfaq = HOME_FAQ + [q for s in SERVICES for q in s["faq"]]
@@ -999,31 +1057,17 @@ def build_static():
            "<h2>Général</h2>" + faq_html(HOME_FAQ) + "".join(f'<h2>{E(s["court"])}</h2>' + faq_html(s["faq"]) for s in SERVICES),
            "FAQ serrurier – Prix, délais, assurance | Shopta Serrure",
            "Toutes les réponses à vos questions : prix d'une ouverture de porte, délai d'intervention, remboursement par l'assurance, ouverture sans dégât.",
-           extra_ld=[ld_faq(allfaq)])
+           extra_ld=[ld_faq(allfaq)], after=cta_final(source="/faq/"))
 
     # Avis
     body = page_hero([("Avis clients", None)], "Avis clients <em>vérifiés sur Google</em>",
                      "Nos avis sont publiés par nos clients sur notre fiche Google Maps. Ils sont publics, vérifiables et nous ne pouvons pas les modifier.")
-    body += reviews_section(title="Notre réputation sur Google") + cta_final()
+    body += reviews_section(title="Notre réputation sur Google") + cta_final(source="/avis/")
     page("/avis/", "Avis clients Shopta Serrure – Serrurier Paris", "Consultez les avis Google de nos clients et laissez le vôtre. Serrurier d'urgence à Paris et en Île-de-France.",
          body, [ld_business(False), ld_breadcrumb([("Avis clients", "/avis/")])], active="/avis/")
 
     # Contact
-    form = f'''<form class="card" id="contact-form" novalidate>
-      <h3>Demande de devis gratuit</h3>
-      <p>Réponse rapide par téléphone ou WhatsApp.</p>
-      <div class="row2">
-        <div class="field"><label for="f-name">Nom complet</label><input id="f-name" name="name" autocomplete="name" required placeholder="Jean Dupont"></div>
-        <div class="field"><label for="f-tel">Téléphone</label><input id="f-tel" name="tel" type="tel" autocomplete="tel" required placeholder="06 00 00 00 00"></div>
-      </div>
-      <div class="row2">
-        <div class="field"><label for="f-type">Type de besoin</label><select id="f-type" name="type">{"".join(f"<option>{E(s['court'])}</option>" for s in SERVICES)}<option>Autre</option></select></div>
-        <div class="field"><label for="f-city">Ville / arrondissement</label><input id="f-city" name="city" autocomplete="address-level2" placeholder="Paris 15e"></div>
-      </div>
-      <div class="field"><label for="f-msg">Message / description</label><textarea id="f-msg" name="msg" placeholder="Décrivez votre problème (type de porte, serrure…)"></textarea></div>
-      <button class="btn btn-blue btn-lg" type="submit">{ico("i-wa")}Envoyer ma demande</button>
-      <p class="legal">Votre demande est envoyée via WhatsApp. Vos données ne servent qu'à traiter votre demande.</p>
-    </form>'''
+    form = contact_form("/contact/", titre="Écrivez-nous", sous_titre="Devis, rappel, question : réponse rapide, 7j/7.")
     body = page_hero([("Contact", None)], "Contactez <em>un serrurier</em>", "Pour une urgence, appelez directement : c'est le plus rapide. Pour un devis ou des travaux, écrivez-nous.")
     body += f'''<section class="soft"><div class="container contact">
     <div class="contact-info reveal">
@@ -1032,6 +1076,7 @@ def build_static():
       <div class="c-line"><span class="ic">{ico("i-phone", "")}</span><div><small>Téléphone 24h/24</small><strong><a href="{TEL_HREF}">{TEL}</a></strong></div></div>
       <div class="c-line"><span class="ic">{ico("i-mail", "")}</span><div><small>E-mail</small><strong><a href="mailto:{CONFIG['email']}">{CONFIG['email']}</a></strong></div></div>
       <div class="c-line"><span class="ic">{ico("i-insta", "")}</span><div><small>Instagram</small><strong><a href="{CONFIG['instagram']}" target="_blank" rel="noopener me">@shoptaserrure</a></strong></div></div>
+      <div class="c-line"><span class="ic">{ico("i-tiktok", "")}</span><div><small>TikTok</small><strong><a href="{CONFIG['tiktok']}" target="_blank" rel="noopener me">@shopta.serrure</a></strong></div></div>
       <div class="c-line"><span class="ic">{ico("i-pin", "")}</span><div><small>Zone d'intervention</small><strong>Paris, Hauts-de-Seine, Val-d'Oise</strong></div></div>
       {btn_call("Appeler maintenant", cls="btn btn-call btn-lg", track="call_contact")}
     </div>
@@ -1061,6 +1106,15 @@ Adresse : {E(", ".join(v for v in CONFIG["adresse"].values() if v)) or na}<br>T�
            "Politique de confidentialité | Shopta Serrure", "Politique de confidentialité et traitement des données personnelles du site Shopta Serrure.", aside=False)
 
 
+def build_merci():
+    body = f'''<section class="notfound"><div class="container">
+<div style="display:inline-grid;place-items:center;width:84px;height:84px;border-radius:50%;background:var(--green-50);color:var(--green-600);margin-bottom:18px">{ico("i-checkc", "ok-ic")}</div>
+<h1 style="font-size:clamp(32px,5vw,48px)">Merci, demande reçue !</h1>
+<p style="color:var(--muted);margin:14px auto 28px;max-width:560px;font-size:18px">Nous vous rappelons très rapidement. Pour une urgence (porte claquée, effraction), appelez-nous directement : c'est le plus rapide.</p>
+<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">{btn_call(cls="btn btn-call btn-lg", track="call_merci")}<a class="btn btn-blue btn-lg" href="/">Retour à l'accueil</a></div></div></section>'''
+    page("/merci/", "Demande envoyée | Shopta Serrure", "Votre demande a bien été envoyée.", body, robots="noindex, nofollow")
+
+
 def build_blog():
     cards = "".join(f'''<article class="post reveal">
   {cover(a)}
@@ -1068,7 +1122,7 @@ def build_blog():
   <h3><a href="/blog/{a["slug"]}/">{E(a["court"])}</a></h3><p>{E(a["desc"])}</p><a class="more" href="/blog/{a["slug"]}/">Lire l'article →</a></div>
 </article>''' for a in ARTICLES)
     body = page_hero([("Blog", None)], "Le Mag Sécurité <em>Shopta Serrure</em>", "Conseils, guides pratiques et actualités pour la sécurité de votre logement, rédigés par nos serruriers.")
-    body += f'<section><div class="container"><div class="blog-grid">{cards}</div></div></section>' + cta_final()
+    body += f'<section><div class="container"><div class="blog-grid">{cards}</div></div></section>' + cta_final(source="/blog/")
     page("/blog/", "Blog sécurité & serrurerie – Conseils de serruriers | Shopta Serrure",
          "Conseils de serruriers : porte claquée, clé cassée, éviter les arnaques, choisir une serrure A2P, entretenir sa serrure.",
          body, [ld_business(False), ld_breadcrumb([("Blog", "/blog/")])], active="/blog/")
@@ -1086,7 +1140,7 @@ def build_blog():
         body = page_hero([("Blog", "/blog/"), (a["court"], None)], E(a["titre"]), E(a["desc"]),
                          f'<div class="article-meta"><span>{E(a["cat"])}</span><span>·</span><time datetime="{a["date"]}">Publié le {fr_date(a["date"])}</time><span>·</span><span>Par l\'équipe Shopta Serrure</span></div>')
         body += f'<section><div class="container layout"><article class="prose">{prose}</article>{aside_card()}</div></section>'
-        body += f'<section class="soft" style="padding:64px 0"><div class="container"><h2 style="font-size:26px;margin-bottom:20px">À lire aussi</h2><div class="related">{rel}</div></div></section>'
+        body += f'<section class="soft" style="padding:64px 0"><div class="container"><h2 style="font-size:26px;margin-bottom:20px">À lire aussi</h2><div class="related">{rel}</div></div></section>' + cta_final(source=path)
         ld = [ld_business(False), ld_breadcrumb([("Blog", "/blog/"), (a["court"], path)]),
               {"@context": "https://schema.org", "@type": "BlogPosting", "headline": a["titre"], "description": a["desc"],
                "datePublished": a["date"], "dateModified": a["date"], "inLanguage": "fr-FR", "mainEntityOfPage": URL + path,
@@ -1136,51 +1190,37 @@ def build_seo_files():
     def prio(p):
         if p == "/":
             return "1.0"
-        if p.startswith("/depannage/") or p in ("/villes/paris/", "/tarifs/"):
+        if p.startswith("/depannage/") or p in ("/villes/paris/", "/tarifs/", "/contact/"):
             return "0.9"
         if p.startswith("/villes/"):
             return "0.8"
         return "0.6"
-    urls = "".join(f"  <url><loc>{URL}{p}</loc><lastmod>{TODAY}</lastmod><priority>{prio(p)}</priority></url>\n" for p in SITEMAP)
-    write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n')
 
-    write("robots.txt", f"""# Shopta Serrure
-User-agent: *
-Allow: /
-Disallow: /_src/
+    def freq(p):
+        return "weekly" if p in ("/", "/avis/", "/blog/") else "monthly"
 
-# Moteurs de recherche IA : autorisés à lire et citer le site
-User-agent: GPTBot
-Allow: /
-User-agent: OAI-SearchBot
-Allow: /
-User-agent: ChatGPT-User
-Allow: /
-User-agent: ClaudeBot
-Allow: /
-User-agent: Claude-SearchBot
-Allow: /
-User-agent: Claude-User
-Allow: /
-User-agent: PerplexityBot
-Allow: /
-User-agent: Perplexity-User
-Allow: /
-User-agent: Google-Extended
-Allow: /
-User-agent: Applebot-Extended
-Allow: /
-User-agent: Bingbot
-Allow: /
-User-agent: Mistralai-User
-Allow: /
+    def url_entry(p):
+        imgs = "".join(f"<image:image><image:loc>{URL}{i}</image:loc></image:image>" for i in SITEMAP_IMAGES.get(p, [])[:5])
+        return (f"  <url><loc>{URL}{p}</loc><lastmod>{TODAY}</lastmod><changefreq>{freq(p)}</changefreq>"
+                f"<priority>{prio(p)}</priority>{imgs}</url>\n")
+    urls = "".join(url_entry(p) for p in SITEMAP)
+    write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n'
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
+          f"{urls}</urlset>\n")
 
-Sitemap: {URL}/sitemap.xml
-""")
+    bots = ["*", "Googlebot", "Bingbot", "Applebot", "DuckDuckBot", "YandexBot", "Qwantbot",
+            "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User",
+            "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "Mistralai-User", "Meta-ExternalAgent"]
+    write("robots.txt", "# Shopta Serrure – moteurs de recherche et assistants IA autorisés\n"
+          + "".join(f"User-agent: {b}\n" for b in bots)
+          + "Allow: /\nDisallow: /_src/\nDisallow: /merci/\n\n"
+          + f"Sitemap: {URL}/sitemap.xml\n")
 
     svc = "\n".join(f"- [{s['nom']}]({URL}/depannage/{s['slug']}/) : {s['prix']}. {s['resume']}" for s in SERVICES)
     arts = "\n".join(f"- [{a['court']}]({URL}/blog/{a['slug']}/) : {a['desc']}" for a in ARTICLES)
-    deps = "\n".join(f"- {label} : " + ", ".join(z["court"] for z in ZONES if z["dep"] == dep) for dep, (_, label) in DEPTS.items())
+    deps = "\n\n".join(f"### {label}\n" + "\n".join(f"- [Serrurier {z['court']}]({URL}{z['url']})" for z in ZONES if z["dep"] == dep)
+                       for dep, (_, label) in DEPTS.items())
+    note = (f"- Note Google : {AVIS['note']}/5 sur {AVIS['nombre']} avis\n" if AVIS.get("note") else "")
     write("llms.txt", f"""# Shopta Serrure
 
 > Serrurier d'urgence à Paris et en Île-de-France (Paris 75, Hauts-de-Seine 92, Val-d'Oise 95), disponible 24h/24 et 7j/7. Ouverture de porte claquée à partir de 49 € TTC, prix annoncé au téléphone avant le déplacement, devis écrit signé avant toute intervention, facture détaillée reconnue par les assureurs habitation.
@@ -1193,10 +1233,12 @@ Sitemap: {URL}/sitemap.xml
 - Site : {URL}/
 - Fiche Google Maps : {MAPS}
 - Instagram : {CONFIG['instagram']}
+- TikTok : {CONFIG['tiktok']}
 - Délai d'intervention : moins de 30 minutes en moyenne dans Paris et la proche couronne
 - Paiement : carte bancaire, espèces, virement
 - Assurance : facture conforme, remboursable selon le contrat d'assurance habitation. Entreprise indépendante, sans partenariat avec les assureurs.
-
+- Devis écrit gratuit : formulaire sur chaque page et sur {URL}/contact/, ou par WhatsApp
+{note}
 ## Services et prix
 {svc}
 
@@ -1208,7 +1250,8 @@ Sitemap: {URL}/sitemap.xml
 - [Serrurier et assurance]({URL}/assurances/)
 - [Avis clients]({URL}/avis/)
 - [FAQ]({URL}/faq/)
-- [Contact]({URL}/contact/)
+- [Contact et demande de devis]({URL}/contact/)
+- [Plan du site]({URL}/plan-du-site/)
 
 ## Guides
 {arts}
@@ -1229,6 +1272,7 @@ def main():
     build_zones_pages()
     build_static()
     build_blog()
+    build_merci()
     build_sitemap_page()
     build_404()
     build_seo_files()
