@@ -36,6 +36,7 @@ CONFIG = {
     "maps_cid": "12208539419776823105",
     # Lien « Demander des avis » de la fiche Google Business Profile (ex. https://g.page/r/XXXX/review)
     "avis_url": "",
+    "instagram": "https://www.instagram.com/shoptaserrure/",
     "ga_id": "G-0VFWJ86Y1C",
     "indexnow_key": "8f3c1a6e2b7d4f90a5c3e1b2d4f6a8c0",
     # Mentions légales
@@ -302,7 +303,7 @@ def ld_business(full=True):
         "paymentAccepted": "Carte bancaire, Espèces, Virement",
         "geo": {"@type": "GeoCoordinates", "latitude": CONFIG["lat"], "longitude": CONFIG["lng"]},
         "hasMap": MAPS,
-        "sameAs": [MAPS],
+        "sameAs": [MAPS, CONFIG["instagram"]],
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -437,6 +438,7 @@ def footer():
         <a href="/" class="logo"><svg><use href="#i-logo"/></svg><span>Shopta<b>Serrure</b><small>Serrurier d'urgence</small></span></a>
         <p>Serrurier d'urgence à Paris et en Île-de-France. Intervention rapide 24h/24 et 7j/7, prix annoncés avant déplacement, factures reconnues par les assurances.</p>
         <p style="margin-top:14px"><a href="{TEL_HREF}" style="color:#fff;font-family:var(--head);font-weight:700;font-size:20px">{TEL}</a><br><a href="mailto:{CONFIG['email']}">{CONFIG['email']}</a></p>
+        <p style="margin-top:14px"><a class="social" href="{CONFIG['instagram']}" target="_blank" rel="noopener me" aria-label="Instagram Shopta Serrure">{ico("i-insta", "")}@shoptaserrure</a></p>
       </div>
       <div><h4>Dépannages</h4><ul>{svc}</ul></div>
       <div><h4>Zones</h4><ul>{zl}<li><a href="/villes/">Toutes nos zones →</a></li></ul></div>
@@ -1025,6 +1027,7 @@ def build_static():
       <p>Serrurier d'urgence à Paris et en Île-de-France, 24h/24 et 7j/7.</p>
       <div class="c-line"><span class="ic">{ico("i-phone", "")}</span><div><small>Téléphone 24h/24</small><strong><a href="{TEL_HREF}">{TEL}</a></strong></div></div>
       <div class="c-line"><span class="ic">{ico("i-mail", "")}</span><div><small>E-mail</small><strong><a href="mailto:{CONFIG['email']}">{CONFIG['email']}</a></strong></div></div>
+      <div class="c-line"><span class="ic">{ico("i-insta", "")}</span><div><small>Instagram</small><strong><a href="{CONFIG['instagram']}" target="_blank" rel="noopener me">@shoptaserrure</a></strong></div></div>
       <div class="c-line"><span class="ic">{ico("i-pin", "")}</span><div><small>Zone d'intervention</small><strong>Paris, Hauts-de-Seine, Val-d'Oise</strong></div></div>
       {btn_call("Appeler maintenant", cls="btn btn-call btn-lg", track="call_contact")}
     </div>
@@ -1185,6 +1188,7 @@ Sitemap: {URL}/sitemap.xml
 - E-mail : {CONFIG['email']}
 - Site : {URL}/
 - Fiche Google Maps : {MAPS}
+- Instagram : {CONFIG['instagram']}
 - Délai d'intervention : moins de 30 minutes en moyenne dans Paris et la proche couronne
 - Paiement : carte bancaire, espèces, virement
 - Assurance : facture conforme, remboursable selon le contrat d'assurance habitation. Entreprise indépendante, sans partenariat avec les assureurs.
