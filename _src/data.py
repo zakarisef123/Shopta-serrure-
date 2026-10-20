@@ -193,6 +193,10 @@ HDS = [  # Hauts-de-Seine (92)
     ("Vaucresson", 48.8400, 2.1530), ("Ville-d'Avray", 48.8250, 2.1930), ("Villeneuve-la-Garenne", 48.9367, 2.3250),
 ]
 
+SSD = [  # Seine-Saint-Denis (93)
+    ("Saint-Ouen-sur-Seine", 48.9116, 2.3339),
+]
+
 VDO = [  # Val-d'Oise (95)
     ("Argenteuil", 48.9472, 2.2467), ("Arnouville", 48.9870, 2.4170), ("Auvers-sur-Oise", 49.0710, 2.1700),
     ("Beauchamp", 49.0130, 2.1900), ("Beaumont-sur-Oise", 49.1420, 2.2870), ("Bernes-sur-Oise", 49.1610, 2.3000),
@@ -220,6 +224,7 @@ VDO = [  # Val-d'Oise (95)
 DEPTS = {
     "75": ("Paris", "Paris (75)"),
     "92": ("Hauts-de-Seine", "Hauts-de-Seine (92)"),
+    "93": ("Seine-Saint-Denis", "Seine-Saint-Denis (93)"),
     "95": ("Val-d'Oise", "Val-d'Oise (95)"),
 }
 

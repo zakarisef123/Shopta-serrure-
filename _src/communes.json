@@ -3432,5 +3432,23 @@
 "CC du Vexin-Val de Seine"
 ]
 ]
+},
+"93070": {
+"nom": "Saint-Ouen-sur-Seine",
+"dep": "93",
+"cp": [
+"93400"
+],
+"pop": 53615,
+"groupes": [
+[
+"METRO",
+"Métropole du Grand Paris"
+],
+[
+"EPT",
+"Plaine Commune"
+]
+]
 }
 }
