@@ -404,7 +404,7 @@ BRANDS = [
     ("Thirard", "thirard", "serrure"), ("Metalux", "metalux", "serrure"), ("Laperche", "laperche", "serrure"),
     ("Stremler", "stremler", "serrure"), ("Mul-T-Lock", "mul-t-lock", "serrure"), ("Abus", "abus", "serrure"),
     ("DOM", "dom", "serrure"), ("Mauer", "mauer", "serrure"), ("EVVA", "evva", "serrure"),
-    ("Kaba", "kaba", "serrure"), ("Keso", "keso", "serrure"), ("Iseo", "iseo", "serrure"), ("Cisa", "cisa", "serrure"),
+    ("dormakaba", "kaba", "serrure"), ("Keso", "keso", "serrure"), ("Iseo", "iseo", "serrure"), ("Cisa", "cisa", "serrure"),
     ("Mottura", "mottura", "serrure"), ("Tesa", "tesa", "serrure"), ("Yale", "yale", "serrure"),
     ("Assa Abloy", "assa-abloy", "serrure"),
     # Portes blindées et portes d'entrée

@@ -259,7 +259,7 @@ Selon les dégâts : nouvelle serrure multipoints A2P, cornières anti-pinces, p
 Hors zone, des frais de déplacement supplémentaires peuvent s'appliquer et sont annoncés à l'avance.
 
 ## Marques prises en charge
-Fichet, Point Fort Fichet, Picard Serrures, Vachette, Bricard, Héraclès, Pollux, JPM, Thirard, Metalux, Laperche, Stremler, Mul-T-Lock, Abus, DOM, Mauer, EVVA, Kaba, Keso, Iseo, Cisa, Mottura, Tesa, Yale, Assa Abloy, Tordjman Métal, Bel'M, K•Line, Zilten, Lapeyre, Tryba, Dierre, Gardesa, Hörmann, Somfy, Netatmo, Linus by Yale, Nuki, Ultion, Danalock, Bold, Igloohome
+Fichet, Point Fort Fichet, Picard Serrures, Vachette, Bricard, Héraclès, Pollux, JPM, Thirard, Metalux, Laperche, Stremler, Mul-T-Lock, Abus, DOM, Mauer, EVVA, dormakaba, Keso, Iseo, Cisa, Mottura, Tesa, Yale, Assa Abloy, Tordjman Métal, Bel'M, K•Line, Zilten, Lapeyre, Tryba, Dierre, Gardesa, Hörmann, Somfy, Netatmo, Linus by Yale, Nuki, Ultion, Danalock, Bold, Igloohome
 
 ## Porte claquée : que faire ? Le guide pour rentrer chez vous sans arnaque
 https://shopta-serrure.fr/blog/porte-claquee-que-faire/ – publié le 12 octobre 2026
