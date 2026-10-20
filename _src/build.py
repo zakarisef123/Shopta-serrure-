@@ -180,8 +180,12 @@ def fig(key, caption=None, eager=False):
     return f'<figure class="photo">{pic}{cap}</figure>'
 
 
+# Photo de remplacement tant qu'une photo n'est pas fournie
+PHOTO_FALLBACK = {"serrure-bloquee": "changement-serrure", "porte-rouge": "cle-cassee"}
+
+
 def picture(key, cls="", sizes="(max-width: 720px) 100vw, 600px", eager=False):
-    p = PHOTO.get(key)
+    p = PHOTO.get(key) or PHOTO.get(PHOTO_FALLBACK.get(key))
     if not p:
         return ""
     load = 'fetchpriority="high"' if eager else 'loading="lazy"'
