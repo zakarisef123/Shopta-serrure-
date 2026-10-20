@@ -26,6 +26,7 @@
     img.alt = i.n; img.decoding = "async"; img.src = i.logo;
     img.onerror = function(){ el.replaceWith(fallbackChip(i)); };
     el.appendChild(img);
+    if (i.label) el.appendChild(document.createTextNode(i.n));
     return el;
   }
   // les assureurs avec logo fourni passent en premier

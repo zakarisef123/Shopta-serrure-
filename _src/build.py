@@ -1115,8 +1115,13 @@ def write(name, content):
         f.write(content)
 
 
+# Logos réduits au symbole : le nom de l'assureur est affiché à côté
+LOGO_SANS_NOM = {"allianz"}
+
+
 def build_insurers_js():
-    data = [{"n": n, "d": d, "c": c, **({"logo": LOGOS[slug]} if slug in LOGOS else {})} for n, slug, d, c in INSURERS]
+    data = [{"n": n, "d": d, "c": c, **({"logo": LOGOS[slug]} if slug in LOGOS else {}),
+             **({"label": 1} if slug in LOGO_SANS_NOM else {})} for n, slug, d, c in INSURERS]
     write("assets/js/assureurs.js", "window.ASSUREURS=" + json.dumps(data, ensure_ascii=False) + ";\n")
 
 
