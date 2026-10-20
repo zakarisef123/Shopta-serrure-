@@ -39,6 +39,9 @@ CONFIG = {
     "instagram": "https://www.instagram.com/shoptaserrure/",
     "tiktok": "https://www.tiktok.com/@shopta.serrure",
     "ga_id": "G-0VFWJ86Y1C",
+    # Google Ads : ID du compte (AW-XXXXXXXXX) et libellés des conversions (Outils > Conversions > « Configurer la balise »)
+    "ads_id": "",
+    "ads_conv": {"call": "", "wa": "", "form": ""},
     "indexnow_key": "8f3c1a6e2b7d4f90a5c3e1b2d4f6a8c0",
     # Mentions légales
     "raison_sociale": "Shopta Serrure",
@@ -514,6 +517,8 @@ def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og
     mnav = "".join(f'<a href="{u}">{E(l)}</a>' for l, u in [("Accueil", "/")] + NAV)
     ld_html = "".join(f'<script type="application/ld+json">{json.dumps(d, ensure_ascii=False)}</script>\n' for d in ld)
     ga = CONFIG["ga_id"]
+    ads = CONFIG["ads_id"]
+    ads_js = (f"gtag('config','{ads}');window.ADS_CONV=" + json.dumps({k: f"{ads}/{v}" for k, v in CONFIG["ads_conv"].items() if v}) + ";") if ads else ""
     doc = f'''<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -543,7 +548,7 @@ def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/site.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id={ga}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{ga}');</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{ga}');{ads_js}</script>
 {ld_html}</head>
 <body>
 {SPRITE}
@@ -841,10 +846,9 @@ def build_services():
     for s in SERVICES:
         path = f"/depannage/{s['slug']}/"
         secs = "".join(f"<h2>{E(t)}</h2><p>{c}</p>" for t, c in s["sections"])
-        arr_links = "".join(f'<a href="/villes/paris-{n}/">{E(s["court"])} Paris {n}</a>' for n in range(1, 21))
-        near = [z for z in ZONES if z["dep"] in ("92",)][:36]
-        hds_links = "".join(f'<a href="{z["url"]}">{E(z["court"])}</a>' for z in near)
-        vdo_links = "".join(f'<a href="{z["url"]}">{E(z["court"])}</a>' for z in ZONES if z["dep"] == "95")
+        arr_links = "".join(f'<a href="{combo_url(s, z)}">{E(s["court"])} {E(z["court"])}</a>' for z in ZONES if z["dep"] == "75")
+        hds_links = "".join(f'<a href="{combo_url(s, z)}">{E(z["court"])}</a>' for z in ZONES if z["dep"] == "92")
+        vdo_links = "".join(f'<a href="{combo_url(s, z)}">{E(z["court"])}</a>' for z in ZONES if z["dep"] == "95")
         others = "".join(f'<a href="/depannage/{o["slug"]}/">{E(o["court"])}</a>' for o in SERVICES if o is not s)
         prix_txt = f"à partir de <strong>{s['prix_num']} € TTC</strong>" if s["prix_num"] else "<strong>sur devis gratuit</strong>"
         content = f'''<div class="prose">
@@ -960,8 +964,8 @@ def build_zones_pages():
   <div class="fact"><small>Délai</small><strong>{"~30 min en moyenne" if z["proche"] else "annoncé au téléphone"}</strong></div>
 </div>'''
         svc = "".join(f'''<div class="svc-item"><div class="ic">{ico(s["icon"], "")}</div>
-  <div><h3>{E(s["nom"])} {E(z["a"])}</h3><p>{E(s["resume"])}</p></div>
-  <div class="pr">{E(s["prix"])}<a href="/depannage/{s["slug"]}/">Détails →</a></div></div>''' for s in SERVICES)
+  <div><h3><a href="{combo_url(s, z)}">{E(s["nom"])} {E(z["a"])}</a></h3><p>{E(s["resume"])}</p></div>
+  <div class="pr">{E(s["prix"])}<a href="{combo_url(s, z)}">Détails →</a></div></div>''' for s in SERVICES)
         faq = zone_faq(z)
         near_links = "".join(f'<a href="{v["url"]}">Serrurier {E(v["court"])}</a>' for v in z["voisins"])
         content = f'''<div class="prose">
@@ -1007,6 +1011,178 @@ def build_zones_pages():
                               **({"postalCode": z["cp"][0]} if z["slug"] != "paris" else {})},
                "offers": {"@type": "Offer", "priceSpecification": {"@type": "PriceSpecification", "minPrice": 49, "priceCurrency": "EUR"}}}]
         page(path, title, desc, body, ld, active="/villes/")
+
+
+# --- Pages service × ville ---------------------------------------------------
+# Une page par combinaison (ex. /depannage/porte-claquee/boulogne-billancourt/)
+def combo_url(s, z):
+    return f"/depannage/{s['slug']}/{z['slug']}/"
+
+
+SVC_LOCAL = {
+    "porte-claquee": {
+        "intros": [
+            "Votre porte a claqué {a} et vos clés sont restées à l'intérieur ? Un serrurier Shopta Serrure se déplace 24h/24 pour l'ouvrir sans casse, le plus souvent en quelques minutes, sans changer la serrure. Le prix vous est annoncé au téléphone avant le départ.",
+            "Porte claquée {a} : pas de panique. Nos serruriers ouvrent les portes simplement claquées à la radio ou au crochetage, sans abîmer la porte ni le cylindre. Ouverture à partir de 49 € TTC, jour et nuit, week-end compris.",
+            "Bloqué sur le palier {a}, la porte claquée derrière vous ? Appelez-nous : un serrurier part immédiatement, vous connaissez le prix avant qu'il arrive et la porte est ouverte sans dégât dans la grande majorité des cas.",
+        ],
+        "conseil": "Ne tentez pas d'ouvrir avec une carte ou un tournevis : vous risquez d'abîmer la gâche et le bâti, ce qui rendrait l'intervention plus longue et plus chère.",
+    },
+    "serrure-bloquee": {
+        "intros": [
+            "La clé tourne dans le vide ou refuse de tourner {a} ? Nos serruriers diagnostiquent et débloquent votre serrure 24h/24 : lubrification, réglage de la gâche, remplacement du cylindre si nécessaire. Prix annoncé avant déplacement.",
+            "Serrure bloquée {a}, porte impossible à ouvrir ou à fermer : un serrurier qualifié intervient jour et nuit avec les pièces courantes dans son véhicule, pour régler le problème en une seule visite dans la plupart des cas.",
+            "Un cylindre grippé, une porte qui a bougé, un pêne qui reste coincé : les serrures bloquées sont fréquentes {a}. Nous débloquons la serrure à partir de 49 € TTC et vous expliquons comment éviter que ça recommence.",
+        ],
+        "conseil": "Ne forcez pas sur la clé et n'injectez pas d'huile de cuisine ou de graisse épaisse : elles encrassent le cylindre. Un lubrifiant sec (graphite, PTFE) est préférable.",
+    },
+    "cle-cassee": {
+        "intros": [
+            "Votre clé s'est cassée dans la serrure {a} ? Nos serruriers extraient le morceau avec des outils dédiés, sans démonter la serrure dans la plupart des cas, 24h/24 et à partir de 49 € TTC.",
+            "Clé cassée dans le cylindre {a} : un serrurier se déplace rapidement pour extraire le fragment, vérifier le cylindre et, si besoin, le remplacer sur place. Le prix est annoncé avant le déplacement.",
+            "Une clé usée qui casse dans la serrure, c'est courant {a}. Nous retirons le morceau sans casse, puis nous vous conseillons : faire refaire une clé, ou changer un cylindre fatigué.",
+        ],
+        "conseil": "N'essayez pas de retirer le morceau avec de la colle ou une pince : vous risquez de l'enfoncer davantage et de rendre le cylindre irrécupérable.",
+    },
+    "changement-serrure": {
+        "intros": [
+            "Clés perdues, déménagement, serrure usée ou envie de plus de sécurité {a} : nous remplaçons cylindres et serrures complètes, du modèle standard à la serrure multipoints certifiée A2P. Devis gratuit et signé avant travaux.",
+            "Changement de serrure {a} : un serrurier se déplace avec un choix de cylindres et de serrures en stock, vous présente les options et leur prix, puis pose le modèle choisi le jour même dans la plupart des cas.",
+            "Vous emménagez {a} ou vous avez perdu vos clés ? Changer le cylindre est la solution la plus simple et la plus économique pour retrouver la maîtrise de vos accès. Devis gratuit, matériel certifié, facture détaillée.",
+        ],
+        "conseil": "Avant de choisir, regardez le nombre d'étoiles A2P (1 à 3) : c'est le niveau de résistance à l'effraction, souvent exigé par les assureurs.",
+    },
+    "serrure-connectee": {
+        "intros": [
+            "Vous voulez ouvrir votre porte avec votre téléphone {a} ? Nous installons et paramétrons des serrures connectées compatibles avec votre porte, et nous dépannons celles qui ne répondent plus.",
+            "Serrure connectée {a} : installation, réglage, dépannage en cas de batterie vide ou de moteur bloqué. Nos serruriers vérifient la compatibilité avec votre cylindre avant de poser quoi que ce soit.",
+            "Smart lock en panne ou projet d'installation {a} : nous intervenons 24h/24 pour ouvrir une porte équipée d'une serrure connectée bloquée, et sur rendez-vous pour une installation propre et sécurisée.",
+        ],
+        "conseil": "Gardez toujours une clé mécanique de secours et vérifiez le niveau des piles régulièrement : c'est la cause numéro un des serrures connectées bloquées.",
+    },
+    "effraction": {
+        "intros": [
+            "Victime d'un cambriolage ou d'une tentative d'effraction {a} ? Nous sécurisons votre porte en urgence, 24h/24, puis nous remettons en état ou renforçons votre fermeture. Facture détaillée pour votre assurance.",
+            "Porte forcée {a} : un serrurier se déplace jour et nuit pour remettre une fermeture provisoire ou définitive, remplacer le cylindre endommagé et vous fournir les documents utiles à votre déclaration de sinistre.",
+            "Après une effraction {a}, la priorité est de pouvoir refermer chez vous dès ce soir. Nous intervenons rapidement, sur devis gratuit, et vous conseillons sur le renforcement de la porte (cornières, serrure A2P, blindage).",
+        ],
+        "conseil": "Ne touchez à rien avant le passage de la police si possible, prenez des photos des dégâts et déposez plainte : votre assureur vous demandera le récépissé.",
+    },
+}
+
+ETAPES = [
+    ("Vous appelez", "Décrivez la situation (type de porte, serrure). Le prix vous est annoncé au téléphone."),
+    ("Le serrurier arrive", "Il part immédiatement vers votre adresse {a} et vous prévient de son arrivée."),
+    ("Devis signé", "Avant de commencer, il confirme le prix par un devis écrit que vous signez."),
+    ("Intervention et facture", "Travail soigné, facture détaillée reconnue par votre assureur, paiement CB, espèces ou virement."),
+]
+
+
+def habitat(z):
+    if z["arr"] or z["slug"] == "paris":
+        return "immeubles haussmanniens avec portes palières à serrure multipoints, résidences récentes, commerces et bureaux"
+    if z["pop"] >= 50000:
+        return "grands ensembles, résidences avec digicode, pavillons et commerces de centre-ville"
+    if z["pop"] >= 15000:
+        return "petits immeubles, résidences et maisons individuelles"
+    return "maisons individuelles et pavillons, avec portes d'entrée, portes de garage et portillons"
+
+
+ARTICLE_SVC = {"porte-claquee": "une ouverture de porte claquée", "serrure-bloquee": "un déblocage de serrure",
+               "cle-cassee": "l'extraction d'une clé cassée", "changement-serrure": "un changement de serrure",
+               "serrure-connectee": "une serrure connectée", "effraction": "la sécurisation après une effraction"}
+
+
+def combo_faq(s, z, idx):
+    prix = f"à partir de {s['prix_num']} € TTC" if s["prix_num"] else "sur devis gratuit"
+    delai = ("en moyenne en moins de 30 minutes" if z["proche"] else "dans un délai qui vous est annoncé au téléphone avant le départ")
+    local = [
+        (f"Combien coûte {ARTICLE_SVC[s['slug']]} {z['a']} ?",
+         f"Ce service est proposé {prix} {z['a']}. Le prix exact dépend du type de porte et de serrure : il vous est annoncé au téléphone, puis confirmé par un devis écrit signé avant toute intervention."),
+        (f"En combien de temps intervenez-vous {z['a']} ?",
+         f"Nos serruriers interviennent {z['a']} {delai}, 24h/24 et 7j/7, y compris la nuit, le week-end et les jours fériés."),
+    ]
+    extra = s["faq"][idx % len(s["faq"])]
+    return local + [extra, ("Ma facture sera-t-elle prise en charge par mon assurance ?",
+                            "Nos factures sont détaillées et conformes : elles sont reconnues par les assureurs habitation. Le remboursement dépend des garanties de votre contrat.")]
+
+
+def build_combo_pages():
+    for si, s in enumerate(SERVICES):
+        loc = SVC_LOCAL[s["slug"]]
+        for idx, z in enumerate(ZONES):
+            path = combo_url(s, z)
+            n = idx + si
+            cp = ", ".join(z["cp"])
+            cp_short = z["cp"][0] if z["slug"] != "paris" else "75"
+            prix_court = f"dès {s['prix_num']} €" if s["prix_num"] else "devis gratuit"
+            intro = loc["intros"][n % 3].format(a=z["a"])
+            if z["slug"] == "paris":
+                local = (f"<h2>{E(s['court'])} dans tous les arrondissements</h2><p>Choisissez votre arrondissement pour voir les détails :</p>"
+                         '<div class="link-grid">' + "".join(
+                             f'<a href="{combo_url(s, ZONE_BY_SLUG["paris-%d" % k])}">{E(s["court"])} Paris {k}{"er" if k == 1 else "e"}</a>' for k in range(1, 21)) + "</div>")
+            elif z["arr"]:
+                local = (f"<h2>{E(s['court'])} {E(z['a'])} : quartiers desservis</h2><p>Nous intervenons dans les quartiers "
+                         f"<strong>{', '.join(z['quartiers'])}</strong>, autour de {', '.join(z['lieux'])} ({cp}). "
+                         f"Le parc immobilier y est varié ({habitat(z)}) : nos serruriers sont équipés pour les portes standard comme pour les portes blindées.</p>")
+            else:
+                grp = [g[1] for g in z["groupes"]]
+                grp_txt = f", au sein de l'intercommunalité {E(grp[0])}" if grp else ""
+                local = (f"<h2>{E(s['court'])} {E(z['a'])} ({E(cp_short)})</h2><p>{E(z['nom'])} ({cp}) compte {fmt_int(z['pop'])} habitants{grp_txt}, "
+                         f"dans le département {E(DEPTS[z['dep']][1])}. On y trouve surtout des {habitat(z)}. "
+                         f"Nos serruriers connaissent ces configurations et interviennent aussi bien pour les particuliers que pour les syndics, bailleurs et commerçants.</p>")
+            t1, c1 = s["sections"][n % 3]
+            t2, c2 = s["sections"][(n + 1) % 3]
+            etapes = "".join(f"<li><strong>{E(t)}</strong> : {E(d.format(a=z['a']))}</li>" for t, d in ETAPES)
+            facts = f'''<div class="facts">
+  <div class="fact"><small>Tarif</small><strong>{E(s["prix"].replace(" TTC", ""))}</strong></div>
+  <div class="fact"><small>Code postal</small><strong>{E(cp if len(z["cp"]) < 3 else z["cp"][0] + "…")}</strong></div>
+  <div class="fact"><small>Disponibilité</small><strong>24h/24 · 7j/7</strong></div>
+  <div class="fact"><small>Délai</small><strong>{"~30 min en moyenne" if z["proche"] else "annoncé au téléphone"}</strong></div>
+</div>'''
+            faq = combo_faq(s, z, n)
+            voisins = "".join(f'<a href="{combo_url(s, v)}">{E(s["court"])} {E(v["court"])}</a>' for v in z["voisins"])
+            others = "".join(f'<a href="{combo_url(o, z)}">{E(o["court"])} {E(z["court"])}</a>' for o in SERVICES if o is not s)
+            content = f'''<div class="prose">
+  <p>{intro}</p>
+  {facts}
+  {fig(s["slug"], f"{s['nom']} {z['a']}")}
+  <p class="callout">Tarif : {"à partir de <strong>%d € TTC</strong>" % s["prix_num"] if s["prix_num"] else "<strong>sur devis gratuit</strong>"}. Prix annoncé au téléphone avant le déplacement, confirmé par un devis signé avant toute intervention. Aucuns frais cachés.</p>
+  {local}
+  <h2>{E(t1)}</h2><p>{c1}</p>
+  <h2>Comment se déroule l'intervention {E(z["a"])} ?</h2>
+  <ol>{etapes}</ol>
+  <h2>{E(t2)}</h2><p>{c2}</p>
+  <p class="callout"><strong>Notre conseil :</strong> {E(loc["conseil"])}</p>
+  <h2>Questions fréquentes</h2>
+  {faq_html(faq)}
+  <h2>{E(s["court"])} dans les communes voisines</h2>
+  <div class="link-grid">{voisins}</div>
+  <h2>Nos autres dépannages {E(z["a"])}</h2>
+  <div class="link-grid">{others}<a href="{z["url"]}">Serrurier {E(z["court"])}</a></div>
+</div>'''
+            h1 = f'{E(s["nom"])} <em>{E(z["a"])}</em>' + (f" ({E(cp_short)})" if z["slug"] != "paris" else "")
+            lead = (f'{E(s["resume"])} Intervention 24h/24 {E(z["a"])}, {"à partir de %d € TTC" % s["prix_num"] if s["prix_num"] else "sur devis gratuit"}. '
+                    f'Prix annoncé avant déplacement, facture remboursable par votre assurance.')
+            crumb_items = [("Dépannage", "/depannage/"), (s["court"], f"/depannage/{s['slug']}/"), (z["court"], None)]
+            body = page_hero(crumb_items, h1, lead, checks(["Prix annoncé avant déplacement", "Devis signé avant travaux", "Nuit, week-end et jours fériés"]))
+            body += f'<section><div class="container layout">{content}{aside_card(f"{s["court"]} {z["court"]}")}</div></section>'
+            body += reviews_section(soft=True) + cta_final(f"{s['court']} {z['a']} ?", "Appelez-nous : prix annoncé au téléphone, serrurier en route immédiatement.",
+                                                           source=path, service=s["court"], ville=z["court"] if z["slug"] != "paris" else "")
+            title = f'{s["court"]} {z["court"]}' + (f" ({cp_short})" if z["slug"] != "paris" else "") + f" – {prix_court} 24h/24"
+            if len(title) <= 48:
+                title += " | Shopta Serrure"
+            desc = (f'{s["nom"]} {z["a"]}' + (f" ({cp_short})" if z["slug"] != "paris" else "") +
+                    f', 24h/24 et 7j/7, {"à partir de %d € TTC" % s["prix_num"] if s["prix_num"] else "devis gratuit"}. '
+                    f'Prix annoncé avant déplacement, devis signé, facture pour l\'assurance. ☎ {TEL}')
+            bc = [(c[0], c[1] if c[1] else path) for c in crumb_items]
+            ld = [ld_business(False), ld_breadcrumb(bc), ld_faq(faq),
+                  {"@context": "https://schema.org", "@type": "Service", "name": f"{s['nom']} {z['a']}", "serviceType": s["nom"],
+                   "url": URL + path, "provider": {"@id": BUSINESS_ID},
+                   "areaServed": {"@type": "City" if not z["arr"] else "AdministrativeArea", "name": z["nom"],
+                                  **({"postalCode": z["cp"][0]} if z["slug"] != "paris" else {})},
+                   **({"offers": {"@type": "Offer", "priceSpecification": {"@type": "PriceSpecification", "minPrice": s["prix_num"], "priceCurrency": "EUR"}}} if s["prix_num"] else {})}]
+            page(path, title, desc, body, ld, active="/depannage/")
 
 
 # --- Pages simples ----------------------------------------------------------
@@ -1156,6 +1332,8 @@ def build_sitemap_page():
               ("Articles", [(a["court"], f"/blog/{a['slug']}/") for a in ARTICLES])]
     for dep, (_, label) in DEPTS.items():
         groups.append((f"Serrurier {label}", [(f"Serrurier {z['court']}", z["url"]) for z in ZONES if z["dep"] == dep]))
+    for s in SERVICES:
+        groups.append((s["nom"], [(f"{s['court']} {z['court']}", combo_url(s, z)) for z in ZONES]))
     prose = "".join(f'<h2>{E(t)}</h2><div class="link-grid">' + "".join(f'<a href="{u}">{E(l)}</a>' for l, u in lst) + "</div>" for t, lst in groups)
     simple("/plan-du-site/", "Plan du site", "Plan du site", "Toutes les pages du site Shopta Serrure.", prose,
            "Plan du site | Shopta Serrure", "Plan du site Shopta Serrure : services, zones d'intervention, articles.", aside=False)
@@ -1190,6 +1368,8 @@ def build_seo_files():
     def prio(p):
         if p == "/":
             return "1.0"
+        if p.startswith("/depannage/") and p.count("/") == 4:
+            return "0.7"
         if p.startswith("/depannage/") or p in ("/villes/paris/", "/tarifs/", "/contact/"):
             return "0.9"
         if p.startswith("/villes/"):
@@ -1203,10 +1383,19 @@ def build_seo_files():
         imgs = "".join(f"<image:image><image:loc>{URL}{i}</image:loc></image:image>" for i in SITEMAP_IMAGES.get(p, [])[:5])
         return (f"  <url><loc>{URL}{p}</loc><lastmod>{TODAY}</lastmod><changefreq>{freq(p)}</changefreq>"
                 f"<priority>{prio(p)}</priority>{imgs}</url>\n")
-    urls = "".join(url_entry(p) for p in SITEMAP)
+    # sitemap.xml = index : pages principales + un fichier par service (combinaisons service × ville)
+    combos = {s["slug"]: [p for p in SITEMAP if p.startswith(f"/depannage/{s['slug']}/") and p.count("/") == 4] for s in SERVICES}
+    in_combo = {p for lst in combos.values() for p in lst}
+    files = [("sitemap-pages.xml", [p for p in SITEMAP if p not in in_combo])]
+    files += [(f"sitemap-{slug}.xml", lst) for slug, lst in combos.items()]
+    for name, lst in files:
+        write(name, '<?xml version="1.0" encoding="UTF-8"?>\n'
+              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
+              + "".join(url_entry(p) for p in lst) + "</urlset>\n")
     write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?>\n'
-          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
-          f"{urls}</urlset>\n")
+          '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+          + "".join(f"  <sitemap><loc>{URL}/{name}</loc><lastmod>{TODAY}</lastmod></sitemap>\n" for name, _ in files)
+          + "</sitemapindex>\n")
 
     bots = ["*", "Googlebot", "Bingbot", "Applebot", "DuckDuckBot", "YandexBot", "Qwantbot",
             "GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User",
@@ -1214,12 +1403,21 @@ def build_seo_files():
     write("robots.txt", "# Shopta Serrure – moteurs de recherche et assistants IA autorisés\n"
           + "".join(f"User-agent: {b}\n" for b in bots)
           + "Allow: /\nDisallow: /_src/\nDisallow: /merci/\n\n"
-          + f"Sitemap: {URL}/sitemap.xml\n")
+          + f"Sitemap: {URL}/sitemap.xml\n"
+          + "".join(f"Sitemap: {URL}/sitemap-{x}.xml\n" for x in ["pages"] + [sv["slug"] for sv in SERVICES])
+          + f"\n# Résumé pour les assistants IA : {URL}/llms.txt et {URL}/llms-full.txt\n")
 
     svc = "\n".join(f"- [{s['nom']}]({URL}/depannage/{s['slug']}/) : {s['prix']}. {s['resume']}" for s in SERVICES)
     arts = "\n".join(f"- [{a['court']}]({URL}/blog/{a['slug']}/) : {a['desc']}" for a in ARTICLES)
     deps = "\n\n".join(f"### {label}\n" + "\n".join(f"- [Serrurier {z['court']}]({URL}{z['url']})" for z in ZONES if z["dep"] == dep)
                        for dep, (_, label) in DEPTS.items())
+    combo_hubs = "\n".join(f"- {s['nom']} : " + ", ".join(f"[{z['court']}]({URL}{combo_url(s, z)})" for z in ZONES if z["dep"] == "75" and z["slug"] != "paris")
+                           for s in SERVICES[:1])
+    full = "\n\n".join(f"## {s['nom']} ({s['prix']})\n{s['resume']}\n" + "\n".join(
+        f"- [{s['court']} {z['court']}]({URL}{combo_url(s, z)})" + (f" – {z['cp'][0]}" if z["slug"] != "paris" else "") for z in ZONES)
+        for s in SERVICES)
+    write("llms-full.txt", f"# Shopta Serrure – toutes les pages service × ville\n\n> Serrurier d'urgence 24h/24 à Paris (75), dans les Hauts-de-Seine (92) et le Val-d'Oise (95). "
+          f"Téléphone : {TEL}. Prix annoncé avant déplacement, devis signé avant travaux. Résumé : {URL}/llms.txt\n\n{full}\n")
     note = (f"- Note Google : {AVIS['note']}/5 sur {AVIS['nombre']} avis\n" if AVIS.get("note") else "")
     write("llms.txt", f"""# Shopta Serrure
 
@@ -1244,6 +1442,10 @@ def build_seo_files():
 
 ## Zones d'intervention
 {deps}
+
+## Chaque service dans chaque ville
+Chaque service a une page dédiée pour chacune des {len(ZONES)} zones, au format {URL}/depannage/<service>/<ville>/ (ex. {URL}/depannage/porte-claquee/boulogne-billancourt/). Liste complète des {len(SERVICES) * len(ZONES)} pages : {URL}/llms-full.txt
+{combo_hubs}
 
 ## Pages utiles
 - [Tarifs]({URL}/tarifs/)
@@ -1270,6 +1472,7 @@ def main():
     build_home()
     build_services()
     build_zones_pages()
+    build_combo_pages()
     build_static()
     build_blog()
     build_merci()

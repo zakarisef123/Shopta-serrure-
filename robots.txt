@@ -23,3 +23,12 @@ Disallow: /_src/
 Disallow: /merci/
 
 Sitemap: https://shoptaserrure.netlify.app/sitemap.xml
+Sitemap: https://shoptaserrure.netlify.app/sitemap-pages.xml
+Sitemap: https://shoptaserrure.netlify.app/sitemap-porte-claquee.xml
+Sitemap: https://shoptaserrure.netlify.app/sitemap-serrure-bloquee.xml
+Sitemap: https://shoptaserrure.netlify.app/sitemap-cle-cassee.xml
+Sitemap: https://shoptaserrure.netlify.app/sitemap-changement-serrure.xml
+Sitemap: https://shoptaserrure.netlify.app/sitemap-serrure-connectee.xml
+Sitemap: https://shoptaserrure.netlify.app/sitemap-effraction.xml
+
+# Résumé pour les assistants IA : https://shoptaserrure.netlify.app/llms.txt et https://shoptaserrure.netlify.app/llms-full.txt
