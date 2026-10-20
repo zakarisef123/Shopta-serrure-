@@ -1119,7 +1119,7 @@ def write(name, content):
 
 
 # Logos réduits au symbole : le nom de l'assureur est affiché à côté
-LOGO_SANS_NOM = {"allianz"}
+LOGO_SANS_NOM = set()
 
 
 def build_insurers_js():
