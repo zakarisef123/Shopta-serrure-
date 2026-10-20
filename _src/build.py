@@ -176,6 +176,63 @@ def process_logos(folder="assureurs", items=None):
 
 
 PHOTO = process_photos()
+
+
+# Photos de fond d'en-tête : _src/images/headers/<nom>.(jpg|png|webp)
+HEADER_FILES = {
+    "pantheon": "Le Panthéon, Paris 5e",
+    "notre-dame": "Notre-Dame de Paris et la Seine",
+    "toits-de-paris": "Les toits de Paris, la Madeleine et la tour Eiffel",
+    "place-des-victoires": "La place des Victoires, Paris",
+    "conciergerie": "La Conciergerie au bord de la Seine",
+}
+# Photo propre à une page (slug de la zone) ; sinon rotation sur toutes les photos
+HEADER_BY_ZONE = {"paris-1": "conciergerie", "paris-2": "place-des-victoires", "paris-4": "notre-dame",
+                  "paris-5": "pantheon", "paris-8": "toits-de-paris", "paris": "toits-de-paris"}
+
+
+def process_headers():
+    out = {}
+    try:
+        from PIL import Image, ImageOps
+    except ImportError:
+        return out
+    os.makedirs(os.path.join(IMG_OUT, "headers"), exist_ok=True)
+    for name, alt in HEADER_FILES.items():
+        src = find_src("headers", name)
+        if not src:
+            continue
+        im = ImageOps.exif_transpose(Image.open(src)).convert("RGB")
+        base = os.path.join(IMG_OUT, "headers", name)
+        for suffix, width in (("", 1920), ("-m", 900)):
+            w, h = im.size
+            v = im.resize((width, round(h * width / w)), Image.LANCZOS) if w != width else im
+            v.save(base + suffix + ".webp", "WEBP", quality=80, method=6)
+            v.save(base + suffix + ".jpg", "JPEG", quality=82, optimize=True, progressive=True)
+        out[name] = {"src": f"/assets/img/headers/{name}", "alt": alt}
+    return out
+
+
+HEADERS = process_headers()
+
+
+def header_for_zone(z, idx):
+    if not HEADERS:
+        return None
+    name = HEADER_BY_ZONE.get(z["slug"])
+    if name in HEADERS:
+        return name
+    names = list(HEADERS)
+    return names[idx % len(names)]
+
+
+def hero_bg(name):
+    h = HEADERS.get(name)
+    if not h:
+        return ""
+    return (f'<picture class="hero-bg"><source media="(max-width: 760px)" type="image/webp" srcset="{h["src"]}-m.webp">'
+            f'<source type="image/webp" srcset="{h["src"]}.webp">'
+            f'<img src="{h["src"]}.jpg" alt="{E(h["alt"])}" fetchpriority="high" decoding="async"></picture>')
 LOGOS = process_logos()
 BRAND_LOGOS = process_logos("marques", [(nom, slug) for nom, slug, _ in BRANDS])
 
@@ -700,7 +757,7 @@ def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og
         f.write(doc)
     if robots.startswith("index"):
         SITEMAP.append(path)
-        imgs = list(dict.fromkeys(re.findall(r'<img src="(/assets/img/photos/[^"]+)"', body)))
+        imgs = list(dict.fromkeys(re.findall(r'<img src="(/assets/img/(?:photos|headers)/[^"]+)"', body)))
         if imgs:
             SITEMAP_IMAGES[path] = imgs
 
@@ -709,8 +766,10 @@ SITEMAP = []
 SITEMAP_IMAGES = {}
 
 
-def page_hero(crumb_items, h1, lead, extra=""):
-    return f'''<section class="page-hero">
+def page_hero(crumb_items, h1, lead, extra="", bg=None):
+    pic = hero_bg(bg) if bg else ""
+    return f'''<section class="page-hero{" has-bg" if pic else ""}">
+  {pic}
   <div class="container">
     {crumbs(crumb_items)}
     <h1>{h1}</h1>
@@ -1104,7 +1163,8 @@ def build_zones_pages():
         if z["arr"]:
             crumb_items.append(("Paris", "/villes/paris/"))
         crumb_items.append((f'Serrurier {z["court"]}', None))
-        body = page_hero(crumb_items, h1, lead, checks(["Devis gratuit", "Sans frais cachés", "Nuit, week-end et jours fériés"]))
+        body = page_hero(crumb_items, h1, lead, checks(["Devis gratuit", "Sans frais cachés", "Nuit, week-end et jours fériés"]),
+                         bg=header_for_zone(z, idx))
         body += f'<section><div class="container layout">{content}{aside_card(f"Serrurier {z["court"]}")}</div></section>'
         body += insurers_block() + reviews_section(title=f"Avis de nos clients", soft=True) + cta_final(f"Bloqué dehors {z['a']} ?", "Appelez-nous : prix annoncé au téléphone, serrurier en route immédiatement.",
                                                                                                                          source=path, ville=z["court"] if z["slug"] != "paris" else "")
