@@ -72,9 +72,27 @@
     document.querySelectorAll(".reveal").forEach(function(el){ el.classList.add("in"); });
   }
 
+  // Conversions Google Ads (actives si ads_id est renseigné dans _src/build.py)
+  function adsConv(kind){
+    var to = (window.ADS_CONV || {})[kind];
+    if (to && window.gtag) gtag("event","conversion",{send_to:to});
+  }
+  // Tous les liens tel: et WhatsApp, même sans data-track (contenu des pages)
+  document.querySelectorAll('a[href^="tel:"]:not([data-track]),a[href^="https://wa.me"]:not([data-track])').forEach(function(a){
+    a.addEventListener("click",function(){
+      var wa = a.href.indexOf("wa.me")>-1;
+      if (window.gtag) gtag("event", wa ? "whatsapp_click" : "phone_click", {location:"inline"});
+      adsConv(wa ? "wa" : "call");
+    });
+  });
+
   // Suivi des clics d'appel / WhatsApp
   document.querySelectorAll("[data-track]").forEach(function(a){
-    a.addEventListener("click",function(){ if (window.gtag) gtag("event", a.dataset.track.indexOf("wa")===0 ? "whatsapp_click" : "phone_click", {location:a.dataset.track}); });
+    a.addEventListener("click",function(){
+      var wa = a.dataset.track.indexOf("wa")===0;
+      if (window.gtag) gtag("event", wa ? "whatsapp_click" : "phone_click", {location:a.dataset.track});
+      adsConv(wa ? "wa" : "call");
+    });
   });
 
   // Formulaires de contact (Netlify Forms) : envoi sans quitter la page
@@ -89,6 +107,7 @@
         .then(function(r){
           if (!r.ok) throw new Error(r.status);
           if (window.gtag) gtag("event","generate_lead",{service:form.service.value, page:form.page.value});
+          adsConv("form");
           form.reset();
           form.querySelector(".form-ok").hidden = false;
           btn.innerHTML = btn.dataset.label; btn.disabled = false;

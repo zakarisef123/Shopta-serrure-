@@ -156,6 +156,7 @@
 - [FAQ](https://shoptaserrure.netlify.app/faq/)
 - [Contact et demande de devis](https://shoptaserrure.netlify.app/contact/)
 - [Plan du site](https://shoptaserrure.netlify.app/plan-du-site/)
+- [Version complète pour les IA](https://shoptaserrure.netlify.app/llms-full.txt)
 
 ## Guides
 - [Porte claquée : que faire ?](https://shoptaserrure.netlify.app/blog/porte-claquee-que-faire/) : Les bons réflexes quand la porte claque derrière vous, ce qu'un serrurier honnête doit vous annoncer, et le prix normal d'une ouverture.
