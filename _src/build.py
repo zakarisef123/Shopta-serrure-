@@ -13,7 +13,7 @@ import re
 import shutil
 import unicodedata
 
-from data import ARTICLE_PHOTOS, ARTICLES, DEPTS, HDS, INSURERS, PARIS_ARR, PHOTOS, SERVICES, VDO
+from data import ARTICLE_PHOTOS, ARTICLES, BRANDS, DEPTS, HDS, INSURERS, PARIS_ARR, PHOTOS, SERVICES, VDO
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "_src")
@@ -139,21 +139,22 @@ def process_photos():
     return out
 
 
-def process_logos():
+def process_logos(folder="assureurs", items=None):
     """Recadre les marges, normalise la hauteur et exporte en WebP + PNG."""
+    items = items if items is not None else [(nom, slug) for nom, slug, _, _ in INSURERS]
     out = {}
     try:
         from PIL import Image, ImageChops
     except ImportError:
         return out
-    os.makedirs(os.path.join(IMG_OUT, "assureurs"), exist_ok=True)
-    for nom, slug, _, _ in INSURERS:
-        src = find_src("assureurs", slug)
+    os.makedirs(os.path.join(IMG_OUT, folder), exist_ok=True)
+    for nom, slug in items:
+        src = find_src(folder, slug)
         if not src:
             continue
         if src.endswith(".svg"):
-            shutil.copy(src, os.path.join(IMG_OUT, "assureurs", slug + ".svg"))
-            out[slug] = f"/assets/img/assureurs/{slug}.svg"
+            shutil.copy(src, os.path.join(IMG_OUT, folder, slug + ".svg"))
+            out[slug] = f"/assets/img/{folder}/{slug}.svg"
             continue
         im = Image.open(src).convert("RGBA")
         bg = Image.new("RGBA", im.size, (255, 255, 255, 255))
@@ -164,15 +165,16 @@ def process_logos():
             im = im.crop(bbox)
         h = 160
         im = im.resize((max(1, round(im.size[0] * h / im.size[1])), h), Image.LANCZOS)
-        base = os.path.join(IMG_OUT, "assureurs", slug)
+        base = os.path.join(IMG_OUT, folder, slug)
         im.save(base + ".webp", "WEBP", quality=90, method=6)
         im.save(base + ".png", "PNG", optimize=True)
-        out[slug] = f"/assets/img/assureurs/{slug}.webp"
+        out[slug] = f"/assets/img/{folder}/{slug}.webp"
     return out
 
 
 PHOTO = process_photos()
 LOGOS = process_logos()
+BRAND_LOGOS = process_logos("marques", [(nom, slug) for nom, slug, _ in BRANDS])
 
 
 def fig(key, caption=None, eager=False):
@@ -341,6 +343,31 @@ def insurers_block():
   <div class="marquee" data-row="1"><div class="track"></div></div>
   <div class="marquee reverse" data-row="2"><div class="track"></div></div>
   <p class="insurers-note">Shopta Serrure est une entreprise indépendante, sans partenariat avec ces compagnies. Les noms et logos cités appartiennent à leurs propriétaires respectifs.</p>
+</div>'''
+
+
+def brands_block(soft=False):
+    def chip(nom, slug):
+        logo = BRAND_LOGOS.get(slug)
+        if logo:
+            return f'<span class="ins has-logo" title="{E(nom)}"><img src="{logo}" alt="{E(nom)}" loading="lazy" decoding="async"></span>'
+        return f'<span class="ins brand-name">{E(nom)}</span>'
+    # marques avec logo en premier, puis les autres
+    ordered = [b for b in BRANDS if b[1] in BRAND_LOGOS] + [b for b in BRANDS if b[1] not in BRAND_LOGOS]
+    half = (len(ordered) + 1) // 2
+    rows = ""
+    for i, part in enumerate((ordered[:half], ordered[half:])):
+        items = "".join(chip(n, s) for n, s, _ in part)
+        rows += (f'<div class="marquee{" reverse" if i else ""}"><div class="track">{items}'
+                 f'<span class="dup" aria-hidden="true">{items}</span></div></div>')
+    noms = ", ".join(n for n, _, _ in BRANDS)
+    return f'''<div class="insurers brands{" soft" if soft else ""}" aria-label="Marques de serrures et de portes">
+  <div class="insurers-head">
+    <p>Nous intervenons sur <span>toutes les grandes marques</span></p>
+    <span class="pill">Serrures · cylindres · portes blindées · serrures connectées</span>
+  </div>
+  {rows}
+  <p class="insurers-note">Marques prises en charge : {E(noms)}. Les marques citées appartiennent à leurs propriétaires ; Shopta Serrure est indépendant.</p>
 </div>'''
 
 
@@ -718,6 +745,7 @@ def build_home():
     {svc_cards()}
   </div>
 </section>
+{brands_block()}
 <section class="soft" aria-labelledby="steps-title">
   <div class="container">
     <div class="section-head center reveal">
@@ -833,7 +861,7 @@ def build_services():
     body = page_hero([("Dépannage", None)], "Dépannage serrurerie <em>24h/24</em> à Paris et en Île-de-France",
                      "Ouverture de porte, déblocage, clé cassée, changement de serrure, serrure connectée, sécurisation après effraction : toutes nos interventions, avec leurs prix de départ.")
     body += f'<section><div class="container layout"><div class="svc-list">{items}</div>{aside_card()}</div></section>'
-    body += insurers_block() + cta_final(source="/depannage/")
+    body += brands_block() + insurers_block() + cta_final(source="/depannage/")
     page("/depannage/", "Dépannage serrurerie 24h/24 Paris & IDF – Tous nos services | Shopta Serrure",
          "Tous nos dépannages de serrurerie à Paris et en Île-de-France : ouverture de porte à partir de 49 €, serrure bloquée, clé cassée, changement de serrure, après effraction.",
          body, [ld_business(False), ld_breadcrumb([("Dépannage", "/depannage/")])], active="/depannage/")
@@ -865,7 +893,7 @@ def build_services():
                          f'{E(s["resume"])} Intervention 24h/24, {"à partir de %d € TTC" % s["prix_num"] if s["prix_num"] else "devis gratuit"}.',
                          checks(["Prix annoncé avant déplacement", "Devis signé avant travaux", "Facture remboursable par l'assurance"]))
         body += f'<section><div class="container layout">{content}{aside_card()}</div></section>'
-        body += insurers_block() + reviews_section(soft=True) + cta_final(
+        body += brands_block() + insurers_block() + reviews_section(soft=True) + cta_final(
             f"{s['court']} ? On s'en occupe.", "Appelez-nous ou laissez vos coordonnées : nous vous rappelons avec un prix clair.",
             source=path, service=s["court"])
         title = f'{s["nom"]} Paris 24h/24 – {s["prix"].replace(" TTC", "").replace("sur devis gratuit", "Devis gratuit")} | Shopta Serrure'

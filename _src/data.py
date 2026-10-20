@@ -391,3 +391,28 @@ INSURERS = [
     ("Allianz Direct", "allianz-direct", "allianz-direct.fr", "#003781"), ("MGEN", "mgen", "mgen.fr", "#00a3a6"),
     ("Euro-Assurance", "euro-assurance", "euro-assurance.com", "#1b4f9c"),
 ]
+
+# ---------------------------------------------------------------------------
+# Marques sur lesquelles nous intervenons : logos dans _src/images/marques/<slug>.*
+# (nom, slug, catégorie)
+# ---------------------------------------------------------------------------
+BRANDS = [
+    # Serrures et cylindres
+    ("Fichet", "fichet", "serrure"), ("Point Fort Fichet", "point-fort-fichet", "serrure"),
+    ("Picard Serrures", "picard", "serrure"), ("Vachette", "vachette", "serrure"), ("Bricard", "bricard", "serrure"),
+    ("Héraclès", "heracles", "serrure"), ("Pollux", "pollux", "serrure"), ("JPM", "jpm", "serrure"),
+    ("Thirard", "thirard", "serrure"), ("Metalux", "metalux", "serrure"), ("Laperche", "laperche", "serrure"),
+    ("Stremler", "stremler", "serrure"), ("Mul-T-Lock", "mul-t-lock", "serrure"), ("Abus", "abus", "serrure"),
+    ("DOM", "dom", "serrure"), ("Mauer", "mauer", "serrure"), ("EVVA", "evva", "serrure"),
+    ("Kaba", "kaba", "serrure"), ("Keso", "keso", "serrure"), ("Iseo", "iseo", "serrure"), ("Cisa", "cisa", "serrure"),
+    ("Mottura", "mottura", "serrure"), ("Tesa", "tesa", "serrure"), ("Yale", "yale", "serrure"),
+    ("Assa Abloy", "assa-abloy", "serrure"),
+    # Portes blindées et portes d'entrée
+    ("Tordjman Métal", "tordjman", "porte"), ("Bel'M", "belm", "porte"), ("K•Line", "kline", "porte"),
+    ("Zilten", "zilten", "porte"), ("Lapeyre", "lapeyre", "porte"), ("Tryba", "tryba", "porte"),
+    ("Dierre", "dierre", "porte"), ("Gardesa", "gardesa", "porte"), ("Hörmann", "hormann", "porte"),
+    # Serrures connectées
+    ("Somfy", "somfy", "connectee"), ("Netatmo", "netatmo", "connectee"), ("Linus by Yale", "linus", "connectee"),
+    ("Nuki", "nuki", "connectee"), ("Ultion", "ultion", "connectee"), ("Danalock", "danalock", "connectee"),
+    ("Bold", "bold", "connectee"), ("Igloohome", "igloohome", "connectee"),
+]
