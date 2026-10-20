@@ -13,7 +13,7 @@ import re
 import shutil
 import unicodedata
 
-from data import ARTICLE_PHOTOS, ARTICLES, BRANDS, DEPTS, HDS, INSURERS, PARIS_ARR, PHOTOS, SERVICES, VDO
+from data import ARTICLE_PHOTOS, ARTICLES, BRANDS, DEPTS, HDS, INSURERS, PARIS_ARR, PHOTOS, SERVICES, TARIFS, VDO
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "_src")
@@ -495,6 +495,48 @@ def aside_card(titre="Besoin d'un serrurier ?", texte="Prix annoncé au téléph
 </aside>'''
 
 
+CRENEAUX = [("i-sun", "Journée", "08h–18h"), ("i-sunset", "Soirée", "18h–22h"), ("i-moon", "Nuit", "22h–08h")]
+
+
+def tarif_grid(titre="Grille tarifaire", sous_titre="Prix TTC selon l'horaire d'intervention, 7j/7"):
+    head = "".join(f'<th scope="col"><div class="tg-h">{ico(i, "")}<span>{l}<small>{h}</small></span></div></th>' for i, l, h in CRENEAUX)
+    rows = ""
+    for presta, *prix in TARIFS:
+        cells = ""
+        for (i, l, h), v in zip(CRENEAUX, prix):
+            label = f"{l} {h}"
+            if v:
+                apd, montant = (v[:11], v[12:]) if v.startswith("À partir de") else ("", v)
+                cells += (f'<td data-label="{label}">' + (f'<small>à partir de</small>' if apd else "")
+                          + f'<b>{E(montant)}</b></td>')
+            else:
+                cells += f'<td data-label="{label}" class="na"><small>sur devis</small></td>'
+        rows += f'<tr><th scope="row">{E(presta)}</th>{cells}</tr>'
+    return f'''<div class="tarif-grid">
+  <header><div><h3>{E(titre)}</h3><p>{E(sous_titre)}</p></div><span class="tg-badge">{ico("i-shield", "")}Prix annoncé avant déplacement</span></header>
+  <div class="tg-scroll"><table class="tg">
+    <thead><tr><th scope="col">Prestation</th>{head}</tr></thead>
+    <tbody>{rows}</tbody>
+  </table></div>
+  <div class="note">{ico("i-info", "")}<span>Tarifs TTC, main d'œuvre comprise. Le prix exact dépend de la porte et de la serrure : il vous est annoncé au téléphone, puis confirmé par un devis écrit et signé avant toute intervention. Devis gratuit.</span></div>
+</div>'''
+
+
+def ld_tarifs():
+    offers = []
+    for presta, jour, *_ in TARIFS:
+        m = re.search(r"([\d\s ]+)\s*€", jour)
+        if not m:
+            continue
+        val = int(re.sub(r"\D", "", m.group(1)))
+        spec = {"@type": "PriceSpecification", "priceCurrency": "EUR", "valueAddedTaxIncluded": True}
+        spec.update({"minPrice": val} if jour.startswith("À partir") else {"price": val})
+        offers.append({"@type": "Offer", "name": presta, "priceSpecification": spec,
+                       "itemOffered": {"@type": "Service", "name": presta}, "seller": {"@id": BUSINESS_ID}})
+    return {"@context": "https://schema.org", "@type": "OfferCatalog", "name": "Grille tarifaire Shopta Serrure",
+            "url": URL + "/tarifs/", "itemListElement": offers}
+
+
 def price_table():
     rows = "".join(f'<tr><td><a href="/depannage/{s["slug"]}/">{E(s["nom"])}</a></td><td>{E(s["prix"].replace(" TTC", ""))}</td></tr>' for s in SERVICES)
     return f'''<div class="price-table">
@@ -674,7 +716,7 @@ def zones_tabs():
 
 
 HOME_FAQ = [
-    ("Combien coûte une ouverture de porte claquée ?", "L'ouverture d'une porte claquée commence à 49 € TTC. Le prix exact vous est annoncé au téléphone avant le déplacement, puis confirmé par un devis écrit sur place avant toute intervention."),
+    ("Combien coûte une ouverture de porte claquée ?", "L'ouverture d'une porte claquée coûte 110 € TTC en journée (8h–18h), 150 € en soirée et 220 € la nuit. Le prix exact vous est annoncé au téléphone avant le déplacement, puis confirmé par un devis écrit sur place avant toute intervention."),
     ("Mon assurance peut-elle rembourser l'intervention ?", "Oui, dans de nombreux cas (effraction, perte ou vol de clés selon votre contrat). Nous vous remettons une facture détaillée et conforme, reconnue par les assureurs habitation en France. Vérifiez les garanties de votre contrat multirisque habitation."),
     ("En combien de temps intervenez-vous ?", "En moyenne en moins de 30 minutes dans Paris et la proche banlieue, 24h/24 et 7j/7, jours fériés compris. Le délai précis vous est annoncé au téléphone."),
     ("Le devis est-il vraiment gratuit ?", "Oui. Le devis est gratuit et sans engagement. Si vous le refusez, vous ne payez rien d'autre que ce qui vous a été annoncé au téléphone."),
@@ -723,7 +765,7 @@ def build_home():
       <div class="avail"><span class="dot"></span> Disponible maintenant</div>
       <h2>Porte claquée ?</h2>
       <p class="sub">Ouverture sans dégât dans la majorité des cas.</p>
-      <div class="price-row"><span class="from">à partir de</span><span class="amount">49&nbsp;€</span><span class="ttc">TTC</span></div>
+      <div class="price-row"><span class="from">à partir de</span><span class="amount">110&nbsp;€</span><span class="ttc">TTC</span></div>
       <div class="mini-steps">
         <div><b>1</b>Vous appelez : on vous annonce le prix tout de suite</div>
         <div><b>2</b>Un serrurier arrive en ~30 min</div>
@@ -738,7 +780,7 @@ def build_home():
   <div class="container">
     <div class="stats-grid">
       <div class="stat"><div class="ic">{ico("i-clock", "")}</div><div><strong>30 min</strong><span>Délai moyen d'arrivée</span></div></div>
-      <div class="stat"><div class="ic">{ico("i-euro", "")}</div><div><strong>à partir de 49 €</strong><span>TTC, prix annoncé</span></div></div>
+      <div class="stat"><div class="ic">{ico("i-euro", "")}</div><div><strong>à partir de 110 €</strong><span>TTC, prix annoncé</span></div></div>
       <div class="stat"><div class="ic">{ico("i-shield", "")}</div><div><strong>24h/24</strong><span>7j/7, jours fériés</span></div></div>
       <div class="stat"><div class="ic">{ico("i-award", "")}</div><div><strong>Garantie</strong><span>Pièces & main d'œuvre</span></div></div>
     </div>
@@ -772,21 +814,23 @@ def build_home():
   </div>
 </section>
 <section id="tarifs" aria-labelledby="tarifs-title">
-  <div class="container commit">
+  <div class="container">
     <div class="reveal">
       <span class="eyebrow">Tarifs transparents</span>
-      <div class="section-head" style="margin-bottom:0">
+      <div class="section-head">
         <h2 id="tarifs-title">Des prix justes, annoncés avant de venir</h2>
-        <p>Une urgence ne doit jamais être synonyme d'arnaque. Nous nous engageons sur une politique de prix claire.</p>
+        <p>Une urgence ne doit jamais être synonyme d'arnaque. Nos tarifs sont publics, par horaire d'intervention, et toujours confirmés par un devis signé.</p>
       </div>
-      <ul class="commit-list">
+    </div>
+    <div class="reveal">{tarif_grid()}</div>
+    <div class="reveal">
+      <ul class="commit-list commit-row">
         <li><span class="ck">{ico("i-check")}</span><div><strong>Devis gratuit et détaillé</strong><span>Signé avant chaque intervention, conformément à la réglementation.</span></div></li>
         <li><span class="ck">{ico("i-check")}</span><div><strong>Déplacement offert</strong><span>En cas de travaux réalisés.</span></div></li>
         <li><span class="ck">{ico("i-check")}</span><div><strong>Facture conforme pour votre assurance</strong><span>Reconnue par les assureurs habitation, remboursable selon votre contrat.</span></div></li>
         <li><span class="ck">{ico("i-check")}</span><div><strong>Matériel certifié et garanti</strong><span>Serrures et cylindres de marques reconnues, normes A2P.</span></div></li>
       </ul>
     </div>
-    <div class="reveal">{price_table()}</div>
   </div>
 </section>
 {reviews_section(soft=True)}
@@ -843,8 +887,8 @@ def build_home():
     ld = [ld_business(), ld_faq(HOME_FAQ),
           {"@context": "https://schema.org", "@type": "WebSite", "name": "Shopta Serrure", "url": URL + "/", "inLanguage": "fr-FR",
            "publisher": {"@id": BUSINESS_ID}}]
-    page("/", "Serrurier Paris 24h/24 – Intervention 30 min, à partir de 49 € | Shopta Serrure",
-         "Serrurier d'urgence à Paris et en Île-de-France 24h/24 et 7j/7. Ouverture de porte à partir de 49 € TTC, prix annoncé avant déplacement, devis gratuit, facture remboursable par votre assurance.",
+    page("/", "Serrurier Paris 24h/24 – Intervention 30 min, à partir de 110 € | Shopta Serrure",
+         "Serrurier d'urgence à Paris et en Île-de-France 24h/24 et 7j/7. Ouverture de porte à partir de 110 € TTC, prix annoncé avant déplacement, devis gratuit, facture remboursable par votre assurance.",
          body, ld)
 
 
@@ -873,7 +917,7 @@ def build_services():
     body += f'<section><div class="container layout"><div class="svc-list">{items}</div>{aside_card()}</div></section>'
     body += brands_block() + insurers_block() + cta_final(source="/depannage/")
     page("/depannage/", "Dépannage serrurerie 24h/24 Paris & IDF – Tous nos services | Shopta Serrure",
-         "Tous nos dépannages de serrurerie à Paris et en Île-de-France : ouverture de porte à partir de 49 €, serrure bloquée, clé cassée, changement de serrure, après effraction.",
+         "Tous nos dépannages de serrurerie à Paris et en Île-de-France : ouverture de porte à partir de 110 €, serrure bloquée, clé cassée, changement de serrure, après effraction.",
          body, [ld_business(False), ld_breadcrumb([("Dépannage", "/depannage/")])], active="/depannage/")
 
     for s in SERVICES:
@@ -888,7 +932,7 @@ def build_services():
         content = f'''<div class="prose">
   <p>{s["intro"]}</p>
   {fig(s["slug"])}
-  <p class="callout">Tarif : {prix_txt}. Le prix exact vous est annoncé au téléphone avant le déplacement et confirmé par un devis écrit avant toute intervention.</p>
+  <p class="callout">Tarif : {prix_txt}. Le prix exact vous est annoncé au téléphone avant le déplacement et confirmé par un devis écrit avant toute intervention. <a href="/tarifs/">Voir la grille tarifaire jour, soir et nuit</a>.</p>
   {secs}
   <h2>{E(s["court"])} : où intervenons-nous ?</h2>
   <p>Nous intervenons pour ce service dans tout Paris, les Hauts-de-Seine et une grande partie du Val-d'Oise, 24h/24 et 7j/7.</p>
@@ -940,7 +984,7 @@ def zone_faq(z):
              if z["proche"] else
              "Le délai dépend de la distance et de la circulation : il vous est annoncé au téléphone, avant le départ du serrurier, pour que vous sachiez exactement quand il arrivera {a}.")
     return [
-        (f"Combien coûte un serrurier {z['a']} ?", f"L'ouverture d'une porte claquée {z['a']} commence à 49 € TTC. Le changement de cylindre ou de serrure se fait sur devis gratuit. Le prix est toujours annoncé avant le déplacement et confirmé par écrit avant les travaux."),
+        (f"Combien coûte un serrurier {z['a']} ?", f"L'ouverture d'une porte claquée {z['a']} coûte 110 € TTC en journée (8h–18h), 150 € en soirée et 220 € la nuit. Le changement de cylindre commence à 160 € en journée. Le prix est toujours annoncé avant le déplacement et confirmé par écrit avant les travaux."),
         (f"En combien de temps un serrurier peut-il arriver {z['a']} ?", delai.format(a=z["a"])),
         (f"Intervenez-vous la nuit et le week-end {z['a']} ?", "Oui, nous intervenons 24h/24 et 7j/7, y compris les dimanches et jours fériés. Le tarif vous est annoncé à l'avance, sans surprise."),
         ("Ma facture sera-t-elle remboursée par mon assurance ?", "Nos factures sont détaillées et conformes : elles sont reconnues par les assureurs habitation. Le remboursement dépend des garanties de votre contrat (effraction, vol ou perte de clés…)."),
@@ -970,7 +1014,7 @@ def build_zones_pages():
         voisins = z["voisins"][:6]
         vtxt = ", ".join(v["court"] for v in voisins[:3])
         if z["slug"] == "paris":
-            intro = ("Shopta Serrure intervient dans les 20 arrondissements de Paris, 24h/24 et 7j/7. Ouverture de porte claquée à partir de 49 € TTC, "
+            intro = ("Shopta Serrure intervient dans les 20 arrondissements de Paris, 24h/24 et 7j/7. Ouverture de porte claquée à partir de 110 € TTC, "
                      "déblocage de serrure, extraction de clé cassée, changement de cylindre ou sécurisation après effraction : "
                      "le prix vous est annoncé au téléphone, puis confirmé par un devis signé avant toute intervention.")
             local = "<h2>Choisissez votre arrondissement</h2><div class=\"link-grid\">" + "".join(
@@ -994,7 +1038,7 @@ def build_zones_pages():
         facts = f'''<div class="facts">
   <div class="fact"><small>Code postal</small><strong>{E(cp if len(z["cp"]) < 3 else z["cp"][0] + "…")}</strong></div>
   <div class="fact"><small>Disponibilité</small><strong>24h/24 · 7j/7</strong></div>
-  <div class="fact"><small>Ouverture de porte</small><strong>à partir de 49 € TTC</strong></div>
+  <div class="fact"><small>Ouverture de porte</small><strong>à partir de 110 € TTC</strong></div>
   <div class="fact"><small>Délai</small><strong>{"~30 min en moyenne" if z["proche"] else "annoncé au téléphone"}</strong></div>
 </div>'''
         svc = "".join(f'''<div class="svc-item"><div class="ic">{ico(s["icon"], "")}</div>
@@ -1022,7 +1066,7 @@ def build_zones_pages():
   <div class="link-grid">{near_links}</div>
 </div>'''
         h1 = f'Serrurier {E(z["court"])} <em>24h/24</em>' + (f' – {E(cp_short)}' if z["slug"] != "paris" else "")
-        lead = f'Ouverture de porte à partir de 49 € TTC, serrure bloquée, clé cassée, changement de serrure {E(z["a"])}. Prix annoncé avant déplacement, devis gratuit, facture remboursable par votre assurance.'
+        lead = f'Ouverture de porte à partir de 110 € TTC, serrure bloquée, clé cassée, changement de serrure {E(z["a"])}. Prix annoncé avant déplacement, devis gratuit, facture remboursable par votre assurance.'
         crumb_items = [("Zones d'intervention", "/villes/")]
         if z["arr"]:
             crumb_items.append(("Paris", "/villes/paris/"))
@@ -1032,10 +1076,10 @@ def build_zones_pages():
         body += insurers_block() + reviews_section(title=f"Avis de nos clients", soft=True) + cta_final(f"Bloqué dehors {z['a']} ?", "Appelez-nous : prix annoncé au téléphone, serrurier en route immédiatement.",
                                                                                                                          source=path, ville=z["court"] if z["slug"] != "paris" else "")
         if z["slug"] == "paris":
-            title = "Serrurier Paris 24h/24 – Tous arrondissements, à partir de 49 € | Shopta Serrure"
+            title = "Serrurier Paris 24h/24 – Tous arrondissements, à partir de 110 € | Shopta Serrure"
         else:
-            title = f'Serrurier {z["court"]} ({cp_short}) 24h/24 – à partir de 49 € | Shopta Serrure'
-        desc = (f'Serrurier {z["court"]} ({cp_short if z["slug"] != "paris" else "75"}) disponible 24h/24 et 7j/7 : ouverture de porte à partir de 49 € TTC, serrure bloquée, '
+            title = f'Serrurier {z["court"]} ({cp_short}) 24h/24 – à partir de 110 € | Shopta Serrure'
+        desc = (f'Serrurier {z["court"]} ({cp_short if z["slug"] != "paris" else "75"}) disponible 24h/24 et 7j/7 : ouverture de porte à partir de 110 € TTC, serrure bloquée, '
                 f'clé cassée, changement de serrure. Prix annoncé avant déplacement, facture remboursable par l\'assurance.')
         bc = [(c[0], c[1] if c[1] else path) for c in crumb_items]
         ld = [ld_business(False), ld_breadcrumb(bc), ld_faq(faq),
@@ -1043,7 +1087,7 @@ def build_zones_pages():
                "url": URL + path, "provider": {"@id": BUSINESS_ID},
                "areaServed": {"@type": "City" if not z["arr"] else "AdministrativeArea", "name": z["nom"],
                               **({"postalCode": z["cp"][0]} if z["slug"] != "paris" else {})},
-               "offers": {"@type": "Offer", "priceSpecification": {"@type": "PriceSpecification", "minPrice": 49, "priceCurrency": "EUR"}}}]
+               "offers": {"@type": "Offer", "priceSpecification": {"@type": "PriceSpecification", "minPrice": 110, "priceCurrency": "EUR"}}}]
         page(path, title, desc, body, ld, active="/villes/")
 
 
@@ -1058,19 +1102,26 @@ def simple(path, crumb, h1, lead, prose, title, desc, extra_ld=(), active=None, 
 def build_static():
     # Tarifs
     rows = "".join(f'<tr><td><a href="/depannage/{s["slug"]}/">{E(s["nom"])}</a></td><td>{E(s["prix"])}</td></tr>' for s in SERVICES)
-    simple("/tarifs/", "Tarifs", "Tarifs serrurier <em>clairs et annoncés</em>",
-           "Nos prix de départ, nos engagements et ce que comprend le prix. Aucun frais caché : tout est annoncé avant le déplacement.",
-           f'''<h2>Nos prix de départ</h2>
-<table><thead><tr><th>Intervention</th><th>Prix</th></tr></thead><tbody>{rows}<tr><td>Devis</td><td><strong>Gratuit</strong></td></tr></tbody></table>
-<p class="callout">Le prix final dépend du type de porte (standard, blindée, multipoints) et du matériel éventuellement remplacé. Il vous est annoncé au téléphone, puis confirmé par un devis écrit et signé avant le début des travaux.</p>
-<h2>Ce que comprend le prix</h2>
-<ul><li>La main d'œuvre du serrurier.</li><li>Le déplacement, offert en cas de travaux réalisés dans notre zone d'intervention.</li><li>La TVA : nos prix sont indiqués TTC.</li><li>La facture détaillée, conforme pour votre assurance.</li></ul>
-<h2>Nos engagements</h2>
-<ul><li><strong>Prix annoncé avant le départ</strong> du technicien.</li><li><strong>Devis écrit et signé</strong> avant toute intervention : rien n'est fait sans votre accord.</li><li><strong>Aucune majoration surprise</strong> : si un supplément s'applique (nuit, hors zone), il vous est annoncé au téléphone.</li><li><strong>Matériel certifié</strong> et garanti, cylindres et serrures de marques reconnues.</li></ul>
-<h2>Moyens de paiement</h2><p>Carte bancaire, espèces et virement.</p>''',
-           "Tarifs serrurier Paris – Ouverture de porte à partir de 49 € TTC | Shopta Serrure",
-           "Tarifs Shopta Serrure : ouverture de porte claquée à partir de 49 € TTC, déblocage, clé cassée, changement de serrure sur devis gratuit. Prix annoncé avant déplacement.",
-           active="/tarifs/", after=insurers_block() + cta_final(source="/tarifs/"))
+    body = page_hero([("Tarifs", None)], "Tarifs serrurier <em>clairs et publics</em>",
+                     "Nos prix par prestation et par horaire d'intervention. Aucun frais caché : tout est annoncé avant le déplacement.")
+    body += f'''<section><div class="container">
+  {tarif_grid()}
+  <div class="tarif-extra">
+    <div class="prose">
+      <h2>Ce que comprend le prix</h2>
+      <ul><li>La main d'œuvre du serrurier.</li><li>Le déplacement, offert en cas de travaux réalisés dans notre zone d'intervention.</li><li>La TVA : nos prix sont indiqués TTC.</li><li>La facture détaillée, conforme pour votre assurance.</li></ul>
+      <h2>Nos engagements</h2>
+      <ul><li><strong>Prix annoncé avant le départ</strong> du technicien.</li><li><strong>Devis écrit et signé</strong> avant toute intervention : rien n'est fait sans votre accord.</li><li><strong>Aucune majoration surprise</strong> : le tarif de soirée ou de nuit vous est annoncé au téléphone.</li><li><strong>Matériel certifié</strong> et garanti, cylindres et serrures de marques reconnues.</li></ul>
+      <h2>Moyens de paiement</h2><p>Carte bancaire, espèces et virement.</p>
+      <h2>Clé cassée, serrure connectée, après effraction</h2>
+      <p>Ces interventions dépendent fortement de la situation : elles font l'objet d'un <strong>devis gratuit</strong>, annoncé au téléphone puis confirmé par écrit. Voir aussi nos <a href="/depannage/">pages dépannage</a>.</p>
+    </div>
+    {aside_card("Un prix au téléphone", "Décrivez votre situation : nous vous annonçons le tarif exact avant de partir.")}
+  </div>
+</div></section>''' + insurers_block() + cta_final(source="/tarifs/")
+    page("/tarifs/", "Tarifs serrurier Paris – Grille de prix jour, soir et nuit | Shopta Serrure",
+         "Grille tarifaire Shopta Serrure : ouverture de porte claquée 110 € TTC en journée, porte fermée à clé à partir de 180 €, changement de cylindre à partir de 160 €. Prix soir et nuit affichés.",
+         body, [ld_business(False), ld_breadcrumb([("Tarifs", "/tarifs/")]), ld_tarifs()], active="/tarifs/")
 
     # Assurances
     simple("/assurances/", "Assurances", "Serrurier et assurance : <em>votre facture remboursable</em>",
@@ -1256,12 +1307,13 @@ def build_seo_files():
 
     svc = "\n".join(f"- [{s['nom']}]({URL}/depannage/{s['slug']}/) : {s['prix']}. {s['resume']}" for s in SERVICES)
     arts = "\n".join(f"- [{a['court']}]({URL}/blog/{a['slug']}/) : {a['desc']}" for a in ARTICLES)
+    grille = "\n".join(f"- {t[0]} : " + " / ".join(v or "sur devis" for v in t[1:]) for t in TARIFS)
     deps = "\n\n".join(f"### {label}\n" + "\n".join(f"- [Serrurier {z['court']}]({URL}{z['url']})" for z in ZONES if z["dep"] == dep)
                        for dep, (_, label) in DEPTS.items())
     note = (f"- Note Google : {AVIS['note']}/5 sur {AVIS['nombre']} avis\n" if AVIS.get("note") else "")
     write("llms.txt", f"""# Shopta Serrure
 
-> Serrurier d'urgence à Paris et en Île-de-France (Paris 75, Hauts-de-Seine 92, Val-d'Oise 95), disponible 24h/24 et 7j/7. Ouverture de porte claquée à partir de 49 € TTC, prix annoncé au téléphone avant le déplacement, devis écrit signé avant toute intervention, facture détaillée reconnue par les assureurs habitation.
+> Serrurier d'urgence à Paris et en Île-de-France (Paris 75, Hauts-de-Seine 92, Val-d'Oise 95), disponible 24h/24 et 7j/7. Ouverture de porte claquée à partir de 110 € TTC, prix annoncé au téléphone avant le déplacement, devis écrit signé avant toute intervention, facture détaillée reconnue par les assureurs habitation.
 
 ## Informations clés
 - Nom : Shopta Serrure (fiche Google : « Serrurier - Shopta serrure »)
@@ -1279,6 +1331,9 @@ def build_seo_files():
 {note}
 ## Services et prix
 {svc}
+
+## Grille tarifaire (TTC, journée 8h–18h / soirée 18h–22h / nuit 22h–8h)
+{grille}
 
 ## Zones d'intervention
 {deps}
@@ -1308,6 +1363,7 @@ def build_seo_files():
         for t, c in sv["sections"]:
             full.append(f"### {t}\n{txt(c)}\n")
         full.append("### Questions fréquentes\n" + "\n".join(f"- **{q}** {txt(a)}" for q, a in sv["faq"]) + "\n")
+    full.append("## Grille tarifaire (TTC, journée 8h–18h / soirée 18h–22h / nuit 22h–8h)\n" + grille + "\n")
     full.append("## Questions générales\n" + "\n".join(f"- **{q}** {txt(a)}" for q, a in HOME_FAQ) + "\n")
     full.append("## Zones d'intervention\n" + deps + "\n\nHors zone, des frais de déplacement supplémentaires peuvent s'appliquer et sont annoncés à l'avance.\n")
     full.append("## Marques prises en charge\n" + ", ".join(n for n, _, _ in BRANDS) + "\n")
