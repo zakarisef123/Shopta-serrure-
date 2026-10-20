@@ -602,3 +602,6 @@ footer .social + .social{margin-left:8px}
 .hero.has-bg::after{background:linear-gradient(100deg,rgba(0,26,69,.86) 0%,rgba(0,26,69,.58) 48%,rgba(0,26,69,.22) 100%)}
 @media (max-width:1080px){.hero.has-bg::after{background:linear-gradient(180deg,rgba(0,26,69,.72) 0%,rgba(0,26,69,.62) 55%,rgba(0,26,69,.82) 100%)}}
 @media (max-width:1080px){.hero.has-bg .hero-bg img{object-position:38% 30%}}
+
+/* Mobile : pas d'animation d'apparition, le contenu (et les photos) s'affiche directement */
+@media (max-width:1080px){.reveal{opacity:1!important;transform:none!important;transition:none!important}}
