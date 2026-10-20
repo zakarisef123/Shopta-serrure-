@@ -77,16 +77,44 @@
     a.addEventListener("click",function(){ if (window.gtag) gtag("event", a.dataset.track.indexOf("wa")===0 ? "whatsapp_click" : "phone_click", {location:a.dataset.track}); });
   });
 
-  // Formulaire -> WhatsApp
-  var form = document.getElementById("contact-form");
-  if (form) form.addEventListener("submit",function(e){
-    e.preventDefault();
-    var f = e.target.elements, name = f.name.value.trim(), tel = f.tel.value.trim();
-    if (!name){ f.name.focus(); f.name.style.borderColor="#ef4444"; return; }
-    if (!tel){ f.tel.focus(); f.tel.style.borderColor="#ef4444"; return; }
-    var txt = "Bonjour Shopta Serrure,\n\nNom : "+name+"\nTéléphone : "+tel+"\nBesoin : "+f.type.value+(f.city.value?"\nVille : "+f.city.value:"")+(f.msg.value?"\n\n"+f.msg.value:"");
-    if (window.gtag) gtag("event","generate_lead",{type:f.type.value});
-    window.open("https://wa.me/33620546693?text="+encodeURIComponent(txt),"_blank","noopener");
+  // Formulaires de contact (Netlify Forms) : envoi sans quitter la page
+  document.querySelectorAll("form.lead-form").forEach(function(form){
+    form.addEventListener("submit", function(e){
+      e.preventDefault();
+      if (!form.reportValidity()) return;
+      var btn = form.querySelector("button[type=submit]");
+      btn.disabled = true; btn.dataset.label = btn.innerHTML; btn.textContent = "Envoi en cours…";
+      fetch("/", {method:"POST", headers:{"Content-Type":"application/x-www-form-urlencoded"},
+                  body:new URLSearchParams(new FormData(form)).toString()})
+        .then(function(r){
+          if (!r.ok) throw new Error(r.status);
+          if (window.gtag) gtag("event","generate_lead",{service:form.service.value, page:form.page.value});
+          form.reset();
+          form.querySelector(".form-ok").hidden = false;
+          btn.innerHTML = btn.dataset.label; btn.disabled = false;
+        })
+        .catch(function(){ form.submit(); });
+    });
+  });
+
+  // Carrousel d'avis : flèches + défilement automatique
+  document.querySelectorAll("[data-carousel]").forEach(function(c){
+    var track = c.querySelector(".car-track"), prev = c.querySelector(".prev"), next = c.querySelector(".next");
+    function step(){ var r = track.querySelector(".review"); return r ? r.getBoundingClientRect().width + 20 : 300; }
+    function update(){
+      prev.disabled = track.scrollLeft < 5;
+      next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 5;
+    }
+    prev.addEventListener("click", function(){ track.scrollBy({left:-step()}); });
+    next.addEventListener("click", function(){ track.scrollBy({left:step()}); });
+    track.addEventListener("scroll", update, {passive:true}); update();
+    var paused = false;
+    ["mouseenter","touchstart","focusin"].forEach(function(ev){ c.addEventListener(ev, function(){ paused = true; }, {passive:true}); });
+    c.addEventListener("mouseleave", function(){ paused = false; });
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) setInterval(function(){
+      if (paused || document.hidden) return;
+      if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 5) track.scrollTo({left:0}); else track.scrollBy({left:step()});
+    }, 5000);
   });
 
   var y = document.getElementById("year"); if (y) y.textContent = new Date().getFullYear();
