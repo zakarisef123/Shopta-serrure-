@@ -185,10 +185,15 @@ HEADER_FILES = {
     "toits-de-paris": "Les toits de Paris, la Madeleine et la tour Eiffel",
     "place-des-victoires": "La place des Victoires, Paris",
     "conciergerie": "La Conciergerie au bord de la Seine",
+    "sacre-coeur": "Le Sacré-Cœur de Montmartre, Paris 18e",
+    "vue-sacre-coeur": "Vue sur Montmartre et le Sacré-Cœur",
+    "avenue-etoile": "Avenue parisienne vue depuis l'Arc de Triomphe",
+    "mairie": "Une mairie d'arrondissement à Paris",
 }
 # Photo propre à une page (slug de la zone) ; sinon rotation sur toutes les photos
 HEADER_BY_ZONE = {"paris-1": "conciergerie", "paris-2": "place-des-victoires", "paris-4": "notre-dame",
-                  "paris-5": "pantheon", "paris-8": "toits-de-paris", "paris": "toits-de-paris"}
+                  "paris-5": "pantheon", "paris-8": "toits-de-paris", "paris": "toits-de-paris",
+                  "paris-17": "avenue-etoile", "paris-18": "sacre-coeur", "paris-19": "vue-sacre-coeur"}
 
 
 def process_headers():
