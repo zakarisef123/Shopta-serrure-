@@ -504,3 +504,13 @@ footer .social:hover{background:rgba(255,255,255,.08)}
 .final .box.final-grid .legal{text-align:left}
 @media (max-width:720px){.final .box.final-grid .ctas{flex-direction:column}.final .box.final-grid .ctas .btn{width:100%}}
 footer .social + .social{margin-left:8px}
+
+/* Bandeau des marques */
+.brands{background:var(--bg-soft);border-top:1px solid var(--line)}
+.brands .insurers-head p span{color:var(--blue)}
+.brands .track{animation-duration:60s}
+.brands .marquee.reverse .track{animation-duration:70s}
+.brands .dup{display:contents}
+.ins.brand-name{font-size:17px;letter-spacing:.01em;color:var(--ink-2);padding:12px 22px;height:64px;display:flex;align-items:center}
+.brands .insurers-note{max-width:900px}
+@media (max-width:720px){.ins.brand-name{height:56px;font-size:15px}}
