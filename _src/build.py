@@ -498,28 +498,51 @@ def aside_card(titre="Besoin d'un serrurier ?", texte="Prix annoncé au téléph
 CRENEAUX = [("i-sun", "Journée", "08h–18h"), ("i-sunset", "Soirée", "18h–22h"), ("i-moon", "Nuit", "22h–08h")]
 
 
-def tarif_grid(titre="Grille tarifaire", sous_titre="Prix TTC selon l'horaire d'intervention, 7j/7"):
-    head = "".join(f'<th scope="col"><div class="tg-h">{ico(i, "")}<span>{l}<small>{h}</small></span></div></th>' for i, l, h in CRENEAUX)
+CRENEAUX = [("jour", "Journée", "8h – 18h"), ("soir", "Soirée", "18h – 22h"), ("nuit", "Nuit", "22h – 8h")]
+
+
+def _prix(v):
+    """« À partir de 180 € » -> ('à partir de', '180 €')"""
+    return ("à partir de", v[12:]) if v.startswith("À partir de") else ("", v)
+
+
+def tarif_grid(titre=None, sous_titre=None):
+    urgences = [t for t in TARIFS if all(t[1:])]
+    travaux = [t for t in TARIFS if not all(t[1:])]
+    tabs = "".join(f'<button type="button" role="tab" data-slot="{k}" aria-selected="{"true" if k == "jour" else "false"}">'
+                   f'<strong>{l}</strong><span>{h}</span></button>' for k, l, h in CRENEAUX)
     rows = ""
-    for presta, *prix in TARIFS:
-        cells = ""
-        for (i, l, h), v in zip(CRENEAUX, prix):
-            label = f"{l} {h}"
-            if v:
-                apd, montant = (v[:11], v[12:]) if v.startswith("À partir de") else ("", v)
-                cells += (f'<td data-label="{label}">' + (f'<small>à partir de</small>' if apd else "")
-                          + f'<b>{E(montant)}</b></td>')
-            else:
-                cells += f'<td data-label="{label}" class="na"><small>sur devis</small></td>'
-        rows += f'<tr><th scope="row">{E(presta)}</th>{cells}</tr>'
-    return f'''<div class="tarif-grid">
-  <header><div><h3>{E(titre)}</h3><p>{E(sous_titre)}</p></div><span class="tg-badge">{ico("i-shield", "")}Prix annoncé avant déplacement</span></header>
-  <div class="tg-scroll"><table class="tg">
-    <thead><tr><th scope="col">Prestation</th>{head}</tr></thead>
-    <tbody>{rows}</tbody>
-  </table></div>
-  <div class="note">{ico("i-info", "")}<span>Tarifs TTC, main d'œuvre comprise. Le prix exact dépend de la porte et de la serrure : il vous est annoncé au téléphone, puis confirmé par un devis écrit et signé avant toute intervention. Devis gratuit.</span></div>
-</div>'''
+    for presta, *prix in urgences:
+        vals = ""
+        for (k, _, _), v in zip(CRENEAUX, prix):
+            apd, m = _prix(v)
+            vals += f'<span class="tp-val" data-slot="{k}"{"" if k == "jour" else " hidden"}>{f"<small>{apd}</small>" if apd else ""}{E(m)}</span>'
+        rows += f'<li><span class="tp-name">{E(presta)}</span><span class="tp-price">{vals}</span></li>'
+    trav = ""
+    for presta, jour, *_ in travaux:
+        apd, m = _prix(jour)
+        trav += f'<li><span class="tp-name">{E(presta)}</span><span class="tp-price"><span class="tp-val">{f"<small>{apd}</small>" if apd else ""}{E(m)}</span></span></li>'
+    return f'''<div class="tarifs-cards">
+  <article class="tp-card tp-urgence" data-tarifs>
+    <header>
+      <span class="tp-kicker">24h/24 · 7j/7</span>
+      <h3>Dépannage d'urgence</h3>
+      <p>Le tarif dépend de l'heure d'intervention.</p>
+    </header>
+    <div class="tp-tabs" role="tablist" aria-label="Horaire d'intervention">{tabs}</div>
+    <ul class="tp-list">{rows}</ul>
+    <p class="tp-now" hidden></p>
+  </article>
+  <article class="tp-card tp-travaux">
+    <header>
+      <span class="tp-kicker">Sur rendez-vous</span>
+      <h3>Travaux et installation</h3>
+      <p>Tarifs de départ en journée, devis détaillé offert.</p>
+    </header>
+    <ul class="tp-list">{trav}</ul>
+  </article>
+</div>
+<p class="tp-note">Tarifs TTC, main d'œuvre comprise. Le prix exact dépend de la porte et de la serrure : il vous est annoncé au téléphone, puis confirmé par un devis écrit et signé avant toute intervention.</p>'''
 
 
 def ld_tarifs():
