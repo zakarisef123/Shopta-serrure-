@@ -39,6 +39,9 @@ CONFIG = {
     "instagram": "https://www.instagram.com/shoptaserrure/",
     "tiktok": "https://www.tiktok.com/@shopta.serrure",
     "ga_id": "G-0VFWJ86Y1C",
+    # Google Ads : ID du compte (AW-XXXXXXXXX) et libellés des conversions (Outils > Conversions > « Configurer la balise »)
+    "ads_id": "",
+    "ads_conv": {"call": "", "wa": "", "form": ""},
     "indexnow_key": "8f3c1a6e2b7d4f90a5c3e1b2d4f6a8c0",
     # Mentions légales
     "raison_sociale": "Shopta Serrure",
@@ -541,6 +544,8 @@ def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og
     mnav = "".join(f'<a href="{u}">{E(l)}</a>' for l, u in [("Accueil", "/")] + NAV)
     ld_html = "".join(f'<script type="application/ld+json">{json.dumps(d, ensure_ascii=False)}</script>\n' for d in ld)
     ga = CONFIG["ga_id"]
+    ads = CONFIG["ads_id"]
+    ads_js = (f"gtag('config','{ads}');window.ADS_CONV=" + json.dumps({k: f"{ads}/{v}" for k, v in CONFIG["ads_conv"].items() if v}) + ";") if ads else ""
     doc = f'''<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -570,7 +575,7 @@ def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/site.css">
 <script async src="https://www.googletagmanager.com/gtag/js?id={ga}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{ga}');</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{ga}');{ads_js}</script>
 {ld_html}</head>
 <body>
 {SPRITE}
@@ -1280,10 +1285,38 @@ def build_seo_files():
 - [FAQ]({URL}/faq/)
 - [Contact et demande de devis]({URL}/contact/)
 - [Plan du site]({URL}/plan-du-site/)
+- [Version complète pour les IA]({URL}/llms-full.txt)
 
 ## Guides
 {arts}
 """)
+
+    def txt(h):
+        return html.unescape(re.sub(r"<[^>]+>", "", h))
+    full = [f"# Shopta Serrure – informations complètes\n\n> Serrurier d'urgence 24h/24 et 7j/7 à Paris (75), dans les Hauts-de-Seine (92) et le Val-d'Oise (95). "
+            f"Téléphone : {TEL}. Site : {URL}/. Fiche Google : {MAPS}\n"]
+    full.append("## Engagements\n- Prix annoncé au téléphone avant le déplacement\n- Devis écrit gratuit, signé avant toute intervention\n"
+                "- Ouverture sans dégât dans la grande majorité des cas\n- Facture détaillée reconnue par les assureurs habitation, remboursable selon le contrat "
+                "(entreprise indépendante, sans partenariat avec les assureurs)\n- Paiement : carte bancaire, espèces, virement\n")
+    for sv in SERVICES:
+        full.append(f"## {sv['nom']} – {sv['prix']}\nPage : {URL}/depannage/{sv['slug']}/\n\n{txt(sv['intro'])}\n")
+        for t, c in sv["sections"]:
+            full.append(f"### {t}\n{txt(c)}\n")
+        full.append("### Questions fréquentes\n" + "\n".join(f"- **{q}** {txt(a)}" for q, a in sv["faq"]) + "\n")
+    full.append("## Questions générales\n" + "\n".join(f"- **{q}** {txt(a)}" for q, a in HOME_FAQ) + "\n")
+    full.append("## Zones d'intervention\n" + deps + "\n\nHors zone, des frais de déplacement supplémentaires peuvent s'appliquer et sont annoncés à l'avance.\n")
+    full.append("## Marques prises en charge\n" + ", ".join(n for n, _, _ in BRANDS) + "\n")
+    for a in ARTICLES:
+        corps = []
+        for kind, val in a["corps"]:
+            if kind in ("ul", "ol"):
+                corps.append("\n".join(f"- {txt(v)}" for v in val))
+            elif kind == "h2":
+                corps.append(f"### {txt(val)}")
+            else:
+                corps.append(txt(val))
+        full.append(f"## {a['titre']}\n{URL}/blog/{a['slug']}/ – publié le {fr_date(a['date'])}\n\n" + "\n\n".join(corps) + "\n")
+    write("llms-full.txt", "\n".join(full))
 
     write("manifest.webmanifest", json.dumps({
         "name": "Shopta Serrure – Serrurier 24h/24", "short_name": "Shopta Serrure", "lang": "fr", "start_url": "/",
