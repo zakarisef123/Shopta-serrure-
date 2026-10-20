@@ -10,8 +10,8 @@ SERVICES = [
         "nom": "Ouverture de porte claquée",
         "court": "Porte claquée",
         "icon": "i-door",
-        "prix": "à partir de 49 € TTC",
-        "prix_num": 49,
+        "prix": "à partir de 110 € TTC",
+        "prix_num": 110,
         "kw": "ouverture de porte",
         "resume": "Vous êtes sorti sans vos clés ? Ouverture fine sans casse, par crochetage ou à la radio, sans changer la serrure.",
         "intro": "Une porte qui claque derrière vous, les clés restées à l'intérieur : c'est l'urgence la plus fréquente en serrurerie. Dans la grande majorité des cas, nos serruriers ouvrent une porte simplement claquée (non verrouillée à clé) sans rien abîmer, en quelques minutes, et sans remplacer la serrure.",
@@ -24,7 +24,7 @@ SERVICES = [
              "Vérifiez qu'aucune fenêtre ou porte secondaire n'est accessible en sécurité, demandez à un voisin ou à votre gardien s'il détient un double, et ne tentez pas de forcer la porte avec une carte ou un tournevis : vous risqueriez d'endommager le bâti ou la serrure et d'alourdir la facture."),
         ],
         "faq": [
-            ("Combien coûte l'ouverture d'une porte claquée ?", "Elle commence à 49 € TTC. Le prix exact dépend du type de porte (standard, blindée, multipoints) et vous est annoncé au téléphone, puis confirmé par un devis écrit sur place avant l'intervention."),
+            ("Combien coûte l'ouverture d'une porte claquée ?", "110 € TTC en journée (8h–18h), 150 € en soirée (18h–22h) et 220 € la nuit (22h–8h). Une porte fermée à clé est facturée à partir de 180 € en journée. Le prix exact vous est annoncé au téléphone, puis confirmé par un devis écrit sur place avant l'intervention."),
             ("Allez-vous casser la serrure ?", "Non dans la grande majorité des cas. Une porte claquée s'ouvre sans dégât. Si un perçage devait être nécessaire, il vous serait expliqué et chiffré avant, et vous restez libre de refuser."),
             ("Combien de temps dure l'ouverture ?", "Quelques minutes pour une porte simplement claquée, un peu plus pour une porte blindée ou fermée à clé."),
         ],
@@ -34,8 +34,8 @@ SERVICES = [
         "nom": "Déblocage de serrure",
         "court": "Serrure bloquée",
         "icon": "i-lock",
-        "prix": "à partir de 49 € TTC",
-        "prix_num": 49,
+        "prix": "à partir de 180 € TTC",
+        "prix_num": 180,
         "kw": "serrure bloquée",
         "resume": "Clé qui ne tourne plus, mécanisme grippé ou porte fermée à clé : diagnostic et déblocage rapide sur place.",
         "intro": "La clé entre mais ne tourne plus, la poignée force, la porte refuse de s'ouvrir ou de se fermer : une serrure bloquée peut vous laisser dehors ou vous empêcher de sécuriser votre logement. Nous diagnostiquons la cause sur place et débloquons le mécanisme, en réparant plutôt qu'en remplaçant chaque fois que c'est possible.",
@@ -58,8 +58,8 @@ SERVICES = [
         "nom": "Extraction de clé cassée",
         "court": "Clé cassée",
         "icon": "i-key",
-        "prix": "à partir de 49 € TTC",
-        "prix_num": 49,
+        "prix": "sur devis gratuit",
+        "prix_num": None,
         "kw": "clé cassée dans la serrure",
         "resume": "Extraction du morceau de clé coincé dans le cylindre sans abîmer la serrure, puis reproduction si besoin.",
         "intro": "Une clé fatiguée finit un jour par se casser dans le cylindre, souvent au pire moment. Bonne nouvelle : dans la plupart des cas, le morceau s'extrait sans changer la serrure, avec un outillage adapté.",
@@ -73,7 +73,7 @@ SERVICES = [
         ],
         "faq": [
             ("Faut-il changer la serrure après une clé cassée ?", "Pas forcément. Si le cylindre n'est pas endommagé et que vous avez un double, il suffit d'extraire le morceau."),
-            ("Combien coûte l'extraction d'une clé cassée ?", "À partir de 49 € TTC. Le prix vous est confirmé avant intervention."),
+            ("Combien coûte l'extraction d'une clé cassée ?", "Le prix dépend de la serrure et de l'heure d'intervention : il vous est annoncé au téléphone et confirmé par un devis gratuit avant intervention."),
             ("Ma clé s'est cassée dans la serrure de ma voiture ou de ma boîte aux lettres", "Nous intervenons aussi sur les boîtes aux lettres. Pour les véhicules, appelez-nous pour vérifier que nous pouvons vous aider."),
         ],
     },
@@ -82,8 +82,8 @@ SERVICES = [
         "nom": "Changement de serrure et de cylindre",
         "court": "Changement de serrure",
         "icon": "i-cyl",
-        "prix": "sur devis gratuit",
-        "prix_num": None,
+        "prix": "à partir de 160 € TTC",
+        "prix_num": 160,
         "kw": "changement de serrure",
         "resume": "Remplacement de cylindre ou de serrure multipoints certifiée A2P après perte de clés, vol ou emménagement.",
         "intro": "Clés perdues ou volées, emménagement dans un logement dont vous ne connaissez pas les doubles, serrure usée ou trop facile à forcer : changer de cylindre ou de serrure est le moyen le plus sûr de reprendre le contrôle de vos accès.",
@@ -96,7 +96,7 @@ SERVICES = [
              "Le serrurier vous présente plusieurs gammes (standard, haute sécurité, A2P) avec leur prix posé, pièces et main d'œuvre comprises. Vous choisissez, il installe, vous repartez avec la facture, les clés neuves et la carte de propriété."),
         ],
         "faq": [
-            ("Combien coûte un changement de cylindre ?", "Le prix dépend de la marque et du niveau de sécurité choisis. Nous vous remettons un devis gratuit, détaillé et sans engagement avant l'intervention."),
+            ("Combien coûte un changement de cylindre ?", "À partir de 160 € TTC en journée (8h–18h), 200 € en soirée (18h–22h) et 230 € la nuit (22h–8h). Le remplacement d'une serrure complète commence à 250 €. Le prix final dépend de la marque et du niveau de sécurité choisis : un devis gratuit et détaillé vous est remis avant l'intervention."),
             ("Faut-il changer la serrure après un vol de clés ?", "Oui, c'est vivement conseillé, surtout si vos papiers avec votre adresse ont été volés en même temps. Votre assurance peut prendre en charge le remplacement selon votre contrat."),
             ("Propriétaire ou locataire : qui paie ?", "Le remplacement suite à la perte des clés est en général à la charge du locataire ; le remplacement d'une serrure vétuste incombe plutôt au propriétaire. Vérifiez votre bail."),
         ],
@@ -106,8 +106,8 @@ SERVICES = [
         "nom": "Serrure connectée (Smart Lock)",
         "court": "Smart Lock",
         "icon": "i-smart",
-        "prix": "à partir de 49 € TTC",
-        "prix_num": 49,
+        "prix": "sur devis gratuit",
+        "prix_num": None,
         "kw": "serrure connectée",
         "resume": "Installation et dépannage de serrures connectées : ouverture par smartphone, code ou empreinte digitale.",
         "intro": "Les serrures connectées permettent d'ouvrir avec un smartphone, un code ou une empreinte, de donner un accès temporaire à un proche ou de suivre les passages. Nous les installons sur votre porte existante et intervenons en cas de panne ou de blocage.",
@@ -122,7 +122,7 @@ SERVICES = [
         "faq": [
             ("Ma serrure connectée ne répond plus, je suis dehors", "Appelez-nous : nous ouvrons la porte comme pour une serrure classique, puis remettons la serrure connectée en service."),
             ("Peut-on installer une serrure connectée sur une porte blindée ?", "Souvent oui, selon le cylindre en place. Envoyez-nous une photo de votre porte sur WhatsApp pour un avis rapide."),
-            ("Combien coûte l'installation ?", "Le dépannage commence à 49 € TTC. L'installation dépend du modèle choisi et fait l'objet d'un devis gratuit."),
+            ("Combien coûte l'installation ?", "Le dépannage comme l'installation font l'objet d'un devis gratuit : le prix dépend du modèle et vous est annoncé avant toute intervention."),
         ],
     },
     {
@@ -242,7 +242,7 @@ ARTICLES = [
             ("p", "Le dépannage en serrurerie fait partie des secteurs les plus surveillés par la DGCCRF. Pour éviter les mauvaises surprises :"),
             ("ul", ["Appelez une entreprise locale identifiée (nom, numéro, avis vérifiables), pas un numéro trouvé sur un prospectus glissé dans la boîte aux lettres.", "Demandez le prix au téléphone : un professionnel sérieux peut l'estimer à partir de votre description.", "Exigez un devis écrit et signé avant le début de l'intervention : c'est obligatoire.", "Méfiez-vous si le serrurier veut percer ou changer la serrure d'une porte simplement claquée."]),
             ("h2", "3. Combien coûte une ouverture de porte claquée ?"),
-            ("p", "Chez Shopta Serrure, l'ouverture d'une porte claquée commence à <strong>49 € TTC</strong>. Le tarif peut varier selon le type de porte (blindée, multipoints) et vous est toujours annoncé avant le déplacement, puis confirmé par écrit sur place."),
+            ("p", "Chez Shopta Serrure, l'ouverture d'une porte claquée coûte <strong>110 € TTC en journée</strong> (8h–18h), 150 € en soirée (18h–22h) et 220 € la nuit (22h–8h). Une porte fermée à clé est facturée à partir de 180 € en journée. Le tarif peut varier selon le type de porte (blindée, multipoints) et vous est toujours annoncé avant le déplacement, puis confirmé par écrit sur place."),
             ("h2", "4. Après l'ouverture"),
             ("p", "Profitez-en pour faire faire un double de vos clés et le confier à une personne de confiance. Si votre porte claque facilement, un groom réglable ou un réglage des paumelles évite que l'incident se reproduise."),
         ],
@@ -297,7 +297,7 @@ ARTICLES = [
             ("h2", "Ce que vous pouvez essayer"),
             ("p", "Si le morceau dépasse nettement, tirez-le bien droit avec une pince plate fine, sans tourner. Un peu de lubrifiant sec (graphite) peut faciliter l'extraction."),
             ("h2", "Quand appeler un serrurier"),
-            ("p", "Si le morceau est entièrement dans le cylindre, un extracteur professionnel est nécessaire. L'opération prend en général quelques minutes et ne nécessite pas de changer la serrure. Chez Shopta Serrure, elle commence à 49 € TTC."),
+            ("p", "Si le morceau est entièrement dans le cylindre, un extracteur professionnel est nécessaire. L'opération prend en général quelques minutes et ne nécessite pas de changer la serrure. Chez Shopta Serrure, le prix vous est annoncé au téléphone avant le déplacement."),
         ],
     },
     {
@@ -414,4 +414,20 @@ BRANDS = [
     ("Somfy", "somfy", "connectee"), ("Netatmo", "netatmo", "connectee"), 
     ("Nuki", "nuki", "connectee"), ("Ultion", "ultion", "connectee"), ("Danalock", "danalock", "connectee"),
     ("Bold", "bold", "connectee"), ("Igloohome", "igloohome", "connectee"),
+]
+
+# ---------------------------------------------------------------------------
+# Grille tarifaire (prix TTC) : prestation, journée 8h–18h, soirée 18h–22h, nuit 22h–8h
+# None = sur devis pour cette tranche horaire
+# ---------------------------------------------------------------------------
+TARIFS = [
+    ("Ouverture de porte claquée", "110 €", "150 €", "220 €"),
+    ("Ouverture de porte fermée à clé", "À partir de 180 €", "À partir de 240 €", "À partir de 280 €"),
+    ("Porte bloquée — clé qui ne tourne plus", "180 €", "240 €", "280 €"),
+    ("Changement de cylindre", "À partir de 160 €", "À partir de 200 €", "À partir de 230 €"),
+    ("Remplacement de serrure", "À partir de 250 €", None, None),
+    ("Blindage de porte", "À partir de 2 300 €", None, None),
+    ("Bloc-porte complet", "À partir de 3 350 €", None, None),
+    ("Bloc-porte de cave", "À partir de 1 550 €", None, None),
+    ("Serrure de boîte aux lettres — modèle basique", "110 €", None, None),
 ]
