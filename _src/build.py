@@ -677,7 +677,7 @@ def footer():
     <p style="font-size:13px;line-height:2;margin-bottom:28px">Serrurier par arrondissement : {arr}</p>
     <div class="foot-bottom">
       <span>© <span id="year">{TODAY[:4]}</span> Shopta Serrure. Tous droits réservés.</span>
-      <nav><a href="/mentions-legales/">Mentions légales</a><a href="/politique-confidentialite/">Confidentialité</a><a href="/plan-du-site/">Plan du site</a></nav>
+      <nav><a href="/mentions-legales/">Mentions légales</a><a href="/politique-confidentialite/">Confidentialité</a><a href="/plan-du-site/">Plan du site</a><button type="button" class="link-btn" data-open-consent>Gestion des cookies</button></nav>
     </div>
   </div>
 </footer>'''
@@ -706,13 +706,29 @@ def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
-new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-}})(window,document,'script','dataLayer','{CONFIG["gtm_id"]}');</script>
-<!-- End Google Tag Manager -->
+<!-- Consentement (Consent Mode v2) + Google Tag Manager, chargé uniquement après accord -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}
+gtag('consent','default',{{ad_storage:'denied',analytics_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500}});
+(function(){{
+  var c=null;try{{c=JSON.parse(localStorage.getItem('ss_consent'));}}catch(e){{}}
+  window.SS_CONSENT=(c&&c.v&&Date.now()-c.t<15552000000)?c.v:null;
+  window.ssLoadTags=function(){{
+    if(window.ssTagsLoaded)return;window.ssTagsLoaded=true;
+    gtag('consent','update',{{ad_storage:'granted',analytics_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'}});
+    /* Google Tag Manager */
+    (function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
+    new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    }})(window,document,'script','dataLayer','{CONFIG["gtm_id"]}');
+    /* Google Analytics */
+    var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id={ga}';document.head.appendChild(g);
+    gtag('js',new Date());gtag('config','{ga}');{ads_js}
+  }};
+  if(window.SS_CONSENT==='granted')window.ssLoadTags();
+}})();
+</script>
 <title>{E(title)}</title>
 <meta name="description" content="{E(desc)}">
 <meta name="robots" content="{robots}, max-image-preview:large">
@@ -736,14 +752,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/site.css?v={asset_v("assets/css/site.css")}">
-<script async src="https://www.googletagmanager.com/gtag/js?id={ga}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{ga}');{ads_js}</script>
 {ld_html}</head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={CONFIG["gtm_id"]}"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 {SPRITE}
 <div class="topbar">
   <div class="container">
@@ -771,6 +781,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 {body}
 </main>
 {footer()}
+<div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Cookies" hidden>
+  <div class="consent-box">
+    <p><strong>Cookies de mesure d'audience</strong>Avec votre accord, nous utilisons Google Analytics et Google Tag Manager pour savoir comment le site est utilisé (pages vues, clics sur le bouton d'appel). Vous pouvez changer d'avis à tout moment via « Gestion des cookies » en bas de page. <a href="/politique-confidentialite/#cookies">En savoir plus</a></p>
+    <div class="consent-actions">
+      <button type="button" class="btn consent-btn" data-consent="denied">Tout refuser</button>
+      <button type="button" class="btn consent-btn" data-consent="granted">Tout accepter</button>
+    </div>
+  </div>
+</div>
 <div class="callbar">
   <a class="btn btn-call pulse" href="{TEL_HREF}" data-track="call_sticky">{ico("i-phone")}Appeler · 24h/24</a>
   <a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener" aria-label="WhatsApp" data-track="wa_sticky"><svg class="ico" style="width:26px;height:26px"><use href="#i-wa"/></svg></a>
@@ -1313,7 +1332,8 @@ Adresse : {E(", ".join(v for v in CONFIG["adresse"].values() if v)) or na}<br>T�
            '''<h2>Données collectées</h2><p>Lorsque vous nous contactez par téléphone, WhatsApp, e-mail ou via le formulaire, nous recueillons uniquement les informations nécessaires au traitement de votre demande : nom, numéro de téléphone, adresse d'intervention et description du problème.</p>
 <h2>Finalité</h2><p>Ces données servent exclusivement à organiser l'intervention, établir le devis et la facture. Elles ne sont ni vendues ni cédées à des tiers.</p>
 <h2>Formulaire et WhatsApp</h2><p>Le formulaire de contact ouvre l'application WhatsApp avec votre message pré-rempli. L'envoi est alors soumis aux conditions de WhatsApp (Meta).</p>
-<h2>Mesure d'audience</h2><p>Ce site utilise Google Analytics pour mesurer sa fréquentation (pages vues, clics sur les boutons d'appel). Ces données sont anonymisées et agrégées.</p>
+<h2 id="cookies">Cookies et mesure d'audience</h2><p>Avec votre accord uniquement, ce site utilise <strong>Google Tag Manager</strong> et <strong>Google Analytics</strong> (Google Ireland Ltd) pour mesurer sa fréquentation et l'efficacité de ses boutons d'appel, de WhatsApp et du formulaire. Tant que vous n'avez pas accepté, aucun de ces outils n'est chargé et aucun cookie de mesure n'est déposé.</p>
+<p>Votre choix est conservé 6 mois dans votre navigateur. Vous pouvez le modifier à tout moment avec le lien « Gestion des cookies » en bas de chaque page. Les cookies de Google Analytics ont une durée de vie maximale de 13 mois.</p>
 <h2>Durée de conservation</h2><p>Les données liées aux factures sont conservées pendant la durée légale de 10 ans. Les autres données sont supprimées au plus tard 3 ans après le dernier contact.</p>
 <h2>Vos droits</h2><p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition. Pour l'exercer, écrivez à shoptaserrure@gmail.com. Vous pouvez également introduire une réclamation auprès de la CNIL.</p>''',
            "Politique de confidentialité | Shopta Serrure", "Politique de confidentialité et traitement des données personnelles du site Shopta Serrure.", aside=False)

@@ -162,5 +162,24 @@
     now.hidden = false;
   });
 
+  // Bandeau de consentement (CNIL) : choix mémorisé 6 mois
+  var consent = document.getElementById("consent");
+  if (consent) {
+    if (!window.SS_CONSENT) consent.hidden = false;
+    consent.querySelectorAll("[data-consent]").forEach(function(b){
+      b.addEventListener("click", function(){
+        var v = b.dataset.consent;
+        try { localStorage.setItem("ss_consent", JSON.stringify({v:v, t:Date.now()})); } catch(e) {}
+        window.SS_CONSENT = v;
+        if (v === "granted" && window.ssLoadTags) window.ssLoadTags();
+        if (v === "denied" && window.ssTagsLoaded) location.reload();
+        consent.hidden = true;
+      });
+    });
+    document.querySelectorAll("[data-open-consent]").forEach(function(b){
+      b.addEventListener("click", function(){ consent.hidden = false; });
+    });
+  }
+
   var y = document.getElementById("year"); if (y) y.textContent = new Date().getFullYear();
 })();
