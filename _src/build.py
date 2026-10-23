@@ -38,6 +38,7 @@ CONFIG = {
     "avis_url": "",
     "instagram": "https://www.instagram.com/shoptaserrure/",
     "tiktok": "https://www.tiktok.com/@shopta.serrure",
+    "gtm_id": "GTM-T4FWXLV4",
     "ga_id": "G-0VFWJ86Y1C",
     # Google Ads : ID du compte (AW-XXXXXXXXX) et libellés des conversions (Outils > Conversions > « Configurer la balise »)
     "ads_id": "",
@@ -705,6 +706,13 @@ def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
+new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+}})(window,document,'script','dataLayer','{CONFIG["gtm_id"]}');</script>
+<!-- End Google Tag Manager -->
 <title>{E(title)}</title>
 <meta name="description" content="{E(desc)}">
 <meta name="robots" content="{robots}, max-image-preview:large">
@@ -732,6 +740,10 @@ def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{ga}');{ads_js}</script>
 {ld_html}</head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={CONFIG["gtm_id"]}"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 {SPRITE}
 <div class="topbar">
   <div class="container">
