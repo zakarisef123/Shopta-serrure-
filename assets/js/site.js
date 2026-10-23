@@ -76,7 +76,7 @@
   // Conversions Google Ads (actives si ads_id est renseigné dans _src/build.py)
   function adsConv(kind){
     var to = (window.ADS_CONV || {})[kind];
-    if (to && window.gtag) gtag("event","conversion",{send_to:to});
+    if (to && window.gtag) gtag("event","conversion",{send_to:to, value:1.0, currency:"EUR"});
   }
   // Événements Google Tag Manager : clic_appel, clic_whatsapp, envoi_formulaire
   function gtmEvent(name, data){

@@ -41,8 +41,8 @@ CONFIG = {
     "gtm_id": "GTM-T4FWXLV4",
     "ga_id": "G-0VFWJ86Y1C",
     # Google Ads : ID du compte (AW-XXXXXXXXX) et libellés des conversions (Outils > Conversions > « Configurer la balise »)
-    "ads_id": "",
-    "ads_conv": {"call": "", "wa": "", "form": ""},
+    "ads_id": "AW-17849171320",
+    "ads_conv": {"call": "", "wa": "", "form": "RoynCK_QoacdEPj6kr9C"},  # « Contact » = envoi du formulaire
     "indexnow_key": "8f3c1a6e2b7d4f90a5c3e1b2d4f6a8c0",
     # Mentions légales
     "raison_sociale": "Shopta Serrure",
@@ -1345,6 +1345,10 @@ def build_merci():
 <h1 style="font-size:clamp(32px,5vw,48px)">Merci, demande reçue !</h1>
 <p style="color:var(--muted);margin:14px auto 28px;max-width:560px;font-size:18px">Nous vous rappelons très rapidement. Pour une urgence (porte claquée, effraction), appelez-nous directement : c'est le plus rapide.</p>
 <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">{btn_call(cls="btn btn-call btn-lg", track="call_merci")}<a class="btn btn-blue btn-lg" href="/">Retour à l'accueil</a></div></div></section>'''
+    conv = CONFIG["ads_conv"]["form"]
+    if CONFIG["ads_id"] and conv:
+        # Page de secours (envoi classique du formulaire) : conversion « Contact »
+        body += (f"<script>gtag('event','conversion',{{'send_to':'{CONFIG['ads_id']}/{conv}','value':1.0,'currency':'EUR'}});</script>")
     page("/merci/", "Demande envoyée | Shopta Serrure", "Votre demande a bien été envoyée.", body, robots="noindex, nofollow")
 
 
