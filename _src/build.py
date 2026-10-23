@@ -42,7 +42,8 @@ CONFIG = {
     "ga_id": "G-0VFWJ86Y1C",
     # Google Ads : ID du compte (AW-XXXXXXXXX) et libellés des conversions (Outils > Conversions > « Configurer la balise »)
     "ads_id": "AW-17849171320",
-    "ads_conv": {"call": "", "wa": "", "form": "RoynCK_QoacdEPj6kr9C"},  # « Contact » = envoi du formulaire
+    # « Contact Site Web » = clic sur un numéro ; « Contact » = envoi du formulaire
+    "ads_conv": {"call": "-hooCL7vn6cdEPj6kr9C", "wa": "", "form": "RoynCK_QoacdEPj6kr9C"},
     "indexnow_key": "8f3c1a6e2b7d4f90a5c3e1b2d4f6a8c0",
     # Mentions légales
     "raison_sociale": "Shopta Serrure",
