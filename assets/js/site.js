@@ -78,12 +78,20 @@
     var to = (window.ADS_CONV || {})[kind];
     if (to && window.gtag) gtag("event","conversion",{send_to:to});
   }
+  // Événements Google Tag Manager : clic_appel, clic_whatsapp, envoi_formulaire
+  function gtmEvent(name, data){
+    window.dataLayer = window.dataLayer || [];
+    var e = {event: name, page_path: location.pathname};
+    for (var k in data) e[k] = data[k];
+    window.dataLayer.push(e);
+  }
   // Tous les liens tel: et WhatsApp, même sans data-track (contenu des pages)
   document.querySelectorAll('a[href^="tel:"]:not([data-track]),a[href^="https://wa.me"]:not([data-track])').forEach(function(a){
     a.addEventListener("click",function(){
       var wa = a.href.indexOf("wa.me")>-1;
       if (window.gtag) gtag("event", wa ? "whatsapp_click" : "phone_click", {location:"inline"});
       adsConv(wa ? "wa" : "call");
+      gtmEvent(wa ? "clic_whatsapp" : "clic_appel", {emplacement:"contenu", lien:a.getAttribute("href")});
     });
   });
 
@@ -93,6 +101,7 @@
       var wa = a.dataset.track.indexOf("wa")===0;
       if (window.gtag) gtag("event", wa ? "whatsapp_click" : "phone_click", {location:a.dataset.track});
       adsConv(wa ? "wa" : "call");
+      gtmEvent(wa ? "clic_whatsapp" : "clic_appel", {emplacement:a.dataset.track, lien:a.getAttribute("href")});
     });
   });
 
@@ -109,6 +118,7 @@
           if (!r.ok) throw new Error(r.status);
           if (window.gtag) gtag("event","generate_lead",{service:form.service.value, page:form.page.value});
           adsConv("form");
+          gtmEvent("envoi_formulaire", {service:form.service.value, emplacement:form.page.value});
           form.reset();
           form.querySelector(".form-ok").hidden = false;
           btn.innerHTML = btn.dataset.label; btn.disabled = false;
