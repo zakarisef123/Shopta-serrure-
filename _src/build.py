@@ -1745,6 +1745,24 @@ Chaque service a une page dédiée pour chacune des {len(ZONES)} zones, au forma
     write(f"{CONFIG['indexnow_key']}.txt", CONFIG["indexnow_key"])
 
 
+def ping_indexnow():
+    """Signale toutes les pages à Bing, Yandex, Seznam… (IndexNow) à chaque déploiement Netlify en production.
+    Google n'utilise pas IndexNow : il passe par le sitemap déclaré dans Search Console."""
+    if os.environ.get("CONTEXT") != "production":
+        return
+    import urllib.request
+    host = URL.split("//", 1)[1]
+    data = json.dumps({"host": host, "key": CONFIG["indexnow_key"], "keyLocation": f"{URL}/{CONFIG['indexnow_key']}.txt",
+                       "urlList": [URL + p for p in SITEMAP]}).encode()
+    req = urllib.request.Request("https://api.indexnow.org/indexnow", data=data,
+                                 headers={"Content-Type": "application/json; charset=utf-8"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            print(f"IndexNow : {len(SITEMAP)} URL envoyées (HTTP {r.status})")
+    except Exception as e:  # ne jamais faire échouer le déploiement
+        print(f"IndexNow : envoi impossible ({e})")
+
+
 def main():
     build_insurers_js()
     build_home()
@@ -1760,6 +1778,7 @@ def main():
     build_insurers_js()
     print(f"Photos : {len(PHOTO)}/{len(PHOTOS)} · logos assureurs : {len(LOGOS)}/{len(INSURERS)}")
     print(f"{len(SITEMAP)} pages indexables générées.")
+    ping_indexnow()
 
 
 if __name__ == "__main__":
