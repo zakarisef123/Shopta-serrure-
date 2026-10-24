@@ -13,7 +13,7 @@ import re
 import shutil
 import unicodedata
 
-from data import ARTICLE_PHOTOS, ARTICLES, DEPTS, HDS, INSURERS, PARIS_ARR, PHOTOS, SERVICES, VDO
+from data import ARTICLE_PHOTOS, ARTICLES, BRANDS, DEPTS, HDS, INSURERS, PARIS_ARR, PHOTOS, SERVICES, SSD, TARIFS, VDO
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "_src")
@@ -22,7 +22,7 @@ SRC = os.path.join(ROOT, "_src")
 # Configuration : à vérifier avant mise en ligne
 # ---------------------------------------------------------------------------
 CONFIG = {
-    "site_url": "https://shoptaserrure.netlify.app",  # remplacer par le nom de domaine définitif, sans / final
+    "site_url": "https://shopta-serrure.fr",  # nom de domaine du site, sans / final
     "nom": "Shopta Serrure",
     "tel": "06 20 54 66 93",
     "tel_intl": "+33620546693",
@@ -38,10 +38,12 @@ CONFIG = {
     "avis_url": "",
     "instagram": "https://www.instagram.com/shoptaserrure/",
     "tiktok": "https://www.tiktok.com/@shopta.serrure",
+    "gtm_id": "GTM-T4FWXLV4",
     "ga_id": "G-0VFWJ86Y1C",
     # Google Ads : ID du compte (AW-XXXXXXXXX) et libellés des conversions (Outils > Conversions > « Configurer la balise »)
-    "ads_id": "",
-    "ads_conv": {"call": "", "wa": "", "form": ""},
+    "ads_id": "AW-17849171320",
+    # « Contact Site Web » = clic sur un numéro ; « Contact » = envoi du formulaire
+    "ads_conv": {"call": "-hooCL7vn6cdEPj6kr9C", "wa": "", "form": "RoynCK_QoacdEPj6kr9C"},
     "indexnow_key": "8f3c1a6e2b7d4f90a5c3e1b2d4f6a8c0",
     # Mentions légales
     "raison_sociale": "Shopta Serrure",
@@ -145,21 +147,22 @@ def process_photos():
     return out
 
 
-def process_logos():
+def process_logos(folder="assureurs", items=None):
     """Recadre les marges, normalise la hauteur et exporte en WebP + PNG."""
+    items = items if items is not None else [(nom, slug) for nom, slug, _, _ in INSURERS]
     out = {}
     try:
         from PIL import Image, ImageChops
     except ImportError:
         return out
-    os.makedirs(os.path.join(IMG_OUT, "assureurs"), exist_ok=True)
-    for nom, slug, _, _ in INSURERS:
-        src = find_src("assureurs", slug)
+    os.makedirs(os.path.join(IMG_OUT, folder), exist_ok=True)
+    for nom, slug in items:
+        src = find_src(folder, slug)
         if not src:
             continue
         if src.endswith(".svg"):
-            shutil.copy(src, os.path.join(IMG_OUT, "assureurs", slug + ".svg"))
-            out[slug] = f"/assets/img/assureurs/{slug}.svg"
+            shutil.copy(src, os.path.join(IMG_OUT, folder, slug + ".svg"))
+            out[slug] = f"/assets/img/{folder}/{slug}.svg"
             continue
         im = Image.open(src).convert("RGBA")
         bg = Image.new("RGBA", im.size, (255, 255, 255, 255))
@@ -170,15 +173,79 @@ def process_logos():
             im = im.crop(bbox)
         h = 160
         im = im.resize((max(1, round(im.size[0] * h / im.size[1])), h), Image.LANCZOS)
-        base = os.path.join(IMG_OUT, "assureurs", slug)
+        base = os.path.join(IMG_OUT, folder, slug)
         im.save(base + ".webp", "WEBP", quality=90, method=6)
         im.save(base + ".png", "PNG", optimize=True)
-        out[slug] = f"/assets/img/assureurs/{slug}.webp"
+        out[slug] = f"/assets/img/{folder}/{slug}.webp"
     return out
 
 
 PHOTO = process_photos()
+
+
+# Photos de fond d'en-tête : _src/images/headers/<nom>.(jpg|png|webp)
+HEADER_FILES = {
+    "tour-eiffel": "La tour Eiffel vue du Trocadéro au coucher du soleil",
+    "pantheon": "Le Panthéon, Paris 5e",
+    "notre-dame": "Notre-Dame de Paris et la Seine",
+    "toits-de-paris": "Les toits de Paris, la Madeleine et la tour Eiffel",
+    "place-des-victoires": "La place des Victoires, Paris",
+    "conciergerie": "La Conciergerie au bord de la Seine",
+    "sacre-coeur": "Le Sacré-Cœur de Montmartre, Paris 18e",
+    "vue-sacre-coeur": "Vue sur Montmartre et le Sacré-Cœur",
+    "avenue-etoile": "Avenue parisienne vue depuis l'Arc de Triomphe",
+    "mairie": "Une mairie d'arrondissement à Paris",
+}
+# Photo propre à une page (slug de la zone) ; sinon rotation sur toutes les photos
+HEADER_BY_ZONE = {"paris-1": "conciergerie", "paris-2": "place-des-victoires", "paris-4": "notre-dame",
+                  "paris-5": "pantheon", "paris-8": "toits-de-paris", "paris": "toits-de-paris",
+                  "paris-17": "avenue-etoile", "paris-16": "tour-eiffel", "paris-18": "sacre-coeur", "paris-19": "vue-sacre-coeur"}
+
+
+def process_headers():
+    out = {}
+    try:
+        from PIL import Image, ImageOps
+    except ImportError:
+        return out
+    os.makedirs(os.path.join(IMG_OUT, "headers"), exist_ok=True)
+    for name, alt in HEADER_FILES.items():
+        src = find_src("headers", name)
+        if not src:
+            continue
+        im = ImageOps.exif_transpose(Image.open(src)).convert("RGB")
+        base = os.path.join(IMG_OUT, "headers", name)
+        for suffix, width in (("", 1920), ("-m", 900)):
+            w, h = im.size
+            v = im.resize((width, round(h * width / w)), Image.LANCZOS) if w != width else im
+            v.save(base + suffix + ".webp", "WEBP", quality=80, method=6)
+            v.save(base + suffix + ".jpg", "JPEG", quality=82, optimize=True, progressive=True)
+        out[name] = {"src": f"/assets/img/headers/{name}", "alt": alt}
+    return out
+
+
+HEADERS = process_headers()
+
+
+def header_for_zone(z, idx):
+    if not HEADERS:
+        return None
+    name = HEADER_BY_ZONE.get(z["slug"])
+    if name in HEADERS:
+        return name
+    names = list(HEADERS)
+    return names[idx % len(names)]
+
+
+def hero_bg(name):
+    h = HEADERS.get(name)
+    if not h:
+        return ""
+    return (f'<picture class="hero-bg"><source media="(max-width: 760px)" type="image/webp" srcset="{h["src"]}-m.webp">'
+            f'<source type="image/webp" srcset="{h["src"]}.webp">'
+            f'<img src="{h["src"]}.jpg" alt="{E(h["alt"])}" fetchpriority="high" decoding="async"></picture>')
 LOGOS = process_logos()
+BRAND_LOGOS = process_logos("marques", [(nom, slug) for nom, slug, _ in BRANDS])
 
 
 def fig(key, caption=None, eager=False):
@@ -227,7 +294,7 @@ def build_zones():
             "a": f"dans le {n}{suf} arrondissement", "de": f"du {n}{suf} arrondissement",
             "cp": c["cp"], "pop": c["pop"], "groupes": [], "arr": n, "quartiers": quartiers, "lieux": lieux,
         })
-    for dep, lst in (("92", HDS), ("95", VDO)):
+    for dep, lst in (("92", HDS), ("93", SSD), ("95", VDO)):
         for nom, lat, lng in lst:
             code = by_name[(ALIAS.get(nom, nom), dep)]
             c = COMMUNES[code]
@@ -248,7 +315,7 @@ def build_zones():
         others = [o for o in zones if o is not z and o["slug"] != "paris"]
         z["voisins"] = sorted(others, key=lambda o: km((z["lat"], z["lng"]), (o["lat"], o["lng"])))[:8]
         z["url"] = f"/villes/{z['slug']}/"
-        z["proche"] = z["dep"] in ("75", "92")
+        z["proche"] = z["dep"] in ("75", "92", "93")
     return zones
 
 
@@ -347,6 +414,36 @@ def insurers_block():
   <div class="marquee" data-row="1"><div class="track"></div></div>
   <div class="marquee reverse" data-row="2"><div class="track"></div></div>
   <p class="insurers-note">Shopta Serrure est une entreprise indépendante, sans partenariat avec ces compagnies. Les noms et logos cités appartiennent à leurs propriétaires respectifs.</p>
+</div>'''
+
+
+# Logos de marque réduits au symbole : le nom est écrit à côté
+BRAND_SANS_NOM = {"mul-t-lock"}
+
+
+def brands_block(soft=False):
+    def chip(nom, slug):
+        logo = BRAND_LOGOS.get(slug)
+        if logo:
+            label = E(nom) if slug in BRAND_SANS_NOM else ""
+            return f'<span class="ins has-logo" title="{E(nom)}"><img src="{logo}" alt="{E(nom)}" loading="lazy" decoding="async">{label}</span>'
+        return f'<span class="ins brand-name">{E(nom)}</span>'
+    # marques avec logo en premier, puis les autres
+    ordered = [b for b in BRANDS if b[1] in BRAND_LOGOS] + [b for b in BRANDS if b[1] not in BRAND_LOGOS]
+    half = (len(ordered) + 1) // 2
+    rows = ""
+    for i, part in enumerate((ordered[:half], ordered[half:])):
+        items = "".join(chip(n, s) for n, s, _ in part)
+        rows += (f'<div class="marquee{" reverse" if i else ""}"><div class="track">{items}'
+                 f'<span class="dup" aria-hidden="true">{items}</span></div></div>')
+    noms = ", ".join(n for n, _, _ in BRANDS)
+    return f'''<div class="insurers brands{" soft" if soft else ""}" aria-label="Marques de serrures et de portes">
+  <div class="insurers-head">
+    <p>Nous intervenons sur <span>toutes les grandes marques</span></p>
+    <span class="pill">Serrures · cylindres · portes blindées · serrures connectées</span>
+  </div>
+  {rows}
+  <p class="insurers-note">Marques prises en charge : {E(noms)}. Les marques citées appartiennent à leurs propriétaires ; Shopta Serrure est indépendant.</p>
 </div>'''
 
 
@@ -466,6 +563,71 @@ def aside_card(titre="Besoin d'un serrurier ?", texte="Prix annoncé au téléph
 </aside>'''
 
 
+CRENEAUX = [("i-sun", "Journée", "08h–18h"), ("i-sunset", "Soirée", "18h–22h"), ("i-moon", "Nuit", "22h–08h")]
+
+
+CRENEAUX = [("jour", "Journée", "8h – 18h"), ("soir", "Soirée", "18h – 22h"), ("nuit", "Nuit", "22h – 8h")]
+
+
+def _prix(v):
+    """« À partir de 180 € » -> ('à partir de', '180 €')"""
+    return ("à partir de", v[12:]) if v.startswith("À partir de") else ("", v)
+
+
+def tarif_grid(titre=None, sous_titre=None):
+    urgences = [t for t in TARIFS if all(t[1:])]
+    travaux = [t for t in TARIFS if not all(t[1:])]
+    tabs = "".join(f'<button type="button" role="tab" data-slot="{k}" aria-selected="{"true" if k == "jour" else "false"}">'
+                   f'<strong>{l}</strong><span>{h}</span></button>' for k, l, h in CRENEAUX)
+    rows = ""
+    for presta, *prix in urgences:
+        vals = ""
+        for (k, _, _), v in zip(CRENEAUX, prix):
+            apd, m = _prix(v)
+            vals += f'<span class="tp-val" data-slot="{k}"{"" if k == "jour" else " hidden"}>{f"<small>{apd}</small>" if apd else ""}{E(m)}</span>'
+        rows += f'<li><span class="tp-name">{E(presta)}</span><span class="tp-price">{vals}</span></li>'
+    trav = ""
+    for presta, jour, *_ in travaux:
+        apd, m = _prix(jour)
+        trav += f'<li><span class="tp-name">{E(presta)}</span><span class="tp-price"><span class="tp-val">{f"<small>{apd}</small>" if apd else ""}{E(m)}</span></span></li>'
+    return f'''<div class="tarifs-cards">
+  <article class="tp-card tp-urgence" data-tarifs>
+    <header>
+      <span class="tp-kicker">24h/24 · 7j/7</span>
+      <h3>Dépannage d'urgence</h3>
+      <p>Le tarif dépend de l'heure d'intervention.</p>
+    </header>
+    <div class="tp-tabs" role="tablist" aria-label="Horaire d'intervention">{tabs}</div>
+    <ul class="tp-list">{rows}</ul>
+    <p class="tp-now" hidden></p>
+  </article>
+  <article class="tp-card tp-travaux">
+    <header>
+      <span class="tp-kicker">Sur rendez-vous</span>
+      <h3>Travaux et installation</h3>
+      <p>Tarifs de départ en journée, devis détaillé offert.</p>
+    </header>
+    <ul class="tp-list">{trav}</ul>
+  </article>
+</div>
+<p class="tp-note">Tarifs TTC, main d'œuvre comprise. Le prix exact dépend de la porte et de la serrure : il vous est annoncé au téléphone, puis confirmé par un devis écrit et signé avant toute intervention.</p>'''
+
+
+def ld_tarifs():
+    offers = []
+    for presta, jour, *_ in TARIFS:
+        m = re.search(r"([\d\s ]+)\s*€", jour)
+        if not m:
+            continue
+        val = int(re.sub(r"\D", "", m.group(1)))
+        spec = {"@type": "PriceSpecification", "priceCurrency": "EUR", "valueAddedTaxIncluded": True}
+        spec.update({"minPrice": val} if jour.startswith("À partir") else {"price": val})
+        offers.append({"@type": "Offer", "name": presta, "priceSpecification": spec,
+                       "itemOffered": {"@type": "Service", "name": presta}, "seller": {"@id": BUSINESS_ID}})
+    return {"@context": "https://schema.org", "@type": "OfferCatalog", "name": "Grille tarifaire Shopta Serrure",
+            "url": URL + "/tarifs/", "itemListElement": offers}
+
+
 def price_table():
     rows = "".join(f'<tr><td><a href="/depannage/{s["slug"]}/">{E(s["nom"])}</a></td><td>{E(s["prix"].replace(" TTC", ""))}</td></tr>' for s in SERVICES)
     return f'''<div class="price-table">
@@ -486,9 +648,20 @@ def faq_html(faq):
 NAV = [("Dépannage", "/depannage/"), ("Tarifs", "/tarifs/"), ("Zones", "/villes/"), ("Avis", "/avis/"), ("Blog", "/blog/"), ("Contact", "/contact/")]
 
 
+# Villes mises en avant (accueil, pied de page) : signal fort pour les liens annexes de Google
+VILLES_PRIORITAIRES = ["paris", "clichy", "asnieres-sur-seine", "neuilly-sur-seine", "gennevilliers", "saint-ouen-sur-seine"]
+
+
+def villes_strip():
+    links = "".join(f'<a href="{ZONE_BY_SLUG[s]["url"]}">Serrurier {E(ZONE_BY_SLUG[s]["court"])}</a>' for s in VILLES_PRIORITAIRES)
+    return f'''<nav class="villes-strip" aria-label="Nos villes principales"><div class="container">
+  <span>Intervention rapide à</span>{links}<a href="/villes/" class="all">Toutes nos villes →</a>
+</div></nav>'''
+
+
 def footer():
     svc = "".join(f'<li><a href="/depannage/{s["slug"]}/">{E(s["court"])}</a></li>' for s in SERVICES)
-    top = ["paris", "clichy", "asnieres-sur-seine", "levallois-perret", "neuilly-sur-seine", "boulogne-billancourt", "nanterre", "argenteuil", "cergy"]
+    top = VILLES_PRIORITAIRES + ["levallois-perret", "boulogne-billancourt", "argenteuil"]
     zl = "".join(f'<li><a href="{ZONE_BY_SLUG[s]["url"]}">Serrurier {E(ZONE_BY_SLUG[s]["court"])}</a></li>' for s in top)
     arr = " · ".join(f'<a href="/villes/paris-{n}/">Paris {n}</a>' for n in range(1, 21))
     return f'''<footer>
@@ -508,10 +681,20 @@ def footer():
     <p style="font-size:13px;line-height:2;margin-bottom:28px">Serrurier par arrondissement : {arr}</p>
     <div class="foot-bottom">
       <span>© <span id="year">{TODAY[:4]}</span> Shopta Serrure. Tous droits réservés.</span>
-      <nav><a href="/mentions-legales/">Mentions légales</a><a href="/politique-confidentialite/">Confidentialité</a><a href="/plan-du-site/">Plan du site</a></nav>
+      <nav><a href="/mentions-legales/">Mentions légales</a><a href="/politique-confidentialite/">Confidentialité</a><a href="/plan-du-site/">Plan du site</a><button type="button" class="link-btn" data-open-consent>Gestion des cookies</button></nav>
     </div>
   </div>
 </footer>'''
+
+
+def asset_v(rel):
+    """Empreinte du fichier : change à chaque modification, force le rechargement chez les visiteurs."""
+    import hashlib
+    try:
+        with open(os.path.join(ROOT, rel), "rb") as f:
+            return hashlib.md5(f.read()).hexdigest()[:10]
+    except FileNotFoundError:
+        return TODAY
 
 
 def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og_type="website"):
@@ -527,6 +710,29 @@ def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Consentement (Consent Mode v2) + Google Tag Manager, chargé uniquement après accord -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}
+gtag('consent','default',{{ad_storage:'denied',analytics_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',functionality_storage:'granted',security_storage:'granted',wait_for_update:500}});
+(function(){{
+  var c=null;try{{c=JSON.parse(localStorage.getItem('ss_consent'));}}catch(e){{}}
+  window.SS_CONSENT=(c&&c.v&&Date.now()-c.t<15552000000)?c.v:null;
+  window.ssLoadTags=function(){{
+    if(window.ssTagsLoaded)return;window.ssTagsLoaded=true;
+    gtag('consent','update',{{ad_storage:'granted',analytics_storage:'granted',ad_user_data:'granted',ad_personalization:'granted'}});
+    /* Google Tag Manager */
+    (function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
+    new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    }})(window,document,'script','dataLayer','{CONFIG["gtm_id"]}');
+    /* Google Analytics */
+    var g=document.createElement('script');g.async=true;g.src='https://www.googletagmanager.com/gtag/js?id={ga}';document.head.appendChild(g);
+    gtag('js',new Date());gtag('config','{ga}');{ads_js}
+  }};
+  if(window.SS_CONSENT==='granted')window.ssLoadTags();
+}})();
+</script>
 <title>{E(title)}</title>
 <meta name="description" content="{E(desc)}">
 <meta name="robots" content="{robots}, max-image-preview:large">
@@ -550,9 +756,7 @@ def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/css/site.css">
-<script async src="https://www.googletagmanager.com/gtag/js?id={ga}"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{ga}');{ads_js}</script>
+<link rel="stylesheet" href="/assets/css/site.css?v={asset_v("assets/css/site.css")}">
 {ld_html}</head>
 <body>
 {SPRITE}
@@ -582,12 +786,21 @@ def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og
 {body}
 </main>
 {footer()}
+<div class="consent" id="consent" role="dialog" aria-live="polite" aria-label="Cookies" hidden>
+  <div class="consent-box">
+    <p><strong>Cookies de mesure d'audience</strong>Avec votre accord, nous utilisons Google Analytics et Google Tag Manager pour savoir comment le site est utilisé (pages vues, clics sur le bouton d'appel). Vous pouvez changer d'avis à tout moment via « Gestion des cookies » en bas de page. <a href="/politique-confidentialite/#cookies">En savoir plus</a></p>
+    <div class="consent-actions">
+      <button type="button" class="btn consent-btn" data-consent="denied">Tout refuser</button>
+      <button type="button" class="btn consent-btn" data-consent="granted">Tout accepter</button>
+    </div>
+  </div>
+</div>
 <div class="callbar">
   <a class="btn btn-call pulse" href="{TEL_HREF}" data-track="call_sticky">{ico("i-phone")}Appeler · 24h/24</a>
   <a class="btn btn-wa" href="{WA}" target="_blank" rel="noopener" aria-label="WhatsApp" data-track="wa_sticky"><svg class="ico" style="width:26px;height:26px"><use href="#i-wa"/></svg></a>
 </div>
-<script src="/assets/js/assureurs.js" defer></script>
-<script src="/assets/js/site.js" defer></script>
+<script src="/assets/js/assureurs.js?v={asset_v("assets/js/assureurs.js")}" defer></script>
+<script src="/assets/js/site.js?v={asset_v("assets/js/site.js")}" defer></script>
 </body>
 </html>
 '''
@@ -597,7 +810,7 @@ def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og
         f.write(doc)
     if robots.startswith("index"):
         SITEMAP.append(path)
-        imgs = list(dict.fromkeys(re.findall(r'<img src="(/assets/img/photos/[^"]+)"', body)))
+        imgs = list(dict.fromkeys(re.findall(r'<img src="(/assets/img/(?:photos|headers)/[^"]+)"', body)))
         if imgs:
             SITEMAP_IMAGES[path] = imgs
 
@@ -606,8 +819,10 @@ SITEMAP = []
 SITEMAP_IMAGES = {}
 
 
-def page_hero(crumb_items, h1, lead, extra=""):
-    return f'''<section class="page-hero">
+def page_hero(crumb_items, h1, lead, extra="", bg=None):
+    pic = hero_bg(bg) if bg else ""
+    return f'''<section class="page-hero{" has-bg" if pic else ""}">
+  {pic}
   <div class="container">
     {crumbs(crumb_items)}
     <h1>{h1}</h1>
@@ -646,7 +861,7 @@ def zones_tabs():
 
 
 HOME_FAQ = [
-    ("Combien coûte une ouverture de porte claquée ?", "L'ouverture d'une porte claquée commence à 49 € TTC. Le prix exact vous est annoncé au téléphone avant le déplacement, puis confirmé par un devis écrit sur place avant toute intervention."),
+    ("Combien coûte une ouverture de porte claquée ?", "L'ouverture d'une porte claquée coûte 110 € TTC en journée (8h–18h), 150 € en soirée et 220 € la nuit. Le prix exact vous est annoncé au téléphone avant le déplacement, puis confirmé par un devis écrit sur place avant toute intervention."),
     ("Mon assurance peut-elle rembourser l'intervention ?", "Oui, dans de nombreux cas (effraction, perte ou vol de clés selon votre contrat). Nous vous remettons une facture détaillée et conforme, reconnue par les assureurs habitation en France. Vérifiez les garanties de votre contrat multirisque habitation."),
     ("En combien de temps intervenez-vous ?", "En moyenne en moins de 30 minutes dans Paris et la proche banlieue, 24h/24 et 7j/7, jours fériés compris. Le délai précis vous est annoncé au téléphone."),
     ("Le devis est-il vraiment gratuit ?", "Oui. Le devis est gratuit et sans engagement. Si vous le refusez, vous ne payez rien d'autre que ce qui vous a été annoncé au téléphone."),
@@ -682,7 +897,8 @@ def build_home():
   <div class="body"><div class="meta"><b>{E(a["cat"])}</b><time datetime="{a["date"]}">{fr_date(a["date"])}</time></div>
   <h3><a href="/blog/{a["slug"]}/">{E(a["court"])}</a></h3><p>{E(a["desc"])}</p><a class="more" href="/blog/{a["slug"]}/">Lire l'article →</a></div>
 </article>''' for a in ARTICLES[:4])
-    body = f'''<section class="hero" aria-labelledby="hero-title">
+    body = f'''<section class="hero{" has-bg" if "tour-eiffel" in HEADERS else ""}" aria-labelledby="hero-title">
+  {hero_bg("tour-eiffel")}
   <div class="container">
     <div>
       <span class="badge"><span class="dot"></span> Un serrurier près de chez vous en ce moment</span>
@@ -695,7 +911,7 @@ def build_home():
       <div class="avail"><span class="dot"></span> Disponible maintenant</div>
       <h2>Porte claquée ?</h2>
       <p class="sub">Ouverture sans dégât dans la majorité des cas.</p>
-      <div class="price-row"><span class="from">à partir de</span><span class="amount">49&nbsp;€</span><span class="ttc">TTC</span></div>
+      <div class="price-row"><span class="from">à partir de</span><span class="amount">110&nbsp;€</span><span class="ttc">TTC</span></div>
       <div class="mini-steps">
         <div><b>1</b>Vous appelez : on vous annonce le prix tout de suite</div>
         <div><b>2</b>Un serrurier arrive en ~30 min</div>
@@ -710,12 +926,13 @@ def build_home():
   <div class="container">
     <div class="stats-grid">
       <div class="stat"><div class="ic">{ico("i-clock", "")}</div><div><strong>30 min</strong><span>Délai moyen d'arrivée</span></div></div>
-      <div class="stat"><div class="ic">{ico("i-euro", "")}</div><div><strong>à partir de 49 €</strong><span>TTC, prix annoncé</span></div></div>
+      <div class="stat"><div class="ic">{ico("i-euro", "")}</div><div><strong>à partir de 110 €</strong><span>TTC, prix annoncé</span></div></div>
       <div class="stat"><div class="ic">{ico("i-shield", "")}</div><div><strong>24h/24</strong><span>7j/7, jours fériés</span></div></div>
       <div class="stat"><div class="ic">{ico("i-award", "")}</div><div><strong>Garantie</strong><span>Pièces & main d'œuvre</span></div></div>
     </div>
   </div>
 </div>
+{villes_strip()}
 {insurers_block()}
 <section id="services" aria-labelledby="services-title">
   <div class="container">
@@ -727,6 +944,7 @@ def build_home():
     {svc_cards()}
   </div>
 </section>
+{brands_block()}
 <section class="soft" aria-labelledby="steps-title">
   <div class="container">
     <div class="section-head center reveal">
@@ -743,21 +961,23 @@ def build_home():
   </div>
 </section>
 <section id="tarifs" aria-labelledby="tarifs-title">
-  <div class="container commit">
+  <div class="container">
     <div class="reveal">
       <span class="eyebrow">Tarifs transparents</span>
-      <div class="section-head" style="margin-bottom:0">
+      <div class="section-head">
         <h2 id="tarifs-title">Des prix justes, annoncés avant de venir</h2>
-        <p>Une urgence ne doit jamais être synonyme d'arnaque. Nous nous engageons sur une politique de prix claire.</p>
+        <p>Une urgence ne doit jamais être synonyme d'arnaque. Nos tarifs sont publics, par horaire d'intervention, et toujours confirmés par un devis signé.</p>
       </div>
-      <ul class="commit-list">
+    </div>
+    <div class="reveal">{tarif_grid()}</div>
+    <div class="reveal">
+      <ul class="commit-list commit-row">
         <li><span class="ck">{ico("i-check")}</span><div><strong>Devis gratuit et détaillé</strong><span>Signé avant chaque intervention, conformément à la réglementation.</span></div></li>
         <li><span class="ck">{ico("i-check")}</span><div><strong>Déplacement offert</strong><span>En cas de travaux réalisés.</span></div></li>
         <li><span class="ck">{ico("i-check")}</span><div><strong>Facture conforme pour votre assurance</strong><span>Reconnue par les assureurs habitation, remboursable selon votre contrat.</span></div></li>
         <li><span class="ck">{ico("i-check")}</span><div><strong>Matériel certifié et garanti</strong><span>Serrures et cylindres de marques reconnues, normes A2P.</span></div></li>
       </ul>
     </div>
-    <div class="reveal">{price_table()}</div>
   </div>
 </section>
 {reviews_section(soft=True)}
@@ -783,7 +1003,7 @@ def build_home():
     <div class="section-head reveal">
       <span class="eyebrow">Zones d'intervention</span>
       <h2 id="zones-title">Paris et l'Île-de-France</h2>
-      <p>Nous intervenons dans les 20 arrondissements de Paris, tout le département des Hauts-de-Seine et une large partie du Val-d'Oise.</p>
+      <p>Nous intervenons dans les 20 arrondissements de Paris, tout le département des Hauts-de-Seine, à Saint-Ouen-sur-Seine et dans une large partie du Val-d'Oise.</p>
     </div>
     {zones_tabs()}
     <p class="zones-note">Votre ville n'est pas listée ? Appelez-nous : hors zone, des frais de déplacement supplémentaires peuvent s'appliquer et vous sont annoncés à l'avance.</p>
@@ -814,8 +1034,8 @@ def build_home():
     ld = [ld_business(), ld_faq(HOME_FAQ),
           {"@context": "https://schema.org", "@type": "WebSite", "name": "Shopta Serrure", "url": URL + "/", "inLanguage": "fr-FR",
            "publisher": {"@id": BUSINESS_ID}}]
-    page("/", "Serrurier Paris 24h/24 – Intervention 30 min, à partir de 49 € | Shopta Serrure",
-         "Serrurier d'urgence à Paris et en Île-de-France 24h/24 et 7j/7. Ouverture de porte à partir de 49 € TTC, prix annoncé avant déplacement, devis gratuit, facture remboursable par votre assurance.",
+    page("/", f"Serrurier Paris 24h/24 – {TEL} | Shopta Serrure",
+         f"{TEL} – Serrurier d'urgence à Paris et en Île-de-France 24h/24 et 7j/7. Intervention en 30 min, ouverture de porte à partir de 110 € TTC, prix annoncé avant déplacement, devis gratuit, facture remboursable par votre assurance.",
          body, ld)
 
 
@@ -842,9 +1062,9 @@ def build_services():
     body = page_hero([("Dépannage", None)], "Dépannage serrurerie <em>24h/24</em> à Paris et en Île-de-France",
                      "Ouverture de porte, déblocage, clé cassée, changement de serrure, serrure connectée, sécurisation après effraction : toutes nos interventions, avec leurs prix de départ.")
     body += f'<section><div class="container layout"><div class="svc-list">{items}</div>{aside_card()}</div></section>'
-    body += insurers_block() + cta_final(source="/depannage/")
+    body += brands_block() + insurers_block() + cta_final(source="/depannage/")
     page("/depannage/", "Dépannage serrurerie 24h/24 Paris & IDF – Tous nos services | Shopta Serrure",
-         "Tous nos dépannages de serrurerie à Paris et en Île-de-France : ouverture de porte à partir de 49 €, serrure bloquée, clé cassée, changement de serrure, après effraction.",
+         "Tous nos dépannages de serrurerie à Paris et en Île-de-France : ouverture de porte à partir de 110 €, serrure bloquée, clé cassée, changement de serrure, après effraction.",
          body, [ld_business(False), ld_breadcrumb([("Dépannage", "/depannage/")])], active="/depannage/")
 
     for s in SERVICES:
@@ -858,7 +1078,7 @@ def build_services():
         content = f'''<div class="prose">
   <p>{s["intro"]}</p>
   {fig(s["slug"])}
-  <p class="callout">Tarif : {prix_txt}. Le prix exact vous est annoncé au téléphone avant le déplacement et confirmé par un devis écrit avant toute intervention.</p>
+  <p class="callout">Tarif : {prix_txt}. Le prix exact vous est annoncé au téléphone avant le déplacement et confirmé par un devis écrit avant toute intervention. <a href="/tarifs/">Voir la grille tarifaire jour, soir et nuit</a>.</p>
   {secs}
   <h2>{E(s["court"])} : où intervenons-nous ?</h2>
   <p>Nous intervenons pour ce service dans tout Paris, les Hauts-de-Seine et une grande partie du Val-d'Oise, 24h/24 et 7j/7.</p>
@@ -873,7 +1093,7 @@ def build_services():
                          f'{E(s["resume"])} Intervention 24h/24, {"à partir de %d € TTC" % s["prix_num"] if s["prix_num"] else "devis gratuit"}.',
                          checks(["Prix annoncé avant déplacement", "Devis signé avant travaux", "Facture remboursable par l'assurance"]))
         body += f'<section><div class="container layout">{content}{aside_card()}</div></section>'
-        body += insurers_block() + reviews_section(soft=True) + cta_final(
+        body += brands_block() + insurers_block() + reviews_section(soft=True) + cta_final(
             f"{s['court']} ? On s'en occupe.", "Appelez-nous ou laissez vos coordonnées : nous vous rappelons avec un prix clair.",
             source=path, service=s["court"])
         title = f'{s["nom"]} Paris 24h/24 – {s["prix"].replace(" TTC", "").replace("sur devis gratuit", "Devis gratuit")} | Shopta Serrure'
@@ -910,7 +1130,7 @@ def zone_faq(z):
              if z["proche"] else
              "Le délai dépend de la distance et de la circulation : il vous est annoncé au téléphone, avant le départ du serrurier, pour que vous sachiez exactement quand il arrivera {a}.")
     return [
-        (f"Combien coûte un serrurier {z['a']} ?", f"L'ouverture d'une porte claquée {z['a']} commence à 49 € TTC. Le changement de cylindre ou de serrure se fait sur devis gratuit. Le prix est toujours annoncé avant le déplacement et confirmé par écrit avant les travaux."),
+        (f"Combien coûte un serrurier {z['a']} ?", f"L'ouverture d'une porte claquée {z['a']} coûte 110 € TTC en journée (8h–18h), 150 € en soirée et 220 € la nuit. Le changement de cylindre commence à 160 € en journée. Le prix est toujours annoncé avant le déplacement et confirmé par écrit avant les travaux."),
         (f"En combien de temps un serrurier peut-il arriver {z['a']} ?", delai.format(a=z["a"])),
         (f"Intervenez-vous la nuit et le week-end {z['a']} ?", "Oui, nous intervenons 24h/24 et 7j/7, y compris les dimanches et jours fériés. Le tarif vous est annoncé à l'avance, sans surprise."),
         ("Ma facture sera-t-elle remboursée par mon assurance ?", "Nos factures sont détaillées et conformes : elles sont reconnues par les assureurs habitation. Le remboursement dépend des garanties de votre contrat (effraction, vol ou perte de clés…)."),
@@ -940,7 +1160,7 @@ def build_zones_pages():
         voisins = z["voisins"][:6]
         vtxt = ", ".join(v["court"] for v in voisins[:3])
         if z["slug"] == "paris":
-            intro = ("Shopta Serrure intervient dans les 20 arrondissements de Paris, 24h/24 et 7j/7. Ouverture de porte claquée à partir de 49 € TTC, "
+            intro = ("Shopta Serrure intervient dans les 20 arrondissements de Paris, 24h/24 et 7j/7. Ouverture de porte claquée à partir de 110 € TTC, "
                      "déblocage de serrure, extraction de clé cassée, changement de cylindre ou sécurisation après effraction : "
                      "le prix vous est annoncé au téléphone, puis confirmé par un devis signé avant toute intervention.")
             local = "<h2>Choisissez votre arrondissement</h2><div class=\"link-grid\">" + "".join(
@@ -964,7 +1184,7 @@ def build_zones_pages():
         facts = f'''<div class="facts">
   <div class="fact"><small>Code postal</small><strong>{E(cp if len(z["cp"]) < 3 else z["cp"][0] + "…")}</strong></div>
   <div class="fact"><small>Disponibilité</small><strong>24h/24 · 7j/7</strong></div>
-  <div class="fact"><small>Ouverture de porte</small><strong>à partir de 49 € TTC</strong></div>
+  <div class="fact"><small>Ouverture de porte</small><strong>à partir de 110 € TTC</strong></div>
   <div class="fact"><small>Délai</small><strong>{"~30 min en moyenne" if z["proche"] else "annoncé au téléphone"}</strong></div>
 </div>'''
         svc = "".join(f'''<div class="svc-item"><div class="ic">{ico(s["icon"], "")}</div>
@@ -992,20 +1212,21 @@ def build_zones_pages():
   <div class="link-grid">{near_links}</div>
 </div>'''
         h1 = f'Serrurier {E(z["court"])} <em>24h/24</em>' + (f' – {E(cp_short)}' if z["slug"] != "paris" else "")
-        lead = f'Ouverture de porte à partir de 49 € TTC, serrure bloquée, clé cassée, changement de serrure {E(z["a"])}. Prix annoncé avant déplacement, devis gratuit, facture remboursable par votre assurance.'
+        lead = f'Ouverture de porte à partir de 110 € TTC, serrure bloquée, clé cassée, changement de serrure {E(z["a"])}. Prix annoncé avant déplacement, devis gratuit, facture remboursable par votre assurance.'
         crumb_items = [("Zones d'intervention", "/villes/")]
         if z["arr"]:
             crumb_items.append(("Paris", "/villes/paris/"))
         crumb_items.append((f'Serrurier {z["court"]}', None))
-        body = page_hero(crumb_items, h1, lead, checks(["Devis gratuit", "Sans frais cachés", "Nuit, week-end et jours fériés"]))
+        body = page_hero(crumb_items, h1, lead, checks(["Devis gratuit", "Sans frais cachés", "Nuit, week-end et jours fériés"]),
+                         bg=header_for_zone(z, idx))
         body += f'<section><div class="container layout">{content}{aside_card(f"Serrurier {z["court"]}")}</div></section>'
         body += insurers_block() + reviews_section(title=f"Avis de nos clients", soft=True) + cta_final(f"Bloqué dehors {z['a']} ?", "Appelez-nous : prix annoncé au téléphone, serrurier en route immédiatement.",
                                                                                                                          source=path, ville=z["court"] if z["slug"] != "paris" else "")
         if z["slug"] == "paris":
-            title = "Serrurier Paris 24h/24 – Tous arrondissements, à partir de 49 € | Shopta Serrure"
+            title = f"Serrurier Paris 24h/24, tous arrondissements – {TEL}"
         else:
-            title = f'Serrurier {z["court"]} ({cp_short}) 24h/24 – à partir de 49 € | Shopta Serrure'
-        desc = (f'Serrurier {z["court"]} ({cp_short if z["slug"] != "paris" else "75"}) disponible 24h/24 et 7j/7 : ouverture de porte à partir de 49 € TTC, serrure bloquée, '
+            title = f'Serrurier {z["court"]} ({cp_short}) 24h/24 – {TEL}'
+        desc = (f'{TEL} – Serrurier {z["court"]} ({cp_short if z["slug"] != "paris" else "75"}) 24h/24 et 7j/7 : ouverture de porte à partir de 110 € TTC, serrure bloquée, '
                 f'clé cassée, changement de serrure. Prix annoncé avant déplacement, facture remboursable par l\'assurance.')
         bc = [(c[0], c[1] if c[1] else path) for c in crumb_items]
         ld = [ld_business(False), ld_breadcrumb(bc), ld_faq(faq),
@@ -1013,7 +1234,7 @@ def build_zones_pages():
                "url": URL + path, "provider": {"@id": BUSINESS_ID},
                "areaServed": {"@type": "City" if not z["arr"] else "AdministrativeArea", "name": z["nom"],
                               **({"postalCode": z["cp"][0]} if z["slug"] != "paris" else {})},
-               "offers": {"@type": "Offer", "priceSpecification": {"@type": "PriceSpecification", "minPrice": 49, "priceCurrency": "EUR"}}}]
+               "offers": {"@type": "Offer", "priceSpecification": {"@type": "PriceSpecification", "minPrice": 110, "priceCurrency": "EUR"}}}]
         page(path, title, desc, body, ld, active="/villes/")
 
 
@@ -1027,7 +1248,7 @@ SVC_LOCAL = {
     "porte-claquee": {
         "intros": [
             "Votre porte a claqué {a} et vos clés sont restées à l'intérieur ? Un serrurier Shopta Serrure se déplace 24h/24 pour l'ouvrir sans casse, le plus souvent en quelques minutes, sans changer la serrure. Le prix vous est annoncé au téléphone avant le départ.",
-            "Porte claquée {a} : pas de panique. Nos serruriers ouvrent les portes simplement claquées à la radio ou au crochetage, sans abîmer la porte ni le cylindre. Ouverture à partir de 49 € TTC, jour et nuit, week-end compris.",
+            "Porte claquée {a} : pas de panique. Nos serruriers ouvrent les portes simplement claquées à la radio ou au crochetage, sans abîmer la porte ni le cylindre. Prix annoncé avant le déplacement, jour et nuit, week-end compris.",
             "Bloqué sur le palier {a}, la porte claquée derrière vous ? Appelez-nous : un serrurier part immédiatement, vous connaissez le prix avant qu'il arrive et la porte est ouverte sans dégât dans la grande majorité des cas.",
         ],
         "conseil": "Ne tentez pas d'ouvrir avec une carte ou un tournevis : vous risquez d'abîmer la gâche et le bâti, ce qui rendrait l'intervention plus longue et plus chère.",
@@ -1036,13 +1257,13 @@ SVC_LOCAL = {
         "intros": [
             "La clé tourne dans le vide ou refuse de tourner {a} ? Nos serruriers diagnostiquent et débloquent votre serrure 24h/24 : lubrification, réglage de la gâche, remplacement du cylindre si nécessaire. Prix annoncé avant déplacement.",
             "Serrure bloquée {a}, porte impossible à ouvrir ou à fermer : un serrurier qualifié intervient jour et nuit avec les pièces courantes dans son véhicule, pour régler le problème en une seule visite dans la plupart des cas.",
-            "Un cylindre grippé, une porte qui a bougé, un pêne qui reste coincé : les serrures bloquées sont fréquentes {a}. Nous débloquons la serrure à partir de 49 € TTC et vous expliquons comment éviter que ça recommence.",
+            "Un cylindre grippé, une porte qui a bougé, un pêne qui reste coincé : les serrures bloquées sont fréquentes {a}. Nous débloquons la serrure avec un prix annoncé à l'avance et vous expliquons comment éviter que ça recommence.",
         ],
         "conseil": "Ne forcez pas sur la clé et n'injectez pas d'huile de cuisine ou de graisse épaisse : elles encrassent le cylindre. Un lubrifiant sec (graphite, PTFE) est préférable.",
     },
     "cle-cassee": {
         "intros": [
-            "Votre clé s'est cassée dans la serrure {a} ? Nos serruriers extraient le morceau avec des outils dédiés, sans démonter la serrure dans la plupart des cas, 24h/24 et à partir de 49 € TTC.",
+            "Votre clé s'est cassée dans la serrure {a} ? Nos serruriers extraient le morceau avec des outils dédiés, sans démonter la serrure dans la plupart des cas, 24h/24, sur devis gratuit.",
             "Clé cassée dans le cylindre {a} : un serrurier se déplace rapidement pour extraire le fragment, vérifier le cylindre et, si besoin, le remplacer sur place. Le prix est annoncé avant le déplacement.",
             "Une clé usée qui casse dans la serrure, c'est courant {a}. Nous retirons le morceau sans casse, puis nous vous conseillons : faire refaire une clé, ou changer un cylindre fatigué.",
         ],
@@ -1200,19 +1421,26 @@ def simple(path, crumb, h1, lead, prose, title, desc, extra_ld=(), active=None, 
 def build_static():
     # Tarifs
     rows = "".join(f'<tr><td><a href="/depannage/{s["slug"]}/">{E(s["nom"])}</a></td><td>{E(s["prix"])}</td></tr>' for s in SERVICES)
-    simple("/tarifs/", "Tarifs", "Tarifs serrurier <em>clairs et annoncés</em>",
-           "Nos prix de départ, nos engagements et ce que comprend le prix. Aucun frais caché : tout est annoncé avant le déplacement.",
-           f'''<h2>Nos prix de départ</h2>
-<table><thead><tr><th>Intervention</th><th>Prix</th></tr></thead><tbody>{rows}<tr><td>Devis</td><td><strong>Gratuit</strong></td></tr></tbody></table>
-<p class="callout">Le prix final dépend du type de porte (standard, blindée, multipoints) et du matériel éventuellement remplacé. Il vous est annoncé au téléphone, puis confirmé par un devis écrit et signé avant le début des travaux.</p>
-<h2>Ce que comprend le prix</h2>
-<ul><li>La main d'œuvre du serrurier.</li><li>Le déplacement, offert en cas de travaux réalisés dans notre zone d'intervention.</li><li>La TVA : nos prix sont indiqués TTC.</li><li>La facture détaillée, conforme pour votre assurance.</li></ul>
-<h2>Nos engagements</h2>
-<ul><li><strong>Prix annoncé avant le départ</strong> du technicien.</li><li><strong>Devis écrit et signé</strong> avant toute intervention : rien n'est fait sans votre accord.</li><li><strong>Aucune majoration surprise</strong> : si un supplément s'applique (nuit, hors zone), il vous est annoncé au téléphone.</li><li><strong>Matériel certifié</strong> et garanti, cylindres et serrures de marques reconnues.</li></ul>
-<h2>Moyens de paiement</h2><p>Carte bancaire, espèces et virement.</p>''',
-           "Tarifs serrurier Paris – Ouverture de porte à partir de 49 € TTC | Shopta Serrure",
-           "Tarifs Shopta Serrure : ouverture de porte claquée à partir de 49 € TTC, déblocage, clé cassée, changement de serrure sur devis gratuit. Prix annoncé avant déplacement.",
-           active="/tarifs/", after=insurers_block() + cta_final(source="/tarifs/"))
+    body = page_hero([("Tarifs", None)], "Tarifs serrurier <em>clairs et publics</em>",
+                     "Nos prix par prestation et par horaire d'intervention. Aucun frais caché : tout est annoncé avant le déplacement.")
+    body += f'''<section><div class="container">
+  {tarif_grid()}
+  <div class="tarif-extra">
+    <div class="prose">
+      <h2>Ce que comprend le prix</h2>
+      <ul><li>La main d'œuvre du serrurier.</li><li>Le déplacement, offert en cas de travaux réalisés dans notre zone d'intervention.</li><li>La TVA : nos prix sont indiqués TTC.</li><li>La facture détaillée, conforme pour votre assurance.</li></ul>
+      <h2>Nos engagements</h2>
+      <ul><li><strong>Prix annoncé avant le départ</strong> du technicien.</li><li><strong>Devis écrit et signé</strong> avant toute intervention : rien n'est fait sans votre accord.</li><li><strong>Aucune majoration surprise</strong> : le tarif de soirée ou de nuit vous est annoncé au téléphone.</li><li><strong>Matériel certifié</strong> et garanti, cylindres et serrures de marques reconnues.</li></ul>
+      <h2>Moyens de paiement</h2><p>Carte bancaire, espèces et virement.</p>
+      <h2>Clé cassée, serrure connectée, après effraction</h2>
+      <p>Ces interventions dépendent fortement de la situation : elles font l'objet d'un <strong>devis gratuit</strong>, annoncé au téléphone puis confirmé par écrit. Voir aussi nos <a href="/depannage/">pages dépannage</a>.</p>
+    </div>
+    {aside_card("Un prix au téléphone", "Décrivez votre situation : nous vous annonçons le tarif exact avant de partir.")}
+  </div>
+</div></section>''' + insurers_block() + cta_final(source="/tarifs/")
+    page("/tarifs/", "Tarifs serrurier Paris – Grille de prix jour, soir et nuit | Shopta Serrure",
+         "Grille tarifaire Shopta Serrure : ouverture de porte claquée 110 € TTC en journée, porte fermée à clé à partir de 180 €, changement de cylindre à partir de 160 €. Prix soir et nuit affichés.",
+         body, [ld_business(False), ld_breadcrumb([("Tarifs", "/tarifs/")]), ld_tarifs()], active="/tarifs/")
 
     # Assurances
     simple("/assurances/", "Assurances", "Serrurier et assurance : <em>votre facture remboursable</em>",
@@ -1288,7 +1516,8 @@ def build_static():
            '''<h2>Données collectées</h2><p>Lorsque vous nous contactez par téléphone, WhatsApp, e-mail ou via le formulaire, nous recueillons uniquement les informations nécessaires au traitement de votre demande : nom, numéro de téléphone, adresse d'intervention et description du problème.</p>
 <h2>Finalité</h2><p>Ces données servent exclusivement à organiser l'intervention, établir le devis et la facture. Elles ne sont ni vendues ni cédées à des tiers.</p>
 <h2>Formulaire et WhatsApp</h2><p>Les demandes envoyées par le formulaire de contact sont transmises via le service Netlify Forms (hébergeur du site) et nous parviennent par e-mail. Les messages envoyés par WhatsApp sont soumis aux conditions de WhatsApp (Meta).</p>
-<h2>Mesure d'audience</h2><p>Ce site utilise Google Analytics pour mesurer sa fréquentation (pages vues, clics sur les boutons d'appel). Ces données sont anonymisées et agrégées.</p>
+<h2 id="cookies">Cookies et mesure d'audience</h2><p>Avec votre accord uniquement, ce site utilise <strong>Google Tag Manager</strong> et <strong>Google Analytics</strong> (Google Ireland Ltd) pour mesurer sa fréquentation et l'efficacité de ses boutons d'appel, de WhatsApp et du formulaire. Tant que vous n'avez pas accepté, aucun de ces outils n'est chargé et aucun cookie de mesure n'est déposé.</p>
+<p>Votre choix est conservé 6 mois dans votre navigateur. Vous pouvez le modifier à tout moment avec le lien « Gestion des cookies » en bas de chaque page. Les cookies de Google Analytics ont une durée de vie maximale de 13 mois.</p>
 <h2>Durée de conservation</h2><p>Les données liées aux factures sont conservées pendant la durée légale de 10 ans. Les autres données sont supprimées au plus tard 3 ans après le dernier contact.</p>
 <h2>Vos droits</h2><p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition. Pour l'exercer, écrivez à shoptaserrure@gmail.com. Vous pouvez également introduire une réclamation auprès de la CNIL.</p>''',
            "Politique de confidentialité | Shopta Serrure", "Politique de confidentialité et traitement des données personnelles du site Shopta Serrure.", aside=False)
@@ -1300,6 +1529,10 @@ def build_merci():
 <h1 style="font-size:clamp(32px,5vw,48px)">Merci, demande reçue !</h1>
 <p style="color:var(--muted);margin:14px auto 28px;max-width:560px;font-size:18px">Nous vous rappelons très rapidement. Pour une urgence (porte claquée, effraction), appelez-nous directement : c'est le plus rapide.</p>
 <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">{btn_call(cls="btn btn-call btn-lg", track="call_merci")}<a class="btn btn-blue btn-lg" href="/">Retour à l'accueil</a></div></div></section>'''
+    conv = CONFIG["ads_conv"]["form"]
+    if CONFIG["ads_id"] and conv:
+        # Page de secours (envoi classique du formulaire) : conversion « Contact »
+        body += (f"<script>gtag('event','conversion',{{'send_to':'{CONFIG['ads_id']}/{conv}','value':1.0,'currency':'EUR'}});</script>")
     page("/merci/", "Demande envoyée | Shopta Serrure", "Votre demande a bien été envoyée.", body, robots="noindex, nofollow")
 
 
@@ -1421,19 +1654,18 @@ def build_seo_files():
 
     svc = "\n".join(f"- [{s['nom']}]({URL}/depannage/{s['slug']}/) : {s['prix']}. {s['resume']}" for s in SERVICES)
     arts = "\n".join(f"- [{a['court']}]({URL}/blog/{a['slug']}/) : {a['desc']}" for a in ARTICLES)
+    grille = "\n".join(f"- {t[0]} : " + " / ".join(v or "sur devis" for v in t[1:]) for t in TARIFS)
     deps = "\n\n".join(f"### {label}\n" + "\n".join(f"- [Serrurier {z['court']}]({URL}{z['url']})" for z in ZONES if z["dep"] == dep)
                        for dep, (_, label) in DEPTS.items())
     combo_hubs = "\n".join(f"- {s['nom']} : " + ", ".join(f"[{z['court']}]({URL}{combo_url(s, z)})" for z in ZONES if z["dep"] == "75" and z["slug"] != "paris")
                            for s in SERVICES[:1])
-    full = "\n\n".join(f"## {s['nom']} ({s['prix']})\n{s['resume']}\n" + "\n".join(
+    combos_txt = "\n\n".join(f"### {s['nom']} ({s['prix']})\n" + "\n".join(
         f"- [{s['court']} {z['court']}]({URL}{combo_url(s, z)})" + (f" – {z['cp'][0]}" if z["slug"] != "paris" else "") for z in ZONES)
         for s in SERVICES)
-    write("llms-full.txt", f"# Shopta Serrure – toutes les pages service × ville\n\n> Serrurier d'urgence 24h/24 à Paris (75), dans les Hauts-de-Seine (92) et le Val-d'Oise (95). "
-          f"Téléphone : {TEL}. Prix annoncé avant déplacement, devis signé avant travaux. Résumé : {URL}/llms.txt\n\n{full}\n")
     note = (f"- Note Google : {AVIS['note']}/5 sur {AVIS['nombre']} avis\n" if AVIS.get("note") else "")
     write("llms.txt", f"""# Shopta Serrure
 
-> Serrurier d'urgence à Paris et en Île-de-France (Paris 75, Hauts-de-Seine 92, Val-d'Oise 95), disponible 24h/24 et 7j/7. Ouverture de porte claquée à partir de 49 € TTC, prix annoncé au téléphone avant le déplacement, devis écrit signé avant toute intervention, facture détaillée reconnue par les assureurs habitation.
+> Serrurier d'urgence à Paris et en Île-de-France (Paris 75, Hauts-de-Seine 92, Val-d'Oise 95), disponible 24h/24 et 7j/7. Ouverture de porte claquée à partir de 110 € TTC, prix annoncé au téléphone avant le déplacement, devis écrit signé avant toute intervention, facture détaillée reconnue par les assureurs habitation.
 
 ## Informations clés
 - Nom : Shopta Serrure (fiche Google : « Serrurier - Shopta serrure »)
@@ -1452,6 +1684,9 @@ def build_seo_files():
 ## Services et prix
 {svc}
 
+## Grille tarifaire (TTC, journée 8h–18h / soirée 18h–22h / nuit 22h–8h)
+{grille}
+
 ## Zones d'intervention
 {deps}
 
@@ -1466,10 +1701,40 @@ Chaque service a une page dédiée pour chacune des {len(ZONES)} zones, au forma
 - [FAQ]({URL}/faq/)
 - [Contact et demande de devis]({URL}/contact/)
 - [Plan du site]({URL}/plan-du-site/)
+- [Version complète pour les IA]({URL}/llms-full.txt)
 
 ## Guides
 {arts}
 """)
+
+    def txt(h):
+        return html.unescape(re.sub(r"<[^>]+>", "", h))
+    full = [f"# Shopta Serrure – informations complètes\n\n> Serrurier d'urgence 24h/24 et 7j/7 à Paris (75), dans les Hauts-de-Seine (92) et le Val-d'Oise (95). "
+            f"Téléphone : {TEL}. Site : {URL}/. Fiche Google : {MAPS}\n"]
+    full.append("## Engagements\n- Prix annoncé au téléphone avant le déplacement\n- Devis écrit gratuit, signé avant toute intervention\n"
+                "- Ouverture sans dégât dans la grande majorité des cas\n- Facture détaillée reconnue par les assureurs habitation, remboursable selon le contrat "
+                "(entreprise indépendante, sans partenariat avec les assureurs)\n- Paiement : carte bancaire, espèces, virement\n")
+    for sv in SERVICES:
+        full.append(f"## {sv['nom']} – {sv['prix']}\nPage : {URL}/depannage/{sv['slug']}/\n\n{txt(sv['intro'])}\n")
+        for t, c in sv["sections"]:
+            full.append(f"### {t}\n{txt(c)}\n")
+        full.append("### Questions fréquentes\n" + "\n".join(f"- **{q}** {txt(a)}" for q, a in sv["faq"]) + "\n")
+    full.append("## Grille tarifaire (TTC, journée 8h–18h / soirée 18h–22h / nuit 22h–8h)\n" + grille + "\n")
+    full.append("## Questions générales\n" + "\n".join(f"- **{q}** {txt(a)}" for q, a in HOME_FAQ) + "\n")
+    full.append("## Zones d'intervention\n" + deps + "\n\nHors zone, des frais de déplacement supplémentaires peuvent s'appliquer et sont annoncés à l'avance.\n")
+    full.append("## Marques prises en charge\n" + ", ".join(n for n, _, _ in BRANDS) + "\n")
+    for a in ARTICLES:
+        corps = []
+        for kind, val in a["corps"]:
+            if kind in ("ul", "ol"):
+                corps.append("\n".join(f"- {txt(v)}" for v in val))
+            elif kind == "h2":
+                corps.append(f"### {txt(val)}")
+            else:
+                corps.append(txt(val))
+        full.append(f"## {a['titre']}\n{URL}/blog/{a['slug']}/ – publié le {fr_date(a['date'])}\n\n" + "\n\n".join(corps) + "\n")
+    full.append("## Pages par service et par ville\n" + combos_txt + "\n")
+    write("llms-full.txt", "\n".join(full))
 
     write("manifest.webmanifest", json.dumps({
         "name": "Shopta Serrure – Serrurier 24h/24", "short_name": "Shopta Serrure", "lang": "fr", "start_url": "/",
@@ -1481,6 +1746,7 @@ Chaque service a une page dédiée pour chacune des {len(ZONES)} zones, au forma
 
 
 def main():
+    build_insurers_js()
     build_home()
     build_services()
     build_zones_pages()

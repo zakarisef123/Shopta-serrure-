@@ -22,13 +22,13 @@ Allow: /
 Disallow: /_src/
 Disallow: /merci/
 
-Sitemap: https://shoptaserrure.netlify.app/sitemap.xml
-Sitemap: https://shoptaserrure.netlify.app/sitemap-pages.xml
-Sitemap: https://shoptaserrure.netlify.app/sitemap-porte-claquee.xml
-Sitemap: https://shoptaserrure.netlify.app/sitemap-serrure-bloquee.xml
-Sitemap: https://shoptaserrure.netlify.app/sitemap-cle-cassee.xml
-Sitemap: https://shoptaserrure.netlify.app/sitemap-changement-serrure.xml
-Sitemap: https://shoptaserrure.netlify.app/sitemap-serrure-connectee.xml
-Sitemap: https://shoptaserrure.netlify.app/sitemap-effraction.xml
+Sitemap: https://shopta-serrure.fr/sitemap.xml
+Sitemap: https://shopta-serrure.fr/sitemap-pages.xml
+Sitemap: https://shopta-serrure.fr/sitemap-porte-claquee.xml
+Sitemap: https://shopta-serrure.fr/sitemap-serrure-bloquee.xml
+Sitemap: https://shopta-serrure.fr/sitemap-cle-cassee.xml
+Sitemap: https://shopta-serrure.fr/sitemap-changement-serrure.xml
+Sitemap: https://shopta-serrure.fr/sitemap-serrure-connectee.xml
+Sitemap: https://shopta-serrure.fr/sitemap-effraction.xml
 
-# Résumé pour les assistants IA : https://shoptaserrure.netlify.app/llms.txt et https://shoptaserrure.netlify.app/llms-full.txt
+# Résumé pour les assistants IA : https://shopta-serrure.fr/llms.txt et https://shopta-serrure.fr/llms-full.txt

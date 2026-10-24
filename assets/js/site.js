@@ -71,11 +71,19 @@
   } else {
     document.querySelectorAll(".reveal").forEach(function(el){ el.classList.add("in"); });
   }
+  setTimeout(function(){ document.querySelectorAll(".reveal:not(.in)").forEach(function(el){ el.classList.add("in"); }); }, 3000);
 
   // Conversions Google Ads (actives si ads_id est renseigné dans _src/build.py)
   function adsConv(kind){
     var to = (window.ADS_CONV || {})[kind];
-    if (to && window.gtag) gtag("event","conversion",{send_to:to});
+    if (to && window.gtag) gtag("event","conversion",{send_to:to, value:1.0, currency:"EUR"});
+  }
+  // Événements Google Tag Manager : clic_appel, clic_whatsapp, envoi_formulaire
+  function gtmEvent(name, data){
+    window.dataLayer = window.dataLayer || [];
+    var e = {event: name, page_path: location.pathname};
+    for (var k in data) e[k] = data[k];
+    window.dataLayer.push(e);
   }
   // Tous les liens tel: et WhatsApp, même sans data-track (contenu des pages)
   document.querySelectorAll('a[href^="tel:"]:not([data-track]),a[href^="https://wa.me"]:not([data-track])').forEach(function(a){
@@ -83,6 +91,7 @@
       var wa = a.href.indexOf("wa.me")>-1;
       if (window.gtag) gtag("event", wa ? "whatsapp_click" : "phone_click", {location:"inline"});
       adsConv(wa ? "wa" : "call");
+      gtmEvent(wa ? "clic_whatsapp" : "clic_appel", {emplacement:"contenu", lien:a.getAttribute("href")});
     });
   });
 
@@ -92,6 +101,7 @@
       var wa = a.dataset.track.indexOf("wa")===0;
       if (window.gtag) gtag("event", wa ? "whatsapp_click" : "phone_click", {location:a.dataset.track});
       adsConv(wa ? "wa" : "call");
+      gtmEvent(wa ? "clic_whatsapp" : "clic_appel", {emplacement:a.dataset.track, lien:a.getAttribute("href")});
     });
   });
 
@@ -108,6 +118,7 @@
           if (!r.ok) throw new Error(r.status);
           if (window.gtag) gtag("event","generate_lead",{service:form.service.value, page:form.page.value});
           adsConv("form");
+          gtmEvent("envoi_formulaire", {service:form.service.value, emplacement:form.page.value});
           form.reset();
           form.querySelector(".form-ok").hidden = false;
           btn.innerHTML = btn.dataset.label; btn.disabled = false;
@@ -135,6 +146,40 @@
       if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 5) track.scrollTo({left:0}); else track.scrollBy({left:step()});
     }, 5000);
   });
+
+  // Grille tarifaire : onglets Journée / Soirée / Nuit, présélection selon l'heure
+  document.querySelectorAll("[data-tarifs]").forEach(function(card){
+    var tabs = card.querySelectorAll(".tp-tabs button"), now = card.querySelector(".tp-now");
+    function show(slot){
+      tabs.forEach(function(t){ t.setAttribute("aria-selected", t.dataset.slot === slot ? "true" : "false"); });
+      card.querySelectorAll(".tp-val[data-slot]").forEach(function(v){ v.hidden = v.dataset.slot !== slot; });
+    }
+    tabs.forEach(function(t){ t.addEventListener("click", function(){ show(t.dataset.slot); }); });
+    var h = new Date().getHours(), slot = h >= 8 && h < 18 ? "jour" : (h >= 18 && h < 22 ? "soir" : "nuit");
+    show(slot);
+    var labels = {jour:"journée", soir:"soirée", nuit:"nuit"};
+    now.textContent = "Il est " + h + "h : vous voyez le tarif de " + labels[slot] + ".";
+    now.hidden = false;
+  });
+
+  // Bandeau de consentement (CNIL) : choix mémorisé 6 mois
+  var consent = document.getElementById("consent");
+  if (consent) {
+    if (!window.SS_CONSENT) consent.hidden = false;
+    consent.querySelectorAll("[data-consent]").forEach(function(b){
+      b.addEventListener("click", function(){
+        var v = b.dataset.consent;
+        try { localStorage.setItem("ss_consent", JSON.stringify({v:v, t:Date.now()})); } catch(e) {}
+        window.SS_CONSENT = v;
+        if (v === "granted" && window.ssLoadTags) window.ssLoadTags();
+        if (v === "denied" && window.ssTagsLoaded) location.reload();
+        consent.hidden = true;
+      });
+    });
+    document.querySelectorAll("[data-open-consent]").forEach(function(b){
+      b.addEventListener("click", function(){ consent.hidden = false; });
+    });
+  }
 
   var y = document.getElementById("year"); if (y) y.textContent = new Date().getFullYear();
 })();

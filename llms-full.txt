@@ -1,729 +1,1151 @@
-# Shopta Serrure – toutes les pages service × ville
+# Shopta Serrure – informations complètes
 
-> Serrurier d'urgence 24h/24 à Paris (75), dans les Hauts-de-Seine (92) et le Val-d'Oise (95). Téléphone : 06 20 54 66 93. Prix annoncé avant déplacement, devis signé avant travaux. Résumé : https://shoptaserrure.netlify.app/llms.txt
+> Serrurier d'urgence 24h/24 et 7j/7 à Paris (75), dans les Hauts-de-Seine (92) et le Val-d'Oise (95). Téléphone : 06 20 54 66 93. Site : https://shopta-serrure.fr/. Fiche Google : https://www.google.com/maps/place/Serrurier+-+Shopta+serrure/@48.910553,2.3087361,17z/data=!3m1!4b1!4m6!3m5!1s0xa8d45bcb80f455ff:0xa96d71eb2e26af41!8m2!3d48.910553!4d2.311311!16s%2Fg%2F11mz7xq9zy
 
-## Ouverture de porte claquée (à partir de 49 € TTC)
-Vous êtes sorti sans vos clés ? Ouverture fine sans casse, par crochetage ou à la radio, sans changer la serrure.
-- [Porte claquée Paris](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris/)
-- [Porte claquée Paris 1er](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-1/) – 75001
-- [Porte claquée Paris 2e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-2/) – 75002
-- [Porte claquée Paris 3e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-3/) – 75003
-- [Porte claquée Paris 4e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-4/) – 75004
-- [Porte claquée Paris 5e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-5/) – 75005
-- [Porte claquée Paris 6e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-6/) – 75006
-- [Porte claquée Paris 7e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-7/) – 75007
-- [Porte claquée Paris 8e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-8/) – 75008
-- [Porte claquée Paris 9e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-9/) – 75009
-- [Porte claquée Paris 10e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-10/) – 75010
-- [Porte claquée Paris 11e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-11/) – 75011
-- [Porte claquée Paris 12e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-12/) – 75012
-- [Porte claquée Paris 13e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-13/) – 75013
-- [Porte claquée Paris 14e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-14/) – 75014
-- [Porte claquée Paris 15e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-15/) – 75015
-- [Porte claquée Paris 16e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-16/) – 75016
-- [Porte claquée Paris 17e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-17/) – 75017
-- [Porte claquée Paris 18e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-18/) – 75018
-- [Porte claquée Paris 19e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-19/) – 75019
-- [Porte claquée Paris 20e](https://shoptaserrure.netlify.app/depannage/porte-claquee/paris-20/) – 75020
-- [Porte claquée Antony](https://shoptaserrure.netlify.app/depannage/porte-claquee/antony/) – 92160
-- [Porte claquée Asnières-sur-Seine](https://shoptaserrure.netlify.app/depannage/porte-claquee/asnieres-sur-seine/) – 92600
-- [Porte claquée Bagneux](https://shoptaserrure.netlify.app/depannage/porte-claquee/bagneux/) – 92220
-- [Porte claquée Bois-Colombes](https://shoptaserrure.netlify.app/depannage/porte-claquee/bois-colombes/) – 92270
-- [Porte claquée Boulogne-Billancourt](https://shoptaserrure.netlify.app/depannage/porte-claquee/boulogne-billancourt/) – 92100
-- [Porte claquée Bourg-la-Reine](https://shoptaserrure.netlify.app/depannage/porte-claquee/bourg-la-reine/) – 92340
-- [Porte claquée Châtenay-Malabry](https://shoptaserrure.netlify.app/depannage/porte-claquee/chatenay-malabry/) – 92290
-- [Porte claquée Châtillon](https://shoptaserrure.netlify.app/depannage/porte-claquee/chatillon/) – 92320
-- [Porte claquée Chaville](https://shoptaserrure.netlify.app/depannage/porte-claquee/chaville/) – 92370
-- [Porte claquée Clamart](https://shoptaserrure.netlify.app/depannage/porte-claquee/clamart/) – 92140
-- [Porte claquée Clichy](https://shoptaserrure.netlify.app/depannage/porte-claquee/clichy/) – 92110
-- [Porte claquée Colombes](https://shoptaserrure.netlify.app/depannage/porte-claquee/colombes/) – 92700
-- [Porte claquée Courbevoie](https://shoptaserrure.netlify.app/depannage/porte-claquee/courbevoie/) – 92400
-- [Porte claquée Fontenay-aux-Roses](https://shoptaserrure.netlify.app/depannage/porte-claquee/fontenay-aux-roses/) – 92260
-- [Porte claquée Garches](https://shoptaserrure.netlify.app/depannage/porte-claquee/garches/) – 92380
-- [Porte claquée La Garenne-Colombes](https://shoptaserrure.netlify.app/depannage/porte-claquee/la-garenne-colombes/) – 92250
-- [Porte claquée Gennevilliers](https://shoptaserrure.netlify.app/depannage/porte-claquee/gennevilliers/) – 92230
-- [Porte claquée Issy-les-Moulineaux](https://shoptaserrure.netlify.app/depannage/porte-claquee/issy-les-moulineaux/) – 92130
-- [Porte claquée Levallois-Perret](https://shoptaserrure.netlify.app/depannage/porte-claquee/levallois-perret/) – 92300
-- [Porte claquée Malakoff](https://shoptaserrure.netlify.app/depannage/porte-claquee/malakoff/) – 92240
-- [Porte claquée Marnes-la-Coquette](https://shoptaserrure.netlify.app/depannage/porte-claquee/marnes-la-coquette/) – 92430
-- [Porte claquée Meudon](https://shoptaserrure.netlify.app/depannage/porte-claquee/meudon/) – 92190
-- [Porte claquée Montrouge](https://shoptaserrure.netlify.app/depannage/porte-claquee/montrouge/) – 92120
-- [Porte claquée Nanterre](https://shoptaserrure.netlify.app/depannage/porte-claquee/nanterre/) – 92000
-- [Porte claquée Neuilly-sur-Seine](https://shoptaserrure.netlify.app/depannage/porte-claquee/neuilly-sur-seine/) – 92200
-- [Porte claquée Le Plessis-Robinson](https://shoptaserrure.netlify.app/depannage/porte-claquee/le-plessis-robinson/) – 92350
-- [Porte claquée Puteaux](https://shoptaserrure.netlify.app/depannage/porte-claquee/puteaux/) – 92800
-- [Porte claquée Rueil-Malmaison](https://shoptaserrure.netlify.app/depannage/porte-claquee/rueil-malmaison/) – 92500
-- [Porte claquée Saint-Cloud](https://shoptaserrure.netlify.app/depannage/porte-claquee/saint-cloud/) – 92210
-- [Porte claquée Sceaux](https://shoptaserrure.netlify.app/depannage/porte-claquee/sceaux/) – 92330
-- [Porte claquée Sèvres](https://shoptaserrure.netlify.app/depannage/porte-claquee/sevres/) – 92310
-- [Porte claquée Suresnes](https://shoptaserrure.netlify.app/depannage/porte-claquee/suresnes/) – 92150
-- [Porte claquée Vanves](https://shoptaserrure.netlify.app/depannage/porte-claquee/vanves/) – 92170
-- [Porte claquée Vaucresson](https://shoptaserrure.netlify.app/depannage/porte-claquee/vaucresson/) – 92420
-- [Porte claquée Ville-d'Avray](https://shoptaserrure.netlify.app/depannage/porte-claquee/ville-d-avray/) – 92410
-- [Porte claquée Villeneuve-la-Garenne](https://shoptaserrure.netlify.app/depannage/porte-claquee/villeneuve-la-garenne/) – 92390
-- [Porte claquée Argenteuil](https://shoptaserrure.netlify.app/depannage/porte-claquee/argenteuil/) – 95100
-- [Porte claquée Arnouville](https://shoptaserrure.netlify.app/depannage/porte-claquee/arnouville/) – 95400
-- [Porte claquée Auvers-sur-Oise](https://shoptaserrure.netlify.app/depannage/porte-claquee/auvers-sur-oise/) – 95430
-- [Porte claquée Beauchamp](https://shoptaserrure.netlify.app/depannage/porte-claquee/beauchamp/) – 95250
-- [Porte claquée Beaumont-sur-Oise](https://shoptaserrure.netlify.app/depannage/porte-claquee/beaumont-sur-oise/) – 95260
-- [Porte claquée Bernes-sur-Oise](https://shoptaserrure.netlify.app/depannage/porte-claquee/bernes-sur-oise/) – 95340
-- [Porte claquée Bessancourt](https://shoptaserrure.netlify.app/depannage/porte-claquee/bessancourt/) – 95550
-- [Porte claquée Bezons](https://shoptaserrure.netlify.app/depannage/porte-claquee/bezons/) – 95870
-- [Porte claquée Boisemont](https://shoptaserrure.netlify.app/depannage/porte-claquee/boisemont/) – 95000
-- [Porte claquée Bonneuil-en-France](https://shoptaserrure.netlify.app/depannage/porte-claquee/bonneuil-en-france/) – 95500
-- [Porte claquée Bouffémont](https://shoptaserrure.netlify.app/depannage/porte-claquee/bouffemont/) – 95570
-- [Porte claquée Bruyères-sur-Oise](https://shoptaserrure.netlify.app/depannage/porte-claquee/bruyeres-sur-oise/) – 95820
-- [Porte claquée Butry-sur-Oise](https://shoptaserrure.netlify.app/depannage/porte-claquee/butry-sur-oise/) – 95430
-- [Porte claquée Cergy](https://shoptaserrure.netlify.app/depannage/porte-claquee/cergy/) – 95000
-- [Porte claquée Champagne-sur-Oise](https://shoptaserrure.netlify.app/depannage/porte-claquee/champagne-sur-oise/) – 95660
-- [Porte claquée Cormeilles-en-Parisis](https://shoptaserrure.netlify.app/depannage/porte-claquee/cormeilles-en-parisis/) – 95240
-- [Porte claquée Courdimanche](https://shoptaserrure.netlify.app/depannage/porte-claquee/courdimanche/) – 95800
-- [Porte claquée Deuil-la-Barre](https://shoptaserrure.netlify.app/depannage/porte-claquee/deuil-la-barre/) – 95170
-- [Porte claquée Domont](https://shoptaserrure.netlify.app/depannage/porte-claquee/domont/) – 95330
-- [Porte claquée Eaubonne](https://shoptaserrure.netlify.app/depannage/porte-claquee/eaubonne/) – 95600
-- [Porte claquée Écouen](https://shoptaserrure.netlify.app/depannage/porte-claquee/ecouen/) – 95440
-- [Porte claquée Enghien-les-Bains](https://shoptaserrure.netlify.app/depannage/porte-claquee/enghien-les-bains/) – 95880
-- [Porte claquée Ennery](https://shoptaserrure.netlify.app/depannage/porte-claquee/ennery/) – 95300
-- [Porte claquée Épiais-Rhus](https://shoptaserrure.netlify.app/depannage/porte-claquee/epiais-rhus/) – 95810
-- [Porte claquée Épinay-Champlâtreux](https://shoptaserrure.netlify.app/depannage/porte-claquee/epinay-champlatreux/) – 95270
-- [Porte claquée Éragny](https://shoptaserrure.netlify.app/depannage/porte-claquee/eragny/) – 95610
-- [Porte claquée Ermont](https://shoptaserrure.netlify.app/depannage/porte-claquee/ermont/) – 95120
-- [Porte claquée Ézanville](https://shoptaserrure.netlify.app/depannage/porte-claquee/ezanville/) – 95460
-- [Porte claquée Fontenay-en-Parisis](https://shoptaserrure.netlify.app/depannage/porte-claquee/fontenay-en-parisis/) – 95190
-- [Porte claquée Fosses](https://shoptaserrure.netlify.app/depannage/porte-claquee/fosses/) – 95470
-- [Porte claquée Franconville](https://shoptaserrure.netlify.app/depannage/porte-claquee/franconville/) – 95130
-- [Porte claquée Frépillon](https://shoptaserrure.netlify.app/depannage/porte-claquee/frepillon/) – 95740
-- [Porte claquée Frouville](https://shoptaserrure.netlify.app/depannage/porte-claquee/frouville/) – 95690
-- [Porte claquée Garges-lès-Gonesse](https://shoptaserrure.netlify.app/depannage/porte-claquee/garges-les-gonesse/) – 95140
-- [Porte claquée Gonesse](https://shoptaserrure.netlify.app/depannage/porte-claquee/gonesse/) – 95500
-- [Porte claquée Goussainville](https://shoptaserrure.netlify.app/depannage/porte-claquee/goussainville/) – 95190
-- [Porte claquée Groslay](https://shoptaserrure.netlify.app/depannage/porte-claquee/groslay/) – 95410
-- [Porte claquée Herblay-sur-Seine](https://shoptaserrure.netlify.app/depannage/porte-claquee/herblay-sur-seine/) – 95220
-- [Porte claquée L'Isle-Adam](https://shoptaserrure.netlify.app/depannage/porte-claquee/l-isle-adam/) – 95290
-- [Porte claquée Jouy-le-Moutier](https://shoptaserrure.netlify.app/depannage/porte-claquee/jouy-le-moutier/) – 95280
-- [Porte claquée Louvres](https://shoptaserrure.netlify.app/depannage/porte-claquee/louvres/) – 95380
-- [Porte claquée Marly-la-Ville](https://shoptaserrure.netlify.app/depannage/porte-claquee/marly-la-ville/) – 95670
-- [Porte claquée Montigny-lès-Cormeilles](https://shoptaserrure.netlify.app/depannage/porte-claquee/montigny-les-cormeilles/) – 95370
-- [Porte claquée Montmagny](https://shoptaserrure.netlify.app/depannage/porte-claquee/montmagny/) – 95360
-- [Porte claquée Montmorency](https://shoptaserrure.netlify.app/depannage/porte-claquee/montmorency/) – 95160
-- [Porte claquée Osny](https://shoptaserrure.netlify.app/depannage/porte-claquee/osny/) – 95520
-- [Porte claquée Persan](https://shoptaserrure.netlify.app/depannage/porte-claquee/persan/) – 95340
-- [Porte claquée Pierrelaye](https://shoptaserrure.netlify.app/depannage/porte-claquee/pierrelaye/) – 95220
-- [Porte claquée Pontoise](https://shoptaserrure.netlify.app/depannage/porte-claquee/pontoise/) – 95000
-- [Porte claquée Puiseux-Pontoise](https://shoptaserrure.netlify.app/depannage/porte-claquee/puiseux-pontoise/) – 95650
-- [Porte claquée Saint-Brice-sous-Forêt](https://shoptaserrure.netlify.app/depannage/porte-claquee/saint-brice-sous-foret/) – 95350
-- [Porte claquée Saint-Gratien](https://shoptaserrure.netlify.app/depannage/porte-claquee/saint-gratien/) – 95210
-- [Porte claquée Saint-Leu-la-Forêt](https://shoptaserrure.netlify.app/depannage/porte-claquee/saint-leu-la-foret/) – 95320
-- [Porte claquée Saint-Ouen-l'Aumône](https://shoptaserrure.netlify.app/depannage/porte-claquee/saint-ouen-l-aumone/) – 95310
-- [Porte claquée Saint-Prix](https://shoptaserrure.netlify.app/depannage/porte-claquee/saint-prix/) – 95390
-- [Porte claquée Sannois](https://shoptaserrure.netlify.app/depannage/porte-claquee/sannois/) – 95110
-- [Porte claquée Sarcelles](https://shoptaserrure.netlify.app/depannage/porte-claquee/sarcelles/) – 95200
-- [Porte claquée Soisy-sous-Montmorency](https://shoptaserrure.netlify.app/depannage/porte-claquee/soisy-sous-montmorency/) – 95230
-- [Porte claquée Taverny](https://shoptaserrure.netlify.app/depannage/porte-claquee/taverny/) – 95150
-- [Porte claquée Vauréal](https://shoptaserrure.netlify.app/depannage/porte-claquee/vaureal/) – 95490
-- [Porte claquée Villiers-le-Bel](https://shoptaserrure.netlify.app/depannage/porte-claquee/villiers-le-bel/) – 95400
+## Engagements
+- Prix annoncé au téléphone avant le déplacement
+- Devis écrit gratuit, signé avant toute intervention
+- Ouverture sans dégât dans la grande majorité des cas
+- Facture détaillée reconnue par les assureurs habitation, remboursable selon le contrat (entreprise indépendante, sans partenariat avec les assureurs)
+- Paiement : carte bancaire, espèces, virement
 
-## Déblocage de serrure (à partir de 49 € TTC)
-Clé qui ne tourne plus, mécanisme grippé ou porte fermée à clé : diagnostic et déblocage rapide sur place.
-- [Serrure bloquée Paris](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris/)
-- [Serrure bloquée Paris 1er](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-1/) – 75001
-- [Serrure bloquée Paris 2e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-2/) – 75002
-- [Serrure bloquée Paris 3e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-3/) – 75003
-- [Serrure bloquée Paris 4e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-4/) – 75004
-- [Serrure bloquée Paris 5e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-5/) – 75005
-- [Serrure bloquée Paris 6e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-6/) – 75006
-- [Serrure bloquée Paris 7e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-7/) – 75007
-- [Serrure bloquée Paris 8e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-8/) – 75008
-- [Serrure bloquée Paris 9e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-9/) – 75009
-- [Serrure bloquée Paris 10e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-10/) – 75010
-- [Serrure bloquée Paris 11e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-11/) – 75011
-- [Serrure bloquée Paris 12e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-12/) – 75012
-- [Serrure bloquée Paris 13e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-13/) – 75013
-- [Serrure bloquée Paris 14e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-14/) – 75014
-- [Serrure bloquée Paris 15e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-15/) – 75015
-- [Serrure bloquée Paris 16e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-16/) – 75016
-- [Serrure bloquée Paris 17e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-17/) – 75017
-- [Serrure bloquée Paris 18e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-18/) – 75018
-- [Serrure bloquée Paris 19e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-19/) – 75019
-- [Serrure bloquée Paris 20e](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/paris-20/) – 75020
-- [Serrure bloquée Antony](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/antony/) – 92160
-- [Serrure bloquée Asnières-sur-Seine](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/asnieres-sur-seine/) – 92600
-- [Serrure bloquée Bagneux](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/bagneux/) – 92220
-- [Serrure bloquée Bois-Colombes](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/bois-colombes/) – 92270
-- [Serrure bloquée Boulogne-Billancourt](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/boulogne-billancourt/) – 92100
-- [Serrure bloquée Bourg-la-Reine](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/bourg-la-reine/) – 92340
-- [Serrure bloquée Châtenay-Malabry](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/chatenay-malabry/) – 92290
-- [Serrure bloquée Châtillon](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/chatillon/) – 92320
-- [Serrure bloquée Chaville](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/chaville/) – 92370
-- [Serrure bloquée Clamart](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/clamart/) – 92140
-- [Serrure bloquée Clichy](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/clichy/) – 92110
-- [Serrure bloquée Colombes](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/colombes/) – 92700
-- [Serrure bloquée Courbevoie](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/courbevoie/) – 92400
-- [Serrure bloquée Fontenay-aux-Roses](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/fontenay-aux-roses/) – 92260
-- [Serrure bloquée Garches](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/garches/) – 92380
-- [Serrure bloquée La Garenne-Colombes](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/la-garenne-colombes/) – 92250
-- [Serrure bloquée Gennevilliers](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/gennevilliers/) – 92230
-- [Serrure bloquée Issy-les-Moulineaux](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/issy-les-moulineaux/) – 92130
-- [Serrure bloquée Levallois-Perret](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/levallois-perret/) – 92300
-- [Serrure bloquée Malakoff](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/malakoff/) – 92240
-- [Serrure bloquée Marnes-la-Coquette](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/marnes-la-coquette/) – 92430
-- [Serrure bloquée Meudon](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/meudon/) – 92190
-- [Serrure bloquée Montrouge](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/montrouge/) – 92120
-- [Serrure bloquée Nanterre](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/nanterre/) – 92000
-- [Serrure bloquée Neuilly-sur-Seine](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/neuilly-sur-seine/) – 92200
-- [Serrure bloquée Le Plessis-Robinson](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/le-plessis-robinson/) – 92350
-- [Serrure bloquée Puteaux](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/puteaux/) – 92800
-- [Serrure bloquée Rueil-Malmaison](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/rueil-malmaison/) – 92500
-- [Serrure bloquée Saint-Cloud](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/saint-cloud/) – 92210
-- [Serrure bloquée Sceaux](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/sceaux/) – 92330
-- [Serrure bloquée Sèvres](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/sevres/) – 92310
-- [Serrure bloquée Suresnes](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/suresnes/) – 92150
-- [Serrure bloquée Vanves](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/vanves/) – 92170
-- [Serrure bloquée Vaucresson](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/vaucresson/) – 92420
-- [Serrure bloquée Ville-d'Avray](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/ville-d-avray/) – 92410
-- [Serrure bloquée Villeneuve-la-Garenne](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/villeneuve-la-garenne/) – 92390
-- [Serrure bloquée Argenteuil](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/argenteuil/) – 95100
-- [Serrure bloquée Arnouville](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/arnouville/) – 95400
-- [Serrure bloquée Auvers-sur-Oise](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/auvers-sur-oise/) – 95430
-- [Serrure bloquée Beauchamp](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/beauchamp/) – 95250
-- [Serrure bloquée Beaumont-sur-Oise](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/beaumont-sur-oise/) – 95260
-- [Serrure bloquée Bernes-sur-Oise](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/bernes-sur-oise/) – 95340
-- [Serrure bloquée Bessancourt](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/bessancourt/) – 95550
-- [Serrure bloquée Bezons](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/bezons/) – 95870
-- [Serrure bloquée Boisemont](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/boisemont/) – 95000
-- [Serrure bloquée Bonneuil-en-France](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/bonneuil-en-france/) – 95500
-- [Serrure bloquée Bouffémont](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/bouffemont/) – 95570
-- [Serrure bloquée Bruyères-sur-Oise](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/bruyeres-sur-oise/) – 95820
-- [Serrure bloquée Butry-sur-Oise](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/butry-sur-oise/) – 95430
-- [Serrure bloquée Cergy](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/cergy/) – 95000
-- [Serrure bloquée Champagne-sur-Oise](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/champagne-sur-oise/) – 95660
-- [Serrure bloquée Cormeilles-en-Parisis](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/cormeilles-en-parisis/) – 95240
-- [Serrure bloquée Courdimanche](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/courdimanche/) – 95800
-- [Serrure bloquée Deuil-la-Barre](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/deuil-la-barre/) – 95170
-- [Serrure bloquée Domont](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/domont/) – 95330
-- [Serrure bloquée Eaubonne](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/eaubonne/) – 95600
-- [Serrure bloquée Écouen](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/ecouen/) – 95440
-- [Serrure bloquée Enghien-les-Bains](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/enghien-les-bains/) – 95880
-- [Serrure bloquée Ennery](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/ennery/) – 95300
-- [Serrure bloquée Épiais-Rhus](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/epiais-rhus/) – 95810
-- [Serrure bloquée Épinay-Champlâtreux](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/epinay-champlatreux/) – 95270
-- [Serrure bloquée Éragny](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/eragny/) – 95610
-- [Serrure bloquée Ermont](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/ermont/) – 95120
-- [Serrure bloquée Ézanville](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/ezanville/) – 95460
-- [Serrure bloquée Fontenay-en-Parisis](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/fontenay-en-parisis/) – 95190
-- [Serrure bloquée Fosses](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/fosses/) – 95470
-- [Serrure bloquée Franconville](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/franconville/) – 95130
-- [Serrure bloquée Frépillon](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/frepillon/) – 95740
-- [Serrure bloquée Frouville](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/frouville/) – 95690
-- [Serrure bloquée Garges-lès-Gonesse](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/garges-les-gonesse/) – 95140
-- [Serrure bloquée Gonesse](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/gonesse/) – 95500
-- [Serrure bloquée Goussainville](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/goussainville/) – 95190
-- [Serrure bloquée Groslay](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/groslay/) – 95410
-- [Serrure bloquée Herblay-sur-Seine](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/herblay-sur-seine/) – 95220
-- [Serrure bloquée L'Isle-Adam](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/l-isle-adam/) – 95290
-- [Serrure bloquée Jouy-le-Moutier](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/jouy-le-moutier/) – 95280
-- [Serrure bloquée Louvres](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/louvres/) – 95380
-- [Serrure bloquée Marly-la-Ville](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/marly-la-ville/) – 95670
-- [Serrure bloquée Montigny-lès-Cormeilles](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/montigny-les-cormeilles/) – 95370
-- [Serrure bloquée Montmagny](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/montmagny/) – 95360
-- [Serrure bloquée Montmorency](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/montmorency/) – 95160
-- [Serrure bloquée Osny](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/osny/) – 95520
-- [Serrure bloquée Persan](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/persan/) – 95340
-- [Serrure bloquée Pierrelaye](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/pierrelaye/) – 95220
-- [Serrure bloquée Pontoise](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/pontoise/) – 95000
-- [Serrure bloquée Puiseux-Pontoise](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/puiseux-pontoise/) – 95650
-- [Serrure bloquée Saint-Brice-sous-Forêt](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/saint-brice-sous-foret/) – 95350
-- [Serrure bloquée Saint-Gratien](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/saint-gratien/) – 95210
-- [Serrure bloquée Saint-Leu-la-Forêt](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/saint-leu-la-foret/) – 95320
-- [Serrure bloquée Saint-Ouen-l'Aumône](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/saint-ouen-l-aumone/) – 95310
-- [Serrure bloquée Saint-Prix](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/saint-prix/) – 95390
-- [Serrure bloquée Sannois](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/sannois/) – 95110
-- [Serrure bloquée Sarcelles](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/sarcelles/) – 95200
-- [Serrure bloquée Soisy-sous-Montmorency](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/soisy-sous-montmorency/) – 95230
-- [Serrure bloquée Taverny](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/taverny/) – 95150
-- [Serrure bloquée Vauréal](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/vaureal/) – 95490
-- [Serrure bloquée Villiers-le-Bel](https://shoptaserrure.netlify.app/depannage/serrure-bloquee/villiers-le-bel/) – 95400
+## Ouverture de porte claquée – à partir de 110 € TTC
+Page : https://shopta-serrure.fr/depannage/porte-claquee/
 
-## Extraction de clé cassée (à partir de 49 € TTC)
-Extraction du morceau de clé coincé dans le cylindre sans abîmer la serrure, puis reproduction si besoin.
-- [Clé cassée Paris](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris/)
-- [Clé cassée Paris 1er](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-1/) – 75001
-- [Clé cassée Paris 2e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-2/) – 75002
-- [Clé cassée Paris 3e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-3/) – 75003
-- [Clé cassée Paris 4e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-4/) – 75004
-- [Clé cassée Paris 5e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-5/) – 75005
-- [Clé cassée Paris 6e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-6/) – 75006
-- [Clé cassée Paris 7e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-7/) – 75007
-- [Clé cassée Paris 8e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-8/) – 75008
-- [Clé cassée Paris 9e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-9/) – 75009
-- [Clé cassée Paris 10e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-10/) – 75010
-- [Clé cassée Paris 11e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-11/) – 75011
-- [Clé cassée Paris 12e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-12/) – 75012
-- [Clé cassée Paris 13e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-13/) – 75013
-- [Clé cassée Paris 14e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-14/) – 75014
-- [Clé cassée Paris 15e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-15/) – 75015
-- [Clé cassée Paris 16e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-16/) – 75016
-- [Clé cassée Paris 17e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-17/) – 75017
-- [Clé cassée Paris 18e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-18/) – 75018
-- [Clé cassée Paris 19e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-19/) – 75019
-- [Clé cassée Paris 20e](https://shoptaserrure.netlify.app/depannage/cle-cassee/paris-20/) – 75020
-- [Clé cassée Antony](https://shoptaserrure.netlify.app/depannage/cle-cassee/antony/) – 92160
-- [Clé cassée Asnières-sur-Seine](https://shoptaserrure.netlify.app/depannage/cle-cassee/asnieres-sur-seine/) – 92600
-- [Clé cassée Bagneux](https://shoptaserrure.netlify.app/depannage/cle-cassee/bagneux/) – 92220
-- [Clé cassée Bois-Colombes](https://shoptaserrure.netlify.app/depannage/cle-cassee/bois-colombes/) – 92270
-- [Clé cassée Boulogne-Billancourt](https://shoptaserrure.netlify.app/depannage/cle-cassee/boulogne-billancourt/) – 92100
-- [Clé cassée Bourg-la-Reine](https://shoptaserrure.netlify.app/depannage/cle-cassee/bourg-la-reine/) – 92340
-- [Clé cassée Châtenay-Malabry](https://shoptaserrure.netlify.app/depannage/cle-cassee/chatenay-malabry/) – 92290
-- [Clé cassée Châtillon](https://shoptaserrure.netlify.app/depannage/cle-cassee/chatillon/) – 92320
-- [Clé cassée Chaville](https://shoptaserrure.netlify.app/depannage/cle-cassee/chaville/) – 92370
-- [Clé cassée Clamart](https://shoptaserrure.netlify.app/depannage/cle-cassee/clamart/) – 92140
-- [Clé cassée Clichy](https://shoptaserrure.netlify.app/depannage/cle-cassee/clichy/) – 92110
-- [Clé cassée Colombes](https://shoptaserrure.netlify.app/depannage/cle-cassee/colombes/) – 92700
-- [Clé cassée Courbevoie](https://shoptaserrure.netlify.app/depannage/cle-cassee/courbevoie/) – 92400
-- [Clé cassée Fontenay-aux-Roses](https://shoptaserrure.netlify.app/depannage/cle-cassee/fontenay-aux-roses/) – 92260
-- [Clé cassée Garches](https://shoptaserrure.netlify.app/depannage/cle-cassee/garches/) – 92380
-- [Clé cassée La Garenne-Colombes](https://shoptaserrure.netlify.app/depannage/cle-cassee/la-garenne-colombes/) – 92250
-- [Clé cassée Gennevilliers](https://shoptaserrure.netlify.app/depannage/cle-cassee/gennevilliers/) – 92230
-- [Clé cassée Issy-les-Moulineaux](https://shoptaserrure.netlify.app/depannage/cle-cassee/issy-les-moulineaux/) – 92130
-- [Clé cassée Levallois-Perret](https://shoptaserrure.netlify.app/depannage/cle-cassee/levallois-perret/) – 92300
-- [Clé cassée Malakoff](https://shoptaserrure.netlify.app/depannage/cle-cassee/malakoff/) – 92240
-- [Clé cassée Marnes-la-Coquette](https://shoptaserrure.netlify.app/depannage/cle-cassee/marnes-la-coquette/) – 92430
-- [Clé cassée Meudon](https://shoptaserrure.netlify.app/depannage/cle-cassee/meudon/) – 92190
-- [Clé cassée Montrouge](https://shoptaserrure.netlify.app/depannage/cle-cassee/montrouge/) – 92120
-- [Clé cassée Nanterre](https://shoptaserrure.netlify.app/depannage/cle-cassee/nanterre/) – 92000
-- [Clé cassée Neuilly-sur-Seine](https://shoptaserrure.netlify.app/depannage/cle-cassee/neuilly-sur-seine/) – 92200
-- [Clé cassée Le Plessis-Robinson](https://shoptaserrure.netlify.app/depannage/cle-cassee/le-plessis-robinson/) – 92350
-- [Clé cassée Puteaux](https://shoptaserrure.netlify.app/depannage/cle-cassee/puteaux/) – 92800
-- [Clé cassée Rueil-Malmaison](https://shoptaserrure.netlify.app/depannage/cle-cassee/rueil-malmaison/) – 92500
-- [Clé cassée Saint-Cloud](https://shoptaserrure.netlify.app/depannage/cle-cassee/saint-cloud/) – 92210
-- [Clé cassée Sceaux](https://shoptaserrure.netlify.app/depannage/cle-cassee/sceaux/) – 92330
-- [Clé cassée Sèvres](https://shoptaserrure.netlify.app/depannage/cle-cassee/sevres/) – 92310
-- [Clé cassée Suresnes](https://shoptaserrure.netlify.app/depannage/cle-cassee/suresnes/) – 92150
-- [Clé cassée Vanves](https://shoptaserrure.netlify.app/depannage/cle-cassee/vanves/) – 92170
-- [Clé cassée Vaucresson](https://shoptaserrure.netlify.app/depannage/cle-cassee/vaucresson/) – 92420
-- [Clé cassée Ville-d'Avray](https://shoptaserrure.netlify.app/depannage/cle-cassee/ville-d-avray/) – 92410
-- [Clé cassée Villeneuve-la-Garenne](https://shoptaserrure.netlify.app/depannage/cle-cassee/villeneuve-la-garenne/) – 92390
-- [Clé cassée Argenteuil](https://shoptaserrure.netlify.app/depannage/cle-cassee/argenteuil/) – 95100
-- [Clé cassée Arnouville](https://shoptaserrure.netlify.app/depannage/cle-cassee/arnouville/) – 95400
-- [Clé cassée Auvers-sur-Oise](https://shoptaserrure.netlify.app/depannage/cle-cassee/auvers-sur-oise/) – 95430
-- [Clé cassée Beauchamp](https://shoptaserrure.netlify.app/depannage/cle-cassee/beauchamp/) – 95250
-- [Clé cassée Beaumont-sur-Oise](https://shoptaserrure.netlify.app/depannage/cle-cassee/beaumont-sur-oise/) – 95260
-- [Clé cassée Bernes-sur-Oise](https://shoptaserrure.netlify.app/depannage/cle-cassee/bernes-sur-oise/) – 95340
-- [Clé cassée Bessancourt](https://shoptaserrure.netlify.app/depannage/cle-cassee/bessancourt/) – 95550
-- [Clé cassée Bezons](https://shoptaserrure.netlify.app/depannage/cle-cassee/bezons/) – 95870
-- [Clé cassée Boisemont](https://shoptaserrure.netlify.app/depannage/cle-cassee/boisemont/) – 95000
-- [Clé cassée Bonneuil-en-France](https://shoptaserrure.netlify.app/depannage/cle-cassee/bonneuil-en-france/) – 95500
-- [Clé cassée Bouffémont](https://shoptaserrure.netlify.app/depannage/cle-cassee/bouffemont/) – 95570
-- [Clé cassée Bruyères-sur-Oise](https://shoptaserrure.netlify.app/depannage/cle-cassee/bruyeres-sur-oise/) – 95820
-- [Clé cassée Butry-sur-Oise](https://shoptaserrure.netlify.app/depannage/cle-cassee/butry-sur-oise/) – 95430
-- [Clé cassée Cergy](https://shoptaserrure.netlify.app/depannage/cle-cassee/cergy/) – 95000
-- [Clé cassée Champagne-sur-Oise](https://shoptaserrure.netlify.app/depannage/cle-cassee/champagne-sur-oise/) – 95660
-- [Clé cassée Cormeilles-en-Parisis](https://shoptaserrure.netlify.app/depannage/cle-cassee/cormeilles-en-parisis/) – 95240
-- [Clé cassée Courdimanche](https://shoptaserrure.netlify.app/depannage/cle-cassee/courdimanche/) – 95800
-- [Clé cassée Deuil-la-Barre](https://shoptaserrure.netlify.app/depannage/cle-cassee/deuil-la-barre/) – 95170
-- [Clé cassée Domont](https://shoptaserrure.netlify.app/depannage/cle-cassee/domont/) – 95330
-- [Clé cassée Eaubonne](https://shoptaserrure.netlify.app/depannage/cle-cassee/eaubonne/) – 95600
-- [Clé cassée Écouen](https://shoptaserrure.netlify.app/depannage/cle-cassee/ecouen/) – 95440
-- [Clé cassée Enghien-les-Bains](https://shoptaserrure.netlify.app/depannage/cle-cassee/enghien-les-bains/) – 95880
-- [Clé cassée Ennery](https://shoptaserrure.netlify.app/depannage/cle-cassee/ennery/) – 95300
-- [Clé cassée Épiais-Rhus](https://shoptaserrure.netlify.app/depannage/cle-cassee/epiais-rhus/) – 95810
-- [Clé cassée Épinay-Champlâtreux](https://shoptaserrure.netlify.app/depannage/cle-cassee/epinay-champlatreux/) – 95270
-- [Clé cassée Éragny](https://shoptaserrure.netlify.app/depannage/cle-cassee/eragny/) – 95610
-- [Clé cassée Ermont](https://shoptaserrure.netlify.app/depannage/cle-cassee/ermont/) – 95120
-- [Clé cassée Ézanville](https://shoptaserrure.netlify.app/depannage/cle-cassee/ezanville/) – 95460
-- [Clé cassée Fontenay-en-Parisis](https://shoptaserrure.netlify.app/depannage/cle-cassee/fontenay-en-parisis/) – 95190
-- [Clé cassée Fosses](https://shoptaserrure.netlify.app/depannage/cle-cassee/fosses/) – 95470
-- [Clé cassée Franconville](https://shoptaserrure.netlify.app/depannage/cle-cassee/franconville/) – 95130
-- [Clé cassée Frépillon](https://shoptaserrure.netlify.app/depannage/cle-cassee/frepillon/) – 95740
-- [Clé cassée Frouville](https://shoptaserrure.netlify.app/depannage/cle-cassee/frouville/) – 95690
-- [Clé cassée Garges-lès-Gonesse](https://shoptaserrure.netlify.app/depannage/cle-cassee/garges-les-gonesse/) – 95140
-- [Clé cassée Gonesse](https://shoptaserrure.netlify.app/depannage/cle-cassee/gonesse/) – 95500
-- [Clé cassée Goussainville](https://shoptaserrure.netlify.app/depannage/cle-cassee/goussainville/) – 95190
-- [Clé cassée Groslay](https://shoptaserrure.netlify.app/depannage/cle-cassee/groslay/) – 95410
-- [Clé cassée Herblay-sur-Seine](https://shoptaserrure.netlify.app/depannage/cle-cassee/herblay-sur-seine/) – 95220
-- [Clé cassée L'Isle-Adam](https://shoptaserrure.netlify.app/depannage/cle-cassee/l-isle-adam/) – 95290
-- [Clé cassée Jouy-le-Moutier](https://shoptaserrure.netlify.app/depannage/cle-cassee/jouy-le-moutier/) – 95280
-- [Clé cassée Louvres](https://shoptaserrure.netlify.app/depannage/cle-cassee/louvres/) – 95380
-- [Clé cassée Marly-la-Ville](https://shoptaserrure.netlify.app/depannage/cle-cassee/marly-la-ville/) – 95670
-- [Clé cassée Montigny-lès-Cormeilles](https://shoptaserrure.netlify.app/depannage/cle-cassee/montigny-les-cormeilles/) – 95370
-- [Clé cassée Montmagny](https://shoptaserrure.netlify.app/depannage/cle-cassee/montmagny/) – 95360
-- [Clé cassée Montmorency](https://shoptaserrure.netlify.app/depannage/cle-cassee/montmorency/) – 95160
-- [Clé cassée Osny](https://shoptaserrure.netlify.app/depannage/cle-cassee/osny/) – 95520
-- [Clé cassée Persan](https://shoptaserrure.netlify.app/depannage/cle-cassee/persan/) – 95340
-- [Clé cassée Pierrelaye](https://shoptaserrure.netlify.app/depannage/cle-cassee/pierrelaye/) – 95220
-- [Clé cassée Pontoise](https://shoptaserrure.netlify.app/depannage/cle-cassee/pontoise/) – 95000
-- [Clé cassée Puiseux-Pontoise](https://shoptaserrure.netlify.app/depannage/cle-cassee/puiseux-pontoise/) – 95650
-- [Clé cassée Saint-Brice-sous-Forêt](https://shoptaserrure.netlify.app/depannage/cle-cassee/saint-brice-sous-foret/) – 95350
-- [Clé cassée Saint-Gratien](https://shoptaserrure.netlify.app/depannage/cle-cassee/saint-gratien/) – 95210
-- [Clé cassée Saint-Leu-la-Forêt](https://shoptaserrure.netlify.app/depannage/cle-cassee/saint-leu-la-foret/) – 95320
-- [Clé cassée Saint-Ouen-l'Aumône](https://shoptaserrure.netlify.app/depannage/cle-cassee/saint-ouen-l-aumone/) – 95310
-- [Clé cassée Saint-Prix](https://shoptaserrure.netlify.app/depannage/cle-cassee/saint-prix/) – 95390
-- [Clé cassée Sannois](https://shoptaserrure.netlify.app/depannage/cle-cassee/sannois/) – 95110
-- [Clé cassée Sarcelles](https://shoptaserrure.netlify.app/depannage/cle-cassee/sarcelles/) – 95200
-- [Clé cassée Soisy-sous-Montmorency](https://shoptaserrure.netlify.app/depannage/cle-cassee/soisy-sous-montmorency/) – 95230
-- [Clé cassée Taverny](https://shoptaserrure.netlify.app/depannage/cle-cassee/taverny/) – 95150
-- [Clé cassée Vauréal](https://shoptaserrure.netlify.app/depannage/cle-cassee/vaureal/) – 95490
-- [Clé cassée Villiers-le-Bel](https://shoptaserrure.netlify.app/depannage/cle-cassee/villiers-le-bel/) – 95400
+Une porte qui claque derrière vous, les clés restées à l'intérieur : c'est l'urgence la plus fréquente en serrurerie. Dans la grande majorité des cas, nos serruriers ouvrent une porte simplement claquée (non verrouillée à clé) sans rien abîmer, en quelques minutes, et sans remplacer la serrure.
 
-## Changement de serrure et de cylindre (sur devis gratuit)
-Remplacement de cylindre ou de serrure multipoints certifiée A2P après perte de clés, vol ou emménagement.
-- [Changement de serrure Paris](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris/)
-- [Changement de serrure Paris 1er](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-1/) – 75001
-- [Changement de serrure Paris 2e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-2/) – 75002
-- [Changement de serrure Paris 3e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-3/) – 75003
-- [Changement de serrure Paris 4e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-4/) – 75004
-- [Changement de serrure Paris 5e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-5/) – 75005
-- [Changement de serrure Paris 6e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-6/) – 75006
-- [Changement de serrure Paris 7e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-7/) – 75007
-- [Changement de serrure Paris 8e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-8/) – 75008
-- [Changement de serrure Paris 9e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-9/) – 75009
-- [Changement de serrure Paris 10e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-10/) – 75010
-- [Changement de serrure Paris 11e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-11/) – 75011
-- [Changement de serrure Paris 12e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-12/) – 75012
-- [Changement de serrure Paris 13e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-13/) – 75013
-- [Changement de serrure Paris 14e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-14/) – 75014
-- [Changement de serrure Paris 15e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-15/) – 75015
-- [Changement de serrure Paris 16e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-16/) – 75016
-- [Changement de serrure Paris 17e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-17/) – 75017
-- [Changement de serrure Paris 18e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-18/) – 75018
-- [Changement de serrure Paris 19e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-19/) – 75019
-- [Changement de serrure Paris 20e](https://shoptaserrure.netlify.app/depannage/changement-serrure/paris-20/) – 75020
-- [Changement de serrure Antony](https://shoptaserrure.netlify.app/depannage/changement-serrure/antony/) – 92160
-- [Changement de serrure Asnières-sur-Seine](https://shoptaserrure.netlify.app/depannage/changement-serrure/asnieres-sur-seine/) – 92600
-- [Changement de serrure Bagneux](https://shoptaserrure.netlify.app/depannage/changement-serrure/bagneux/) – 92220
-- [Changement de serrure Bois-Colombes](https://shoptaserrure.netlify.app/depannage/changement-serrure/bois-colombes/) – 92270
-- [Changement de serrure Boulogne-Billancourt](https://shoptaserrure.netlify.app/depannage/changement-serrure/boulogne-billancourt/) – 92100
-- [Changement de serrure Bourg-la-Reine](https://shoptaserrure.netlify.app/depannage/changement-serrure/bourg-la-reine/) – 92340
-- [Changement de serrure Châtenay-Malabry](https://shoptaserrure.netlify.app/depannage/changement-serrure/chatenay-malabry/) – 92290
-- [Changement de serrure Châtillon](https://shoptaserrure.netlify.app/depannage/changement-serrure/chatillon/) – 92320
-- [Changement de serrure Chaville](https://shoptaserrure.netlify.app/depannage/changement-serrure/chaville/) – 92370
-- [Changement de serrure Clamart](https://shoptaserrure.netlify.app/depannage/changement-serrure/clamart/) – 92140
-- [Changement de serrure Clichy](https://shoptaserrure.netlify.app/depannage/changement-serrure/clichy/) – 92110
-- [Changement de serrure Colombes](https://shoptaserrure.netlify.app/depannage/changement-serrure/colombes/) – 92700
-- [Changement de serrure Courbevoie](https://shoptaserrure.netlify.app/depannage/changement-serrure/courbevoie/) – 92400
-- [Changement de serrure Fontenay-aux-Roses](https://shoptaserrure.netlify.app/depannage/changement-serrure/fontenay-aux-roses/) – 92260
-- [Changement de serrure Garches](https://shoptaserrure.netlify.app/depannage/changement-serrure/garches/) – 92380
-- [Changement de serrure La Garenne-Colombes](https://shoptaserrure.netlify.app/depannage/changement-serrure/la-garenne-colombes/) – 92250
-- [Changement de serrure Gennevilliers](https://shoptaserrure.netlify.app/depannage/changement-serrure/gennevilliers/) – 92230
-- [Changement de serrure Issy-les-Moulineaux](https://shoptaserrure.netlify.app/depannage/changement-serrure/issy-les-moulineaux/) – 92130
-- [Changement de serrure Levallois-Perret](https://shoptaserrure.netlify.app/depannage/changement-serrure/levallois-perret/) – 92300
-- [Changement de serrure Malakoff](https://shoptaserrure.netlify.app/depannage/changement-serrure/malakoff/) – 92240
-- [Changement de serrure Marnes-la-Coquette](https://shoptaserrure.netlify.app/depannage/changement-serrure/marnes-la-coquette/) – 92430
-- [Changement de serrure Meudon](https://shoptaserrure.netlify.app/depannage/changement-serrure/meudon/) – 92190
-- [Changement de serrure Montrouge](https://shoptaserrure.netlify.app/depannage/changement-serrure/montrouge/) – 92120
-- [Changement de serrure Nanterre](https://shoptaserrure.netlify.app/depannage/changement-serrure/nanterre/) – 92000
-- [Changement de serrure Neuilly-sur-Seine](https://shoptaserrure.netlify.app/depannage/changement-serrure/neuilly-sur-seine/) – 92200
-- [Changement de serrure Le Plessis-Robinson](https://shoptaserrure.netlify.app/depannage/changement-serrure/le-plessis-robinson/) – 92350
-- [Changement de serrure Puteaux](https://shoptaserrure.netlify.app/depannage/changement-serrure/puteaux/) – 92800
-- [Changement de serrure Rueil-Malmaison](https://shoptaserrure.netlify.app/depannage/changement-serrure/rueil-malmaison/) – 92500
-- [Changement de serrure Saint-Cloud](https://shoptaserrure.netlify.app/depannage/changement-serrure/saint-cloud/) – 92210
-- [Changement de serrure Sceaux](https://shoptaserrure.netlify.app/depannage/changement-serrure/sceaux/) – 92330
-- [Changement de serrure Sèvres](https://shoptaserrure.netlify.app/depannage/changement-serrure/sevres/) – 92310
-- [Changement de serrure Suresnes](https://shoptaserrure.netlify.app/depannage/changement-serrure/suresnes/) – 92150
-- [Changement de serrure Vanves](https://shoptaserrure.netlify.app/depannage/changement-serrure/vanves/) – 92170
-- [Changement de serrure Vaucresson](https://shoptaserrure.netlify.app/depannage/changement-serrure/vaucresson/) – 92420
-- [Changement de serrure Ville-d'Avray](https://shoptaserrure.netlify.app/depannage/changement-serrure/ville-d-avray/) – 92410
-- [Changement de serrure Villeneuve-la-Garenne](https://shoptaserrure.netlify.app/depannage/changement-serrure/villeneuve-la-garenne/) – 92390
-- [Changement de serrure Argenteuil](https://shoptaserrure.netlify.app/depannage/changement-serrure/argenteuil/) – 95100
-- [Changement de serrure Arnouville](https://shoptaserrure.netlify.app/depannage/changement-serrure/arnouville/) – 95400
-- [Changement de serrure Auvers-sur-Oise](https://shoptaserrure.netlify.app/depannage/changement-serrure/auvers-sur-oise/) – 95430
-- [Changement de serrure Beauchamp](https://shoptaserrure.netlify.app/depannage/changement-serrure/beauchamp/) – 95250
-- [Changement de serrure Beaumont-sur-Oise](https://shoptaserrure.netlify.app/depannage/changement-serrure/beaumont-sur-oise/) – 95260
-- [Changement de serrure Bernes-sur-Oise](https://shoptaserrure.netlify.app/depannage/changement-serrure/bernes-sur-oise/) – 95340
-- [Changement de serrure Bessancourt](https://shoptaserrure.netlify.app/depannage/changement-serrure/bessancourt/) – 95550
-- [Changement de serrure Bezons](https://shoptaserrure.netlify.app/depannage/changement-serrure/bezons/) – 95870
-- [Changement de serrure Boisemont](https://shoptaserrure.netlify.app/depannage/changement-serrure/boisemont/) – 95000
-- [Changement de serrure Bonneuil-en-France](https://shoptaserrure.netlify.app/depannage/changement-serrure/bonneuil-en-france/) – 95500
-- [Changement de serrure Bouffémont](https://shoptaserrure.netlify.app/depannage/changement-serrure/bouffemont/) – 95570
-- [Changement de serrure Bruyères-sur-Oise](https://shoptaserrure.netlify.app/depannage/changement-serrure/bruyeres-sur-oise/) – 95820
-- [Changement de serrure Butry-sur-Oise](https://shoptaserrure.netlify.app/depannage/changement-serrure/butry-sur-oise/) – 95430
-- [Changement de serrure Cergy](https://shoptaserrure.netlify.app/depannage/changement-serrure/cergy/) – 95000
-- [Changement de serrure Champagne-sur-Oise](https://shoptaserrure.netlify.app/depannage/changement-serrure/champagne-sur-oise/) – 95660
-- [Changement de serrure Cormeilles-en-Parisis](https://shoptaserrure.netlify.app/depannage/changement-serrure/cormeilles-en-parisis/) – 95240
-- [Changement de serrure Courdimanche](https://shoptaserrure.netlify.app/depannage/changement-serrure/courdimanche/) – 95800
-- [Changement de serrure Deuil-la-Barre](https://shoptaserrure.netlify.app/depannage/changement-serrure/deuil-la-barre/) – 95170
-- [Changement de serrure Domont](https://shoptaserrure.netlify.app/depannage/changement-serrure/domont/) – 95330
-- [Changement de serrure Eaubonne](https://shoptaserrure.netlify.app/depannage/changement-serrure/eaubonne/) – 95600
-- [Changement de serrure Écouen](https://shoptaserrure.netlify.app/depannage/changement-serrure/ecouen/) – 95440
-- [Changement de serrure Enghien-les-Bains](https://shoptaserrure.netlify.app/depannage/changement-serrure/enghien-les-bains/) – 95880
-- [Changement de serrure Ennery](https://shoptaserrure.netlify.app/depannage/changement-serrure/ennery/) – 95300
-- [Changement de serrure Épiais-Rhus](https://shoptaserrure.netlify.app/depannage/changement-serrure/epiais-rhus/) – 95810
-- [Changement de serrure Épinay-Champlâtreux](https://shoptaserrure.netlify.app/depannage/changement-serrure/epinay-champlatreux/) – 95270
-- [Changement de serrure Éragny](https://shoptaserrure.netlify.app/depannage/changement-serrure/eragny/) – 95610
-- [Changement de serrure Ermont](https://shoptaserrure.netlify.app/depannage/changement-serrure/ermont/) – 95120
-- [Changement de serrure Ézanville](https://shoptaserrure.netlify.app/depannage/changement-serrure/ezanville/) – 95460
-- [Changement de serrure Fontenay-en-Parisis](https://shoptaserrure.netlify.app/depannage/changement-serrure/fontenay-en-parisis/) – 95190
-- [Changement de serrure Fosses](https://shoptaserrure.netlify.app/depannage/changement-serrure/fosses/) – 95470
-- [Changement de serrure Franconville](https://shoptaserrure.netlify.app/depannage/changement-serrure/franconville/) – 95130
-- [Changement de serrure Frépillon](https://shoptaserrure.netlify.app/depannage/changement-serrure/frepillon/) – 95740
-- [Changement de serrure Frouville](https://shoptaserrure.netlify.app/depannage/changement-serrure/frouville/) – 95690
-- [Changement de serrure Garges-lès-Gonesse](https://shoptaserrure.netlify.app/depannage/changement-serrure/garges-les-gonesse/) – 95140
-- [Changement de serrure Gonesse](https://shoptaserrure.netlify.app/depannage/changement-serrure/gonesse/) – 95500
-- [Changement de serrure Goussainville](https://shoptaserrure.netlify.app/depannage/changement-serrure/goussainville/) – 95190
-- [Changement de serrure Groslay](https://shoptaserrure.netlify.app/depannage/changement-serrure/groslay/) – 95410
-- [Changement de serrure Herblay-sur-Seine](https://shoptaserrure.netlify.app/depannage/changement-serrure/herblay-sur-seine/) – 95220
-- [Changement de serrure L'Isle-Adam](https://shoptaserrure.netlify.app/depannage/changement-serrure/l-isle-adam/) – 95290
-- [Changement de serrure Jouy-le-Moutier](https://shoptaserrure.netlify.app/depannage/changement-serrure/jouy-le-moutier/) – 95280
-- [Changement de serrure Louvres](https://shoptaserrure.netlify.app/depannage/changement-serrure/louvres/) – 95380
-- [Changement de serrure Marly-la-Ville](https://shoptaserrure.netlify.app/depannage/changement-serrure/marly-la-ville/) – 95670
-- [Changement de serrure Montigny-lès-Cormeilles](https://shoptaserrure.netlify.app/depannage/changement-serrure/montigny-les-cormeilles/) – 95370
-- [Changement de serrure Montmagny](https://shoptaserrure.netlify.app/depannage/changement-serrure/montmagny/) – 95360
-- [Changement de serrure Montmorency](https://shoptaserrure.netlify.app/depannage/changement-serrure/montmorency/) – 95160
-- [Changement de serrure Osny](https://shoptaserrure.netlify.app/depannage/changement-serrure/osny/) – 95520
-- [Changement de serrure Persan](https://shoptaserrure.netlify.app/depannage/changement-serrure/persan/) – 95340
-- [Changement de serrure Pierrelaye](https://shoptaserrure.netlify.app/depannage/changement-serrure/pierrelaye/) – 95220
-- [Changement de serrure Pontoise](https://shoptaserrure.netlify.app/depannage/changement-serrure/pontoise/) – 95000
-- [Changement de serrure Puiseux-Pontoise](https://shoptaserrure.netlify.app/depannage/changement-serrure/puiseux-pontoise/) – 95650
-- [Changement de serrure Saint-Brice-sous-Forêt](https://shoptaserrure.netlify.app/depannage/changement-serrure/saint-brice-sous-foret/) – 95350
-- [Changement de serrure Saint-Gratien](https://shoptaserrure.netlify.app/depannage/changement-serrure/saint-gratien/) – 95210
-- [Changement de serrure Saint-Leu-la-Forêt](https://shoptaserrure.netlify.app/depannage/changement-serrure/saint-leu-la-foret/) – 95320
-- [Changement de serrure Saint-Ouen-l'Aumône](https://shoptaserrure.netlify.app/depannage/changement-serrure/saint-ouen-l-aumone/) – 95310
-- [Changement de serrure Saint-Prix](https://shoptaserrure.netlify.app/depannage/changement-serrure/saint-prix/) – 95390
-- [Changement de serrure Sannois](https://shoptaserrure.netlify.app/depannage/changement-serrure/sannois/) – 95110
-- [Changement de serrure Sarcelles](https://shoptaserrure.netlify.app/depannage/changement-serrure/sarcelles/) – 95200
-- [Changement de serrure Soisy-sous-Montmorency](https://shoptaserrure.netlify.app/depannage/changement-serrure/soisy-sous-montmorency/) – 95230
-- [Changement de serrure Taverny](https://shoptaserrure.netlify.app/depannage/changement-serrure/taverny/) – 95150
-- [Changement de serrure Vauréal](https://shoptaserrure.netlify.app/depannage/changement-serrure/vaureal/) – 95490
-- [Changement de serrure Villiers-le-Bel](https://shoptaserrure.netlify.app/depannage/changement-serrure/villiers-le-bel/) – 95400
+### Porte claquée ou porte fermée à clé : quelle différence ?
+Une porte claquée n'est retenue que par le pêne demi-tour, la petite languette biseautée qui s'enclenche automatiquement. Elle s'ouvre en général à la radio (une lame souple glissée entre la porte et le bâti) ou au crochetage, sans dégât. Une porte fermée à clé est retenue par les pênes dormants : l'ouverture reste possible sans casse sur la plupart des serrures, mais elle demande plus de temps et parfois un perçage du cylindre, que nous vous annonçons et chiffrons avant.
 
-## Serrure connectée (Smart Lock) (à partir de 49 € TTC)
-Installation et dépannage de serrures connectées : ouverture par smartphone, code ou empreinte digitale.
-- [Smart Lock Paris](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris/)
-- [Smart Lock Paris 1er](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-1/) – 75001
-- [Smart Lock Paris 2e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-2/) – 75002
-- [Smart Lock Paris 3e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-3/) – 75003
-- [Smart Lock Paris 4e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-4/) – 75004
-- [Smart Lock Paris 5e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-5/) – 75005
-- [Smart Lock Paris 6e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-6/) – 75006
-- [Smart Lock Paris 7e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-7/) – 75007
-- [Smart Lock Paris 8e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-8/) – 75008
-- [Smart Lock Paris 9e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-9/) – 75009
-- [Smart Lock Paris 10e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-10/) – 75010
-- [Smart Lock Paris 11e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-11/) – 75011
-- [Smart Lock Paris 12e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-12/) – 75012
-- [Smart Lock Paris 13e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-13/) – 75013
-- [Smart Lock Paris 14e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-14/) – 75014
-- [Smart Lock Paris 15e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-15/) – 75015
-- [Smart Lock Paris 16e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-16/) – 75016
-- [Smart Lock Paris 17e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-17/) – 75017
-- [Smart Lock Paris 18e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-18/) – 75018
-- [Smart Lock Paris 19e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-19/) – 75019
-- [Smart Lock Paris 20e](https://shoptaserrure.netlify.app/depannage/serrure-connectee/paris-20/) – 75020
-- [Smart Lock Antony](https://shoptaserrure.netlify.app/depannage/serrure-connectee/antony/) – 92160
-- [Smart Lock Asnières-sur-Seine](https://shoptaserrure.netlify.app/depannage/serrure-connectee/asnieres-sur-seine/) – 92600
-- [Smart Lock Bagneux](https://shoptaserrure.netlify.app/depannage/serrure-connectee/bagneux/) – 92220
-- [Smart Lock Bois-Colombes](https://shoptaserrure.netlify.app/depannage/serrure-connectee/bois-colombes/) – 92270
-- [Smart Lock Boulogne-Billancourt](https://shoptaserrure.netlify.app/depannage/serrure-connectee/boulogne-billancourt/) – 92100
-- [Smart Lock Bourg-la-Reine](https://shoptaserrure.netlify.app/depannage/serrure-connectee/bourg-la-reine/) – 92340
-- [Smart Lock Châtenay-Malabry](https://shoptaserrure.netlify.app/depannage/serrure-connectee/chatenay-malabry/) – 92290
-- [Smart Lock Châtillon](https://shoptaserrure.netlify.app/depannage/serrure-connectee/chatillon/) – 92320
-- [Smart Lock Chaville](https://shoptaserrure.netlify.app/depannage/serrure-connectee/chaville/) – 92370
-- [Smart Lock Clamart](https://shoptaserrure.netlify.app/depannage/serrure-connectee/clamart/) – 92140
-- [Smart Lock Clichy](https://shoptaserrure.netlify.app/depannage/serrure-connectee/clichy/) – 92110
-- [Smart Lock Colombes](https://shoptaserrure.netlify.app/depannage/serrure-connectee/colombes/) – 92700
-- [Smart Lock Courbevoie](https://shoptaserrure.netlify.app/depannage/serrure-connectee/courbevoie/) – 92400
-- [Smart Lock Fontenay-aux-Roses](https://shoptaserrure.netlify.app/depannage/serrure-connectee/fontenay-aux-roses/) – 92260
-- [Smart Lock Garches](https://shoptaserrure.netlify.app/depannage/serrure-connectee/garches/) – 92380
-- [Smart Lock La Garenne-Colombes](https://shoptaserrure.netlify.app/depannage/serrure-connectee/la-garenne-colombes/) – 92250
-- [Smart Lock Gennevilliers](https://shoptaserrure.netlify.app/depannage/serrure-connectee/gennevilliers/) – 92230
-- [Smart Lock Issy-les-Moulineaux](https://shoptaserrure.netlify.app/depannage/serrure-connectee/issy-les-moulineaux/) – 92130
-- [Smart Lock Levallois-Perret](https://shoptaserrure.netlify.app/depannage/serrure-connectee/levallois-perret/) – 92300
-- [Smart Lock Malakoff](https://shoptaserrure.netlify.app/depannage/serrure-connectee/malakoff/) – 92240
-- [Smart Lock Marnes-la-Coquette](https://shoptaserrure.netlify.app/depannage/serrure-connectee/marnes-la-coquette/) – 92430
-- [Smart Lock Meudon](https://shoptaserrure.netlify.app/depannage/serrure-connectee/meudon/) – 92190
-- [Smart Lock Montrouge](https://shoptaserrure.netlify.app/depannage/serrure-connectee/montrouge/) – 92120
-- [Smart Lock Nanterre](https://shoptaserrure.netlify.app/depannage/serrure-connectee/nanterre/) – 92000
-- [Smart Lock Neuilly-sur-Seine](https://shoptaserrure.netlify.app/depannage/serrure-connectee/neuilly-sur-seine/) – 92200
-- [Smart Lock Le Plessis-Robinson](https://shoptaserrure.netlify.app/depannage/serrure-connectee/le-plessis-robinson/) – 92350
-- [Smart Lock Puteaux](https://shoptaserrure.netlify.app/depannage/serrure-connectee/puteaux/) – 92800
-- [Smart Lock Rueil-Malmaison](https://shoptaserrure.netlify.app/depannage/serrure-connectee/rueil-malmaison/) – 92500
-- [Smart Lock Saint-Cloud](https://shoptaserrure.netlify.app/depannage/serrure-connectee/saint-cloud/) – 92210
-- [Smart Lock Sceaux](https://shoptaserrure.netlify.app/depannage/serrure-connectee/sceaux/) – 92330
-- [Smart Lock Sèvres](https://shoptaserrure.netlify.app/depannage/serrure-connectee/sevres/) – 92310
-- [Smart Lock Suresnes](https://shoptaserrure.netlify.app/depannage/serrure-connectee/suresnes/) – 92150
-- [Smart Lock Vanves](https://shoptaserrure.netlify.app/depannage/serrure-connectee/vanves/) – 92170
-- [Smart Lock Vaucresson](https://shoptaserrure.netlify.app/depannage/serrure-connectee/vaucresson/) – 92420
-- [Smart Lock Ville-d'Avray](https://shoptaserrure.netlify.app/depannage/serrure-connectee/ville-d-avray/) – 92410
-- [Smart Lock Villeneuve-la-Garenne](https://shoptaserrure.netlify.app/depannage/serrure-connectee/villeneuve-la-garenne/) – 92390
-- [Smart Lock Argenteuil](https://shoptaserrure.netlify.app/depannage/serrure-connectee/argenteuil/) – 95100
-- [Smart Lock Arnouville](https://shoptaserrure.netlify.app/depannage/serrure-connectee/arnouville/) – 95400
-- [Smart Lock Auvers-sur-Oise](https://shoptaserrure.netlify.app/depannage/serrure-connectee/auvers-sur-oise/) – 95430
-- [Smart Lock Beauchamp](https://shoptaserrure.netlify.app/depannage/serrure-connectee/beauchamp/) – 95250
-- [Smart Lock Beaumont-sur-Oise](https://shoptaserrure.netlify.app/depannage/serrure-connectee/beaumont-sur-oise/) – 95260
-- [Smart Lock Bernes-sur-Oise](https://shoptaserrure.netlify.app/depannage/serrure-connectee/bernes-sur-oise/) – 95340
-- [Smart Lock Bessancourt](https://shoptaserrure.netlify.app/depannage/serrure-connectee/bessancourt/) – 95550
-- [Smart Lock Bezons](https://shoptaserrure.netlify.app/depannage/serrure-connectee/bezons/) – 95870
-- [Smart Lock Boisemont](https://shoptaserrure.netlify.app/depannage/serrure-connectee/boisemont/) – 95000
-- [Smart Lock Bonneuil-en-France](https://shoptaserrure.netlify.app/depannage/serrure-connectee/bonneuil-en-france/) – 95500
-- [Smart Lock Bouffémont](https://shoptaserrure.netlify.app/depannage/serrure-connectee/bouffemont/) – 95570
-- [Smart Lock Bruyères-sur-Oise](https://shoptaserrure.netlify.app/depannage/serrure-connectee/bruyeres-sur-oise/) – 95820
-- [Smart Lock Butry-sur-Oise](https://shoptaserrure.netlify.app/depannage/serrure-connectee/butry-sur-oise/) – 95430
-- [Smart Lock Cergy](https://shoptaserrure.netlify.app/depannage/serrure-connectee/cergy/) – 95000
-- [Smart Lock Champagne-sur-Oise](https://shoptaserrure.netlify.app/depannage/serrure-connectee/champagne-sur-oise/) – 95660
-- [Smart Lock Cormeilles-en-Parisis](https://shoptaserrure.netlify.app/depannage/serrure-connectee/cormeilles-en-parisis/) – 95240
-- [Smart Lock Courdimanche](https://shoptaserrure.netlify.app/depannage/serrure-connectee/courdimanche/) – 95800
-- [Smart Lock Deuil-la-Barre](https://shoptaserrure.netlify.app/depannage/serrure-connectee/deuil-la-barre/) – 95170
-- [Smart Lock Domont](https://shoptaserrure.netlify.app/depannage/serrure-connectee/domont/) – 95330
-- [Smart Lock Eaubonne](https://shoptaserrure.netlify.app/depannage/serrure-connectee/eaubonne/) – 95600
-- [Smart Lock Écouen](https://shoptaserrure.netlify.app/depannage/serrure-connectee/ecouen/) – 95440
-- [Smart Lock Enghien-les-Bains](https://shoptaserrure.netlify.app/depannage/serrure-connectee/enghien-les-bains/) – 95880
-- [Smart Lock Ennery](https://shoptaserrure.netlify.app/depannage/serrure-connectee/ennery/) – 95300
-- [Smart Lock Épiais-Rhus](https://shoptaserrure.netlify.app/depannage/serrure-connectee/epiais-rhus/) – 95810
-- [Smart Lock Épinay-Champlâtreux](https://shoptaserrure.netlify.app/depannage/serrure-connectee/epinay-champlatreux/) – 95270
-- [Smart Lock Éragny](https://shoptaserrure.netlify.app/depannage/serrure-connectee/eragny/) – 95610
-- [Smart Lock Ermont](https://shoptaserrure.netlify.app/depannage/serrure-connectee/ermont/) – 95120
-- [Smart Lock Ézanville](https://shoptaserrure.netlify.app/depannage/serrure-connectee/ezanville/) – 95460
-- [Smart Lock Fontenay-en-Parisis](https://shoptaserrure.netlify.app/depannage/serrure-connectee/fontenay-en-parisis/) – 95190
-- [Smart Lock Fosses](https://shoptaserrure.netlify.app/depannage/serrure-connectee/fosses/) – 95470
-- [Smart Lock Franconville](https://shoptaserrure.netlify.app/depannage/serrure-connectee/franconville/) – 95130
-- [Smart Lock Frépillon](https://shoptaserrure.netlify.app/depannage/serrure-connectee/frepillon/) – 95740
-- [Smart Lock Frouville](https://shoptaserrure.netlify.app/depannage/serrure-connectee/frouville/) – 95690
-- [Smart Lock Garges-lès-Gonesse](https://shoptaserrure.netlify.app/depannage/serrure-connectee/garges-les-gonesse/) – 95140
-- [Smart Lock Gonesse](https://shoptaserrure.netlify.app/depannage/serrure-connectee/gonesse/) – 95500
-- [Smart Lock Goussainville](https://shoptaserrure.netlify.app/depannage/serrure-connectee/goussainville/) – 95190
-- [Smart Lock Groslay](https://shoptaserrure.netlify.app/depannage/serrure-connectee/groslay/) – 95410
-- [Smart Lock Herblay-sur-Seine](https://shoptaserrure.netlify.app/depannage/serrure-connectee/herblay-sur-seine/) – 95220
-- [Smart Lock L'Isle-Adam](https://shoptaserrure.netlify.app/depannage/serrure-connectee/l-isle-adam/) – 95290
-- [Smart Lock Jouy-le-Moutier](https://shoptaserrure.netlify.app/depannage/serrure-connectee/jouy-le-moutier/) – 95280
-- [Smart Lock Louvres](https://shoptaserrure.netlify.app/depannage/serrure-connectee/louvres/) – 95380
-- [Smart Lock Marly-la-Ville](https://shoptaserrure.netlify.app/depannage/serrure-connectee/marly-la-ville/) – 95670
-- [Smart Lock Montigny-lès-Cormeilles](https://shoptaserrure.netlify.app/depannage/serrure-connectee/montigny-les-cormeilles/) – 95370
-- [Smart Lock Montmagny](https://shoptaserrure.netlify.app/depannage/serrure-connectee/montmagny/) – 95360
-- [Smart Lock Montmorency](https://shoptaserrure.netlify.app/depannage/serrure-connectee/montmorency/) – 95160
-- [Smart Lock Osny](https://shoptaserrure.netlify.app/depannage/serrure-connectee/osny/) – 95520
-- [Smart Lock Persan](https://shoptaserrure.netlify.app/depannage/serrure-connectee/persan/) – 95340
-- [Smart Lock Pierrelaye](https://shoptaserrure.netlify.app/depannage/serrure-connectee/pierrelaye/) – 95220
-- [Smart Lock Pontoise](https://shoptaserrure.netlify.app/depannage/serrure-connectee/pontoise/) – 95000
-- [Smart Lock Puiseux-Pontoise](https://shoptaserrure.netlify.app/depannage/serrure-connectee/puiseux-pontoise/) – 95650
-- [Smart Lock Saint-Brice-sous-Forêt](https://shoptaserrure.netlify.app/depannage/serrure-connectee/saint-brice-sous-foret/) – 95350
-- [Smart Lock Saint-Gratien](https://shoptaserrure.netlify.app/depannage/serrure-connectee/saint-gratien/) – 95210
-- [Smart Lock Saint-Leu-la-Forêt](https://shoptaserrure.netlify.app/depannage/serrure-connectee/saint-leu-la-foret/) – 95320
-- [Smart Lock Saint-Ouen-l'Aumône](https://shoptaserrure.netlify.app/depannage/serrure-connectee/saint-ouen-l-aumone/) – 95310
-- [Smart Lock Saint-Prix](https://shoptaserrure.netlify.app/depannage/serrure-connectee/saint-prix/) – 95390
-- [Smart Lock Sannois](https://shoptaserrure.netlify.app/depannage/serrure-connectee/sannois/) – 95110
-- [Smart Lock Sarcelles](https://shoptaserrure.netlify.app/depannage/serrure-connectee/sarcelles/) – 95200
-- [Smart Lock Soisy-sous-Montmorency](https://shoptaserrure.netlify.app/depannage/serrure-connectee/soisy-sous-montmorency/) – 95230
-- [Smart Lock Taverny](https://shoptaserrure.netlify.app/depannage/serrure-connectee/taverny/) – 95150
-- [Smart Lock Vauréal](https://shoptaserrure.netlify.app/depannage/serrure-connectee/vaureal/) – 95490
-- [Smart Lock Villiers-le-Bel](https://shoptaserrure.netlify.app/depannage/serrure-connectee/villiers-le-bel/) – 95400
+### Nos techniques d'ouverture sans dégât
+Radio et lames souples pour les portes claquées, crochetage et outils de by-pass pour les cylindres, ouverture par l'entrebâilleur ou le judas sur certaines portes blindées. Le perçage n'est utilisé qu'en dernier recours, avec votre accord, et le cylindre est alors remplacé immédiatement par un modèle équivalent ou supérieur.
 
-## Sécurisation après effraction (sur devis gratuit)
-Sécurisation provisoire, remplacement de serrure et de cylindre, renfort de porte, pose de verrou ou de blindage.
-- [Après effraction Paris](https://shoptaserrure.netlify.app/depannage/effraction/paris/)
-- [Après effraction Paris 1er](https://shoptaserrure.netlify.app/depannage/effraction/paris-1/) – 75001
-- [Après effraction Paris 2e](https://shoptaserrure.netlify.app/depannage/effraction/paris-2/) – 75002
-- [Après effraction Paris 3e](https://shoptaserrure.netlify.app/depannage/effraction/paris-3/) – 75003
-- [Après effraction Paris 4e](https://shoptaserrure.netlify.app/depannage/effraction/paris-4/) – 75004
-- [Après effraction Paris 5e](https://shoptaserrure.netlify.app/depannage/effraction/paris-5/) – 75005
-- [Après effraction Paris 6e](https://shoptaserrure.netlify.app/depannage/effraction/paris-6/) – 75006
-- [Après effraction Paris 7e](https://shoptaserrure.netlify.app/depannage/effraction/paris-7/) – 75007
-- [Après effraction Paris 8e](https://shoptaserrure.netlify.app/depannage/effraction/paris-8/) – 75008
-- [Après effraction Paris 9e](https://shoptaserrure.netlify.app/depannage/effraction/paris-9/) – 75009
-- [Après effraction Paris 10e](https://shoptaserrure.netlify.app/depannage/effraction/paris-10/) – 75010
-- [Après effraction Paris 11e](https://shoptaserrure.netlify.app/depannage/effraction/paris-11/) – 75011
-- [Après effraction Paris 12e](https://shoptaserrure.netlify.app/depannage/effraction/paris-12/) – 75012
-- [Après effraction Paris 13e](https://shoptaserrure.netlify.app/depannage/effraction/paris-13/) – 75013
-- [Après effraction Paris 14e](https://shoptaserrure.netlify.app/depannage/effraction/paris-14/) – 75014
-- [Après effraction Paris 15e](https://shoptaserrure.netlify.app/depannage/effraction/paris-15/) – 75015
-- [Après effraction Paris 16e](https://shoptaserrure.netlify.app/depannage/effraction/paris-16/) – 75016
-- [Après effraction Paris 17e](https://shoptaserrure.netlify.app/depannage/effraction/paris-17/) – 75017
-- [Après effraction Paris 18e](https://shoptaserrure.netlify.app/depannage/effraction/paris-18/) – 75018
-- [Après effraction Paris 19e](https://shoptaserrure.netlify.app/depannage/effraction/paris-19/) – 75019
-- [Après effraction Paris 20e](https://shoptaserrure.netlify.app/depannage/effraction/paris-20/) – 75020
-- [Après effraction Antony](https://shoptaserrure.netlify.app/depannage/effraction/antony/) – 92160
-- [Après effraction Asnières-sur-Seine](https://shoptaserrure.netlify.app/depannage/effraction/asnieres-sur-seine/) – 92600
-- [Après effraction Bagneux](https://shoptaserrure.netlify.app/depannage/effraction/bagneux/) – 92220
-- [Après effraction Bois-Colombes](https://shoptaserrure.netlify.app/depannage/effraction/bois-colombes/) – 92270
-- [Après effraction Boulogne-Billancourt](https://shoptaserrure.netlify.app/depannage/effraction/boulogne-billancourt/) – 92100
-- [Après effraction Bourg-la-Reine](https://shoptaserrure.netlify.app/depannage/effraction/bourg-la-reine/) – 92340
-- [Après effraction Châtenay-Malabry](https://shoptaserrure.netlify.app/depannage/effraction/chatenay-malabry/) – 92290
-- [Après effraction Châtillon](https://shoptaserrure.netlify.app/depannage/effraction/chatillon/) – 92320
-- [Après effraction Chaville](https://shoptaserrure.netlify.app/depannage/effraction/chaville/) – 92370
-- [Après effraction Clamart](https://shoptaserrure.netlify.app/depannage/effraction/clamart/) – 92140
-- [Après effraction Clichy](https://shoptaserrure.netlify.app/depannage/effraction/clichy/) – 92110
-- [Après effraction Colombes](https://shoptaserrure.netlify.app/depannage/effraction/colombes/) – 92700
-- [Après effraction Courbevoie](https://shoptaserrure.netlify.app/depannage/effraction/courbevoie/) – 92400
-- [Après effraction Fontenay-aux-Roses](https://shoptaserrure.netlify.app/depannage/effraction/fontenay-aux-roses/) – 92260
-- [Après effraction Garches](https://shoptaserrure.netlify.app/depannage/effraction/garches/) – 92380
-- [Après effraction La Garenne-Colombes](https://shoptaserrure.netlify.app/depannage/effraction/la-garenne-colombes/) – 92250
-- [Après effraction Gennevilliers](https://shoptaserrure.netlify.app/depannage/effraction/gennevilliers/) – 92230
-- [Après effraction Issy-les-Moulineaux](https://shoptaserrure.netlify.app/depannage/effraction/issy-les-moulineaux/) – 92130
-- [Après effraction Levallois-Perret](https://shoptaserrure.netlify.app/depannage/effraction/levallois-perret/) – 92300
-- [Après effraction Malakoff](https://shoptaserrure.netlify.app/depannage/effraction/malakoff/) – 92240
-- [Après effraction Marnes-la-Coquette](https://shoptaserrure.netlify.app/depannage/effraction/marnes-la-coquette/) – 92430
-- [Après effraction Meudon](https://shoptaserrure.netlify.app/depannage/effraction/meudon/) – 92190
-- [Après effraction Montrouge](https://shoptaserrure.netlify.app/depannage/effraction/montrouge/) – 92120
-- [Après effraction Nanterre](https://shoptaserrure.netlify.app/depannage/effraction/nanterre/) – 92000
-- [Après effraction Neuilly-sur-Seine](https://shoptaserrure.netlify.app/depannage/effraction/neuilly-sur-seine/) – 92200
-- [Après effraction Le Plessis-Robinson](https://shoptaserrure.netlify.app/depannage/effraction/le-plessis-robinson/) – 92350
-- [Après effraction Puteaux](https://shoptaserrure.netlify.app/depannage/effraction/puteaux/) – 92800
-- [Après effraction Rueil-Malmaison](https://shoptaserrure.netlify.app/depannage/effraction/rueil-malmaison/) – 92500
-- [Après effraction Saint-Cloud](https://shoptaserrure.netlify.app/depannage/effraction/saint-cloud/) – 92210
-- [Après effraction Sceaux](https://shoptaserrure.netlify.app/depannage/effraction/sceaux/) – 92330
-- [Après effraction Sèvres](https://shoptaserrure.netlify.app/depannage/effraction/sevres/) – 92310
-- [Après effraction Suresnes](https://shoptaserrure.netlify.app/depannage/effraction/suresnes/) – 92150
-- [Après effraction Vanves](https://shoptaserrure.netlify.app/depannage/effraction/vanves/) – 92170
-- [Après effraction Vaucresson](https://shoptaserrure.netlify.app/depannage/effraction/vaucresson/) – 92420
-- [Après effraction Ville-d'Avray](https://shoptaserrure.netlify.app/depannage/effraction/ville-d-avray/) – 92410
-- [Après effraction Villeneuve-la-Garenne](https://shoptaserrure.netlify.app/depannage/effraction/villeneuve-la-garenne/) – 92390
-- [Après effraction Argenteuil](https://shoptaserrure.netlify.app/depannage/effraction/argenteuil/) – 95100
-- [Après effraction Arnouville](https://shoptaserrure.netlify.app/depannage/effraction/arnouville/) – 95400
-- [Après effraction Auvers-sur-Oise](https://shoptaserrure.netlify.app/depannage/effraction/auvers-sur-oise/) – 95430
-- [Après effraction Beauchamp](https://shoptaserrure.netlify.app/depannage/effraction/beauchamp/) – 95250
-- [Après effraction Beaumont-sur-Oise](https://shoptaserrure.netlify.app/depannage/effraction/beaumont-sur-oise/) – 95260
-- [Après effraction Bernes-sur-Oise](https://shoptaserrure.netlify.app/depannage/effraction/bernes-sur-oise/) – 95340
-- [Après effraction Bessancourt](https://shoptaserrure.netlify.app/depannage/effraction/bessancourt/) – 95550
-- [Après effraction Bezons](https://shoptaserrure.netlify.app/depannage/effraction/bezons/) – 95870
-- [Après effraction Boisemont](https://shoptaserrure.netlify.app/depannage/effraction/boisemont/) – 95000
-- [Après effraction Bonneuil-en-France](https://shoptaserrure.netlify.app/depannage/effraction/bonneuil-en-france/) – 95500
-- [Après effraction Bouffémont](https://shoptaserrure.netlify.app/depannage/effraction/bouffemont/) – 95570
-- [Après effraction Bruyères-sur-Oise](https://shoptaserrure.netlify.app/depannage/effraction/bruyeres-sur-oise/) – 95820
-- [Après effraction Butry-sur-Oise](https://shoptaserrure.netlify.app/depannage/effraction/butry-sur-oise/) – 95430
-- [Après effraction Cergy](https://shoptaserrure.netlify.app/depannage/effraction/cergy/) – 95000
-- [Après effraction Champagne-sur-Oise](https://shoptaserrure.netlify.app/depannage/effraction/champagne-sur-oise/) – 95660
-- [Après effraction Cormeilles-en-Parisis](https://shoptaserrure.netlify.app/depannage/effraction/cormeilles-en-parisis/) – 95240
-- [Après effraction Courdimanche](https://shoptaserrure.netlify.app/depannage/effraction/courdimanche/) – 95800
-- [Après effraction Deuil-la-Barre](https://shoptaserrure.netlify.app/depannage/effraction/deuil-la-barre/) – 95170
-- [Après effraction Domont](https://shoptaserrure.netlify.app/depannage/effraction/domont/) – 95330
-- [Après effraction Eaubonne](https://shoptaserrure.netlify.app/depannage/effraction/eaubonne/) – 95600
-- [Après effraction Écouen](https://shoptaserrure.netlify.app/depannage/effraction/ecouen/) – 95440
-- [Après effraction Enghien-les-Bains](https://shoptaserrure.netlify.app/depannage/effraction/enghien-les-bains/) – 95880
-- [Après effraction Ennery](https://shoptaserrure.netlify.app/depannage/effraction/ennery/) – 95300
-- [Après effraction Épiais-Rhus](https://shoptaserrure.netlify.app/depannage/effraction/epiais-rhus/) – 95810
-- [Après effraction Épinay-Champlâtreux](https://shoptaserrure.netlify.app/depannage/effraction/epinay-champlatreux/) – 95270
-- [Après effraction Éragny](https://shoptaserrure.netlify.app/depannage/effraction/eragny/) – 95610
-- [Après effraction Ermont](https://shoptaserrure.netlify.app/depannage/effraction/ermont/) – 95120
-- [Après effraction Ézanville](https://shoptaserrure.netlify.app/depannage/effraction/ezanville/) – 95460
-- [Après effraction Fontenay-en-Parisis](https://shoptaserrure.netlify.app/depannage/effraction/fontenay-en-parisis/) – 95190
-- [Après effraction Fosses](https://shoptaserrure.netlify.app/depannage/effraction/fosses/) – 95470
-- [Après effraction Franconville](https://shoptaserrure.netlify.app/depannage/effraction/franconville/) – 95130
-- [Après effraction Frépillon](https://shoptaserrure.netlify.app/depannage/effraction/frepillon/) – 95740
-- [Après effraction Frouville](https://shoptaserrure.netlify.app/depannage/effraction/frouville/) – 95690
-- [Après effraction Garges-lès-Gonesse](https://shoptaserrure.netlify.app/depannage/effraction/garges-les-gonesse/) – 95140
-- [Après effraction Gonesse](https://shoptaserrure.netlify.app/depannage/effraction/gonesse/) – 95500
-- [Après effraction Goussainville](https://shoptaserrure.netlify.app/depannage/effraction/goussainville/) – 95190
-- [Après effraction Groslay](https://shoptaserrure.netlify.app/depannage/effraction/groslay/) – 95410
-- [Après effraction Herblay-sur-Seine](https://shoptaserrure.netlify.app/depannage/effraction/herblay-sur-seine/) – 95220
-- [Après effraction L'Isle-Adam](https://shoptaserrure.netlify.app/depannage/effraction/l-isle-adam/) – 95290
-- [Après effraction Jouy-le-Moutier](https://shoptaserrure.netlify.app/depannage/effraction/jouy-le-moutier/) – 95280
-- [Après effraction Louvres](https://shoptaserrure.netlify.app/depannage/effraction/louvres/) – 95380
-- [Après effraction Marly-la-Ville](https://shoptaserrure.netlify.app/depannage/effraction/marly-la-ville/) – 95670
-- [Après effraction Montigny-lès-Cormeilles](https://shoptaserrure.netlify.app/depannage/effraction/montigny-les-cormeilles/) – 95370
-- [Après effraction Montmagny](https://shoptaserrure.netlify.app/depannage/effraction/montmagny/) – 95360
-- [Après effraction Montmorency](https://shoptaserrure.netlify.app/depannage/effraction/montmorency/) – 95160
-- [Après effraction Osny](https://shoptaserrure.netlify.app/depannage/effraction/osny/) – 95520
-- [Après effraction Persan](https://shoptaserrure.netlify.app/depannage/effraction/persan/) – 95340
-- [Après effraction Pierrelaye](https://shoptaserrure.netlify.app/depannage/effraction/pierrelaye/) – 95220
-- [Après effraction Pontoise](https://shoptaserrure.netlify.app/depannage/effraction/pontoise/) – 95000
-- [Après effraction Puiseux-Pontoise](https://shoptaserrure.netlify.app/depannage/effraction/puiseux-pontoise/) – 95650
-- [Après effraction Saint-Brice-sous-Forêt](https://shoptaserrure.netlify.app/depannage/effraction/saint-brice-sous-foret/) – 95350
-- [Après effraction Saint-Gratien](https://shoptaserrure.netlify.app/depannage/effraction/saint-gratien/) – 95210
-- [Après effraction Saint-Leu-la-Forêt](https://shoptaserrure.netlify.app/depannage/effraction/saint-leu-la-foret/) – 95320
-- [Après effraction Saint-Ouen-l'Aumône](https://shoptaserrure.netlify.app/depannage/effraction/saint-ouen-l-aumone/) – 95310
-- [Après effraction Saint-Prix](https://shoptaserrure.netlify.app/depannage/effraction/saint-prix/) – 95390
-- [Après effraction Sannois](https://shoptaserrure.netlify.app/depannage/effraction/sannois/) – 95110
-- [Après effraction Sarcelles](https://shoptaserrure.netlify.app/depannage/effraction/sarcelles/) – 95200
-- [Après effraction Soisy-sous-Montmorency](https://shoptaserrure.netlify.app/depannage/effraction/soisy-sous-montmorency/) – 95230
-- [Après effraction Taverny](https://shoptaserrure.netlify.app/depannage/effraction/taverny/) – 95150
-- [Après effraction Vauréal](https://shoptaserrure.netlify.app/depannage/effraction/vaureal/) – 95490
-- [Après effraction Villiers-le-Bel](https://shoptaserrure.netlify.app/depannage/effraction/villiers-le-bel/) – 95400
+### Les bons réflexes en attendant le serrurier
+Vérifiez qu'aucune fenêtre ou porte secondaire n'est accessible en sécurité, demandez à un voisin ou à votre gardien s'il détient un double, et ne tentez pas de forcer la porte avec une carte ou un tournevis : vous risqueriez d'endommager le bâti ou la serrure et d'alourdir la facture.
+
+### Questions fréquentes
+- **Combien coûte l'ouverture d'une porte claquée ?** 110 € TTC en journée (8h–18h), 150 € en soirée (18h–22h) et 220 € la nuit (22h–8h). Une porte fermée à clé est facturée à partir de 180 € en journée. Le prix exact vous est annoncé au téléphone, puis confirmé par un devis écrit sur place avant l'intervention.
+- **Allez-vous casser la serrure ?** Non dans la grande majorité des cas. Une porte claquée s'ouvre sans dégât. Si un perçage devait être nécessaire, il vous serait expliqué et chiffré avant, et vous restez libre de refuser.
+- **Combien de temps dure l'ouverture ?** Quelques minutes pour une porte simplement claquée, un peu plus pour une porte blindée ou fermée à clé.
+
+## Déblocage de serrure – à partir de 180 € TTC
+Page : https://shopta-serrure.fr/depannage/serrure-bloquee/
+
+La clé entre mais ne tourne plus, la poignée force, la porte refuse de s'ouvrir ou de se fermer : une serrure bloquée peut vous laisser dehors ou vous empêcher de sécuriser votre logement. Nous diagnostiquons la cause sur place et débloquons le mécanisme, en réparant plutôt qu'en remplaçant chaque fois que c'est possible.
+
+### Les causes les plus fréquentes
+Cylindre encrassé ou usé, clé tordue ou trop usée, pêne mal aligné avec la gâche après un affaissement de la porte, ressort cassé dans le boîtier, ou serrure multipoints dont une tringle s'est désolidarisée. Chaque cause a sa solution : nettoyage et lubrification, réglage de la gâche, remplacement d'une pièce ou, en dernier recours, du cylindre.
+
+### Ce que nous faisons sur place
+Ouverture de la porte si vous êtes à l'extérieur, démontage et diagnostic du mécanisme, puis réparation. Si une pièce doit être changée, le serrurier vous présente le devis et les références avant de la remplacer. Nous avons dans le véhicule les cylindres et pièces courantes pour terminer l'intervention le jour même.
+
+### Éviter que ça recommence
+Un entretien une fois par an avec un lubrifiant sec (graphite ou PTFE) suffit à garder un cylindre fluide. Évitez l'huile de cuisine ou le dégrippant gras, qui finissent par coller la poussière dans le mécanisme. Si votre porte frotte, faites régler les paumelles : une porte affaissée force sur le pêne et use la serrure.
+
+### Questions fréquentes
+- **Ma clé tourne dans le vide, que faire ?** C'est souvent le signe d'une came cassée ou d'un cylindre défaillant. N'insistez pas, appelez-nous : nous ouvrons la porte et remplaçons la pièce défectueuse.
+- **Peut-on réparer une serrure multipoints ?** Oui, dans la plupart des cas. Nous remplaçons seulement le boîtier ou la pièce en cause, sans changer toute la serrure.
+- **Le déblocage est-il remboursé par l'assurance ?** Cela dépend de votre contrat et de la cause (usure ou tentative d'effraction). Nous vous remettons une facture détaillée à transmettre à votre assureur.
+
+## Extraction de clé cassée – sur devis gratuit
+Page : https://shopta-serrure.fr/depannage/cle-cassee/
+
+Une clé fatiguée finit un jour par se casser dans le cylindre, souvent au pire moment. Bonne nouvelle : dans la plupart des cas, le morceau s'extrait sans changer la serrure, avec un outillage adapté.
+
+### Ne forcez pas !
+Pousser le morceau avec une autre clé, un tournevis ou de la colle l'enfonce plus loin et peut bloquer les goupilles. Si le bout dépasse franchement, vous pouvez essayer de le tirer droit avec une pince fine. Sinon, laissez faire un professionnel.
+
+### Notre méthode
+Le serrurier utilise des extracteurs fins qui accrochent le morceau de clé entre les goupilles sans les endommager. La porte est ensuite ouverte, le cylindre contrôlé, et nous pouvons vous proposer un nouveau cylindre si la clé cassée révélait une usure avancée.
+
+### Et après ?
+Si vous avez une autre clé en bon état, le cylindre reste utilisable. Si c'était la dernière, nous vous conseillons de faire reproduire une clé à partir de la carte de propriété (pour les cylindres de sécurité) ou de remplacer le cylindre avec plusieurs clés neuves.
+
+### Questions fréquentes
+- **Faut-il changer la serrure après une clé cassée ?** Pas forcément. Si le cylindre n'est pas endommagé et que vous avez un double, il suffit d'extraire le morceau.
+- **Combien coûte l'extraction d'une clé cassée ?** Le prix dépend de la serrure et de l'heure d'intervention : il vous est annoncé au téléphone et confirmé par un devis gratuit avant intervention.
+- **Ma clé s'est cassée dans la serrure de ma voiture ou de ma boîte aux lettres** Nous intervenons aussi sur les boîtes aux lettres. Pour les véhicules, appelez-nous pour vérifier que nous pouvons vous aider.
+
+## Changement de serrure et de cylindre – à partir de 160 € TTC
+Page : https://shopta-serrure.fr/depannage/changement-serrure/
+
+Clés perdues ou volées, emménagement dans un logement dont vous ne connaissez pas les doubles, serrure usée ou trop facile à forcer : changer de cylindre ou de serrure est le moyen le plus sûr de reprendre le contrôle de vos accès.
+
+### Cylindre seul ou serrure complète ?
+Le plus souvent, remplacer le cylindre (la partie où entre la clé) suffit : c'est rapide et économique. La serrure complète se change quand le boîtier est endommagé, après une effraction, ou pour passer à une serrure 3 ou 5 points plus résistante.
+
+### Comprendre la certification A2P
+La marque A2P, délivrée par le CNPP, classe la résistance à l'effraction : A2P* (5 minutes), A2P** (10 minutes), A2P*** (15 minutes). Certaines assurances exigent un niveau minimal : vérifiez votre contrat, nous vous conseillerons le modèle adapté. Les cylindres de sécurité sont livrés avec une carte de propriété : seul son détenteur peut faire reproduire les clés.
+
+### Un devis clair avant de commencer
+Le serrurier vous présente plusieurs gammes (standard, haute sécurité, A2P) avec leur prix posé, pièces et main d'œuvre comprises. Vous choisissez, il installe, vous repartez avec la facture, les clés neuves et la carte de propriété.
+
+### Questions fréquentes
+- **Combien coûte un changement de cylindre ?** À partir de 160 € TTC en journée (8h–18h), 200 € en soirée (18h–22h) et 230 € la nuit (22h–8h). Le remplacement d'une serrure complète commence à 250 €. Le prix final dépend de la marque et du niveau de sécurité choisis : un devis gratuit et détaillé vous est remis avant l'intervention.
+- **Faut-il changer la serrure après un vol de clés ?** Oui, c'est vivement conseillé, surtout si vos papiers avec votre adresse ont été volés en même temps. Votre assurance peut prendre en charge le remplacement selon votre contrat.
+- **Propriétaire ou locataire : qui paie ?** Le remplacement suite à la perte des clés est en général à la charge du locataire ; le remplacement d'une serrure vétuste incombe plutôt au propriétaire. Vérifiez votre bail.
+
+## Serrure connectée (Smart Lock) – sur devis gratuit
+Page : https://shopta-serrure.fr/depannage/serrure-connectee/
+
+Les serrures connectées permettent d'ouvrir avec un smartphone, un code ou une empreinte, de donner un accès temporaire à un proche ou de suivre les passages. Nous les installons sur votre porte existante et intervenons en cas de panne ou de blocage.
+
+### Installation sur votre porte
+Selon le modèle, la serrure connectée se pose côté intérieur sur votre cylindre existant, ou remplace le cylindre et la poignée. Nous vérifions la compatibilité de votre porte, installons et paramétrons l'application avec vous, puis testons chaque mode d'ouverture.
+
+### Dépannage d'une serrure connectée
+Pile vide, mise à jour ratée, appairage perdu, moteur qui force sur un pêne mal aligné : nous ouvrons la porte si vous êtes bloqué dehors, remettons le système en fonctionnement et réglons la porte pour éviter que la panne se reproduise.
+
+### Nos conseils de sécurité
+Gardez toujours une clé mécanique de secours hors du logement, choisissez un modèle avec cylindre certifié si votre porte donne sur l'extérieur, et remplacez les piles dès la première alerte de batterie faible.
+
+### Questions fréquentes
+- **Ma serrure connectée ne répond plus, je suis dehors** Appelez-nous : nous ouvrons la porte comme pour une serrure classique, puis remettons la serrure connectée en service.
+- **Peut-on installer une serrure connectée sur une porte blindée ?** Souvent oui, selon le cylindre en place. Envoyez-nous une photo de votre porte sur WhatsApp pour un avis rapide.
+- **Combien coûte l'installation ?** Le dépannage comme l'installation font l'objet d'un devis gratuit : le prix dépend du modèle et vous est annoncé avant toute intervention.
+
+## Sécurisation après effraction – sur devis gratuit
+Page : https://shopta-serrure.fr/depannage/effraction/
+
+Après un cambriolage ou une tentative d'effraction, la priorité est de refermer votre logement le jour même. Nous sécurisons la porte en urgence, puis vous proposons une remise en état durable, avec tous les documents nécessaires à votre déclaration d'assurance.
+
+### Les étapes après une effraction
+1. Ne touchez à rien et appelez la police (17) pour faire constater. 2. Déposez plainte, le récépissé est demandé par votre assureur. 3. Faites sécuriser l'accès : nous intervenons 24h/24. 4. Déclarez le sinistre à votre assurance, en général dans les 2 jours ouvrés après en avoir eu connaissance.
+
+### Sécurisation immédiate
+Remplacement du cylindre forcé, pose d'une serrure provisoire, consolidation du bâti ou de la gâche arrachée, condamnation temporaire si la porte ne peut pas être refermée. L'objectif : que vous puissiez dormir chez vous en sécurité dès ce soir.
+
+### Remise en état et renforcement
+Selon les dégâts : nouvelle serrure multipoints A2P, cornières anti-pinces, protège-cylindre, renfort de bâti, blindage de porte. Nous fournissons un devis détaillé et des photos avant/après pour l'expert de votre assurance.
+
+### Questions fréquentes
+- **L'assurance rembourse-t-elle le serrurier après un cambriolage ?** Dans la plupart des contrats multirisques habitation, oui, sur présentation du dépôt de plainte et de la facture. Nous vous remettons une facture détaillée et conforme.
+- **Pouvez-vous intervenir avant le passage de la police ?** Il est préférable d'attendre le constat. Si la porte ne ferme plus, nous pouvons sécuriser provisoirement en préservant les traces utiles.
+- **Faites-vous la pose de porte blindée ?** Nous réalisons le blindage de porte existante et les renforts. Pour un bloc-porte blindé complet, demandez-nous un devis.
+
+## Grille tarifaire (TTC, journée 8h–18h / soirée 18h–22h / nuit 22h–8h)
+- Ouverture de porte claquée : 110 € / 150 € / 220 €
+- Ouverture de porte fermée à clé : À partir de 180 € / À partir de 240 € / À partir de 280 €
+- Porte bloquée — clé qui ne tourne plus : 180 € / 240 € / 280 €
+- Changement de cylindre : À partir de 160 € / À partir de 200 € / À partir de 230 €
+- Remplacement de serrure : À partir de 250 € / sur devis / sur devis
+- Blindage de porte : À partir de 2 300 € / sur devis / sur devis
+- Bloc-porte complet : À partir de 3 350 € / sur devis / sur devis
+- Bloc-porte de cave : À partir de 1 550 € / sur devis / sur devis
+- Serrure de boîte aux lettres — modèle basique : 110 € / sur devis / sur devis
+
+## Questions générales
+- **Combien coûte une ouverture de porte claquée ?** L'ouverture d'une porte claquée coûte 110 € TTC en journée (8h–18h), 150 € en soirée et 220 € la nuit. Le prix exact vous est annoncé au téléphone avant le déplacement, puis confirmé par un devis écrit sur place avant toute intervention.
+- **Mon assurance peut-elle rembourser l'intervention ?** Oui, dans de nombreux cas (effraction, perte ou vol de clés selon votre contrat). Nous vous remettons une facture détaillée et conforme, reconnue par les assureurs habitation en France. Vérifiez les garanties de votre contrat multirisque habitation.
+- **En combien de temps intervenez-vous ?** En moyenne en moins de 30 minutes dans Paris et la proche banlieue, 24h/24 et 7j/7, jours fériés compris. Le délai précis vous est annoncé au téléphone.
+- **Le devis est-il vraiment gratuit ?** Oui. Le devis est gratuit et sans engagement. Si vous le refusez, vous ne payez rien d'autre que ce qui vous a été annoncé au téléphone.
+- **Allez-vous casser ma serrure ?** Non, sauf cas exceptionnel. Nous privilégions toujours l'ouverture fine (crochetage, radio, by-pass). Si un remplacement est nécessaire, il vous est expliqué et chiffré avant.
+- **Quels moyens de paiement acceptez-vous ?** Carte bancaire, espèces et virement. Une facture détaillée vous est systématiquement remise.
+
+## Zones d'intervention
+### Paris (75)
+- [Serrurier Paris](https://shopta-serrure.fr/villes/paris/)
+- [Serrurier Paris 1er](https://shopta-serrure.fr/villes/paris-1/)
+- [Serrurier Paris 2e](https://shopta-serrure.fr/villes/paris-2/)
+- [Serrurier Paris 3e](https://shopta-serrure.fr/villes/paris-3/)
+- [Serrurier Paris 4e](https://shopta-serrure.fr/villes/paris-4/)
+- [Serrurier Paris 5e](https://shopta-serrure.fr/villes/paris-5/)
+- [Serrurier Paris 6e](https://shopta-serrure.fr/villes/paris-6/)
+- [Serrurier Paris 7e](https://shopta-serrure.fr/villes/paris-7/)
+- [Serrurier Paris 8e](https://shopta-serrure.fr/villes/paris-8/)
+- [Serrurier Paris 9e](https://shopta-serrure.fr/villes/paris-9/)
+- [Serrurier Paris 10e](https://shopta-serrure.fr/villes/paris-10/)
+- [Serrurier Paris 11e](https://shopta-serrure.fr/villes/paris-11/)
+- [Serrurier Paris 12e](https://shopta-serrure.fr/villes/paris-12/)
+- [Serrurier Paris 13e](https://shopta-serrure.fr/villes/paris-13/)
+- [Serrurier Paris 14e](https://shopta-serrure.fr/villes/paris-14/)
+- [Serrurier Paris 15e](https://shopta-serrure.fr/villes/paris-15/)
+- [Serrurier Paris 16e](https://shopta-serrure.fr/villes/paris-16/)
+- [Serrurier Paris 17e](https://shopta-serrure.fr/villes/paris-17/)
+- [Serrurier Paris 18e](https://shopta-serrure.fr/villes/paris-18/)
+- [Serrurier Paris 19e](https://shopta-serrure.fr/villes/paris-19/)
+- [Serrurier Paris 20e](https://shopta-serrure.fr/villes/paris-20/)
+
+### Hauts-de-Seine (92)
+- [Serrurier Antony](https://shopta-serrure.fr/villes/antony/)
+- [Serrurier Asnières-sur-Seine](https://shopta-serrure.fr/villes/asnieres-sur-seine/)
+- [Serrurier Bagneux](https://shopta-serrure.fr/villes/bagneux/)
+- [Serrurier Bois-Colombes](https://shopta-serrure.fr/villes/bois-colombes/)
+- [Serrurier Boulogne-Billancourt](https://shopta-serrure.fr/villes/boulogne-billancourt/)
+- [Serrurier Bourg-la-Reine](https://shopta-serrure.fr/villes/bourg-la-reine/)
+- [Serrurier Châtenay-Malabry](https://shopta-serrure.fr/villes/chatenay-malabry/)
+- [Serrurier Châtillon](https://shopta-serrure.fr/villes/chatillon/)
+- [Serrurier Chaville](https://shopta-serrure.fr/villes/chaville/)
+- [Serrurier Clamart](https://shopta-serrure.fr/villes/clamart/)
+- [Serrurier Clichy](https://shopta-serrure.fr/villes/clichy/)
+- [Serrurier Colombes](https://shopta-serrure.fr/villes/colombes/)
+- [Serrurier Courbevoie](https://shopta-serrure.fr/villes/courbevoie/)
+- [Serrurier Fontenay-aux-Roses](https://shopta-serrure.fr/villes/fontenay-aux-roses/)
+- [Serrurier Garches](https://shopta-serrure.fr/villes/garches/)
+- [Serrurier La Garenne-Colombes](https://shopta-serrure.fr/villes/la-garenne-colombes/)
+- [Serrurier Gennevilliers](https://shopta-serrure.fr/villes/gennevilliers/)
+- [Serrurier Issy-les-Moulineaux](https://shopta-serrure.fr/villes/issy-les-moulineaux/)
+- [Serrurier Levallois-Perret](https://shopta-serrure.fr/villes/levallois-perret/)
+- [Serrurier Malakoff](https://shopta-serrure.fr/villes/malakoff/)
+- [Serrurier Marnes-la-Coquette](https://shopta-serrure.fr/villes/marnes-la-coquette/)
+- [Serrurier Meudon](https://shopta-serrure.fr/villes/meudon/)
+- [Serrurier Montrouge](https://shopta-serrure.fr/villes/montrouge/)
+- [Serrurier Nanterre](https://shopta-serrure.fr/villes/nanterre/)
+- [Serrurier Neuilly-sur-Seine](https://shopta-serrure.fr/villes/neuilly-sur-seine/)
+- [Serrurier Le Plessis-Robinson](https://shopta-serrure.fr/villes/le-plessis-robinson/)
+- [Serrurier Puteaux](https://shopta-serrure.fr/villes/puteaux/)
+- [Serrurier Rueil-Malmaison](https://shopta-serrure.fr/villes/rueil-malmaison/)
+- [Serrurier Saint-Cloud](https://shopta-serrure.fr/villes/saint-cloud/)
+- [Serrurier Sceaux](https://shopta-serrure.fr/villes/sceaux/)
+- [Serrurier Sèvres](https://shopta-serrure.fr/villes/sevres/)
+- [Serrurier Suresnes](https://shopta-serrure.fr/villes/suresnes/)
+- [Serrurier Vanves](https://shopta-serrure.fr/villes/vanves/)
+- [Serrurier Vaucresson](https://shopta-serrure.fr/villes/vaucresson/)
+- [Serrurier Ville-d'Avray](https://shopta-serrure.fr/villes/ville-d-avray/)
+- [Serrurier Villeneuve-la-Garenne](https://shopta-serrure.fr/villes/villeneuve-la-garenne/)
+
+### Seine-Saint-Denis (93)
+- [Serrurier Saint-Ouen-sur-Seine](https://shopta-serrure.fr/villes/saint-ouen-sur-seine/)
+
+### Val-d'Oise (95)
+- [Serrurier Argenteuil](https://shopta-serrure.fr/villes/argenteuil/)
+- [Serrurier Arnouville](https://shopta-serrure.fr/villes/arnouville/)
+- [Serrurier Auvers-sur-Oise](https://shopta-serrure.fr/villes/auvers-sur-oise/)
+- [Serrurier Beauchamp](https://shopta-serrure.fr/villes/beauchamp/)
+- [Serrurier Beaumont-sur-Oise](https://shopta-serrure.fr/villes/beaumont-sur-oise/)
+- [Serrurier Bernes-sur-Oise](https://shopta-serrure.fr/villes/bernes-sur-oise/)
+- [Serrurier Bessancourt](https://shopta-serrure.fr/villes/bessancourt/)
+- [Serrurier Bezons](https://shopta-serrure.fr/villes/bezons/)
+- [Serrurier Boisemont](https://shopta-serrure.fr/villes/boisemont/)
+- [Serrurier Bonneuil-en-France](https://shopta-serrure.fr/villes/bonneuil-en-france/)
+- [Serrurier Bouffémont](https://shopta-serrure.fr/villes/bouffemont/)
+- [Serrurier Bruyères-sur-Oise](https://shopta-serrure.fr/villes/bruyeres-sur-oise/)
+- [Serrurier Butry-sur-Oise](https://shopta-serrure.fr/villes/butry-sur-oise/)
+- [Serrurier Cergy](https://shopta-serrure.fr/villes/cergy/)
+- [Serrurier Champagne-sur-Oise](https://shopta-serrure.fr/villes/champagne-sur-oise/)
+- [Serrurier Cormeilles-en-Parisis](https://shopta-serrure.fr/villes/cormeilles-en-parisis/)
+- [Serrurier Courdimanche](https://shopta-serrure.fr/villes/courdimanche/)
+- [Serrurier Deuil-la-Barre](https://shopta-serrure.fr/villes/deuil-la-barre/)
+- [Serrurier Domont](https://shopta-serrure.fr/villes/domont/)
+- [Serrurier Eaubonne](https://shopta-serrure.fr/villes/eaubonne/)
+- [Serrurier Écouen](https://shopta-serrure.fr/villes/ecouen/)
+- [Serrurier Enghien-les-Bains](https://shopta-serrure.fr/villes/enghien-les-bains/)
+- [Serrurier Ennery](https://shopta-serrure.fr/villes/ennery/)
+- [Serrurier Épiais-Rhus](https://shopta-serrure.fr/villes/epiais-rhus/)
+- [Serrurier Épinay-Champlâtreux](https://shopta-serrure.fr/villes/epinay-champlatreux/)
+- [Serrurier Éragny](https://shopta-serrure.fr/villes/eragny/)
+- [Serrurier Ermont](https://shopta-serrure.fr/villes/ermont/)
+- [Serrurier Ézanville](https://shopta-serrure.fr/villes/ezanville/)
+- [Serrurier Fontenay-en-Parisis](https://shopta-serrure.fr/villes/fontenay-en-parisis/)
+- [Serrurier Fosses](https://shopta-serrure.fr/villes/fosses/)
+- [Serrurier Franconville](https://shopta-serrure.fr/villes/franconville/)
+- [Serrurier Frépillon](https://shopta-serrure.fr/villes/frepillon/)
+- [Serrurier Frouville](https://shopta-serrure.fr/villes/frouville/)
+- [Serrurier Garges-lès-Gonesse](https://shopta-serrure.fr/villes/garges-les-gonesse/)
+- [Serrurier Gonesse](https://shopta-serrure.fr/villes/gonesse/)
+- [Serrurier Goussainville](https://shopta-serrure.fr/villes/goussainville/)
+- [Serrurier Groslay](https://shopta-serrure.fr/villes/groslay/)
+- [Serrurier Herblay-sur-Seine](https://shopta-serrure.fr/villes/herblay-sur-seine/)
+- [Serrurier L'Isle-Adam](https://shopta-serrure.fr/villes/l-isle-adam/)
+- [Serrurier Jouy-le-Moutier](https://shopta-serrure.fr/villes/jouy-le-moutier/)
+- [Serrurier Louvres](https://shopta-serrure.fr/villes/louvres/)
+- [Serrurier Marly-la-Ville](https://shopta-serrure.fr/villes/marly-la-ville/)
+- [Serrurier Montigny-lès-Cormeilles](https://shopta-serrure.fr/villes/montigny-les-cormeilles/)
+- [Serrurier Montmagny](https://shopta-serrure.fr/villes/montmagny/)
+- [Serrurier Montmorency](https://shopta-serrure.fr/villes/montmorency/)
+- [Serrurier Osny](https://shopta-serrure.fr/villes/osny/)
+- [Serrurier Persan](https://shopta-serrure.fr/villes/persan/)
+- [Serrurier Pierrelaye](https://shopta-serrure.fr/villes/pierrelaye/)
+- [Serrurier Pontoise](https://shopta-serrure.fr/villes/pontoise/)
+- [Serrurier Puiseux-Pontoise](https://shopta-serrure.fr/villes/puiseux-pontoise/)
+- [Serrurier Saint-Brice-sous-Forêt](https://shopta-serrure.fr/villes/saint-brice-sous-foret/)
+- [Serrurier Saint-Gratien](https://shopta-serrure.fr/villes/saint-gratien/)
+- [Serrurier Saint-Leu-la-Forêt](https://shopta-serrure.fr/villes/saint-leu-la-foret/)
+- [Serrurier Saint-Ouen-l'Aumône](https://shopta-serrure.fr/villes/saint-ouen-l-aumone/)
+- [Serrurier Saint-Prix](https://shopta-serrure.fr/villes/saint-prix/)
+- [Serrurier Sannois](https://shopta-serrure.fr/villes/sannois/)
+- [Serrurier Sarcelles](https://shopta-serrure.fr/villes/sarcelles/)
+- [Serrurier Soisy-sous-Montmorency](https://shopta-serrure.fr/villes/soisy-sous-montmorency/)
+- [Serrurier Taverny](https://shopta-serrure.fr/villes/taverny/)
+- [Serrurier Vauréal](https://shopta-serrure.fr/villes/vaureal/)
+- [Serrurier Villiers-le-Bel](https://shopta-serrure.fr/villes/villiers-le-bel/)
+
+Hors zone, des frais de déplacement supplémentaires peuvent s'appliquer et sont annoncés à l'avance.
+
+## Marques prises en charge
+Point Fort Fichet, Picard Serrures, Vachette, Bricard, Héraclès, Pollux, JPM, Thirard, Metalux, Laperche, Stremler, Mul-T-Lock, Abus, DOM, EVVA, dormakaba, Keso, Iseo, Cisa, Mottura, Tesa, Yale, Tordjman Métal, Bel'M, K•Line, Zilten, Lapeyre, Tryba, Dierre, Gardesa, Hörmann, Somfy, Netatmo, Nuki, Ultion, Danalock, Bold, Igloohome
+
+## Porte claquée : que faire ? Le guide pour rentrer chez vous sans arnaque
+https://shopta-serrure.fr/blog/porte-claquee-que-faire/ – publié le 12 octobre 2026
+
+Vous sortez sur le palier, un courant d'air, et la porte se referme derrière vous avec les clés à l'intérieur. Pas de panique : une porte claquée, c'est-à-dire non verrouillée à clé, s'ouvre presque toujours sans dégât et en quelques minutes.
+
+### 1. Vérifiez les solutions gratuites
+
+- Un proche, un voisin ou le gardien a-t-il un double ?
+- Votre propriétaire ou votre agence en conserve-t-il un ?
+- Une autre porte (service, garage, terrasse) est-elle accessible sans danger ?
+
+N'essayez pas de passer par une fenêtre en hauteur, et évitez la technique de la carte bancaire : sur les serrures récentes, elle ne fonctionne pas et peut abîmer le joint ou la gâche.
+
+### 2. Choisissez un serrurier qui annonce son prix
+
+Le dépannage en serrurerie fait partie des secteurs les plus surveillés par la DGCCRF. Pour éviter les mauvaises surprises :
+
+- Appelez une entreprise locale identifiée (nom, numéro, avis vérifiables), pas un numéro trouvé sur un prospectus glissé dans la boîte aux lettres.
+- Demandez le prix au téléphone : un professionnel sérieux peut l'estimer à partir de votre description.
+- Exigez un devis écrit et signé avant le début de l'intervention : c'est obligatoire.
+- Méfiez-vous si le serrurier veut percer ou changer la serrure d'une porte simplement claquée.
+
+### 3. Combien coûte une ouverture de porte claquée ?
+
+Chez Shopta Serrure, l'ouverture d'une porte claquée coûte 110 € TTC en journée (8h–18h), 150 € en soirée (18h–22h) et 220 € la nuit (22h–8h). Une porte fermée à clé est facturée à partir de 180 € en journée. Le tarif peut varier selon le type de porte (blindée, multipoints) et vous est toujours annoncé avant le déplacement, puis confirmé par écrit sur place.
+
+### 4. Après l'ouverture
+
+Profitez-en pour faire faire un double de vos clés et le confier à une personne de confiance. Si votre porte claque facilement, un groom réglable ou un réglage des paumelles évite que l'incident se reproduise.
+
+## Arnaques au serrurier : 7 signaux d'alerte et comment les éviter
+https://shopta-serrure.fr/blog/eviter-arnaques-serrurier/ – publié le 28 septembre 2026
+
+Chaque année, des particuliers paient des sommes exorbitantes pour une simple ouverture de porte. Ces abus ne sont pas une fatalité : quelques réflexes suffisent à les éviter.
+
+### Les signaux d'alerte
+
+- Un prospectus « numéro d'urgence » imitant un document de la mairie ou du syndic.
+- Un prix au téléphone flou ou « à partir de 19 € » sans autre précision.
+- Pas de devis écrit avant de commencer.
+- La proposition de percer ou de changer la serrure pour une porte simplement claquée.
+- Un paiement exigé uniquement en espèces, sans facture.
+- Une pression pour signer vite, « sinon le déplacement est facturé ».
+- Une entreprise sans adresse, sans SIRET ni avis vérifiables.
+
+### Vos droits
+
+Pour un dépannage à domicile, le professionnel doit afficher ses tarifs et vous remettre un devis détaillé avant l'intervention lorsque le montant est connu à l'avance. Vous pouvez refuser ce devis : seul le déplacement, s'il vous a été annoncé, peut alors être dû. Une facture détaillée doit vous être remise.
+
+### En cas de litige
+
+Gardez tous les documents, contestez par écrit, et signalez les pratiques abusives sur la plateforme publique SignalConso. Vous pouvez aussi saisir le médiateur de la consommation indiqué par l'entreprise.
+
+### Notre engagement
+
+Chez Shopta Serrure, le prix est annoncé au téléphone, confirmé par un devis signé, et la facture est détaillée et conforme pour votre assurance. Nos avis clients sont publics et vérifiables sur notre fiche Google.
+
+## Comment sécuriser votre porte d'entrée ?
+https://shopta-serrure.fr/blog/securiser-porte-entree/ – publié le 24 janvier 2026
+
+La porte d'entrée reste le premier point de passage des cambrioleurs. La plupart abandonnent au-delà de quelques minutes de résistance : chaque élément qui les ralentit compte.
+
+### 1. Une serrure multipoints certifiée
+
+Une serrure 3 ou 5 points répartit l'ancrage sur toute la hauteur de la porte. Choisissez un modèle certifié A2P (1, 2 ou 3 étoiles selon la résistance) et un cylindre de sécurité avec carte de propriété.
+
+### 2. Le cylindre, point faible fréquent
+
+Un cylindre standard peut être cassé ou arraché. Un cylindre anti-casse, anti-perçage et anti-crochetage, associé à un protège-cylindre (rosace) en acier, ferme cette porte d'entrée aux tentatives les plus courantes.
+
+### 3. Le blindage et les cornières
+
+Le blindage d'une porte existante renforce le vantail par une tôle d'acier. Les cornières anti-pinces empêchent d'insérer un pied-de-biche entre la porte et le bâti.
+
+### 4. Les petits équipements utiles
+
+- Un entrebâilleur pour ouvrir sans laisser entrer.
+- Un judas (ou un judas numérique) pour identifier le visiteur.
+- Des paumelles anti-dégondage.
+- Un éclairage extérieur à détection.
+
+Nos serruriers peuvent évaluer votre porte gratuitement et vous proposer les renforts adaptés à votre budget.
+
+## Que faire en cas de clé cassée dans la serrure ?
+https://shopta-serrure.fr/blog/cle-cassee-dans-la-serrure/ – publié le 20 janvier 2026
+
+Un moment de précipitation et la clé casse dans le cylindre. Pas de panique, mais surtout : ne forcez pas.
+
+### Ce qu'il ne faut pas faire
+
+- Pousser le morceau avec une autre clé ou un tournevis : il s'enfonce davantage.
+- Mettre de la colle sur l'autre morceau pour « recoller » : la colle bloque les goupilles.
+- Tourner le cylindre avec une pince : vous risquez de casser la came.
+
+### Ce que vous pouvez essayer
+
+Si le morceau dépasse nettement, tirez-le bien droit avec une pince plate fine, sans tourner. Un peu de lubrifiant sec (graphite) peut faciliter l'extraction.
+
+### Quand appeler un serrurier
+
+Si le morceau est entièrement dans le cylindre, un extracteur professionnel est nécessaire. L'opération prend en général quelques minutes et ne nécessite pas de changer la serrure. Chez Shopta Serrure, le prix vous est annoncé au téléphone avant le déplacement.
+
+## L'importance de l'entretien de vos serrures
+https://shopta-serrure.fr/blog/entretien-serrure/ – publié le 15 janvier 2026
+
+La poussière, l'humidité et l'usure sont les ennemis de vos cylindres. Une serrure entretenue dure plus longtemps et vous évite un blocage au pire moment.
+
+### Le bon lubrifiant
+
+Utilisez un lubrifiant sec : poudre de graphite ou spray PTFE. Évitez absolument l'huile de cuisine et les dégrippants gras, qui retiennent la poussière et finissent par coller les goupilles.
+
+### La routine annuelle
+
+- Nettoyez l'entrée du cylindre avec un pinceau sec.
+- Injectez une petite dose de lubrifiant sec.
+- Faites tourner la clé plusieurs fois dans les deux sens.
+- Vérifiez que le pêne entre bien dans la gâche sans frotter.
+- Resserrez les vis de la poignée et de la plaque.
+
+### Les signes qui doivent alerter
+
+Une clé qui accroche, un pêne qui force, une porte qu'il faut pousser pour fermer : ces signes annoncent souvent un blocage prochain. Une intervention préventive coûte moins cher qu'un dépannage d'urgence.
+
+## Comment choisir sa serrure haute sécurité ?
+https://shopta-serrure.fr/blog/choisir-serrure-haute-securite/ – publié le 10 janvier 2026
+
+Le choix d'une serrure dépend de votre porte, de votre environnement et des exigences de votre assurance.
+
+### Les niveaux A2P
+
+- A2P* : résiste 5 minutes à une tentative d'effraction.
+- A2P** : 10 minutes.
+- A2P*** : 15 minutes, le niveau souvent exigé pour les biens les plus exposés.
+
+La certification est délivrée par le CNPP. Vérifiez dans votre contrat d'assurance habitation si un niveau minimal est requis.
+
+### Serrure en applique ou encastrée ?
+
+La serrure en applique se fixe sur la face intérieure de la porte : idéale pour ajouter un verrou de sécurité. La serrure encastrée (à mortaiser) est intégrée dans l'épaisseur de la porte : plus discrète, elle équipe la majorité des portes récentes.
+
+### Combien de points ?
+
+Pour une porte d'entrée, une serrure 3 points est un minimum recommandé ; 5 points pour les portes les plus exposées (rez-de-chaussée, maison).
+
+### Et les serrures connectées ?
+
+Pratiques au quotidien, elles doivent être associées à un cylindre mécanique de qualité. Nous installons et dépannons les principaux modèles.
+
+## Pages par service et par ville
+### Ouverture de porte claquée (à partir de 110 € TTC)
+- [Porte claquée Paris](https://shopta-serrure.fr/depannage/porte-claquee/paris/)
+- [Porte claquée Paris 1er](https://shopta-serrure.fr/depannage/porte-claquee/paris-1/) – 75001
+- [Porte claquée Paris 2e](https://shopta-serrure.fr/depannage/porte-claquee/paris-2/) – 75002
+- [Porte claquée Paris 3e](https://shopta-serrure.fr/depannage/porte-claquee/paris-3/) – 75003
+- [Porte claquée Paris 4e](https://shopta-serrure.fr/depannage/porte-claquee/paris-4/) – 75004
+- [Porte claquée Paris 5e](https://shopta-serrure.fr/depannage/porte-claquee/paris-5/) – 75005
+- [Porte claquée Paris 6e](https://shopta-serrure.fr/depannage/porte-claquee/paris-6/) – 75006
+- [Porte claquée Paris 7e](https://shopta-serrure.fr/depannage/porte-claquee/paris-7/) – 75007
+- [Porte claquée Paris 8e](https://shopta-serrure.fr/depannage/porte-claquee/paris-8/) – 75008
+- [Porte claquée Paris 9e](https://shopta-serrure.fr/depannage/porte-claquee/paris-9/) – 75009
+- [Porte claquée Paris 10e](https://shopta-serrure.fr/depannage/porte-claquee/paris-10/) – 75010
+- [Porte claquée Paris 11e](https://shopta-serrure.fr/depannage/porte-claquee/paris-11/) – 75011
+- [Porte claquée Paris 12e](https://shopta-serrure.fr/depannage/porte-claquee/paris-12/) – 75012
+- [Porte claquée Paris 13e](https://shopta-serrure.fr/depannage/porte-claquee/paris-13/) – 75013
+- [Porte claquée Paris 14e](https://shopta-serrure.fr/depannage/porte-claquee/paris-14/) – 75014
+- [Porte claquée Paris 15e](https://shopta-serrure.fr/depannage/porte-claquee/paris-15/) – 75015
+- [Porte claquée Paris 16e](https://shopta-serrure.fr/depannage/porte-claquee/paris-16/) – 75016
+- [Porte claquée Paris 17e](https://shopta-serrure.fr/depannage/porte-claquee/paris-17/) – 75017
+- [Porte claquée Paris 18e](https://shopta-serrure.fr/depannage/porte-claquee/paris-18/) – 75018
+- [Porte claquée Paris 19e](https://shopta-serrure.fr/depannage/porte-claquee/paris-19/) – 75019
+- [Porte claquée Paris 20e](https://shopta-serrure.fr/depannage/porte-claquee/paris-20/) – 75020
+- [Porte claquée Antony](https://shopta-serrure.fr/depannage/porte-claquee/antony/) – 92160
+- [Porte claquée Asnières-sur-Seine](https://shopta-serrure.fr/depannage/porte-claquee/asnieres-sur-seine/) – 92600
+- [Porte claquée Bagneux](https://shopta-serrure.fr/depannage/porte-claquee/bagneux/) – 92220
+- [Porte claquée Bois-Colombes](https://shopta-serrure.fr/depannage/porte-claquee/bois-colombes/) – 92270
+- [Porte claquée Boulogne-Billancourt](https://shopta-serrure.fr/depannage/porte-claquee/boulogne-billancourt/) – 92100
+- [Porte claquée Bourg-la-Reine](https://shopta-serrure.fr/depannage/porte-claquee/bourg-la-reine/) – 92340
+- [Porte claquée Châtenay-Malabry](https://shopta-serrure.fr/depannage/porte-claquee/chatenay-malabry/) – 92290
+- [Porte claquée Châtillon](https://shopta-serrure.fr/depannage/porte-claquee/chatillon/) – 92320
+- [Porte claquée Chaville](https://shopta-serrure.fr/depannage/porte-claquee/chaville/) – 92370
+- [Porte claquée Clamart](https://shopta-serrure.fr/depannage/porte-claquee/clamart/) – 92140
+- [Porte claquée Clichy](https://shopta-serrure.fr/depannage/porte-claquee/clichy/) – 92110
+- [Porte claquée Colombes](https://shopta-serrure.fr/depannage/porte-claquee/colombes/) – 92700
+- [Porte claquée Courbevoie](https://shopta-serrure.fr/depannage/porte-claquee/courbevoie/) – 92400
+- [Porte claquée Fontenay-aux-Roses](https://shopta-serrure.fr/depannage/porte-claquee/fontenay-aux-roses/) – 92260
+- [Porte claquée Garches](https://shopta-serrure.fr/depannage/porte-claquee/garches/) – 92380
+- [Porte claquée La Garenne-Colombes](https://shopta-serrure.fr/depannage/porte-claquee/la-garenne-colombes/) – 92250
+- [Porte claquée Gennevilliers](https://shopta-serrure.fr/depannage/porte-claquee/gennevilliers/) – 92230
+- [Porte claquée Issy-les-Moulineaux](https://shopta-serrure.fr/depannage/porte-claquee/issy-les-moulineaux/) – 92130
+- [Porte claquée Levallois-Perret](https://shopta-serrure.fr/depannage/porte-claquee/levallois-perret/) – 92300
+- [Porte claquée Malakoff](https://shopta-serrure.fr/depannage/porte-claquee/malakoff/) – 92240
+- [Porte claquée Marnes-la-Coquette](https://shopta-serrure.fr/depannage/porte-claquee/marnes-la-coquette/) – 92430
+- [Porte claquée Meudon](https://shopta-serrure.fr/depannage/porte-claquee/meudon/) – 92190
+- [Porte claquée Montrouge](https://shopta-serrure.fr/depannage/porte-claquee/montrouge/) – 92120
+- [Porte claquée Nanterre](https://shopta-serrure.fr/depannage/porte-claquee/nanterre/) – 92000
+- [Porte claquée Neuilly-sur-Seine](https://shopta-serrure.fr/depannage/porte-claquee/neuilly-sur-seine/) – 92200
+- [Porte claquée Le Plessis-Robinson](https://shopta-serrure.fr/depannage/porte-claquee/le-plessis-robinson/) – 92350
+- [Porte claquée Puteaux](https://shopta-serrure.fr/depannage/porte-claquee/puteaux/) – 92800
+- [Porte claquée Rueil-Malmaison](https://shopta-serrure.fr/depannage/porte-claquee/rueil-malmaison/) – 92500
+- [Porte claquée Saint-Cloud](https://shopta-serrure.fr/depannage/porte-claquee/saint-cloud/) – 92210
+- [Porte claquée Sceaux](https://shopta-serrure.fr/depannage/porte-claquee/sceaux/) – 92330
+- [Porte claquée Sèvres](https://shopta-serrure.fr/depannage/porte-claquee/sevres/) – 92310
+- [Porte claquée Suresnes](https://shopta-serrure.fr/depannage/porte-claquee/suresnes/) – 92150
+- [Porte claquée Vanves](https://shopta-serrure.fr/depannage/porte-claquee/vanves/) – 92170
+- [Porte claquée Vaucresson](https://shopta-serrure.fr/depannage/porte-claquee/vaucresson/) – 92420
+- [Porte claquée Ville-d'Avray](https://shopta-serrure.fr/depannage/porte-claquee/ville-d-avray/) – 92410
+- [Porte claquée Villeneuve-la-Garenne](https://shopta-serrure.fr/depannage/porte-claquee/villeneuve-la-garenne/) – 92390
+- [Porte claquée Saint-Ouen-sur-Seine](https://shopta-serrure.fr/depannage/porte-claquee/saint-ouen-sur-seine/) – 93400
+- [Porte claquée Argenteuil](https://shopta-serrure.fr/depannage/porte-claquee/argenteuil/) – 95100
+- [Porte claquée Arnouville](https://shopta-serrure.fr/depannage/porte-claquee/arnouville/) – 95400
+- [Porte claquée Auvers-sur-Oise](https://shopta-serrure.fr/depannage/porte-claquee/auvers-sur-oise/) – 95430
+- [Porte claquée Beauchamp](https://shopta-serrure.fr/depannage/porte-claquee/beauchamp/) – 95250
+- [Porte claquée Beaumont-sur-Oise](https://shopta-serrure.fr/depannage/porte-claquee/beaumont-sur-oise/) – 95260
+- [Porte claquée Bernes-sur-Oise](https://shopta-serrure.fr/depannage/porte-claquee/bernes-sur-oise/) – 95340
+- [Porte claquée Bessancourt](https://shopta-serrure.fr/depannage/porte-claquee/bessancourt/) – 95550
+- [Porte claquée Bezons](https://shopta-serrure.fr/depannage/porte-claquee/bezons/) – 95870
+- [Porte claquée Boisemont](https://shopta-serrure.fr/depannage/porte-claquee/boisemont/) – 95000
+- [Porte claquée Bonneuil-en-France](https://shopta-serrure.fr/depannage/porte-claquee/bonneuil-en-france/) – 95500
+- [Porte claquée Bouffémont](https://shopta-serrure.fr/depannage/porte-claquee/bouffemont/) – 95570
+- [Porte claquée Bruyères-sur-Oise](https://shopta-serrure.fr/depannage/porte-claquee/bruyeres-sur-oise/) – 95820
+- [Porte claquée Butry-sur-Oise](https://shopta-serrure.fr/depannage/porte-claquee/butry-sur-oise/) – 95430
+- [Porte claquée Cergy](https://shopta-serrure.fr/depannage/porte-claquee/cergy/) – 95000
+- [Porte claquée Champagne-sur-Oise](https://shopta-serrure.fr/depannage/porte-claquee/champagne-sur-oise/) – 95660
+- [Porte claquée Cormeilles-en-Parisis](https://shopta-serrure.fr/depannage/porte-claquee/cormeilles-en-parisis/) – 95240
+- [Porte claquée Courdimanche](https://shopta-serrure.fr/depannage/porte-claquee/courdimanche/) – 95800
+- [Porte claquée Deuil-la-Barre](https://shopta-serrure.fr/depannage/porte-claquee/deuil-la-barre/) – 95170
+- [Porte claquée Domont](https://shopta-serrure.fr/depannage/porte-claquee/domont/) – 95330
+- [Porte claquée Eaubonne](https://shopta-serrure.fr/depannage/porte-claquee/eaubonne/) – 95600
+- [Porte claquée Écouen](https://shopta-serrure.fr/depannage/porte-claquee/ecouen/) – 95440
+- [Porte claquée Enghien-les-Bains](https://shopta-serrure.fr/depannage/porte-claquee/enghien-les-bains/) – 95880
+- [Porte claquée Ennery](https://shopta-serrure.fr/depannage/porte-claquee/ennery/) – 95300
+- [Porte claquée Épiais-Rhus](https://shopta-serrure.fr/depannage/porte-claquee/epiais-rhus/) – 95810
+- [Porte claquée Épinay-Champlâtreux](https://shopta-serrure.fr/depannage/porte-claquee/epinay-champlatreux/) – 95270
+- [Porte claquée Éragny](https://shopta-serrure.fr/depannage/porte-claquee/eragny/) – 95610
+- [Porte claquée Ermont](https://shopta-serrure.fr/depannage/porte-claquee/ermont/) – 95120
+- [Porte claquée Ézanville](https://shopta-serrure.fr/depannage/porte-claquee/ezanville/) – 95460
+- [Porte claquée Fontenay-en-Parisis](https://shopta-serrure.fr/depannage/porte-claquee/fontenay-en-parisis/) – 95190
+- [Porte claquée Fosses](https://shopta-serrure.fr/depannage/porte-claquee/fosses/) – 95470
+- [Porte claquée Franconville](https://shopta-serrure.fr/depannage/porte-claquee/franconville/) – 95130
+- [Porte claquée Frépillon](https://shopta-serrure.fr/depannage/porte-claquee/frepillon/) – 95740
+- [Porte claquée Frouville](https://shopta-serrure.fr/depannage/porte-claquee/frouville/) – 95690
+- [Porte claquée Garges-lès-Gonesse](https://shopta-serrure.fr/depannage/porte-claquee/garges-les-gonesse/) – 95140
+- [Porte claquée Gonesse](https://shopta-serrure.fr/depannage/porte-claquee/gonesse/) – 95500
+- [Porte claquée Goussainville](https://shopta-serrure.fr/depannage/porte-claquee/goussainville/) – 95190
+- [Porte claquée Groslay](https://shopta-serrure.fr/depannage/porte-claquee/groslay/) – 95410
+- [Porte claquée Herblay-sur-Seine](https://shopta-serrure.fr/depannage/porte-claquee/herblay-sur-seine/) – 95220
+- [Porte claquée L'Isle-Adam](https://shopta-serrure.fr/depannage/porte-claquee/l-isle-adam/) – 95290
+- [Porte claquée Jouy-le-Moutier](https://shopta-serrure.fr/depannage/porte-claquee/jouy-le-moutier/) – 95280
+- [Porte claquée Louvres](https://shopta-serrure.fr/depannage/porte-claquee/louvres/) – 95380
+- [Porte claquée Marly-la-Ville](https://shopta-serrure.fr/depannage/porte-claquee/marly-la-ville/) – 95670
+- [Porte claquée Montigny-lès-Cormeilles](https://shopta-serrure.fr/depannage/porte-claquee/montigny-les-cormeilles/) – 95370
+- [Porte claquée Montmagny](https://shopta-serrure.fr/depannage/porte-claquee/montmagny/) – 95360
+- [Porte claquée Montmorency](https://shopta-serrure.fr/depannage/porte-claquee/montmorency/) – 95160
+- [Porte claquée Osny](https://shopta-serrure.fr/depannage/porte-claquee/osny/) – 95520
+- [Porte claquée Persan](https://shopta-serrure.fr/depannage/porte-claquee/persan/) – 95340
+- [Porte claquée Pierrelaye](https://shopta-serrure.fr/depannage/porte-claquee/pierrelaye/) – 95220
+- [Porte claquée Pontoise](https://shopta-serrure.fr/depannage/porte-claquee/pontoise/) – 95000
+- [Porte claquée Puiseux-Pontoise](https://shopta-serrure.fr/depannage/porte-claquee/puiseux-pontoise/) – 95650
+- [Porte claquée Saint-Brice-sous-Forêt](https://shopta-serrure.fr/depannage/porte-claquee/saint-brice-sous-foret/) – 95350
+- [Porte claquée Saint-Gratien](https://shopta-serrure.fr/depannage/porte-claquee/saint-gratien/) – 95210
+- [Porte claquée Saint-Leu-la-Forêt](https://shopta-serrure.fr/depannage/porte-claquee/saint-leu-la-foret/) – 95320
+- [Porte claquée Saint-Ouen-l'Aumône](https://shopta-serrure.fr/depannage/porte-claquee/saint-ouen-l-aumone/) – 95310
+- [Porte claquée Saint-Prix](https://shopta-serrure.fr/depannage/porte-claquee/saint-prix/) – 95390
+- [Porte claquée Sannois](https://shopta-serrure.fr/depannage/porte-claquee/sannois/) – 95110
+- [Porte claquée Sarcelles](https://shopta-serrure.fr/depannage/porte-claquee/sarcelles/) – 95200
+- [Porte claquée Soisy-sous-Montmorency](https://shopta-serrure.fr/depannage/porte-claquee/soisy-sous-montmorency/) – 95230
+- [Porte claquée Taverny](https://shopta-serrure.fr/depannage/porte-claquee/taverny/) – 95150
+- [Porte claquée Vauréal](https://shopta-serrure.fr/depannage/porte-claquee/vaureal/) – 95490
+- [Porte claquée Villiers-le-Bel](https://shopta-serrure.fr/depannage/porte-claquee/villiers-le-bel/) – 95400
+
+### Déblocage de serrure (à partir de 180 € TTC)
+- [Serrure bloquée Paris](https://shopta-serrure.fr/depannage/serrure-bloquee/paris/)
+- [Serrure bloquée Paris 1er](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-1/) – 75001
+- [Serrure bloquée Paris 2e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-2/) – 75002
+- [Serrure bloquée Paris 3e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-3/) – 75003
+- [Serrure bloquée Paris 4e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-4/) – 75004
+- [Serrure bloquée Paris 5e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-5/) – 75005
+- [Serrure bloquée Paris 6e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-6/) – 75006
+- [Serrure bloquée Paris 7e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-7/) – 75007
+- [Serrure bloquée Paris 8e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-8/) – 75008
+- [Serrure bloquée Paris 9e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-9/) – 75009
+- [Serrure bloquée Paris 10e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-10/) – 75010
+- [Serrure bloquée Paris 11e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-11/) – 75011
+- [Serrure bloquée Paris 12e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-12/) – 75012
+- [Serrure bloquée Paris 13e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-13/) – 75013
+- [Serrure bloquée Paris 14e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-14/) – 75014
+- [Serrure bloquée Paris 15e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-15/) – 75015
+- [Serrure bloquée Paris 16e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-16/) – 75016
+- [Serrure bloquée Paris 17e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-17/) – 75017
+- [Serrure bloquée Paris 18e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-18/) – 75018
+- [Serrure bloquée Paris 19e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-19/) – 75019
+- [Serrure bloquée Paris 20e](https://shopta-serrure.fr/depannage/serrure-bloquee/paris-20/) – 75020
+- [Serrure bloquée Antony](https://shopta-serrure.fr/depannage/serrure-bloquee/antony/) – 92160
+- [Serrure bloquée Asnières-sur-Seine](https://shopta-serrure.fr/depannage/serrure-bloquee/asnieres-sur-seine/) – 92600
+- [Serrure bloquée Bagneux](https://shopta-serrure.fr/depannage/serrure-bloquee/bagneux/) – 92220
+- [Serrure bloquée Bois-Colombes](https://shopta-serrure.fr/depannage/serrure-bloquee/bois-colombes/) – 92270
+- [Serrure bloquée Boulogne-Billancourt](https://shopta-serrure.fr/depannage/serrure-bloquee/boulogne-billancourt/) – 92100
+- [Serrure bloquée Bourg-la-Reine](https://shopta-serrure.fr/depannage/serrure-bloquee/bourg-la-reine/) – 92340
+- [Serrure bloquée Châtenay-Malabry](https://shopta-serrure.fr/depannage/serrure-bloquee/chatenay-malabry/) – 92290
+- [Serrure bloquée Châtillon](https://shopta-serrure.fr/depannage/serrure-bloquee/chatillon/) – 92320
+- [Serrure bloquée Chaville](https://shopta-serrure.fr/depannage/serrure-bloquee/chaville/) – 92370
+- [Serrure bloquée Clamart](https://shopta-serrure.fr/depannage/serrure-bloquee/clamart/) – 92140
+- [Serrure bloquée Clichy](https://shopta-serrure.fr/depannage/serrure-bloquee/clichy/) – 92110
+- [Serrure bloquée Colombes](https://shopta-serrure.fr/depannage/serrure-bloquee/colombes/) – 92700
+- [Serrure bloquée Courbevoie](https://shopta-serrure.fr/depannage/serrure-bloquee/courbevoie/) – 92400
+- [Serrure bloquée Fontenay-aux-Roses](https://shopta-serrure.fr/depannage/serrure-bloquee/fontenay-aux-roses/) – 92260
+- [Serrure bloquée Garches](https://shopta-serrure.fr/depannage/serrure-bloquee/garches/) – 92380
+- [Serrure bloquée La Garenne-Colombes](https://shopta-serrure.fr/depannage/serrure-bloquee/la-garenne-colombes/) – 92250
+- [Serrure bloquée Gennevilliers](https://shopta-serrure.fr/depannage/serrure-bloquee/gennevilliers/) – 92230
+- [Serrure bloquée Issy-les-Moulineaux](https://shopta-serrure.fr/depannage/serrure-bloquee/issy-les-moulineaux/) – 92130
+- [Serrure bloquée Levallois-Perret](https://shopta-serrure.fr/depannage/serrure-bloquee/levallois-perret/) – 92300
+- [Serrure bloquée Malakoff](https://shopta-serrure.fr/depannage/serrure-bloquee/malakoff/) – 92240
+- [Serrure bloquée Marnes-la-Coquette](https://shopta-serrure.fr/depannage/serrure-bloquee/marnes-la-coquette/) – 92430
+- [Serrure bloquée Meudon](https://shopta-serrure.fr/depannage/serrure-bloquee/meudon/) – 92190
+- [Serrure bloquée Montrouge](https://shopta-serrure.fr/depannage/serrure-bloquee/montrouge/) – 92120
+- [Serrure bloquée Nanterre](https://shopta-serrure.fr/depannage/serrure-bloquee/nanterre/) – 92000
+- [Serrure bloquée Neuilly-sur-Seine](https://shopta-serrure.fr/depannage/serrure-bloquee/neuilly-sur-seine/) – 92200
+- [Serrure bloquée Le Plessis-Robinson](https://shopta-serrure.fr/depannage/serrure-bloquee/le-plessis-robinson/) – 92350
+- [Serrure bloquée Puteaux](https://shopta-serrure.fr/depannage/serrure-bloquee/puteaux/) – 92800
+- [Serrure bloquée Rueil-Malmaison](https://shopta-serrure.fr/depannage/serrure-bloquee/rueil-malmaison/) – 92500
+- [Serrure bloquée Saint-Cloud](https://shopta-serrure.fr/depannage/serrure-bloquee/saint-cloud/) – 92210
+- [Serrure bloquée Sceaux](https://shopta-serrure.fr/depannage/serrure-bloquee/sceaux/) – 92330
+- [Serrure bloquée Sèvres](https://shopta-serrure.fr/depannage/serrure-bloquee/sevres/) – 92310
+- [Serrure bloquée Suresnes](https://shopta-serrure.fr/depannage/serrure-bloquee/suresnes/) – 92150
+- [Serrure bloquée Vanves](https://shopta-serrure.fr/depannage/serrure-bloquee/vanves/) – 92170
+- [Serrure bloquée Vaucresson](https://shopta-serrure.fr/depannage/serrure-bloquee/vaucresson/) – 92420
+- [Serrure bloquée Ville-d'Avray](https://shopta-serrure.fr/depannage/serrure-bloquee/ville-d-avray/) – 92410
+- [Serrure bloquée Villeneuve-la-Garenne](https://shopta-serrure.fr/depannage/serrure-bloquee/villeneuve-la-garenne/) – 92390
+- [Serrure bloquée Saint-Ouen-sur-Seine](https://shopta-serrure.fr/depannage/serrure-bloquee/saint-ouen-sur-seine/) – 93400
+- [Serrure bloquée Argenteuil](https://shopta-serrure.fr/depannage/serrure-bloquee/argenteuil/) – 95100
+- [Serrure bloquée Arnouville](https://shopta-serrure.fr/depannage/serrure-bloquee/arnouville/) – 95400
+- [Serrure bloquée Auvers-sur-Oise](https://shopta-serrure.fr/depannage/serrure-bloquee/auvers-sur-oise/) – 95430
+- [Serrure bloquée Beauchamp](https://shopta-serrure.fr/depannage/serrure-bloquee/beauchamp/) – 95250
+- [Serrure bloquée Beaumont-sur-Oise](https://shopta-serrure.fr/depannage/serrure-bloquee/beaumont-sur-oise/) – 95260
+- [Serrure bloquée Bernes-sur-Oise](https://shopta-serrure.fr/depannage/serrure-bloquee/bernes-sur-oise/) – 95340
+- [Serrure bloquée Bessancourt](https://shopta-serrure.fr/depannage/serrure-bloquee/bessancourt/) – 95550
+- [Serrure bloquée Bezons](https://shopta-serrure.fr/depannage/serrure-bloquee/bezons/) – 95870
+- [Serrure bloquée Boisemont](https://shopta-serrure.fr/depannage/serrure-bloquee/boisemont/) – 95000
+- [Serrure bloquée Bonneuil-en-France](https://shopta-serrure.fr/depannage/serrure-bloquee/bonneuil-en-france/) – 95500
+- [Serrure bloquée Bouffémont](https://shopta-serrure.fr/depannage/serrure-bloquee/bouffemont/) – 95570
+- [Serrure bloquée Bruyères-sur-Oise](https://shopta-serrure.fr/depannage/serrure-bloquee/bruyeres-sur-oise/) – 95820
+- [Serrure bloquée Butry-sur-Oise](https://shopta-serrure.fr/depannage/serrure-bloquee/butry-sur-oise/) – 95430
+- [Serrure bloquée Cergy](https://shopta-serrure.fr/depannage/serrure-bloquee/cergy/) – 95000
+- [Serrure bloquée Champagne-sur-Oise](https://shopta-serrure.fr/depannage/serrure-bloquee/champagne-sur-oise/) – 95660
+- [Serrure bloquée Cormeilles-en-Parisis](https://shopta-serrure.fr/depannage/serrure-bloquee/cormeilles-en-parisis/) – 95240
+- [Serrure bloquée Courdimanche](https://shopta-serrure.fr/depannage/serrure-bloquee/courdimanche/) – 95800
+- [Serrure bloquée Deuil-la-Barre](https://shopta-serrure.fr/depannage/serrure-bloquee/deuil-la-barre/) – 95170
+- [Serrure bloquée Domont](https://shopta-serrure.fr/depannage/serrure-bloquee/domont/) – 95330
+- [Serrure bloquée Eaubonne](https://shopta-serrure.fr/depannage/serrure-bloquee/eaubonne/) – 95600
+- [Serrure bloquée Écouen](https://shopta-serrure.fr/depannage/serrure-bloquee/ecouen/) – 95440
+- [Serrure bloquée Enghien-les-Bains](https://shopta-serrure.fr/depannage/serrure-bloquee/enghien-les-bains/) – 95880
+- [Serrure bloquée Ennery](https://shopta-serrure.fr/depannage/serrure-bloquee/ennery/) – 95300
+- [Serrure bloquée Épiais-Rhus](https://shopta-serrure.fr/depannage/serrure-bloquee/epiais-rhus/) – 95810
+- [Serrure bloquée Épinay-Champlâtreux](https://shopta-serrure.fr/depannage/serrure-bloquee/epinay-champlatreux/) – 95270
+- [Serrure bloquée Éragny](https://shopta-serrure.fr/depannage/serrure-bloquee/eragny/) – 95610
+- [Serrure bloquée Ermont](https://shopta-serrure.fr/depannage/serrure-bloquee/ermont/) – 95120
+- [Serrure bloquée Ézanville](https://shopta-serrure.fr/depannage/serrure-bloquee/ezanville/) – 95460
+- [Serrure bloquée Fontenay-en-Parisis](https://shopta-serrure.fr/depannage/serrure-bloquee/fontenay-en-parisis/) – 95190
+- [Serrure bloquée Fosses](https://shopta-serrure.fr/depannage/serrure-bloquee/fosses/) – 95470
+- [Serrure bloquée Franconville](https://shopta-serrure.fr/depannage/serrure-bloquee/franconville/) – 95130
+- [Serrure bloquée Frépillon](https://shopta-serrure.fr/depannage/serrure-bloquee/frepillon/) – 95740
+- [Serrure bloquée Frouville](https://shopta-serrure.fr/depannage/serrure-bloquee/frouville/) – 95690
+- [Serrure bloquée Garges-lès-Gonesse](https://shopta-serrure.fr/depannage/serrure-bloquee/garges-les-gonesse/) – 95140
+- [Serrure bloquée Gonesse](https://shopta-serrure.fr/depannage/serrure-bloquee/gonesse/) – 95500
+- [Serrure bloquée Goussainville](https://shopta-serrure.fr/depannage/serrure-bloquee/goussainville/) – 95190
+- [Serrure bloquée Groslay](https://shopta-serrure.fr/depannage/serrure-bloquee/groslay/) – 95410
+- [Serrure bloquée Herblay-sur-Seine](https://shopta-serrure.fr/depannage/serrure-bloquee/herblay-sur-seine/) – 95220
+- [Serrure bloquée L'Isle-Adam](https://shopta-serrure.fr/depannage/serrure-bloquee/l-isle-adam/) – 95290
+- [Serrure bloquée Jouy-le-Moutier](https://shopta-serrure.fr/depannage/serrure-bloquee/jouy-le-moutier/) – 95280
+- [Serrure bloquée Louvres](https://shopta-serrure.fr/depannage/serrure-bloquee/louvres/) – 95380
+- [Serrure bloquée Marly-la-Ville](https://shopta-serrure.fr/depannage/serrure-bloquee/marly-la-ville/) – 95670
+- [Serrure bloquée Montigny-lès-Cormeilles](https://shopta-serrure.fr/depannage/serrure-bloquee/montigny-les-cormeilles/) – 95370
+- [Serrure bloquée Montmagny](https://shopta-serrure.fr/depannage/serrure-bloquee/montmagny/) – 95360
+- [Serrure bloquée Montmorency](https://shopta-serrure.fr/depannage/serrure-bloquee/montmorency/) – 95160
+- [Serrure bloquée Osny](https://shopta-serrure.fr/depannage/serrure-bloquee/osny/) – 95520
+- [Serrure bloquée Persan](https://shopta-serrure.fr/depannage/serrure-bloquee/persan/) – 95340
+- [Serrure bloquée Pierrelaye](https://shopta-serrure.fr/depannage/serrure-bloquee/pierrelaye/) – 95220
+- [Serrure bloquée Pontoise](https://shopta-serrure.fr/depannage/serrure-bloquee/pontoise/) – 95000
+- [Serrure bloquée Puiseux-Pontoise](https://shopta-serrure.fr/depannage/serrure-bloquee/puiseux-pontoise/) – 95650
+- [Serrure bloquée Saint-Brice-sous-Forêt](https://shopta-serrure.fr/depannage/serrure-bloquee/saint-brice-sous-foret/) – 95350
+- [Serrure bloquée Saint-Gratien](https://shopta-serrure.fr/depannage/serrure-bloquee/saint-gratien/) – 95210
+- [Serrure bloquée Saint-Leu-la-Forêt](https://shopta-serrure.fr/depannage/serrure-bloquee/saint-leu-la-foret/) – 95320
+- [Serrure bloquée Saint-Ouen-l'Aumône](https://shopta-serrure.fr/depannage/serrure-bloquee/saint-ouen-l-aumone/) – 95310
+- [Serrure bloquée Saint-Prix](https://shopta-serrure.fr/depannage/serrure-bloquee/saint-prix/) – 95390
+- [Serrure bloquée Sannois](https://shopta-serrure.fr/depannage/serrure-bloquee/sannois/) – 95110
+- [Serrure bloquée Sarcelles](https://shopta-serrure.fr/depannage/serrure-bloquee/sarcelles/) – 95200
+- [Serrure bloquée Soisy-sous-Montmorency](https://shopta-serrure.fr/depannage/serrure-bloquee/soisy-sous-montmorency/) – 95230
+- [Serrure bloquée Taverny](https://shopta-serrure.fr/depannage/serrure-bloquee/taverny/) – 95150
+- [Serrure bloquée Vauréal](https://shopta-serrure.fr/depannage/serrure-bloquee/vaureal/) – 95490
+- [Serrure bloquée Villiers-le-Bel](https://shopta-serrure.fr/depannage/serrure-bloquee/villiers-le-bel/) – 95400
+
+### Extraction de clé cassée (sur devis gratuit)
+- [Clé cassée Paris](https://shopta-serrure.fr/depannage/cle-cassee/paris/)
+- [Clé cassée Paris 1er](https://shopta-serrure.fr/depannage/cle-cassee/paris-1/) – 75001
+- [Clé cassée Paris 2e](https://shopta-serrure.fr/depannage/cle-cassee/paris-2/) – 75002
+- [Clé cassée Paris 3e](https://shopta-serrure.fr/depannage/cle-cassee/paris-3/) – 75003
+- [Clé cassée Paris 4e](https://shopta-serrure.fr/depannage/cle-cassee/paris-4/) – 75004
+- [Clé cassée Paris 5e](https://shopta-serrure.fr/depannage/cle-cassee/paris-5/) – 75005
+- [Clé cassée Paris 6e](https://shopta-serrure.fr/depannage/cle-cassee/paris-6/) – 75006
+- [Clé cassée Paris 7e](https://shopta-serrure.fr/depannage/cle-cassee/paris-7/) – 75007
+- [Clé cassée Paris 8e](https://shopta-serrure.fr/depannage/cle-cassee/paris-8/) – 75008
+- [Clé cassée Paris 9e](https://shopta-serrure.fr/depannage/cle-cassee/paris-9/) – 75009
+- [Clé cassée Paris 10e](https://shopta-serrure.fr/depannage/cle-cassee/paris-10/) – 75010
+- [Clé cassée Paris 11e](https://shopta-serrure.fr/depannage/cle-cassee/paris-11/) – 75011
+- [Clé cassée Paris 12e](https://shopta-serrure.fr/depannage/cle-cassee/paris-12/) – 75012
+- [Clé cassée Paris 13e](https://shopta-serrure.fr/depannage/cle-cassee/paris-13/) – 75013
+- [Clé cassée Paris 14e](https://shopta-serrure.fr/depannage/cle-cassee/paris-14/) – 75014
+- [Clé cassée Paris 15e](https://shopta-serrure.fr/depannage/cle-cassee/paris-15/) – 75015
+- [Clé cassée Paris 16e](https://shopta-serrure.fr/depannage/cle-cassee/paris-16/) – 75016
+- [Clé cassée Paris 17e](https://shopta-serrure.fr/depannage/cle-cassee/paris-17/) – 75017
+- [Clé cassée Paris 18e](https://shopta-serrure.fr/depannage/cle-cassee/paris-18/) – 75018
+- [Clé cassée Paris 19e](https://shopta-serrure.fr/depannage/cle-cassee/paris-19/) – 75019
+- [Clé cassée Paris 20e](https://shopta-serrure.fr/depannage/cle-cassee/paris-20/) – 75020
+- [Clé cassée Antony](https://shopta-serrure.fr/depannage/cle-cassee/antony/) – 92160
+- [Clé cassée Asnières-sur-Seine](https://shopta-serrure.fr/depannage/cle-cassee/asnieres-sur-seine/) – 92600
+- [Clé cassée Bagneux](https://shopta-serrure.fr/depannage/cle-cassee/bagneux/) – 92220
+- [Clé cassée Bois-Colombes](https://shopta-serrure.fr/depannage/cle-cassee/bois-colombes/) – 92270
+- [Clé cassée Boulogne-Billancourt](https://shopta-serrure.fr/depannage/cle-cassee/boulogne-billancourt/) – 92100
+- [Clé cassée Bourg-la-Reine](https://shopta-serrure.fr/depannage/cle-cassee/bourg-la-reine/) – 92340
+- [Clé cassée Châtenay-Malabry](https://shopta-serrure.fr/depannage/cle-cassee/chatenay-malabry/) – 92290
+- [Clé cassée Châtillon](https://shopta-serrure.fr/depannage/cle-cassee/chatillon/) – 92320
+- [Clé cassée Chaville](https://shopta-serrure.fr/depannage/cle-cassee/chaville/) – 92370
+- [Clé cassée Clamart](https://shopta-serrure.fr/depannage/cle-cassee/clamart/) – 92140
+- [Clé cassée Clichy](https://shopta-serrure.fr/depannage/cle-cassee/clichy/) – 92110
+- [Clé cassée Colombes](https://shopta-serrure.fr/depannage/cle-cassee/colombes/) – 92700
+- [Clé cassée Courbevoie](https://shopta-serrure.fr/depannage/cle-cassee/courbevoie/) – 92400
+- [Clé cassée Fontenay-aux-Roses](https://shopta-serrure.fr/depannage/cle-cassee/fontenay-aux-roses/) – 92260
+- [Clé cassée Garches](https://shopta-serrure.fr/depannage/cle-cassee/garches/) – 92380
+- [Clé cassée La Garenne-Colombes](https://shopta-serrure.fr/depannage/cle-cassee/la-garenne-colombes/) – 92250
+- [Clé cassée Gennevilliers](https://shopta-serrure.fr/depannage/cle-cassee/gennevilliers/) – 92230
+- [Clé cassée Issy-les-Moulineaux](https://shopta-serrure.fr/depannage/cle-cassee/issy-les-moulineaux/) – 92130
+- [Clé cassée Levallois-Perret](https://shopta-serrure.fr/depannage/cle-cassee/levallois-perret/) – 92300
+- [Clé cassée Malakoff](https://shopta-serrure.fr/depannage/cle-cassee/malakoff/) – 92240
+- [Clé cassée Marnes-la-Coquette](https://shopta-serrure.fr/depannage/cle-cassee/marnes-la-coquette/) – 92430
+- [Clé cassée Meudon](https://shopta-serrure.fr/depannage/cle-cassee/meudon/) – 92190
+- [Clé cassée Montrouge](https://shopta-serrure.fr/depannage/cle-cassee/montrouge/) – 92120
+- [Clé cassée Nanterre](https://shopta-serrure.fr/depannage/cle-cassee/nanterre/) – 92000
+- [Clé cassée Neuilly-sur-Seine](https://shopta-serrure.fr/depannage/cle-cassee/neuilly-sur-seine/) – 92200
+- [Clé cassée Le Plessis-Robinson](https://shopta-serrure.fr/depannage/cle-cassee/le-plessis-robinson/) – 92350
+- [Clé cassée Puteaux](https://shopta-serrure.fr/depannage/cle-cassee/puteaux/) – 92800
+- [Clé cassée Rueil-Malmaison](https://shopta-serrure.fr/depannage/cle-cassee/rueil-malmaison/) – 92500
+- [Clé cassée Saint-Cloud](https://shopta-serrure.fr/depannage/cle-cassee/saint-cloud/) – 92210
+- [Clé cassée Sceaux](https://shopta-serrure.fr/depannage/cle-cassee/sceaux/) – 92330
+- [Clé cassée Sèvres](https://shopta-serrure.fr/depannage/cle-cassee/sevres/) – 92310
+- [Clé cassée Suresnes](https://shopta-serrure.fr/depannage/cle-cassee/suresnes/) – 92150
+- [Clé cassée Vanves](https://shopta-serrure.fr/depannage/cle-cassee/vanves/) – 92170
+- [Clé cassée Vaucresson](https://shopta-serrure.fr/depannage/cle-cassee/vaucresson/) – 92420
+- [Clé cassée Ville-d'Avray](https://shopta-serrure.fr/depannage/cle-cassee/ville-d-avray/) – 92410
+- [Clé cassée Villeneuve-la-Garenne](https://shopta-serrure.fr/depannage/cle-cassee/villeneuve-la-garenne/) – 92390
+- [Clé cassée Saint-Ouen-sur-Seine](https://shopta-serrure.fr/depannage/cle-cassee/saint-ouen-sur-seine/) – 93400
+- [Clé cassée Argenteuil](https://shopta-serrure.fr/depannage/cle-cassee/argenteuil/) – 95100
+- [Clé cassée Arnouville](https://shopta-serrure.fr/depannage/cle-cassee/arnouville/) – 95400
+- [Clé cassée Auvers-sur-Oise](https://shopta-serrure.fr/depannage/cle-cassee/auvers-sur-oise/) – 95430
+- [Clé cassée Beauchamp](https://shopta-serrure.fr/depannage/cle-cassee/beauchamp/) – 95250
+- [Clé cassée Beaumont-sur-Oise](https://shopta-serrure.fr/depannage/cle-cassee/beaumont-sur-oise/) – 95260
+- [Clé cassée Bernes-sur-Oise](https://shopta-serrure.fr/depannage/cle-cassee/bernes-sur-oise/) – 95340
+- [Clé cassée Bessancourt](https://shopta-serrure.fr/depannage/cle-cassee/bessancourt/) – 95550
+- [Clé cassée Bezons](https://shopta-serrure.fr/depannage/cle-cassee/bezons/) – 95870
+- [Clé cassée Boisemont](https://shopta-serrure.fr/depannage/cle-cassee/boisemont/) – 95000
+- [Clé cassée Bonneuil-en-France](https://shopta-serrure.fr/depannage/cle-cassee/bonneuil-en-france/) – 95500
+- [Clé cassée Bouffémont](https://shopta-serrure.fr/depannage/cle-cassee/bouffemont/) – 95570
+- [Clé cassée Bruyères-sur-Oise](https://shopta-serrure.fr/depannage/cle-cassee/bruyeres-sur-oise/) – 95820
+- [Clé cassée Butry-sur-Oise](https://shopta-serrure.fr/depannage/cle-cassee/butry-sur-oise/) – 95430
+- [Clé cassée Cergy](https://shopta-serrure.fr/depannage/cle-cassee/cergy/) – 95000
+- [Clé cassée Champagne-sur-Oise](https://shopta-serrure.fr/depannage/cle-cassee/champagne-sur-oise/) – 95660
+- [Clé cassée Cormeilles-en-Parisis](https://shopta-serrure.fr/depannage/cle-cassee/cormeilles-en-parisis/) – 95240
+- [Clé cassée Courdimanche](https://shopta-serrure.fr/depannage/cle-cassee/courdimanche/) – 95800
+- [Clé cassée Deuil-la-Barre](https://shopta-serrure.fr/depannage/cle-cassee/deuil-la-barre/) – 95170
+- [Clé cassée Domont](https://shopta-serrure.fr/depannage/cle-cassee/domont/) – 95330
+- [Clé cassée Eaubonne](https://shopta-serrure.fr/depannage/cle-cassee/eaubonne/) – 95600
+- [Clé cassée Écouen](https://shopta-serrure.fr/depannage/cle-cassee/ecouen/) – 95440
+- [Clé cassée Enghien-les-Bains](https://shopta-serrure.fr/depannage/cle-cassee/enghien-les-bains/) – 95880
+- [Clé cassée Ennery](https://shopta-serrure.fr/depannage/cle-cassee/ennery/) – 95300
+- [Clé cassée Épiais-Rhus](https://shopta-serrure.fr/depannage/cle-cassee/epiais-rhus/) – 95810
+- [Clé cassée Épinay-Champlâtreux](https://shopta-serrure.fr/depannage/cle-cassee/epinay-champlatreux/) – 95270
+- [Clé cassée Éragny](https://shopta-serrure.fr/depannage/cle-cassee/eragny/) – 95610
+- [Clé cassée Ermont](https://shopta-serrure.fr/depannage/cle-cassee/ermont/) – 95120
+- [Clé cassée Ézanville](https://shopta-serrure.fr/depannage/cle-cassee/ezanville/) – 95460
+- [Clé cassée Fontenay-en-Parisis](https://shopta-serrure.fr/depannage/cle-cassee/fontenay-en-parisis/) – 95190
+- [Clé cassée Fosses](https://shopta-serrure.fr/depannage/cle-cassee/fosses/) – 95470
+- [Clé cassée Franconville](https://shopta-serrure.fr/depannage/cle-cassee/franconville/) – 95130
+- [Clé cassée Frépillon](https://shopta-serrure.fr/depannage/cle-cassee/frepillon/) – 95740
+- [Clé cassée Frouville](https://shopta-serrure.fr/depannage/cle-cassee/frouville/) – 95690
+- [Clé cassée Garges-lès-Gonesse](https://shopta-serrure.fr/depannage/cle-cassee/garges-les-gonesse/) – 95140
+- [Clé cassée Gonesse](https://shopta-serrure.fr/depannage/cle-cassee/gonesse/) – 95500
+- [Clé cassée Goussainville](https://shopta-serrure.fr/depannage/cle-cassee/goussainville/) – 95190
+- [Clé cassée Groslay](https://shopta-serrure.fr/depannage/cle-cassee/groslay/) – 95410
+- [Clé cassée Herblay-sur-Seine](https://shopta-serrure.fr/depannage/cle-cassee/herblay-sur-seine/) – 95220
+- [Clé cassée L'Isle-Adam](https://shopta-serrure.fr/depannage/cle-cassee/l-isle-adam/) – 95290
+- [Clé cassée Jouy-le-Moutier](https://shopta-serrure.fr/depannage/cle-cassee/jouy-le-moutier/) – 95280
+- [Clé cassée Louvres](https://shopta-serrure.fr/depannage/cle-cassee/louvres/) – 95380
+- [Clé cassée Marly-la-Ville](https://shopta-serrure.fr/depannage/cle-cassee/marly-la-ville/) – 95670
+- [Clé cassée Montigny-lès-Cormeilles](https://shopta-serrure.fr/depannage/cle-cassee/montigny-les-cormeilles/) – 95370
+- [Clé cassée Montmagny](https://shopta-serrure.fr/depannage/cle-cassee/montmagny/) – 95360
+- [Clé cassée Montmorency](https://shopta-serrure.fr/depannage/cle-cassee/montmorency/) – 95160
+- [Clé cassée Osny](https://shopta-serrure.fr/depannage/cle-cassee/osny/) – 95520
+- [Clé cassée Persan](https://shopta-serrure.fr/depannage/cle-cassee/persan/) – 95340
+- [Clé cassée Pierrelaye](https://shopta-serrure.fr/depannage/cle-cassee/pierrelaye/) – 95220
+- [Clé cassée Pontoise](https://shopta-serrure.fr/depannage/cle-cassee/pontoise/) – 95000
+- [Clé cassée Puiseux-Pontoise](https://shopta-serrure.fr/depannage/cle-cassee/puiseux-pontoise/) – 95650
+- [Clé cassée Saint-Brice-sous-Forêt](https://shopta-serrure.fr/depannage/cle-cassee/saint-brice-sous-foret/) – 95350
+- [Clé cassée Saint-Gratien](https://shopta-serrure.fr/depannage/cle-cassee/saint-gratien/) – 95210
+- [Clé cassée Saint-Leu-la-Forêt](https://shopta-serrure.fr/depannage/cle-cassee/saint-leu-la-foret/) – 95320
+- [Clé cassée Saint-Ouen-l'Aumône](https://shopta-serrure.fr/depannage/cle-cassee/saint-ouen-l-aumone/) – 95310
+- [Clé cassée Saint-Prix](https://shopta-serrure.fr/depannage/cle-cassee/saint-prix/) – 95390
+- [Clé cassée Sannois](https://shopta-serrure.fr/depannage/cle-cassee/sannois/) – 95110
+- [Clé cassée Sarcelles](https://shopta-serrure.fr/depannage/cle-cassee/sarcelles/) – 95200
+- [Clé cassée Soisy-sous-Montmorency](https://shopta-serrure.fr/depannage/cle-cassee/soisy-sous-montmorency/) – 95230
+- [Clé cassée Taverny](https://shopta-serrure.fr/depannage/cle-cassee/taverny/) – 95150
+- [Clé cassée Vauréal](https://shopta-serrure.fr/depannage/cle-cassee/vaureal/) – 95490
+- [Clé cassée Villiers-le-Bel](https://shopta-serrure.fr/depannage/cle-cassee/villiers-le-bel/) – 95400
+
+### Changement de serrure et de cylindre (à partir de 160 € TTC)
+- [Changement de serrure Paris](https://shopta-serrure.fr/depannage/changement-serrure/paris/)
+- [Changement de serrure Paris 1er](https://shopta-serrure.fr/depannage/changement-serrure/paris-1/) – 75001
+- [Changement de serrure Paris 2e](https://shopta-serrure.fr/depannage/changement-serrure/paris-2/) – 75002
+- [Changement de serrure Paris 3e](https://shopta-serrure.fr/depannage/changement-serrure/paris-3/) – 75003
+- [Changement de serrure Paris 4e](https://shopta-serrure.fr/depannage/changement-serrure/paris-4/) – 75004
+- [Changement de serrure Paris 5e](https://shopta-serrure.fr/depannage/changement-serrure/paris-5/) – 75005
+- [Changement de serrure Paris 6e](https://shopta-serrure.fr/depannage/changement-serrure/paris-6/) – 75006
+- [Changement de serrure Paris 7e](https://shopta-serrure.fr/depannage/changement-serrure/paris-7/) – 75007
+- [Changement de serrure Paris 8e](https://shopta-serrure.fr/depannage/changement-serrure/paris-8/) – 75008
+- [Changement de serrure Paris 9e](https://shopta-serrure.fr/depannage/changement-serrure/paris-9/) – 75009
+- [Changement de serrure Paris 10e](https://shopta-serrure.fr/depannage/changement-serrure/paris-10/) – 75010
+- [Changement de serrure Paris 11e](https://shopta-serrure.fr/depannage/changement-serrure/paris-11/) – 75011
+- [Changement de serrure Paris 12e](https://shopta-serrure.fr/depannage/changement-serrure/paris-12/) – 75012
+- [Changement de serrure Paris 13e](https://shopta-serrure.fr/depannage/changement-serrure/paris-13/) – 75013
+- [Changement de serrure Paris 14e](https://shopta-serrure.fr/depannage/changement-serrure/paris-14/) – 75014
+- [Changement de serrure Paris 15e](https://shopta-serrure.fr/depannage/changement-serrure/paris-15/) – 75015
+- [Changement de serrure Paris 16e](https://shopta-serrure.fr/depannage/changement-serrure/paris-16/) – 75016
+- [Changement de serrure Paris 17e](https://shopta-serrure.fr/depannage/changement-serrure/paris-17/) – 75017
+- [Changement de serrure Paris 18e](https://shopta-serrure.fr/depannage/changement-serrure/paris-18/) – 75018
+- [Changement de serrure Paris 19e](https://shopta-serrure.fr/depannage/changement-serrure/paris-19/) – 75019
+- [Changement de serrure Paris 20e](https://shopta-serrure.fr/depannage/changement-serrure/paris-20/) – 75020
+- [Changement de serrure Antony](https://shopta-serrure.fr/depannage/changement-serrure/antony/) – 92160
+- [Changement de serrure Asnières-sur-Seine](https://shopta-serrure.fr/depannage/changement-serrure/asnieres-sur-seine/) – 92600
+- [Changement de serrure Bagneux](https://shopta-serrure.fr/depannage/changement-serrure/bagneux/) – 92220
+- [Changement de serrure Bois-Colombes](https://shopta-serrure.fr/depannage/changement-serrure/bois-colombes/) – 92270
+- [Changement de serrure Boulogne-Billancourt](https://shopta-serrure.fr/depannage/changement-serrure/boulogne-billancourt/) – 92100
+- [Changement de serrure Bourg-la-Reine](https://shopta-serrure.fr/depannage/changement-serrure/bourg-la-reine/) – 92340
+- [Changement de serrure Châtenay-Malabry](https://shopta-serrure.fr/depannage/changement-serrure/chatenay-malabry/) – 92290
+- [Changement de serrure Châtillon](https://shopta-serrure.fr/depannage/changement-serrure/chatillon/) – 92320
+- [Changement de serrure Chaville](https://shopta-serrure.fr/depannage/changement-serrure/chaville/) – 92370
+- [Changement de serrure Clamart](https://shopta-serrure.fr/depannage/changement-serrure/clamart/) – 92140
+- [Changement de serrure Clichy](https://shopta-serrure.fr/depannage/changement-serrure/clichy/) – 92110
+- [Changement de serrure Colombes](https://shopta-serrure.fr/depannage/changement-serrure/colombes/) – 92700
+- [Changement de serrure Courbevoie](https://shopta-serrure.fr/depannage/changement-serrure/courbevoie/) – 92400
+- [Changement de serrure Fontenay-aux-Roses](https://shopta-serrure.fr/depannage/changement-serrure/fontenay-aux-roses/) – 92260
+- [Changement de serrure Garches](https://shopta-serrure.fr/depannage/changement-serrure/garches/) – 92380
+- [Changement de serrure La Garenne-Colombes](https://shopta-serrure.fr/depannage/changement-serrure/la-garenne-colombes/) – 92250
+- [Changement de serrure Gennevilliers](https://shopta-serrure.fr/depannage/changement-serrure/gennevilliers/) – 92230
+- [Changement de serrure Issy-les-Moulineaux](https://shopta-serrure.fr/depannage/changement-serrure/issy-les-moulineaux/) – 92130
+- [Changement de serrure Levallois-Perret](https://shopta-serrure.fr/depannage/changement-serrure/levallois-perret/) – 92300
+- [Changement de serrure Malakoff](https://shopta-serrure.fr/depannage/changement-serrure/malakoff/) – 92240
+- [Changement de serrure Marnes-la-Coquette](https://shopta-serrure.fr/depannage/changement-serrure/marnes-la-coquette/) – 92430
+- [Changement de serrure Meudon](https://shopta-serrure.fr/depannage/changement-serrure/meudon/) – 92190
+- [Changement de serrure Montrouge](https://shopta-serrure.fr/depannage/changement-serrure/montrouge/) – 92120
+- [Changement de serrure Nanterre](https://shopta-serrure.fr/depannage/changement-serrure/nanterre/) – 92000
+- [Changement de serrure Neuilly-sur-Seine](https://shopta-serrure.fr/depannage/changement-serrure/neuilly-sur-seine/) – 92200
+- [Changement de serrure Le Plessis-Robinson](https://shopta-serrure.fr/depannage/changement-serrure/le-plessis-robinson/) – 92350
+- [Changement de serrure Puteaux](https://shopta-serrure.fr/depannage/changement-serrure/puteaux/) – 92800
+- [Changement de serrure Rueil-Malmaison](https://shopta-serrure.fr/depannage/changement-serrure/rueil-malmaison/) – 92500
+- [Changement de serrure Saint-Cloud](https://shopta-serrure.fr/depannage/changement-serrure/saint-cloud/) – 92210
+- [Changement de serrure Sceaux](https://shopta-serrure.fr/depannage/changement-serrure/sceaux/) – 92330
+- [Changement de serrure Sèvres](https://shopta-serrure.fr/depannage/changement-serrure/sevres/) – 92310
+- [Changement de serrure Suresnes](https://shopta-serrure.fr/depannage/changement-serrure/suresnes/) – 92150
+- [Changement de serrure Vanves](https://shopta-serrure.fr/depannage/changement-serrure/vanves/) – 92170
+- [Changement de serrure Vaucresson](https://shopta-serrure.fr/depannage/changement-serrure/vaucresson/) – 92420
+- [Changement de serrure Ville-d'Avray](https://shopta-serrure.fr/depannage/changement-serrure/ville-d-avray/) – 92410
+- [Changement de serrure Villeneuve-la-Garenne](https://shopta-serrure.fr/depannage/changement-serrure/villeneuve-la-garenne/) – 92390
+- [Changement de serrure Saint-Ouen-sur-Seine](https://shopta-serrure.fr/depannage/changement-serrure/saint-ouen-sur-seine/) – 93400
+- [Changement de serrure Argenteuil](https://shopta-serrure.fr/depannage/changement-serrure/argenteuil/) – 95100
+- [Changement de serrure Arnouville](https://shopta-serrure.fr/depannage/changement-serrure/arnouville/) – 95400
+- [Changement de serrure Auvers-sur-Oise](https://shopta-serrure.fr/depannage/changement-serrure/auvers-sur-oise/) – 95430
+- [Changement de serrure Beauchamp](https://shopta-serrure.fr/depannage/changement-serrure/beauchamp/) – 95250
+- [Changement de serrure Beaumont-sur-Oise](https://shopta-serrure.fr/depannage/changement-serrure/beaumont-sur-oise/) – 95260
+- [Changement de serrure Bernes-sur-Oise](https://shopta-serrure.fr/depannage/changement-serrure/bernes-sur-oise/) – 95340
+- [Changement de serrure Bessancourt](https://shopta-serrure.fr/depannage/changement-serrure/bessancourt/) – 95550
+- [Changement de serrure Bezons](https://shopta-serrure.fr/depannage/changement-serrure/bezons/) – 95870
+- [Changement de serrure Boisemont](https://shopta-serrure.fr/depannage/changement-serrure/boisemont/) – 95000
+- [Changement de serrure Bonneuil-en-France](https://shopta-serrure.fr/depannage/changement-serrure/bonneuil-en-france/) – 95500
+- [Changement de serrure Bouffémont](https://shopta-serrure.fr/depannage/changement-serrure/bouffemont/) – 95570
+- [Changement de serrure Bruyères-sur-Oise](https://shopta-serrure.fr/depannage/changement-serrure/bruyeres-sur-oise/) – 95820
+- [Changement de serrure Butry-sur-Oise](https://shopta-serrure.fr/depannage/changement-serrure/butry-sur-oise/) – 95430
+- [Changement de serrure Cergy](https://shopta-serrure.fr/depannage/changement-serrure/cergy/) – 95000
+- [Changement de serrure Champagne-sur-Oise](https://shopta-serrure.fr/depannage/changement-serrure/champagne-sur-oise/) – 95660
+- [Changement de serrure Cormeilles-en-Parisis](https://shopta-serrure.fr/depannage/changement-serrure/cormeilles-en-parisis/) – 95240
+- [Changement de serrure Courdimanche](https://shopta-serrure.fr/depannage/changement-serrure/courdimanche/) – 95800
+- [Changement de serrure Deuil-la-Barre](https://shopta-serrure.fr/depannage/changement-serrure/deuil-la-barre/) – 95170
+- [Changement de serrure Domont](https://shopta-serrure.fr/depannage/changement-serrure/domont/) – 95330
+- [Changement de serrure Eaubonne](https://shopta-serrure.fr/depannage/changement-serrure/eaubonne/) – 95600
+- [Changement de serrure Écouen](https://shopta-serrure.fr/depannage/changement-serrure/ecouen/) – 95440
+- [Changement de serrure Enghien-les-Bains](https://shopta-serrure.fr/depannage/changement-serrure/enghien-les-bains/) – 95880
+- [Changement de serrure Ennery](https://shopta-serrure.fr/depannage/changement-serrure/ennery/) – 95300
+- [Changement de serrure Épiais-Rhus](https://shopta-serrure.fr/depannage/changement-serrure/epiais-rhus/) – 95810
+- [Changement de serrure Épinay-Champlâtreux](https://shopta-serrure.fr/depannage/changement-serrure/epinay-champlatreux/) – 95270
+- [Changement de serrure Éragny](https://shopta-serrure.fr/depannage/changement-serrure/eragny/) – 95610
+- [Changement de serrure Ermont](https://shopta-serrure.fr/depannage/changement-serrure/ermont/) – 95120
+- [Changement de serrure Ézanville](https://shopta-serrure.fr/depannage/changement-serrure/ezanville/) – 95460
+- [Changement de serrure Fontenay-en-Parisis](https://shopta-serrure.fr/depannage/changement-serrure/fontenay-en-parisis/) – 95190
+- [Changement de serrure Fosses](https://shopta-serrure.fr/depannage/changement-serrure/fosses/) – 95470
+- [Changement de serrure Franconville](https://shopta-serrure.fr/depannage/changement-serrure/franconville/) – 95130
+- [Changement de serrure Frépillon](https://shopta-serrure.fr/depannage/changement-serrure/frepillon/) – 95740
+- [Changement de serrure Frouville](https://shopta-serrure.fr/depannage/changement-serrure/frouville/) – 95690
+- [Changement de serrure Garges-lès-Gonesse](https://shopta-serrure.fr/depannage/changement-serrure/garges-les-gonesse/) – 95140
+- [Changement de serrure Gonesse](https://shopta-serrure.fr/depannage/changement-serrure/gonesse/) – 95500
+- [Changement de serrure Goussainville](https://shopta-serrure.fr/depannage/changement-serrure/goussainville/) – 95190
+- [Changement de serrure Groslay](https://shopta-serrure.fr/depannage/changement-serrure/groslay/) – 95410
+- [Changement de serrure Herblay-sur-Seine](https://shopta-serrure.fr/depannage/changement-serrure/herblay-sur-seine/) – 95220
+- [Changement de serrure L'Isle-Adam](https://shopta-serrure.fr/depannage/changement-serrure/l-isle-adam/) – 95290
+- [Changement de serrure Jouy-le-Moutier](https://shopta-serrure.fr/depannage/changement-serrure/jouy-le-moutier/) – 95280
+- [Changement de serrure Louvres](https://shopta-serrure.fr/depannage/changement-serrure/louvres/) – 95380
+- [Changement de serrure Marly-la-Ville](https://shopta-serrure.fr/depannage/changement-serrure/marly-la-ville/) – 95670
+- [Changement de serrure Montigny-lès-Cormeilles](https://shopta-serrure.fr/depannage/changement-serrure/montigny-les-cormeilles/) – 95370
+- [Changement de serrure Montmagny](https://shopta-serrure.fr/depannage/changement-serrure/montmagny/) – 95360
+- [Changement de serrure Montmorency](https://shopta-serrure.fr/depannage/changement-serrure/montmorency/) – 95160
+- [Changement de serrure Osny](https://shopta-serrure.fr/depannage/changement-serrure/osny/) – 95520
+- [Changement de serrure Persan](https://shopta-serrure.fr/depannage/changement-serrure/persan/) – 95340
+- [Changement de serrure Pierrelaye](https://shopta-serrure.fr/depannage/changement-serrure/pierrelaye/) – 95220
+- [Changement de serrure Pontoise](https://shopta-serrure.fr/depannage/changement-serrure/pontoise/) – 95000
+- [Changement de serrure Puiseux-Pontoise](https://shopta-serrure.fr/depannage/changement-serrure/puiseux-pontoise/) – 95650
+- [Changement de serrure Saint-Brice-sous-Forêt](https://shopta-serrure.fr/depannage/changement-serrure/saint-brice-sous-foret/) – 95350
+- [Changement de serrure Saint-Gratien](https://shopta-serrure.fr/depannage/changement-serrure/saint-gratien/) – 95210
+- [Changement de serrure Saint-Leu-la-Forêt](https://shopta-serrure.fr/depannage/changement-serrure/saint-leu-la-foret/) – 95320
+- [Changement de serrure Saint-Ouen-l'Aumône](https://shopta-serrure.fr/depannage/changement-serrure/saint-ouen-l-aumone/) – 95310
+- [Changement de serrure Saint-Prix](https://shopta-serrure.fr/depannage/changement-serrure/saint-prix/) – 95390
+- [Changement de serrure Sannois](https://shopta-serrure.fr/depannage/changement-serrure/sannois/) – 95110
+- [Changement de serrure Sarcelles](https://shopta-serrure.fr/depannage/changement-serrure/sarcelles/) – 95200
+- [Changement de serrure Soisy-sous-Montmorency](https://shopta-serrure.fr/depannage/changement-serrure/soisy-sous-montmorency/) – 95230
+- [Changement de serrure Taverny](https://shopta-serrure.fr/depannage/changement-serrure/taverny/) – 95150
+- [Changement de serrure Vauréal](https://shopta-serrure.fr/depannage/changement-serrure/vaureal/) – 95490
+- [Changement de serrure Villiers-le-Bel](https://shopta-serrure.fr/depannage/changement-serrure/villiers-le-bel/) – 95400
+
+### Serrure connectée (Smart Lock) (sur devis gratuit)
+- [Smart Lock Paris](https://shopta-serrure.fr/depannage/serrure-connectee/paris/)
+- [Smart Lock Paris 1er](https://shopta-serrure.fr/depannage/serrure-connectee/paris-1/) – 75001
+- [Smart Lock Paris 2e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-2/) – 75002
+- [Smart Lock Paris 3e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-3/) – 75003
+- [Smart Lock Paris 4e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-4/) – 75004
+- [Smart Lock Paris 5e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-5/) – 75005
+- [Smart Lock Paris 6e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-6/) – 75006
+- [Smart Lock Paris 7e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-7/) – 75007
+- [Smart Lock Paris 8e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-8/) – 75008
+- [Smart Lock Paris 9e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-9/) – 75009
+- [Smart Lock Paris 10e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-10/) – 75010
+- [Smart Lock Paris 11e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-11/) – 75011
+- [Smart Lock Paris 12e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-12/) – 75012
+- [Smart Lock Paris 13e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-13/) – 75013
+- [Smart Lock Paris 14e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-14/) – 75014
+- [Smart Lock Paris 15e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-15/) – 75015
+- [Smart Lock Paris 16e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-16/) – 75016
+- [Smart Lock Paris 17e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-17/) – 75017
+- [Smart Lock Paris 18e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-18/) – 75018
+- [Smart Lock Paris 19e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-19/) – 75019
+- [Smart Lock Paris 20e](https://shopta-serrure.fr/depannage/serrure-connectee/paris-20/) – 75020
+- [Smart Lock Antony](https://shopta-serrure.fr/depannage/serrure-connectee/antony/) – 92160
+- [Smart Lock Asnières-sur-Seine](https://shopta-serrure.fr/depannage/serrure-connectee/asnieres-sur-seine/) – 92600
+- [Smart Lock Bagneux](https://shopta-serrure.fr/depannage/serrure-connectee/bagneux/) – 92220
+- [Smart Lock Bois-Colombes](https://shopta-serrure.fr/depannage/serrure-connectee/bois-colombes/) – 92270
+- [Smart Lock Boulogne-Billancourt](https://shopta-serrure.fr/depannage/serrure-connectee/boulogne-billancourt/) – 92100
+- [Smart Lock Bourg-la-Reine](https://shopta-serrure.fr/depannage/serrure-connectee/bourg-la-reine/) – 92340
+- [Smart Lock Châtenay-Malabry](https://shopta-serrure.fr/depannage/serrure-connectee/chatenay-malabry/) – 92290
+- [Smart Lock Châtillon](https://shopta-serrure.fr/depannage/serrure-connectee/chatillon/) – 92320
+- [Smart Lock Chaville](https://shopta-serrure.fr/depannage/serrure-connectee/chaville/) – 92370
+- [Smart Lock Clamart](https://shopta-serrure.fr/depannage/serrure-connectee/clamart/) – 92140
+- [Smart Lock Clichy](https://shopta-serrure.fr/depannage/serrure-connectee/clichy/) – 92110
+- [Smart Lock Colombes](https://shopta-serrure.fr/depannage/serrure-connectee/colombes/) – 92700
+- [Smart Lock Courbevoie](https://shopta-serrure.fr/depannage/serrure-connectee/courbevoie/) – 92400
+- [Smart Lock Fontenay-aux-Roses](https://shopta-serrure.fr/depannage/serrure-connectee/fontenay-aux-roses/) – 92260
+- [Smart Lock Garches](https://shopta-serrure.fr/depannage/serrure-connectee/garches/) – 92380
+- [Smart Lock La Garenne-Colombes](https://shopta-serrure.fr/depannage/serrure-connectee/la-garenne-colombes/) – 92250
+- [Smart Lock Gennevilliers](https://shopta-serrure.fr/depannage/serrure-connectee/gennevilliers/) – 92230
+- [Smart Lock Issy-les-Moulineaux](https://shopta-serrure.fr/depannage/serrure-connectee/issy-les-moulineaux/) – 92130
+- [Smart Lock Levallois-Perret](https://shopta-serrure.fr/depannage/serrure-connectee/levallois-perret/) – 92300
+- [Smart Lock Malakoff](https://shopta-serrure.fr/depannage/serrure-connectee/malakoff/) – 92240
+- [Smart Lock Marnes-la-Coquette](https://shopta-serrure.fr/depannage/serrure-connectee/marnes-la-coquette/) – 92430
+- [Smart Lock Meudon](https://shopta-serrure.fr/depannage/serrure-connectee/meudon/) – 92190
+- [Smart Lock Montrouge](https://shopta-serrure.fr/depannage/serrure-connectee/montrouge/) – 92120
+- [Smart Lock Nanterre](https://shopta-serrure.fr/depannage/serrure-connectee/nanterre/) – 92000
+- [Smart Lock Neuilly-sur-Seine](https://shopta-serrure.fr/depannage/serrure-connectee/neuilly-sur-seine/) – 92200
+- [Smart Lock Le Plessis-Robinson](https://shopta-serrure.fr/depannage/serrure-connectee/le-plessis-robinson/) – 92350
+- [Smart Lock Puteaux](https://shopta-serrure.fr/depannage/serrure-connectee/puteaux/) – 92800
+- [Smart Lock Rueil-Malmaison](https://shopta-serrure.fr/depannage/serrure-connectee/rueil-malmaison/) – 92500
+- [Smart Lock Saint-Cloud](https://shopta-serrure.fr/depannage/serrure-connectee/saint-cloud/) – 92210
+- [Smart Lock Sceaux](https://shopta-serrure.fr/depannage/serrure-connectee/sceaux/) – 92330
+- [Smart Lock Sèvres](https://shopta-serrure.fr/depannage/serrure-connectee/sevres/) – 92310
+- [Smart Lock Suresnes](https://shopta-serrure.fr/depannage/serrure-connectee/suresnes/) – 92150
+- [Smart Lock Vanves](https://shopta-serrure.fr/depannage/serrure-connectee/vanves/) – 92170
+- [Smart Lock Vaucresson](https://shopta-serrure.fr/depannage/serrure-connectee/vaucresson/) – 92420
+- [Smart Lock Ville-d'Avray](https://shopta-serrure.fr/depannage/serrure-connectee/ville-d-avray/) – 92410
+- [Smart Lock Villeneuve-la-Garenne](https://shopta-serrure.fr/depannage/serrure-connectee/villeneuve-la-garenne/) – 92390
+- [Smart Lock Saint-Ouen-sur-Seine](https://shopta-serrure.fr/depannage/serrure-connectee/saint-ouen-sur-seine/) – 93400
+- [Smart Lock Argenteuil](https://shopta-serrure.fr/depannage/serrure-connectee/argenteuil/) – 95100
+- [Smart Lock Arnouville](https://shopta-serrure.fr/depannage/serrure-connectee/arnouville/) – 95400
+- [Smart Lock Auvers-sur-Oise](https://shopta-serrure.fr/depannage/serrure-connectee/auvers-sur-oise/) – 95430
+- [Smart Lock Beauchamp](https://shopta-serrure.fr/depannage/serrure-connectee/beauchamp/) – 95250
+- [Smart Lock Beaumont-sur-Oise](https://shopta-serrure.fr/depannage/serrure-connectee/beaumont-sur-oise/) – 95260
+- [Smart Lock Bernes-sur-Oise](https://shopta-serrure.fr/depannage/serrure-connectee/bernes-sur-oise/) – 95340
+- [Smart Lock Bessancourt](https://shopta-serrure.fr/depannage/serrure-connectee/bessancourt/) – 95550
+- [Smart Lock Bezons](https://shopta-serrure.fr/depannage/serrure-connectee/bezons/) – 95870
+- [Smart Lock Boisemont](https://shopta-serrure.fr/depannage/serrure-connectee/boisemont/) – 95000
+- [Smart Lock Bonneuil-en-France](https://shopta-serrure.fr/depannage/serrure-connectee/bonneuil-en-france/) – 95500
+- [Smart Lock Bouffémont](https://shopta-serrure.fr/depannage/serrure-connectee/bouffemont/) – 95570
+- [Smart Lock Bruyères-sur-Oise](https://shopta-serrure.fr/depannage/serrure-connectee/bruyeres-sur-oise/) – 95820
+- [Smart Lock Butry-sur-Oise](https://shopta-serrure.fr/depannage/serrure-connectee/butry-sur-oise/) – 95430
+- [Smart Lock Cergy](https://shopta-serrure.fr/depannage/serrure-connectee/cergy/) – 95000
+- [Smart Lock Champagne-sur-Oise](https://shopta-serrure.fr/depannage/serrure-connectee/champagne-sur-oise/) – 95660
+- [Smart Lock Cormeilles-en-Parisis](https://shopta-serrure.fr/depannage/serrure-connectee/cormeilles-en-parisis/) – 95240
+- [Smart Lock Courdimanche](https://shopta-serrure.fr/depannage/serrure-connectee/courdimanche/) – 95800
+- [Smart Lock Deuil-la-Barre](https://shopta-serrure.fr/depannage/serrure-connectee/deuil-la-barre/) – 95170
+- [Smart Lock Domont](https://shopta-serrure.fr/depannage/serrure-connectee/domont/) – 95330
+- [Smart Lock Eaubonne](https://shopta-serrure.fr/depannage/serrure-connectee/eaubonne/) – 95600
+- [Smart Lock Écouen](https://shopta-serrure.fr/depannage/serrure-connectee/ecouen/) – 95440
+- [Smart Lock Enghien-les-Bains](https://shopta-serrure.fr/depannage/serrure-connectee/enghien-les-bains/) – 95880
+- [Smart Lock Ennery](https://shopta-serrure.fr/depannage/serrure-connectee/ennery/) – 95300
+- [Smart Lock Épiais-Rhus](https://shopta-serrure.fr/depannage/serrure-connectee/epiais-rhus/) – 95810
+- [Smart Lock Épinay-Champlâtreux](https://shopta-serrure.fr/depannage/serrure-connectee/epinay-champlatreux/) – 95270
+- [Smart Lock Éragny](https://shopta-serrure.fr/depannage/serrure-connectee/eragny/) – 95610
+- [Smart Lock Ermont](https://shopta-serrure.fr/depannage/serrure-connectee/ermont/) – 95120
+- [Smart Lock Ézanville](https://shopta-serrure.fr/depannage/serrure-connectee/ezanville/) – 95460
+- [Smart Lock Fontenay-en-Parisis](https://shopta-serrure.fr/depannage/serrure-connectee/fontenay-en-parisis/) – 95190
+- [Smart Lock Fosses](https://shopta-serrure.fr/depannage/serrure-connectee/fosses/) – 95470
+- [Smart Lock Franconville](https://shopta-serrure.fr/depannage/serrure-connectee/franconville/) – 95130
+- [Smart Lock Frépillon](https://shopta-serrure.fr/depannage/serrure-connectee/frepillon/) – 95740
+- [Smart Lock Frouville](https://shopta-serrure.fr/depannage/serrure-connectee/frouville/) – 95690
+- [Smart Lock Garges-lès-Gonesse](https://shopta-serrure.fr/depannage/serrure-connectee/garges-les-gonesse/) – 95140
+- [Smart Lock Gonesse](https://shopta-serrure.fr/depannage/serrure-connectee/gonesse/) – 95500
+- [Smart Lock Goussainville](https://shopta-serrure.fr/depannage/serrure-connectee/goussainville/) – 95190
+- [Smart Lock Groslay](https://shopta-serrure.fr/depannage/serrure-connectee/groslay/) – 95410
+- [Smart Lock Herblay-sur-Seine](https://shopta-serrure.fr/depannage/serrure-connectee/herblay-sur-seine/) – 95220
+- [Smart Lock L'Isle-Adam](https://shopta-serrure.fr/depannage/serrure-connectee/l-isle-adam/) – 95290
+- [Smart Lock Jouy-le-Moutier](https://shopta-serrure.fr/depannage/serrure-connectee/jouy-le-moutier/) – 95280
+- [Smart Lock Louvres](https://shopta-serrure.fr/depannage/serrure-connectee/louvres/) – 95380
+- [Smart Lock Marly-la-Ville](https://shopta-serrure.fr/depannage/serrure-connectee/marly-la-ville/) – 95670
+- [Smart Lock Montigny-lès-Cormeilles](https://shopta-serrure.fr/depannage/serrure-connectee/montigny-les-cormeilles/) – 95370
+- [Smart Lock Montmagny](https://shopta-serrure.fr/depannage/serrure-connectee/montmagny/) – 95360
+- [Smart Lock Montmorency](https://shopta-serrure.fr/depannage/serrure-connectee/montmorency/) – 95160
+- [Smart Lock Osny](https://shopta-serrure.fr/depannage/serrure-connectee/osny/) – 95520
+- [Smart Lock Persan](https://shopta-serrure.fr/depannage/serrure-connectee/persan/) – 95340
+- [Smart Lock Pierrelaye](https://shopta-serrure.fr/depannage/serrure-connectee/pierrelaye/) – 95220
+- [Smart Lock Pontoise](https://shopta-serrure.fr/depannage/serrure-connectee/pontoise/) – 95000
+- [Smart Lock Puiseux-Pontoise](https://shopta-serrure.fr/depannage/serrure-connectee/puiseux-pontoise/) – 95650
+- [Smart Lock Saint-Brice-sous-Forêt](https://shopta-serrure.fr/depannage/serrure-connectee/saint-brice-sous-foret/) – 95350
+- [Smart Lock Saint-Gratien](https://shopta-serrure.fr/depannage/serrure-connectee/saint-gratien/) – 95210
+- [Smart Lock Saint-Leu-la-Forêt](https://shopta-serrure.fr/depannage/serrure-connectee/saint-leu-la-foret/) – 95320
+- [Smart Lock Saint-Ouen-l'Aumône](https://shopta-serrure.fr/depannage/serrure-connectee/saint-ouen-l-aumone/) – 95310
+- [Smart Lock Saint-Prix](https://shopta-serrure.fr/depannage/serrure-connectee/saint-prix/) – 95390
+- [Smart Lock Sannois](https://shopta-serrure.fr/depannage/serrure-connectee/sannois/) – 95110
+- [Smart Lock Sarcelles](https://shopta-serrure.fr/depannage/serrure-connectee/sarcelles/) – 95200
+- [Smart Lock Soisy-sous-Montmorency](https://shopta-serrure.fr/depannage/serrure-connectee/soisy-sous-montmorency/) – 95230
+- [Smart Lock Taverny](https://shopta-serrure.fr/depannage/serrure-connectee/taverny/) – 95150
+- [Smart Lock Vauréal](https://shopta-serrure.fr/depannage/serrure-connectee/vaureal/) – 95490
+- [Smart Lock Villiers-le-Bel](https://shopta-serrure.fr/depannage/serrure-connectee/villiers-le-bel/) – 95400
+
+### Sécurisation après effraction (sur devis gratuit)
+- [Après effraction Paris](https://shopta-serrure.fr/depannage/effraction/paris/)
+- [Après effraction Paris 1er](https://shopta-serrure.fr/depannage/effraction/paris-1/) – 75001
+- [Après effraction Paris 2e](https://shopta-serrure.fr/depannage/effraction/paris-2/) – 75002
+- [Après effraction Paris 3e](https://shopta-serrure.fr/depannage/effraction/paris-3/) – 75003
+- [Après effraction Paris 4e](https://shopta-serrure.fr/depannage/effraction/paris-4/) – 75004
+- [Après effraction Paris 5e](https://shopta-serrure.fr/depannage/effraction/paris-5/) – 75005
+- [Après effraction Paris 6e](https://shopta-serrure.fr/depannage/effraction/paris-6/) – 75006
+- [Après effraction Paris 7e](https://shopta-serrure.fr/depannage/effraction/paris-7/) – 75007
+- [Après effraction Paris 8e](https://shopta-serrure.fr/depannage/effraction/paris-8/) – 75008
+- [Après effraction Paris 9e](https://shopta-serrure.fr/depannage/effraction/paris-9/) – 75009
+- [Après effraction Paris 10e](https://shopta-serrure.fr/depannage/effraction/paris-10/) – 75010
+- [Après effraction Paris 11e](https://shopta-serrure.fr/depannage/effraction/paris-11/) – 75011
+- [Après effraction Paris 12e](https://shopta-serrure.fr/depannage/effraction/paris-12/) – 75012
+- [Après effraction Paris 13e](https://shopta-serrure.fr/depannage/effraction/paris-13/) – 75013
+- [Après effraction Paris 14e](https://shopta-serrure.fr/depannage/effraction/paris-14/) – 75014
+- [Après effraction Paris 15e](https://shopta-serrure.fr/depannage/effraction/paris-15/) – 75015
+- [Après effraction Paris 16e](https://shopta-serrure.fr/depannage/effraction/paris-16/) – 75016
+- [Après effraction Paris 17e](https://shopta-serrure.fr/depannage/effraction/paris-17/) – 75017
+- [Après effraction Paris 18e](https://shopta-serrure.fr/depannage/effraction/paris-18/) – 75018
+- [Après effraction Paris 19e](https://shopta-serrure.fr/depannage/effraction/paris-19/) – 75019
+- [Après effraction Paris 20e](https://shopta-serrure.fr/depannage/effraction/paris-20/) – 75020
+- [Après effraction Antony](https://shopta-serrure.fr/depannage/effraction/antony/) – 92160
+- [Après effraction Asnières-sur-Seine](https://shopta-serrure.fr/depannage/effraction/asnieres-sur-seine/) – 92600
+- [Après effraction Bagneux](https://shopta-serrure.fr/depannage/effraction/bagneux/) – 92220
+- [Après effraction Bois-Colombes](https://shopta-serrure.fr/depannage/effraction/bois-colombes/) – 92270
+- [Après effraction Boulogne-Billancourt](https://shopta-serrure.fr/depannage/effraction/boulogne-billancourt/) – 92100
+- [Après effraction Bourg-la-Reine](https://shopta-serrure.fr/depannage/effraction/bourg-la-reine/) – 92340
+- [Après effraction Châtenay-Malabry](https://shopta-serrure.fr/depannage/effraction/chatenay-malabry/) – 92290
+- [Après effraction Châtillon](https://shopta-serrure.fr/depannage/effraction/chatillon/) – 92320
+- [Après effraction Chaville](https://shopta-serrure.fr/depannage/effraction/chaville/) – 92370
+- [Après effraction Clamart](https://shopta-serrure.fr/depannage/effraction/clamart/) – 92140
+- [Après effraction Clichy](https://shopta-serrure.fr/depannage/effraction/clichy/) – 92110
+- [Après effraction Colombes](https://shopta-serrure.fr/depannage/effraction/colombes/) – 92700
+- [Après effraction Courbevoie](https://shopta-serrure.fr/depannage/effraction/courbevoie/) – 92400
+- [Après effraction Fontenay-aux-Roses](https://shopta-serrure.fr/depannage/effraction/fontenay-aux-roses/) – 92260
+- [Après effraction Garches](https://shopta-serrure.fr/depannage/effraction/garches/) – 92380
+- [Après effraction La Garenne-Colombes](https://shopta-serrure.fr/depannage/effraction/la-garenne-colombes/) – 92250
+- [Après effraction Gennevilliers](https://shopta-serrure.fr/depannage/effraction/gennevilliers/) – 92230
+- [Après effraction Issy-les-Moulineaux](https://shopta-serrure.fr/depannage/effraction/issy-les-moulineaux/) – 92130
+- [Après effraction Levallois-Perret](https://shopta-serrure.fr/depannage/effraction/levallois-perret/) – 92300
+- [Après effraction Malakoff](https://shopta-serrure.fr/depannage/effraction/malakoff/) – 92240
+- [Après effraction Marnes-la-Coquette](https://shopta-serrure.fr/depannage/effraction/marnes-la-coquette/) – 92430
+- [Après effraction Meudon](https://shopta-serrure.fr/depannage/effraction/meudon/) – 92190
+- [Après effraction Montrouge](https://shopta-serrure.fr/depannage/effraction/montrouge/) – 92120
+- [Après effraction Nanterre](https://shopta-serrure.fr/depannage/effraction/nanterre/) – 92000
+- [Après effraction Neuilly-sur-Seine](https://shopta-serrure.fr/depannage/effraction/neuilly-sur-seine/) – 92200
+- [Après effraction Le Plessis-Robinson](https://shopta-serrure.fr/depannage/effraction/le-plessis-robinson/) – 92350
+- [Après effraction Puteaux](https://shopta-serrure.fr/depannage/effraction/puteaux/) – 92800
+- [Après effraction Rueil-Malmaison](https://shopta-serrure.fr/depannage/effraction/rueil-malmaison/) – 92500
+- [Après effraction Saint-Cloud](https://shopta-serrure.fr/depannage/effraction/saint-cloud/) – 92210
+- [Après effraction Sceaux](https://shopta-serrure.fr/depannage/effraction/sceaux/) – 92330
+- [Après effraction Sèvres](https://shopta-serrure.fr/depannage/effraction/sevres/) – 92310
+- [Après effraction Suresnes](https://shopta-serrure.fr/depannage/effraction/suresnes/) – 92150
+- [Après effraction Vanves](https://shopta-serrure.fr/depannage/effraction/vanves/) – 92170
+- [Après effraction Vaucresson](https://shopta-serrure.fr/depannage/effraction/vaucresson/) – 92420
+- [Après effraction Ville-d'Avray](https://shopta-serrure.fr/depannage/effraction/ville-d-avray/) – 92410
+- [Après effraction Villeneuve-la-Garenne](https://shopta-serrure.fr/depannage/effraction/villeneuve-la-garenne/) – 92390
+- [Après effraction Saint-Ouen-sur-Seine](https://shopta-serrure.fr/depannage/effraction/saint-ouen-sur-seine/) – 93400
+- [Après effraction Argenteuil](https://shopta-serrure.fr/depannage/effraction/argenteuil/) – 95100
+- [Après effraction Arnouville](https://shopta-serrure.fr/depannage/effraction/arnouville/) – 95400
+- [Après effraction Auvers-sur-Oise](https://shopta-serrure.fr/depannage/effraction/auvers-sur-oise/) – 95430
+- [Après effraction Beauchamp](https://shopta-serrure.fr/depannage/effraction/beauchamp/) – 95250
+- [Après effraction Beaumont-sur-Oise](https://shopta-serrure.fr/depannage/effraction/beaumont-sur-oise/) – 95260
+- [Après effraction Bernes-sur-Oise](https://shopta-serrure.fr/depannage/effraction/bernes-sur-oise/) – 95340
+- [Après effraction Bessancourt](https://shopta-serrure.fr/depannage/effraction/bessancourt/) – 95550
+- [Après effraction Bezons](https://shopta-serrure.fr/depannage/effraction/bezons/) – 95870
+- [Après effraction Boisemont](https://shopta-serrure.fr/depannage/effraction/boisemont/) – 95000
+- [Après effraction Bonneuil-en-France](https://shopta-serrure.fr/depannage/effraction/bonneuil-en-france/) – 95500
+- [Après effraction Bouffémont](https://shopta-serrure.fr/depannage/effraction/bouffemont/) – 95570
+- [Après effraction Bruyères-sur-Oise](https://shopta-serrure.fr/depannage/effraction/bruyeres-sur-oise/) – 95820
+- [Après effraction Butry-sur-Oise](https://shopta-serrure.fr/depannage/effraction/butry-sur-oise/) – 95430
+- [Après effraction Cergy](https://shopta-serrure.fr/depannage/effraction/cergy/) – 95000
+- [Après effraction Champagne-sur-Oise](https://shopta-serrure.fr/depannage/effraction/champagne-sur-oise/) – 95660
+- [Après effraction Cormeilles-en-Parisis](https://shopta-serrure.fr/depannage/effraction/cormeilles-en-parisis/) – 95240
+- [Après effraction Courdimanche](https://shopta-serrure.fr/depannage/effraction/courdimanche/) – 95800
+- [Après effraction Deuil-la-Barre](https://shopta-serrure.fr/depannage/effraction/deuil-la-barre/) – 95170
+- [Après effraction Domont](https://shopta-serrure.fr/depannage/effraction/domont/) – 95330
+- [Après effraction Eaubonne](https://shopta-serrure.fr/depannage/effraction/eaubonne/) – 95600
+- [Après effraction Écouen](https://shopta-serrure.fr/depannage/effraction/ecouen/) – 95440
+- [Après effraction Enghien-les-Bains](https://shopta-serrure.fr/depannage/effraction/enghien-les-bains/) – 95880
+- [Après effraction Ennery](https://shopta-serrure.fr/depannage/effraction/ennery/) – 95300
+- [Après effraction Épiais-Rhus](https://shopta-serrure.fr/depannage/effraction/epiais-rhus/) – 95810
+- [Après effraction Épinay-Champlâtreux](https://shopta-serrure.fr/depannage/effraction/epinay-champlatreux/) – 95270
+- [Après effraction Éragny](https://shopta-serrure.fr/depannage/effraction/eragny/) – 95610
+- [Après effraction Ermont](https://shopta-serrure.fr/depannage/effraction/ermont/) – 95120
+- [Après effraction Ézanville](https://shopta-serrure.fr/depannage/effraction/ezanville/) – 95460
+- [Après effraction Fontenay-en-Parisis](https://shopta-serrure.fr/depannage/effraction/fontenay-en-parisis/) – 95190
+- [Après effraction Fosses](https://shopta-serrure.fr/depannage/effraction/fosses/) – 95470
+- [Après effraction Franconville](https://shopta-serrure.fr/depannage/effraction/franconville/) – 95130
+- [Après effraction Frépillon](https://shopta-serrure.fr/depannage/effraction/frepillon/) – 95740
+- [Après effraction Frouville](https://shopta-serrure.fr/depannage/effraction/frouville/) – 95690
+- [Après effraction Garges-lès-Gonesse](https://shopta-serrure.fr/depannage/effraction/garges-les-gonesse/) – 95140
+- [Après effraction Gonesse](https://shopta-serrure.fr/depannage/effraction/gonesse/) – 95500
+- [Après effraction Goussainville](https://shopta-serrure.fr/depannage/effraction/goussainville/) – 95190
+- [Après effraction Groslay](https://shopta-serrure.fr/depannage/effraction/groslay/) – 95410
+- [Après effraction Herblay-sur-Seine](https://shopta-serrure.fr/depannage/effraction/herblay-sur-seine/) – 95220
+- [Après effraction L'Isle-Adam](https://shopta-serrure.fr/depannage/effraction/l-isle-adam/) – 95290
+- [Après effraction Jouy-le-Moutier](https://shopta-serrure.fr/depannage/effraction/jouy-le-moutier/) – 95280
+- [Après effraction Louvres](https://shopta-serrure.fr/depannage/effraction/louvres/) – 95380
+- [Après effraction Marly-la-Ville](https://shopta-serrure.fr/depannage/effraction/marly-la-ville/) – 95670
+- [Après effraction Montigny-lès-Cormeilles](https://shopta-serrure.fr/depannage/effraction/montigny-les-cormeilles/) – 95370
+- [Après effraction Montmagny](https://shopta-serrure.fr/depannage/effraction/montmagny/) – 95360
+- [Après effraction Montmorency](https://shopta-serrure.fr/depannage/effraction/montmorency/) – 95160
+- [Après effraction Osny](https://shopta-serrure.fr/depannage/effraction/osny/) – 95520
+- [Après effraction Persan](https://shopta-serrure.fr/depannage/effraction/persan/) – 95340
+- [Après effraction Pierrelaye](https://shopta-serrure.fr/depannage/effraction/pierrelaye/) – 95220
+- [Après effraction Pontoise](https://shopta-serrure.fr/depannage/effraction/pontoise/) – 95000
+- [Après effraction Puiseux-Pontoise](https://shopta-serrure.fr/depannage/effraction/puiseux-pontoise/) – 95650
+- [Après effraction Saint-Brice-sous-Forêt](https://shopta-serrure.fr/depannage/effraction/saint-brice-sous-foret/) – 95350
+- [Après effraction Saint-Gratien](https://shopta-serrure.fr/depannage/effraction/saint-gratien/) – 95210
+- [Après effraction Saint-Leu-la-Forêt](https://shopta-serrure.fr/depannage/effraction/saint-leu-la-foret/) – 95320
+- [Après effraction Saint-Ouen-l'Aumône](https://shopta-serrure.fr/depannage/effraction/saint-ouen-l-aumone/) – 95310
+- [Après effraction Saint-Prix](https://shopta-serrure.fr/depannage/effraction/saint-prix/) – 95390
+- [Après effraction Sannois](https://shopta-serrure.fr/depannage/effraction/sannois/) – 95110
+- [Après effraction Sarcelles](https://shopta-serrure.fr/depannage/effraction/sarcelles/) – 95200
+- [Après effraction Soisy-sous-Montmorency](https://shopta-serrure.fr/depannage/effraction/soisy-sous-montmorency/) – 95230
+- [Après effraction Taverny](https://shopta-serrure.fr/depannage/effraction/taverny/) – 95150
+- [Après effraction Vauréal](https://shopta-serrure.fr/depannage/effraction/vaureal/) – 95490
+- [Après effraction Villiers-le-Bel](https://shopta-serrure.fr/depannage/effraction/villiers-le-bel/) – 95400
