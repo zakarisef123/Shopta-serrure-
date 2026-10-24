@@ -45,8 +45,11 @@ CONFIG = {
     "indexnow_key": "8f3c1a6e2b7d4f90a5c3e1b2d4f6a8c0",
     # Mentions légales
     "raison_sociale": "Shopta Serrure",
-    "siret": "",
+    "siren": "952031888",
+    "siret": "95203188800029",
     "responsable": "",
+    # Médiateur de la consommation (nom + site), obligatoire pour la vente aux particuliers
+    "mediateur": "",
 }
 TODAY = datetime.date.today().isoformat()
 
@@ -309,6 +312,8 @@ def ld_business(full=True):
         "image": URL + "/assets/img/og.png",
         "logo": URL + "/assets/img/logo.svg",
         "priceRange": "€€",
+        "identifier": [{"@type": "PropertyValue", "propertyID": "SIREN", "value": CONFIG["siren"]},
+                       {"@type": "PropertyValue", "propertyID": "SIRET", "value": CONFIG["siret"]}],
         "currenciesAccepted": "EUR",
         "paymentAccepted": "Carte bancaire, Espèces, Virement",
         "geo": {"@type": "GeoCoordinates", "latitude": CONFIG["lat"], "longitude": CONFIG["lng"]},
@@ -504,7 +509,7 @@ def footer():
     </div>
     <p style="font-size:13px;line-height:2;margin-bottom:28px">Serrurier par arrondissement : {arr}</p>
     <div class="foot-bottom">
-      <span>© <span id="year">{TODAY[:4]}</span> Shopta Serrure. Tous droits réservés.</span>
+      <span>© <span id="year">{TODAY[:4]}</span> Shopta Serrure · SIRET {CONFIG["siret"][:3]} {CONFIG["siret"][3:6]} {CONFIG["siret"][6:9]} {CONFIG["siret"][9:]}. Tous droits réservés.</span>
       <nav><a href="/mentions-legales/">Mentions légales</a><a href="/politique-confidentialite/">Confidentialité</a><a href="/plan-du-site/">Plan du site</a></nav>
     </div>
   </div>
@@ -1262,20 +1267,27 @@ def build_static():
          body, [ld_business(), ld_breadcrumb([("Contact", "/contact/")])], active="/contact/")
 
     # Mentions légales
-    na = "<em>[à compléter]</em>"
+    adresse = ", ".join(v for v in CONFIG["adresse"].values() if v)
+    lignes = [E(CONFIG["raison_sociale"]),
+              *([f"Responsable de la publication : {E(CONFIG['responsable'])}"] if CONFIG["responsable"] else []),
+              f"SIREN : {CONFIG['siren']}", f"SIRET : {CONFIG['siret']}",
+              f'<a href="https://annuaire-entreprises.data.gouv.fr/entreprise/{CONFIG["siren"]}" target="_blank" rel="noopener">Fiche de l\'entreprise sur l\'Annuaire des entreprises</a>',
+              *([f"Adresse : {E(adresse)}"] if adresse else []), f"Téléphone : {TEL}", f"E-mail : {CONFIG['email']}"]
+    mediateur = CONFIG.get("mediateur") or "ses coordonnées vous sont communiquées sur simple demande à " + CONFIG["email"]
     simple("/mentions-legales/", "Mentions légales", "Mentions légales", "Informations légales relatives au site et à l'entreprise.",
            f'''<h2>Éditeur du site</h2>
-<p>{E(CONFIG["raison_sociale"])}<br>Responsable de la publication : {E(CONFIG["responsable"]) or na}<br>SIRET : {E(CONFIG["siret"]) or na}<br>
-Adresse : {E(", ".join(v for v in CONFIG["adresse"].values() if v)) or na}<br>Téléphone : {TEL}<br>E-mail : {CONFIG["email"]}</p>
+<p>{"<br>".join(lignes)}</p>
 <h2>Hébergement</h2><p>Netlify, Inc. – 44 Montgomery Street, Suite 300, San Francisco, CA 94104, États-Unis – www.netlify.com</p>
 <h2>Propriété intellectuelle</h2><p>Les textes, illustrations et éléments graphiques de ce site sont la propriété de Shopta Serrure, sauf mention contraire. Les noms et logos des compagnies d'assurance appartiennent à leurs propriétaires respectifs et sont cités à titre informatif ; ils n'impliquent aucun partenariat.</p>
-<h2>Médiation de la consommation</h2><p>Conformément à l'article L612-1 du Code de la consommation, vous pouvez recourir gratuitement à un médiateur de la consommation : {na}</p>''',
+<h2>Médiation de la consommation</h2><p>Conformément à l'article L612-1 du Code de la consommation, vous pouvez recourir gratuitement à un médiateur de la consommation : {mediateur}.</p>
+<h2>Prix et devis</h2><p>Les prix indiqués sur ce site sont des prix de départ TTC. Conformément à l'arrêté du 24 janvier 2017 relatif aux prestations de dépannage, réparation et entretien dans le secteur du bâtiment, un devis détaillé et gratuit vous est remis et signé avant toute intervention ; une note détaillée vous est remise à la fin de la prestation.</p>
+<h2>Responsabilité</h2><p>Les informations publiées sur ce site sont données à titre indicatif et peuvent évoluer. Shopta Serrure ne saurait être tenue responsable d'une erreur ou d'une omission, ni de l'usage qui en est fait.</p>''',
            "Mentions légales | Shopta Serrure", "Mentions légales du site Shopta Serrure, serrurier à Paris et en Île-de-France.", aside=False)
 
     simple("/politique-confidentialite/", "Confidentialité", "Politique de confidentialité", "Comment nous traitons vos données personnelles.",
            '''<h2>Données collectées</h2><p>Lorsque vous nous contactez par téléphone, WhatsApp, e-mail ou via le formulaire, nous recueillons uniquement les informations nécessaires au traitement de votre demande : nom, numéro de téléphone, adresse d'intervention et description du problème.</p>
 <h2>Finalité</h2><p>Ces données servent exclusivement à organiser l'intervention, établir le devis et la facture. Elles ne sont ni vendues ni cédées à des tiers.</p>
-<h2>Formulaire et WhatsApp</h2><p>Le formulaire de contact ouvre l'application WhatsApp avec votre message pré-rempli. L'envoi est alors soumis aux conditions de WhatsApp (Meta).</p>
+<h2>Formulaire et WhatsApp</h2><p>Les demandes envoyées par le formulaire de contact sont transmises via le service Netlify Forms (hébergeur du site) et nous parviennent par e-mail. Les messages envoyés par WhatsApp sont soumis aux conditions de WhatsApp (Meta).</p>
 <h2>Mesure d'audience</h2><p>Ce site utilise Google Analytics pour mesurer sa fréquentation (pages vues, clics sur les boutons d'appel). Ces données sont anonymisées et agrégées.</p>
 <h2>Durée de conservation</h2><p>Les données liées aux factures sont conservées pendant la durée légale de 10 ans. Les autres données sont supprimées au plus tard 3 ans après le dernier contact.</p>
 <h2>Vos droits</h2><p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition. Pour l'exercer, écrivez à shoptaserrure@gmail.com. Vous pouvez également introduire une réclamation auprès de la CNIL.</p>''',
@@ -1425,6 +1437,7 @@ def build_seo_files():
 
 ## Informations clés
 - Nom : Shopta Serrure (fiche Google : « Serrurier - Shopta serrure »)
+- Entreprise : SIREN {CONFIG['siren']}, SIRET {CONFIG['siret']}
 - Téléphone : {TEL} ({CONFIG['tel_intl']}), joignable 24h/24, 7j/7, jours fériés compris
 - WhatsApp : {WA}
 - E-mail : {CONFIG['email']}
