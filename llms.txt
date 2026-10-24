@@ -163,6 +163,10 @@
 - [Serrurier Vauréal](https://shopta-serrure.fr/villes/vaureal/)
 - [Serrurier Villiers-le-Bel](https://shopta-serrure.fr/villes/villiers-le-bel/)
 
+## Chaque service dans chaque ville
+Chaque service a une page dédiée pour chacune des 119 zones, au format https://shopta-serrure.fr/depannage/<service>/<ville>/ (ex. https://shopta-serrure.fr/depannage/porte-claquee/boulogne-billancourt/). Liste complète des 714 pages : https://shopta-serrure.fr/llms-full.txt
+- Ouverture de porte claquée : [Paris 1er](https://shopta-serrure.fr/depannage/porte-claquee/paris-1/), [Paris 2e](https://shopta-serrure.fr/depannage/porte-claquee/paris-2/), [Paris 3e](https://shopta-serrure.fr/depannage/porte-claquee/paris-3/), [Paris 4e](https://shopta-serrure.fr/depannage/porte-claquee/paris-4/), [Paris 5e](https://shopta-serrure.fr/depannage/porte-claquee/paris-5/), [Paris 6e](https://shopta-serrure.fr/depannage/porte-claquee/paris-6/), [Paris 7e](https://shopta-serrure.fr/depannage/porte-claquee/paris-7/), [Paris 8e](https://shopta-serrure.fr/depannage/porte-claquee/paris-8/), [Paris 9e](https://shopta-serrure.fr/depannage/porte-claquee/paris-9/), [Paris 10e](https://shopta-serrure.fr/depannage/porte-claquee/paris-10/), [Paris 11e](https://shopta-serrure.fr/depannage/porte-claquee/paris-11/), [Paris 12e](https://shopta-serrure.fr/depannage/porte-claquee/paris-12/), [Paris 13e](https://shopta-serrure.fr/depannage/porte-claquee/paris-13/), [Paris 14e](https://shopta-serrure.fr/depannage/porte-claquee/paris-14/), [Paris 15e](https://shopta-serrure.fr/depannage/porte-claquee/paris-15/), [Paris 16e](https://shopta-serrure.fr/depannage/porte-claquee/paris-16/), [Paris 17e](https://shopta-serrure.fr/depannage/porte-claquee/paris-17/), [Paris 18e](https://shopta-serrure.fr/depannage/porte-claquee/paris-18/), [Paris 19e](https://shopta-serrure.fr/depannage/porte-claquee/paris-19/), [Paris 20e](https://shopta-serrure.fr/depannage/porte-claquee/paris-20/)
+
 ## Pages utiles
 - [Tarifs](https://shopta-serrure.fr/tarifs/)
 - [Serrurier et assurance](https://shopta-serrure.fr/assurances/)
