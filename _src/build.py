@@ -312,8 +312,6 @@ def ld_business(full=True):
         "image": URL + "/assets/img/og.png",
         "logo": URL + "/assets/img/logo.svg",
         "priceRange": "€€",
-        "identifier": [{"@type": "PropertyValue", "propertyID": "SIREN", "value": CONFIG["siren"]},
-                       {"@type": "PropertyValue", "propertyID": "SIRET", "value": CONFIG["siret"]}],
         "currenciesAccepted": "EUR",
         "paymentAccepted": "Carte bancaire, Espèces, Virement",
         "geo": {"@type": "GeoCoordinates", "latitude": CONFIG["lat"], "longitude": CONFIG["lng"]},
@@ -509,7 +507,7 @@ def footer():
     </div>
     <p style="font-size:13px;line-height:2;margin-bottom:28px">Serrurier par arrondissement : {arr}</p>
     <div class="foot-bottom">
-      <span>© <span id="year">{TODAY[:4]}</span> Shopta Serrure · SIRET {CONFIG["siret"][:3]} {CONFIG["siret"][3:6]} {CONFIG["siret"][6:9]} {CONFIG["siret"][9:]}. Tous droits réservés.</span>
+      <span>© <span id="year">{TODAY[:4]}</span> Shopta Serrure. Tous droits réservés.</span>
       <nav><a href="/mentions-legales/">Mentions légales</a><a href="/politique-confidentialite/">Confidentialité</a><a href="/plan-du-site/">Plan du site</a></nav>
     </div>
   </div>
@@ -1270,7 +1268,8 @@ def build_static():
     adresse = ", ".join(v for v in CONFIG["adresse"].values() if v)
     lignes = [E(CONFIG["raison_sociale"]),
               *([f"Responsable de la publication : {E(CONFIG['responsable'])}"] if CONFIG["responsable"] else []),
-              f"SIREN : {CONFIG['siren']}", f"SIRET : {CONFIG['siret']}",
+              f"SIREN : {CONFIG['siren'][:3]} {CONFIG['siren'][3:6]} {CONFIG['siren'][6:]}",
+              f"SIRET : {CONFIG['siret'][:3]} {CONFIG['siret'][3:6]} {CONFIG['siret'][6:9]} {CONFIG['siret'][9:]}",
               f'<a href="https://annuaire-entreprises.data.gouv.fr/entreprise/{CONFIG["siren"]}" target="_blank" rel="noopener">Fiche de l\'entreprise sur l\'Annuaire des entreprises</a>',
               *([f"Adresse : {E(adresse)}"] if adresse else []), f"Téléphone : {TEL}", f"E-mail : {CONFIG['email']}"]
     mediateur = CONFIG.get("mediateur") or "ses coordonnées vous sont communiquées sur simple demande à " + CONFIG["email"]
@@ -1437,7 +1436,6 @@ def build_seo_files():
 
 ## Informations clés
 - Nom : Shopta Serrure (fiche Google : « Serrurier - Shopta serrure »)
-- Entreprise : SIREN {CONFIG['siren']}, SIRET {CONFIG['siret']}
 - Téléphone : {TEL} ({CONFIG['tel_intl']}), joignable 24h/24, 7j/7, jours fériés compris
 - WhatsApp : {WA}
 - E-mail : {CONFIG['email']}
