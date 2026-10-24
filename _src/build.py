@@ -531,6 +531,7 @@ def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og
 <meta name="description" content="{E(desc)}">
 <meta name="robots" content="{robots}, max-image-preview:large">
 <link rel="canonical" href="{canonical}">
+<meta name="google-site-verification" content="pKHgK-jD0t6UBmiTcE1T5UDwKWt-KTGMSLnPerg9JfA">
 <meta name="theme-color" content="#003380">
 <meta name="geo.region" content="FR-IDF">
 <meta name="geo.position" content="{CONFIG['lat']};{CONFIG['lng']}">
