@@ -197,35 +197,14 @@ SSD = [  # Seine-Saint-Denis (93)
     ("Saint-Ouen-sur-Seine", 48.9116, 2.3339),
 ]
 
-VDO = [  # Val-d'Oise (95)
-    ("Argenteuil", 48.9472, 2.2467), ("Arnouville", 48.9870, 2.4170), ("Auvers-sur-Oise", 49.0710, 2.1700),
-    ("Beauchamp", 49.0130, 2.1900), ("Beaumont-sur-Oise", 49.1420, 2.2870), ("Bernes-sur-Oise", 49.1610, 2.3000),
-    ("Bessancourt", 49.0370, 2.2090), ("Bezons", 48.9260, 2.2170), ("Boisemont", 49.0190, 2.0050),
-    ("Bonneuil-en-France", 48.9700, 2.4300), ("Bouffémont", 49.0430, 2.3010), ("Bruyères-sur-Oise", 49.1580, 2.3270),
-    ("Butry-sur-Oise", 49.0880, 2.1980), ("Cergy", 49.0364, 2.0761), ("Champagne-sur-Oise", 49.1400, 2.2400),
-    ("Cormeilles-en-Parisis", 48.9730, 2.2010), ("Courdimanche", 49.0390, 2.0010), ("Deuil-la-Barre", 48.9700, 2.3270),
-    ("Domont", 49.0270, 2.3270), ("Eaubonne", 48.9920, 2.2800), ("Écouen", 49.0190, 2.3790),
-    ("Enghien-les-Bains", 48.9700, 2.3080), ("Ennery", 49.0750, 2.1080), ("Épiais-Rhus", 49.1200, 2.0700),
-    ("Épinay-Champlâtreux", 49.0890, 2.4110), ("Éragny", 49.0170, 2.0920), ("Ermont", 48.9900, 2.2580),
-    ("Ézanville", 49.0280, 2.3610), ("Fontenay-en-Parisis", 49.0510, 2.4520), ("Fosses", 49.0980, 2.5070),
-    ("Franconville", 48.9890, 2.2290), ("Frépillon", 49.0520, 2.2050), ("Frouville", 49.1550, 2.1480),
-    ("Garges-lès-Gonesse", 48.9720, 2.3990), ("Gonesse", 48.9870, 2.4490), ("Goussainville", 49.0330, 2.4650),
-    ("Groslay", 48.9860, 2.3480), ("Herblay-sur-Seine", 48.9900, 2.1650), ("L'Isle-Adam", 49.1110, 2.2230),
-    ("Jouy-le-Moutier", 49.0110, 2.0410), ("Louvres", 49.0440, 2.5050), ("Marly-la-Ville", 49.0820, 2.5000),
-    ("Montigny-lès-Cormeilles", 48.9930, 2.1960), ("Montmagny", 48.9730, 2.3460), ("Montmorency", 48.9890, 2.3220),
-    ("Osny", 49.0590, 2.0630), ("Persan", 49.1530, 2.2720), ("Pierrelaye", 49.0220, 2.1540),
-    ("Pontoise", 49.0510, 2.1010), ("Puiseux-Pontoise", 49.0600, 2.0170), ("Saint-Brice-sous-Forêt", 48.9990, 2.3570),
-    ("Saint-Gratien", 48.9720, 2.2850), ("Saint-Leu-la-Forêt", 49.0150, 2.2470), ("Saint-Ouen-l'Aumône", 49.0440, 2.1110),
-    ("Saint-Prix", 49.0130, 2.2630), ("Sannois", 48.9720, 2.2580), ("Sarcelles", 48.9970, 2.3780),
-    ("Soisy-sous-Montmorency", 48.9880, 2.3000), ("Taverny", 49.0260, 2.2220), ("Vauréal", 49.0300, 2.0330),
-    ("Villiers-le-Bel", 49.0090, 2.3910),
-]
+# Val-d'Oise (95) et Yvelines (78) : toutes les communes, générées depuis _src/communes.json
 
 DEPTS = {
     "75": ("Paris", "Paris (75)"),
     "92": ("Hauts-de-Seine", "Hauts-de-Seine (92)"),
     "93": ("Seine-Saint-Denis", "Seine-Saint-Denis (93)"),
     "95": ("Val-d'Oise", "Val-d'Oise (95)"),
+    "78": ("Yvelines", "Yvelines (78)"),
 }
 
 # ---------------------------------------------------------------------------

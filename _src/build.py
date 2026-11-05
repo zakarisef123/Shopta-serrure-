@@ -13,7 +13,7 @@ import re
 import shutil
 import unicodedata
 
-from data import ARTICLE_PHOTOS, ARTICLES, BRANDS, DEPTS, HDS, INSURERS, PARIS_ARR, PHOTOS, SERVICES, SSD, TARIFS, VDO
+from data import ARTICLE_PHOTOS, ARTICLES, BRANDS, DEPTS, HDS, INSURERS, PARIS_ARR, PHOTOS, SERVICES, SSD, TARIFS
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "_src")
@@ -273,6 +273,7 @@ def picture(key, cls="", sizes="(max-width: 720px) 100vw, 600px", eager=False):
 # Zones
 # ---------------------------------------------------------------------------
 ALIAS = {"Éragny": "Éragny-sur-Oise"}  # nom usuel -> nom officiel INSEE
+DISPLAY = {v: k for k, v in ALIAS.items()}  # nom officiel -> nom affiché (garde les adresses existantes)
 
 
 def build_zones():
@@ -294,11 +295,19 @@ def build_zones():
             "a": f"dans le {n}{suf} arrondissement", "de": f"du {n}{suf} arrondissement",
             "cp": c["cp"], "pop": c["pop"], "groupes": [], "arr": n, "quartiers": quartiers, "lieux": lieux,
         })
-    for dep, lst in (("92", HDS), ("93", SSD), ("95", VDO)):
+    # Départements complets : toutes les communes du 95 et du 78 (coordonnées = centre de la commune)
+    def complet(dep):
+        lst = [(DISPLAY.get(v["nom"], v["nom"]), v["lat"], v["lng"]) for v in COMMUNES.values()
+               if v["dep"] == dep and "lat" in v]
+        return sorted(lst, key=lambda t: slugify(t[0]))
+
+    for dep, lst in (("92", HDS), ("93", SSD), ("95", complet("95")), ("78", complet("78"))):
         for nom, lat, lng in lst:
             code = by_name[(ALIAS.get(nom, nom), dep)]
             c = COMMUNES[code]
-            if nom.startswith("Le "):
+            if nom.startswith("Les "):
+                a, de = "aux " + nom[4:], "des " + nom[4:]
+            elif nom.startswith("Le "):
                 a, de = "au " + nom[3:], "du " + nom[3:]
             elif nom.startswith("La "):
                 a, de = "à " + nom, "de " + nom
@@ -394,7 +403,9 @@ def ld_business(full=True):
     if a["rue"]:
         d["address"].update({"streetAddress": a["rue"], "postalCode": a["cp"], "addressLocality": a["ville"]})
     if full:
-        d["areaServed"] = [{"@type": "City", "name": z["nom"]} for z in ZONES if z["slug"] == "paris" or z["dep"] != "75"]
+        # Départements desservis (la liste détaillée des communes est sur chaque page ville)
+        d["areaServed"] = [{"@type": "City", "name": "Paris"}] + [
+            {"@type": "AdministrativeArea", "name": n} for n in ("Hauts-de-Seine", "Seine-Saint-Denis", "Val-d'Oise", "Yvelines")]
         d["hasOfferCatalog"] = {
             "@type": "OfferCatalog", "name": "Dépannage serrurerie",
             "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": s["nom"], "url": f"{URL}/depannage/{s['slug']}/"},
@@ -1003,7 +1014,7 @@ def build_home():
     <div class="section-head reveal">
       <span class="eyebrow">Zones d'intervention</span>
       <h2 id="zones-title">Paris et l'Île-de-France</h2>
-      <p>Nous intervenons dans les 20 arrondissements de Paris, tout le département des Hauts-de-Seine, à Saint-Ouen-sur-Seine et dans une large partie du Val-d'Oise.</p>
+      <p>Nous intervenons dans les 20 arrondissements de Paris, dans tout le Val-d'Oise, les Yvelines et les Hauts-de-Seine, ainsi qu'à Saint-Ouen-sur-Seine.</p>
     </div>
     {zones_tabs()}
     <p class="zones-note">Votre ville n'est pas listée ? Appelez-nous : hors zone, des frais de déplacement supplémentaires peuvent s'appliquer et vous sont annoncés à l'avance.</p>
@@ -1073,6 +1084,7 @@ def build_services():
         arr_links = "".join(f'<a href="{combo_url(s, z)}">{E(s["court"])} {E(z["court"])}</a>' for z in ZONES if z["dep"] == "75")
         hds_links = "".join(f'<a href="{combo_url(s, z)}">{E(z["court"])}</a>' for z in ZONES if z["dep"] == "92")
         vdo_links = "".join(f'<a href="{combo_url(s, z)}">{E(z["court"])}</a>' for z in ZONES if z["dep"] == "95")
+        yv_links = "".join(f'<a href="{combo_url(s, z)}">{E(z["court"])}</a>' for z in ZONES if z["dep"] == "78")
         others = "".join(f'<a href="/depannage/{o["slug"]}/">{E(o["court"])}</a>' for o in SERVICES if o is not s)
         prix_txt = f"à partir de <strong>{s['prix_num']} € TTC</strong>" if s["prix_num"] else "<strong>sur devis gratuit</strong>"
         content = f'''<div class="prose">
@@ -1081,10 +1093,11 @@ def build_services():
   <p class="callout">Tarif : {prix_txt}. Le prix exact vous est annoncé au téléphone avant le déplacement et confirmé par un devis écrit avant toute intervention. <a href="/tarifs/">Voir la grille tarifaire jour, soir et nuit</a>.</p>
   {secs}
   <h2>{E(s["court"])} : où intervenons-nous ?</h2>
-  <p>Nous intervenons pour ce service dans tout Paris, les Hauts-de-Seine et une grande partie du Val-d'Oise, 24h/24 et 7j/7.</p>
+  <p>Nous intervenons pour ce service dans tout Paris, les Hauts-de-Seine, le Val-d'Oise et les Yvelines, 24h/24 et 7j/7.</p>
   <h3>Paris</h3><div class="link-grid">{arr_links}</div>
   <h3>Hauts-de-Seine (92)</h3><div class="link-grid">{hds_links}</div>
   <h3>Val-d'Oise (95)</h3><div class="link-grid">{vdo_links}</div>
+  <h3>Yvelines (78)</h3><div class="link-grid">{yv_links}</div>
   <h2>Questions fréquentes</h2>
   {faq_html(s["faq"])}
   <h2>Nos autres dépannages</h2><div class="link-grid">{others}</div>
@@ -1100,7 +1113,7 @@ def build_services():
         desc = f'{s["nom"]} à Paris et en Île-de-France, 24h/24 et 7j/7. {s["resume"]} Prix annoncé avant déplacement.'
         ld = [ld_business(False), ld_breadcrumb([("Dépannage", "/depannage/"), (s["court"], path)]), ld_faq(s["faq"]),
               {"@context": "https://schema.org", "@type": "Service", "name": s["nom"], "serviceType": s["nom"], "url": URL + path,
-               "provider": {"@id": BUSINESS_ID}, "areaServed": [{"@type": "City", "name": "Paris"}, {"@type": "AdministrativeArea", "name": "Hauts-de-Seine"}, {"@type": "AdministrativeArea", "name": "Val-d'Oise"}],
+               "provider": {"@id": BUSINESS_ID}, "areaServed": [{"@type": "City", "name": "Paris"}, {"@type": "AdministrativeArea", "name": "Hauts-de-Seine"}, {"@type": "AdministrativeArea", "name": "Val-d'Oise"}, {"@type": "AdministrativeArea", "name": "Yvelines"}],
                **({"offers": {"@type": "Offer", "priceSpecification": {"@type": "PriceSpecification", "minPrice": s["prix_num"], "priceCurrency": "EUR"}}} if s["prix_num"] else {})}]
         page(path, title, desc, body, ld, active="/depannage/")
 
@@ -1145,11 +1158,11 @@ def build_zones_pages():
         links = "".join(f'<a href="{z["url"]}">Serrurier {E(z["court"])}</a>' for z in lst)
         blocks += f'<h2>{E(label)}</h2><div class="link-grid">{links}</div>'
     body = page_hero([("Zones d'intervention", None)], "Nos zones d'intervention <em>en Île-de-France</em>",
-                     f"Shopta Serrure intervient 24h/24 dans {len(ZONES) - 1} communes et arrondissements : Paris, Hauts-de-Seine et Val-d'Oise.")
+                     f"Shopta Serrure intervient 24h/24 dans {len(ZONES) - 1} communes et arrondissements : Paris, Hauts-de-Seine, Saint-Ouen, Val-d'Oise et Yvelines.")
     body += f'<section><div class="container layout"><div class="prose">{blocks}<p class="callout">Votre ville n\'est pas listée ? Appelez-nous au {TEL} : hors zone, des frais de déplacement supplémentaires peuvent s\'appliquer et vous sont annoncés à l\'avance.</p></div>{aside_card()}</div></section>'
     body += reviews_section(soft=True) + cta_final(source="/villes/")
     page("/villes/", "Zones d'intervention – Serrurier Paris, 92 et 95 | Shopta Serrure",
-         "Liste des villes et arrondissements où Shopta Serrure intervient 24h/24 : Paris 1 à 20, Hauts-de-Seine (92) et Val-d'Oise (95).",
+         "Liste des villes et arrondissements où Shopta Serrure intervient 24h/24 : Paris 1 à 20, Hauts-de-Seine (92), Val-d'Oise (95) et Yvelines (78).",
          body, [ld_business(False), ld_breadcrumb([("Zones d'intervention", "/villes/")])], active="/villes/")
 
     for idx, z in enumerate(ZONES):
@@ -1340,7 +1353,7 @@ def build_combo_pages():
             n = idx + si
             cp = ", ".join(z["cp"])
             cp_short = z["cp"][0] if z["slug"] != "paris" else "75"
-            prix_court = f"dès {s['prix_num']} €" if s["prix_num"] else "devis gratuit"
+            prix_court = f"à partir de {s['prix_num']} €" if s["prix_num"] else "devis gratuit"
             intro = loc["intros"][n % 3].format(a=z["a"])
             if z["slug"] == "paris":
                 local = (f"<h2>{E(s['court'])} dans tous les arrondissements</h2><p>Choisissez votre arrondissement pour voir les détails :</p>"
@@ -1485,7 +1498,7 @@ def build_static():
       <div class="c-line"><span class="ic">{ico("i-mail", "")}</span><div><small>E-mail</small><strong><a href="mailto:{CONFIG['email']}">{CONFIG['email']}</a></strong></div></div>
       <div class="c-line"><span class="ic">{ico("i-insta", "")}</span><div><small>Instagram</small><strong><a href="{CONFIG['instagram']}" target="_blank" rel="noopener me">@shoptaserrure</a></strong></div></div>
       <div class="c-line"><span class="ic">{ico("i-tiktok", "")}</span><div><small>TikTok</small><strong><a href="{CONFIG['tiktok']}" target="_blank" rel="noopener me">@shopta.serrure</a></strong></div></div>
-      <div class="c-line"><span class="ic">{ico("i-pin", "")}</span><div><small>Zone d'intervention</small><strong>Paris, Hauts-de-Seine, Val-d'Oise</strong></div></div>
+      <div class="c-line"><span class="ic">{ico("i-pin", "")}</span><div><small>Zone d'intervention</small><strong>Paris, 92, 93, Val-d'Oise et Yvelines</strong></div></div>
       {btn_call("Appeler maintenant", cls="btn btn-call btn-lg", track="call_contact")}
     </div>
     {form}
@@ -1665,7 +1678,7 @@ def build_seo_files():
     note = (f"- Note Google : {AVIS['note']}/5 sur {AVIS['nombre']} avis\n" if AVIS.get("note") else "")
     write("llms.txt", f"""# Shopta Serrure
 
-> Serrurier d'urgence à Paris et en Île-de-France (Paris 75, Hauts-de-Seine 92, Val-d'Oise 95), disponible 24h/24 et 7j/7. Ouverture de porte claquée à partir de 110 € TTC, prix annoncé au téléphone avant le déplacement, devis écrit signé avant toute intervention, facture détaillée reconnue par les assureurs habitation.
+> Serrurier d'urgence à Paris et en Île-de-France (Paris 75, Hauts-de-Seine 92, Saint-Ouen 93, Val-d'Oise 95, Yvelines 78), disponible 24h/24 et 7j/7. Ouverture de porte claquée à partir de 110 € TTC, prix annoncé au téléphone avant le déplacement, devis écrit signé avant toute intervention, facture détaillée reconnue par les assureurs habitation.
 
 ## Informations clés
 - Nom : Shopta Serrure (fiche Google : « Serrurier - Shopta serrure »)
@@ -1709,7 +1722,7 @@ Chaque service a une page dédiée pour chacune des {len(ZONES)} zones, au forma
 
     def txt(h):
         return html.unescape(re.sub(r"<[^>]+>", "", h))
-    full = [f"# Shopta Serrure – informations complètes\n\n> Serrurier d'urgence 24h/24 et 7j/7 à Paris (75), dans les Hauts-de-Seine (92) et le Val-d'Oise (95). "
+    full = [f"# Shopta Serrure – informations complètes\n\n> Serrurier d'urgence 24h/24 et 7j/7 à Paris (75), dans les Hauts-de-Seine (92), à Saint-Ouen (93), dans le Val-d'Oise (95) et les Yvelines (78). "
             f"Téléphone : {TEL}. Site : {URL}/. Fiche Google : {MAPS}\n"]
     full.append("## Engagements\n- Prix annoncé au téléphone avant le déplacement\n- Devis écrit gratuit, signé avant toute intervention\n"
                 "- Ouverture sans dégât dans la grande majorité des cas\n- Facture détaillée reconnue par les assureurs habitation, remboursable selon le contrat "

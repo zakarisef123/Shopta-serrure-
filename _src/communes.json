@@ -863,2576 +863,6 @@
 ]
 ]
 },
-"95002": {
-"nom": "Ableiges",
-"dep": "95",
-"cp": [
-"95450"
-],
-"pop": 1108,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95008": {
-"nom": "Aincourt",
-"dep": "95",
-"cp": [
-"95510"
-],
-"pop": 854,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95011": {
-"nom": "Ambleville",
-"dep": "95",
-"cp": [
-"95420",
-"95710"
-],
-"pop": 388,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95012": {
-"nom": "Amenucourt",
-"dep": "95",
-"cp": [
-"95510"
-],
-"pop": 212,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95014": {
-"nom": "Andilly",
-"dep": "95",
-"cp": [
-"95580"
-],
-"pop": 2742,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95018": {
-"nom": "Argenteuil",
-"dep": "95",
-"cp": [
-"95100"
-],
-"pop": 106130,
-"groupes": [
-[
-"METRO",
-"Métropole du Grand Paris"
-],
-[
-"EPT",
-"Boucle Nord de Seine"
-]
-]
-},
-"95019": {
-"nom": "Arnouville",
-"dep": "95",
-"cp": [
-"95400"
-],
-"pop": 15023,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95023": {
-"nom": "Arronville",
-"dep": "95",
-"cp": [
-"95810"
-],
-"pop": 618,
-"groupes": [
-[
-"CC",
-"CC Sausseron Impressionnistes"
-]
-]
-},
-"95024": {
-"nom": "Arthies",
-"dep": "95",
-"cp": [
-"95420"
-],
-"pop": 265,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95026": {
-"nom": "Asnières-sur-Oise",
-"dep": "95",
-"cp": [
-"95270"
-],
-"pop": 3127,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95028": {
-"nom": "Attainville",
-"dep": "95",
-"cp": [
-"95570"
-],
-"pop": 1904,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95039": {
-"nom": "Auvers-sur-Oise",
-"dep": "95",
-"cp": [
-"95430"
-],
-"pop": 6863,
-"groupes": [
-[
-"CC",
-"CC Sausseron Impressionnistes"
-]
-]
-},
-"95040": {
-"nom": "Avernes",
-"dep": "95",
-"cp": [
-"95450"
-],
-"pop": 871,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95042": {
-"nom": "Baillet-en-France",
-"dep": "95",
-"cp": [
-"95560"
-],
-"pop": 2021,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95046": {
-"nom": "Banthelu",
-"dep": "95",
-"cp": [
-"95420"
-],
-"pop": 146,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95051": {
-"nom": "Beauchamp",
-"dep": "95",
-"cp": [
-"95250"
-],
-"pop": 9849,
-"groupes": [
-[
-"CA",
-"CA Val Parisis"
-]
-]
-},
-"95052": {
-"nom": "Beaumont-sur-Oise",
-"dep": "95",
-"cp": [
-"95260"
-],
-"pop": 10232,
-"groupes": [
-[
-"CC",
-"CC du Haut Val d'Oise"
-]
-]
-},
-"95054": {
-"nom": "Le Bellay-en-Vexin",
-"dep": "95",
-"cp": [
-"95750"
-],
-"pop": 224,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95055": {
-"nom": "Bellefontaine",
-"dep": "95",
-"cp": [
-"95270"
-],
-"pop": 474,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95056": {
-"nom": "Belloy-en-France",
-"dep": "95",
-"cp": [
-"95270"
-],
-"pop": 2250,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95058": {
-"nom": "Bernes-sur-Oise",
-"dep": "95",
-"cp": [
-"95340"
-],
-"pop": 2684,
-"groupes": [
-[
-"CC",
-"CC du Haut Val d'Oise"
-]
-]
-},
-"95059": {
-"nom": "Berville",
-"dep": "95",
-"cp": [
-"95810"
-],
-"pop": 374,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95060": {
-"nom": "Bessancourt",
-"dep": "95",
-"cp": [
-"95550"
-],
-"pop": 8869,
-"groupes": [
-[
-"CA",
-"CA Val Parisis"
-]
-]
-},
-"95061": {
-"nom": "Béthemont-la-Forêt",
-"dep": "95",
-"cp": [
-"95840"
-],
-"pop": 435,
-"groupes": [
-[
-"CC",
-"CC de la Vallée de l'Oise et des Trois Forêts"
-]
-]
-},
-"95063": {
-"nom": "Bezons",
-"dep": "95",
-"cp": [
-"95870"
-],
-"pop": 36434,
-"groupes": [
-[
-"CA",
-"CA Saint Germain Boucles de Seine"
-]
-]
-},
-"95074": {
-"nom": "Boisemont",
-"dep": "95",
-"cp": [
-"95000"
-],
-"pop": 892,
-"groupes": [
-[
-"CA",
-"CA de Cergy-Pontoise"
-]
-]
-},
-"95078": {
-"nom": "Boissy-l'Aillerie",
-"dep": "95",
-"cp": [
-"95650"
-],
-"pop": 2120,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95088": {
-"nom": "Bonneuil-en-France",
-"dep": "95",
-"cp": [
-"95500"
-],
-"pop": 1185,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95091": {
-"nom": "Bouffémont",
-"dep": "95",
-"cp": [
-"95570"
-],
-"pop": 6593,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95094": {
-"nom": "Bouqueval",
-"dep": "95",
-"cp": [
-"95720"
-],
-"pop": 314,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95101": {
-"nom": "Bray-et-Lû",
-"dep": "95",
-"cp": [
-"95710"
-],
-"pop": 954,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95102": {
-"nom": "Bréançon",
-"dep": "95",
-"cp": [
-"95640"
-],
-"pop": 432,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95110": {
-"nom": "Brignancourt",
-"dep": "95",
-"cp": [
-"95640"
-],
-"pop": 262,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95116": {
-"nom": "Bruyères-sur-Oise",
-"dep": "95",
-"cp": [
-"95820"
-],
-"pop": 4921,
-"groupes": [
-[
-"CC",
-"CC du Haut Val d'Oise"
-]
-]
-},
-"95119": {
-"nom": "Buhy",
-"dep": "95",
-"cp": [
-"95770"
-],
-"pop": 329,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95120": {
-"nom": "Butry-sur-Oise",
-"dep": "95",
-"cp": [
-"95430"
-],
-"pop": 2252,
-"groupes": [
-[
-"CC",
-"CC Sausseron Impressionnistes"
-]
-]
-},
-"95127": {
-"nom": "Cergy",
-"dep": "95",
-"cp": [
-"95000",
-"95800"
-],
-"pop": 70906,
-"groupes": [
-[
-"CA",
-"CA de Cergy-Pontoise"
-]
-]
-},
-"95134": {
-"nom": "Champagne-sur-Oise",
-"dep": "95",
-"cp": [
-"95660"
-],
-"pop": 5036,
-"groupes": [
-[
-"CC",
-"CC du Haut Val d'Oise"
-]
-]
-},
-"95139": {
-"nom": "La Chapelle-en-Vexin",
-"dep": "95",
-"cp": [
-"95420"
-],
-"pop": 320,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95141": {
-"nom": "Charmont",
-"dep": "95",
-"cp": [
-"95420"
-],
-"pop": 32,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95142": {
-"nom": "Chars",
-"dep": "95",
-"cp": [
-"95750"
-],
-"pop": 2006,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95144": {
-"nom": "Châtenay-en-France",
-"dep": "95",
-"cp": [
-"95190"
-],
-"pop": 68,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95149": {
-"nom": "Chaumontel",
-"dep": "95",
-"cp": [
-"95270"
-],
-"pop": 3332,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95150": {
-"nom": "Chaussy",
-"dep": "95",
-"cp": [
-"95710"
-],
-"pop": 631,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95151": {
-"nom": "Chauvry",
-"dep": "95",
-"cp": [
-"95560"
-],
-"pop": 297,
-"groupes": [
-[
-"CC",
-"CC de la Vallée de l'Oise et des Trois Forêts"
-]
-]
-},
-"95154": {
-"nom": "Chennevières-lès-Louvres",
-"dep": "95",
-"cp": [
-"95380"
-],
-"pop": 282,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95157": {
-"nom": "Chérence",
-"dep": "95",
-"cp": [
-"95510"
-],
-"pop": 137,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95166": {
-"nom": "Cléry-en-Vexin",
-"dep": "95",
-"cp": [
-"95420"
-],
-"pop": 476,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95169": {
-"nom": "Commeny",
-"dep": "95",
-"cp": [
-"95450"
-],
-"pop": 646,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95170": {
-"nom": "Condécourt",
-"dep": "95",
-"cp": [
-"95450"
-],
-"pop": 564,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95176": {
-"nom": "Cormeilles-en-Parisis",
-"dep": "95",
-"cp": [
-"95240"
-],
-"pop": 27292,
-"groupes": [
-[
-"CA",
-"CA Val Parisis"
-]
-]
-},
-"95177": {
-"nom": "Cormeilles-en-Vexin",
-"dep": "95",
-"cp": [
-"95830"
-],
-"pop": 1297,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95181": {
-"nom": "Courcelles-sur-Viosne",
-"dep": "95",
-"cp": [
-"95650"
-],
-"pop": 310,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95183": {
-"nom": "Courdimanche",
-"dep": "95",
-"cp": [
-"95800"
-],
-"pop": 7311,
-"groupes": [
-[
-"CA",
-"CA de Cergy-Pontoise"
-]
-]
-},
-"95197": {
-"nom": "Deuil-la-Barre",
-"dep": "95",
-"cp": [
-"95170"
-],
-"pop": 23099,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95199": {
-"nom": "Domont",
-"dep": "95",
-"cp": [
-"95330"
-],
-"pop": 16065,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95203": {
-"nom": "Eaubonne",
-"dep": "95",
-"cp": [
-"95600"
-],
-"pop": 26211,
-"groupes": [
-[
-"CA",
-"CA Val Parisis"
-]
-]
-},
-"95205": {
-"nom": "Écouen",
-"dep": "95",
-"cp": [
-"95440"
-],
-"pop": 7202,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95210": {
-"nom": "Enghien-les-Bains",
-"dep": "95",
-"cp": [
-"95880"
-],
-"pop": 11432,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95211": {
-"nom": "Ennery",
-"dep": "95",
-"cp": [
-"95300"
-],
-"pop": 2243,
-"groupes": [
-[
-"CC",
-"CC Sausseron Impressionnistes"
-]
-]
-},
-"95212": {
-"nom": "Épiais-lès-Louvres",
-"dep": "95",
-"cp": [
-"95380"
-],
-"pop": 156,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95213": {
-"nom": "Épiais-Rhus",
-"dep": "95",
-"cp": [
-"95810"
-],
-"pop": 603,
-"groupes": [
-[
-"CC",
-"CC Sausseron Impressionnistes"
-]
-]
-},
-"95214": {
-"nom": "Épinay-Champlâtreux",
-"dep": "95",
-"cp": [
-"95270"
-],
-"pop": 57,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95218": {
-"nom": "Éragny-sur-Oise",
-"dep": "95",
-"cp": [
-"95610"
-],
-"pop": 18436,
-"groupes": [
-[
-"CA",
-"CA de Cergy-Pontoise"
-]
-]
-},
-"95219": {
-"nom": "Ermont",
-"dep": "95",
-"cp": [
-"95120"
-],
-"pop": 29489,
-"groupes": [
-[
-"CA",
-"CA Val Parisis"
-]
-]
-},
-"95229": {
-"nom": "Ézanville",
-"dep": "95",
-"cp": [
-"95460"
-],
-"pop": 9858,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95241": {
-"nom": "Fontenay-en-Parisis",
-"dep": "95",
-"cp": [
-"95190"
-],
-"pop": 2219,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95250": {
-"nom": "Fosses",
-"dep": "95",
-"cp": [
-"95470"
-],
-"pop": 10570,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95252": {
-"nom": "Franconville",
-"dep": "95",
-"cp": [
-"95130"
-],
-"pop": 37754,
-"groupes": [
-[
-"CA",
-"CA Val Parisis"
-]
-]
-},
-"95253": {
-"nom": "Frémainville",
-"dep": "95",
-"cp": [
-"95450"
-],
-"pop": 507,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95254": {
-"nom": "Frémécourt",
-"dep": "95",
-"cp": [
-"95830"
-],
-"pop": 526,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95256": {
-"nom": "Frépillon",
-"dep": "95",
-"cp": [
-"95740"
-],
-"pop": 3317,
-"groupes": [
-[
-"CA",
-"CA Val Parisis"
-]
-]
-},
-"95257": {
-"nom": "La Frette-sur-Seine",
-"dep": "95",
-"cp": [
-"95530"
-],
-"pop": 4570,
-"groupes": [
-[
-"CA",
-"CA Val Parisis"
-]
-]
-},
-"95258": {
-"nom": "Frouville",
-"dep": "95",
-"cp": [
-"95690"
-],
-"pop": 347,
-"groupes": [
-[
-"CC",
-"CC Sausseron Impressionnistes"
-]
-]
-},
-"95268": {
-"nom": "Garges-lès-Gonesse",
-"dep": "95",
-"cp": [
-"95140"
-],
-"pop": 41791,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95270": {
-"nom": "Genainville",
-"dep": "95",
-"cp": [
-"95420"
-],
-"pop": 522,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95271": {
-"nom": "Génicourt",
-"dep": "95",
-"cp": [
-"95650"
-],
-"pop": 514,
-"groupes": [
-[
-"CC",
-"CC Sausseron Impressionnistes"
-]
-]
-},
-"95277": {
-"nom": "Gonesse",
-"dep": "95",
-"cp": [
-"95500"
-],
-"pop": 27707,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95280": {
-"nom": "Goussainville",
-"dep": "95",
-"cp": [
-"95190"
-],
-"pop": 31301,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95287": {
-"nom": "Grisy-les-Plâtres",
-"dep": "95",
-"cp": [
-"95810"
-],
-"pop": 709,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95288": {
-"nom": "Groslay",
-"dep": "95",
-"cp": [
-"95410"
-],
-"pop": 8453,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95295": {
-"nom": "Guiry-en-Vexin",
-"dep": "95",
-"cp": [
-"95450"
-],
-"pop": 161,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95298": {
-"nom": "Haravilliers",
-"dep": "95",
-"cp": [
-"95640"
-],
-"pop": 589,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95301": {
-"nom": "Haute-Isle",
-"dep": "95",
-"cp": [
-"95780"
-],
-"pop": 293,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95303": {
-"nom": "Le Heaulme",
-"dep": "95",
-"cp": [
-"95640"
-],
-"pop": 207,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95304": {
-"nom": "Hédouville",
-"dep": "95",
-"cp": [
-"95690"
-],
-"pop": 278,
-"groupes": [
-[
-"CC",
-"CC Sausseron Impressionnistes"
-]
-]
-},
-"95306": {
-"nom": "Herblay-sur-Seine",
-"dep": "95",
-"cp": [
-"95220"
-],
-"pop": 31779,
-"groupes": [
-[
-"CA",
-"CA Val Parisis"
-]
-]
-},
-"95308": {
-"nom": "Hérouville-en-Vexin",
-"dep": "95",
-"cp": [
-"95300"
-],
-"pop": 584,
-"groupes": [
-[
-"CC",
-"CC Sausseron Impressionnistes"
-]
-]
-},
-"95309": {
-"nom": "Hodent",
-"dep": "95",
-"cp": [
-"95420"
-],
-"pop": 225,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95313": {
-"nom": "L'Isle-Adam",
-"dep": "95",
-"cp": [
-"95290"
-],
-"pop": 12493,
-"groupes": [
-[
-"CC",
-"CC de la Vallée de l'Oise et des Trois Forêts"
-]
-]
-},
-"95316": {
-"nom": "Jagny-sous-Bois",
-"dep": "95",
-"cp": [
-"95850"
-],
-"pop": 269,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95323": {
-"nom": "Jouy-le-Moutier",
-"dep": "95",
-"cp": [
-"95280"
-],
-"pop": 17854,
-"groupes": [
-[
-"CA",
-"CA de Cergy-Pontoise"
-]
-]
-},
-"95328": {
-"nom": "Labbeville",
-"dep": "95",
-"cp": [
-"95690"
-],
-"pop": 641,
-"groupes": [
-[
-"CC",
-"CC Sausseron Impressionnistes"
-]
-]
-},
-"95331": {
-"nom": "Lassy",
-"dep": "95",
-"cp": [
-"95270"
-],
-"pop": 196,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95341": {
-"nom": "Livilliers",
-"dep": "95",
-"cp": [
-"95300"
-],
-"pop": 389,
-"groupes": [
-[
-"CC",
-"CC Sausseron Impressionnistes"
-]
-]
-},
-"95348": {
-"nom": "Longuesse",
-"dep": "95",
-"cp": [
-"95450"
-],
-"pop": 496,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95351": {
-"nom": "Louvres",
-"dep": "95",
-"cp": [
-"95380"
-],
-"pop": 12560,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95352": {
-"nom": "Luzarches",
-"dep": "95",
-"cp": [
-"95270"
-],
-"pop": 5008,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95353": {
-"nom": "Maffliers",
-"dep": "95",
-"cp": [
-"95560"
-],
-"pop": 1856,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95355": {
-"nom": "Magny-en-Vexin",
-"dep": "95",
-"cp": [
-"95420"
-],
-"pop": 5779,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95365": {
-"nom": "Mareil-en-France",
-"dep": "95",
-"cp": [
-"95850"
-],
-"pop": 734,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95369": {
-"nom": "Margency",
-"dep": "95",
-"cp": [
-"95580"
-],
-"pop": 3012,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95370": {
-"nom": "Marines",
-"dep": "95",
-"cp": [
-"95640"
-],
-"pop": 3594,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95371": {
-"nom": "Marly-la-Ville",
-"dep": "95",
-"cp": [
-"95670"
-],
-"pop": 6022,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95379": {
-"nom": "Maudétour-en-Vexin",
-"dep": "95",
-"cp": [
-"95420"
-],
-"pop": 208,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95387": {
-"nom": "Menouville",
-"dep": "95",
-"cp": [
-"95810"
-],
-"pop": 62,
-"groupes": [
-[
-"CC",
-"CC Sausseron Impressionnistes"
-]
-]
-},
-"95388": {
-"nom": "Menucourt",
-"dep": "95",
-"cp": [
-"95180"
-],
-"pop": 6184,
-"groupes": [
-[
-"CA",
-"CA de Cergy-Pontoise"
-]
-]
-},
-"95392": {
-"nom": "Mériel",
-"dep": "95",
-"cp": [
-"95630"
-],
-"pop": 5347,
-"groupes": [
-[
-"CC",
-"CC de la Vallée de l'Oise et des Trois Forêts"
-]
-]
-},
-"95394": {
-"nom": "Méry-sur-Oise",
-"dep": "95",
-"cp": [
-"95540"
-],
-"pop": 9983,
-"groupes": [
-[
-"CC",
-"CC de la Vallée de l'Oise et des Trois Forêts"
-]
-]
-},
-"95395": {
-"nom": "Le Mesnil-Aubry",
-"dep": "95",
-"cp": [
-"95720"
-],
-"pop": 914,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95409": {
-"nom": "Moisselles",
-"dep": "95",
-"cp": [
-"95570"
-],
-"pop": 1261,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95422": {
-"nom": "Montgeroult",
-"dep": "95",
-"cp": [
-"95650"
-],
-"pop": 361,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95424": {
-"nom": "Montigny-lès-Cormeilles",
-"dep": "95",
-"cp": [
-"95370"
-],
-"pop": 22457,
-"groupes": [
-[
-"CA",
-"CA Val Parisis"
-]
-]
-},
-"95426": {
-"nom": "Montlignon",
-"dep": "95",
-"cp": [
-"95680"
-],
-"pop": 3038,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95427": {
-"nom": "Montmagny",
-"dep": "95",
-"cp": [
-"95360"
-],
-"pop": 15105,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95428": {
-"nom": "Montmorency",
-"dep": "95",
-"cp": [
-"95160"
-],
-"pop": 21763,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95429": {
-"nom": "Montreuil-sur-Epte",
-"dep": "95",
-"cp": [
-"95770"
-],
-"pop": 377,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95430": {
-"nom": "Montsoult",
-"dep": "95",
-"cp": [
-"95560"
-],
-"pop": 4023,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95436": {
-"nom": "Mours",
-"dep": "95",
-"cp": [
-"95260"
-],
-"pop": 1693,
-"groupes": [
-[
-"CC",
-"CC du Haut Val d'Oise"
-]
-]
-},
-"95438": {
-"nom": "Moussy",
-"dep": "95",
-"cp": [
-"95640"
-],
-"pop": 108,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95445": {
-"nom": "Nerville-la-Forêt",
-"dep": "95",
-"cp": [
-"95590"
-],
-"pop": 756,
-"groupes": [
-[
-"CC",
-"CC de la Vallée de l'Oise et des Trois Forêts"
-]
-]
-},
-"95446": {
-"nom": "Nesles-la-Vallée",
-"dep": "95",
-"cp": [
-"95690"
-],
-"pop": 1842,
-"groupes": [
-[
-"CC",
-"CC Sausseron Impressionnistes"
-]
-]
-},
-"95447": {
-"nom": "Neuilly-en-Vexin",
-"dep": "95",
-"cp": [
-"95640"
-],
-"pop": 240,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95450": {
-"nom": "Neuville-sur-Oise",
-"dep": "95",
-"cp": [
-"95000"
-],
-"pop": 2058,
-"groupes": [
-[
-"CA",
-"CA de Cergy-Pontoise"
-]
-]
-},
-"95452": {
-"nom": "Nointel",
-"dep": "95",
-"cp": [
-"95590"
-],
-"pop": 903,
-"groupes": [
-[
-"CC",
-"CC du Haut Val d'Oise"
-]
-]
-},
-"95456": {
-"nom": "Noisy-sur-Oise",
-"dep": "95",
-"cp": [
-"95270"
-],
-"pop": 549,
-"groupes": [
-[
-"CC",
-"CC du Haut Val d'Oise"
-]
-]
-},
-"95459": {
-"nom": "Nucourt",
-"dep": "95",
-"cp": [
-"95420"
-],
-"pop": 719,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95462": {
-"nom": "Omerville",
-"dep": "95",
-"cp": [
-"95420"
-],
-"pop": 327,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95476": {
-"nom": "Osny",
-"dep": "95",
-"cp": [
-"95520"
-],
-"pop": 17954,
-"groupes": [
-[
-"CA",
-"CA de Cergy-Pontoise"
-]
-]
-},
-"95480": {
-"nom": "Parmain",
-"dep": "95",
-"cp": [
-"95620"
-],
-"pop": 5655,
-"groupes": [
-[
-"CC",
-"CC de la Vallée de l'Oise et des Trois Forêts"
-]
-]
-},
-"95483": {
-"nom": "Le Perchay",
-"dep": "95",
-"cp": [
-"95450"
-],
-"pop": 504,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95487": {
-"nom": "Persan",
-"dep": "95",
-"cp": [
-"95340"
-],
-"pop": 14359,
-"groupes": [
-[
-"CC",
-"CC du Haut Val d'Oise"
-]
-]
-},
-"95488": {
-"nom": "Pierrelaye",
-"dep": "95",
-"cp": [
-"95220",
-"95480"
-],
-"pop": 10130,
-"groupes": [
-[
-"CA",
-"CA Val Parisis"
-]
-]
-},
-"95489": {
-"nom": "Piscop",
-"dep": "95",
-"cp": [
-"95350"
-],
-"pop": 768,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95491": {
-"nom": "Le Plessis-Bouchard",
-"dep": "95",
-"cp": [
-"95130"
-],
-"pop": 8518,
-"groupes": [
-[
-"CA",
-"CA Val Parisis"
-]
-]
-},
-"95492": {
-"nom": "Le Plessis-Gassot",
-"dep": "95",
-"cp": [
-"95720"
-],
-"pop": 102,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95493": {
-"nom": "Le Plessis-Luzarches",
-"dep": "95",
-"cp": [
-"95270"
-],
-"pop": 152,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95500": {
-"nom": "Pontoise",
-"dep": "95",
-"cp": [
-"95000",
-"95300"
-],
-"pop": 31970,
-"groupes": [
-[
-"CA",
-"CA de Cergy-Pontoise"
-]
-]
-},
-"95504": {
-"nom": "Presles",
-"dep": "95",
-"cp": [
-"95590"
-],
-"pop": 4017,
-"groupes": [
-[
-"CC",
-"CC de la Vallée de l'Oise et des Trois Forêts"
-]
-]
-},
-"95509": {
-"nom": "Puiseux-en-France",
-"dep": "95",
-"cp": [
-"95380"
-],
-"pop": 3765,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95510": {
-"nom": "Puiseux-Pontoise",
-"dep": "95",
-"cp": [
-"95650"
-],
-"pop": 603,
-"groupes": [
-[
-"CA",
-"CA de Cergy-Pontoise"
-]
-]
-},
-"95523": {
-"nom": "La Roche-Guyon",
-"dep": "95",
-"cp": [
-"95780"
-],
-"pop": 399,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95527": {
-"nom": "Roissy-en-France",
-"dep": "95",
-"cp": [
-"95700"
-],
-"pop": 2674,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95529": {
-"nom": "Ronquerolles",
-"dep": "95",
-"cp": [
-"95340"
-],
-"pop": 907,
-"groupes": [
-[
-"CC",
-"CC du Haut Val d'Oise"
-]
-]
-},
-"95535": {
-"nom": "Sagy",
-"dep": "95",
-"cp": [
-"95450"
-],
-"pop": 1096,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95539": {
-"nom": "Saint-Brice-sous-Forêt",
-"dep": "95",
-"cp": [
-"95350"
-],
-"pop": 15063,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95541": {
-"nom": "Saint-Clair-sur-Epte",
-"dep": "95",
-"cp": [
-"95770"
-],
-"pop": 964,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95543": {
-"nom": "Saint-Cyr-en-Arthies",
-"dep": "95",
-"cp": [
-"95510"
-],
-"pop": 236,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95554": {
-"nom": "Saint-Gervais",
-"dep": "95",
-"cp": [
-"95420"
-],
-"pop": 878,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95555": {
-"nom": "Saint-Gratien",
-"dep": "95",
-"cp": [
-"95210"
-],
-"pop": 21336,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95563": {
-"nom": "Saint-Leu-la-Forêt",
-"dep": "95",
-"cp": [
-"95320"
-],
-"pop": 16138,
-"groupes": [
-[
-"CA",
-"CA Val Parisis"
-]
-]
-},
-"95566": {
-"nom": "Saint-Martin-du-Tertre",
-"dep": "95",
-"cp": [
-"95270"
-],
-"pop": 2689,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95572": {
-"nom": "Saint-Ouen-l'Aumône",
-"dep": "95",
-"cp": [
-"95310"
-],
-"pop": 25578,
-"groupes": [
-[
-"CA",
-"CA de Cergy-Pontoise"
-]
-]
-},
-"95574": {
-"nom": "Saint-Prix",
-"dep": "95",
-"cp": [
-"95390"
-],
-"pop": 7612,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95580": {
-"nom": "Saint-Witz",
-"dep": "95",
-"cp": [
-"95470"
-],
-"pop": 2724,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95582": {
-"nom": "Sannois",
-"dep": "95",
-"cp": [
-"95110"
-],
-"pop": 26924,
-"groupes": [
-[
-"CA",
-"CA Val Parisis"
-]
-]
-},
-"95584": {
-"nom": "Santeuil",
-"dep": "95",
-"cp": [
-"95640"
-],
-"pop": 658,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95585": {
-"nom": "Sarcelles",
-"dep": "95",
-"cp": [
-"95200"
-],
-"pop": 59173,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95592": {
-"nom": "Seraincourt",
-"dep": "95",
-"cp": [
-"95450"
-],
-"pop": 1305,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95594": {
-"nom": "Seugy",
-"dep": "95",
-"cp": [
-"95270"
-],
-"pop": 1044,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95598": {
-"nom": "Soisy-sous-Montmorency",
-"dep": "95",
-"cp": [
-"95230"
-],
-"pop": 18008,
-"groupes": [
-[
-"CA",
-"CA Plaine Vallée"
-]
-]
-},
-"95604": {
-"nom": "Survilliers",
-"dep": "95",
-"cp": [
-"95470"
-],
-"pop": 4091,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95607": {
-"nom": "Taverny",
-"dep": "95",
-"cp": [
-"95150"
-],
-"pop": 27593,
-"groupes": [
-[
-"CA",
-"CA Val Parisis"
-]
-]
-},
-"95610": {
-"nom": "Théméricourt",
-"dep": "95",
-"cp": [
-"95450"
-],
-"pop": 283,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95611": {
-"nom": "Theuville",
-"dep": "95",
-"cp": [
-"95810"
-],
-"pop": 53,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95612": {
-"nom": "Le Thillay",
-"dep": "95",
-"cp": [
-"95500"
-],
-"pop": 4560,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95625": {
-"nom": "Us",
-"dep": "95",
-"cp": [
-"95450"
-],
-"pop": 1374,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95627": {
-"nom": "Vallangoujard",
-"dep": "95",
-"cp": [
-"95810"
-],
-"pop": 625,
-"groupes": [
-[
-"CC",
-"CC Sausseron Impressionnistes"
-]
-]
-},
-"95628": {
-"nom": "Valmondois",
-"dep": "95",
-"cp": [
-"95760"
-],
-"pop": 1208,
-"groupes": [
-[
-"CC",
-"CC Sausseron Impressionnistes"
-]
-]
-},
-"95633": {
-"nom": "Vaudherland",
-"dep": "95",
-"cp": [
-"95500"
-],
-"pop": 104,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95637": {
-"nom": "Vauréal",
-"dep": "95",
-"cp": [
-"95490"
-],
-"pop": 16079,
-"groupes": [
-[
-"CA",
-"CA de Cergy-Pontoise"
-]
-]
-},
-"95641": {
-"nom": "Vémars",
-"dep": "95",
-"cp": [
-"95470"
-],
-"pop": 3124,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95651": {
-"nom": "Vétheuil",
-"dep": "95",
-"cp": [
-"95510"
-],
-"pop": 849,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95652": {
-"nom": "Viarmes",
-"dep": "95",
-"cp": [
-"95270"
-],
-"pop": 5558,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95656": {
-"nom": "Vienne-en-Arthies",
-"dep": "95",
-"cp": [
-"95510"
-],
-"pop": 379,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95658": {
-"nom": "Vigny",
-"dep": "95",
-"cp": [
-"95450"
-],
-"pop": 1137,
-"groupes": [
-[
-"CC",
-"CC Vexin Centre"
-]
-]
-},
-"95660": {
-"nom": "Villaines-sous-Bois",
-"dep": "95",
-"cp": [
-"95570"
-],
-"pop": 778,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95675": {
-"nom": "Villeron",
-"dep": "95",
-"cp": [
-"95380"
-],
-"pop": 1766,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95676": {
-"nom": "Villers-en-Arthies",
-"dep": "95",
-"cp": [
-"95510"
-],
-"pop": 498,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
-"95678": {
-"nom": "Villiers-Adam",
-"dep": "95",
-"cp": [
-"95840"
-],
-"pop": 858,
-"groupes": [
-[
-"CC",
-"CC de la Vallée de l'Oise et des Trois Forêts"
-]
-]
-},
-"95680": {
-"nom": "Villiers-le-Bel",
-"dep": "95",
-"cp": [
-"95400"
-],
-"pop": 30053,
-"groupes": [
-[
-"CA",
-"CA Roissy Pays de France"
-]
-]
-},
-"95682": {
-"nom": "Villiers-le-Sec",
-"dep": "95",
-"cp": [
-"95720"
-],
-"pop": 205,
-"groupes": [
-[
-"CC",
-"CC Carnelle Pays-de-France"
-]
-]
-},
-"95690": {
-"nom": "Wy-dit-Joli-Village",
-"dep": "95",
-"cp": [
-"95420"
-],
-"pop": 326,
-"groupes": [
-[
-"CC",
-"CC du Vexin-Val de Seine"
-]
-]
-},
 "93070": {
 "nom": "Saint-Ouen-sur-Seine",
 "dep": "93",
@@ -3450,5 +880,7086 @@
 "Plaine Commune"
 ]
 ]
+},
+"78003": {
+"nom": "Ablis",
+"dep": "78",
+"cp": [
+"78660"
+],
+"pop": 3913,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.5283,
+"lng": 1.8508
+},
+"78005": {
+"nom": "Achères",
+"dep": "78",
+"cp": [
+"78260"
+],
+"pop": 22241,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9718,
+"lng": 2.0887
+},
+"78006": {
+"nom": "Adainville",
+"dep": "78",
+"cp": [
+"78113"
+],
+"pop": 673,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.7203,
+"lng": 1.6624
+},
+"78007": {
+"nom": "Aigremont",
+"dep": "78",
+"cp": [
+"78240"
+],
+"pop": 1075,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.9009,
+"lng": 2.0162
+},
+"78009": {
+"nom": "Allainville",
+"dep": "78",
+"cp": [
+"78660"
+],
+"pop": 281,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.4674,
+"lng": 1.9026
+},
+"78010": {
+"nom": "Les Alluets-le-Roi",
+"dep": "78",
+"cp": [
+"78580"
+],
+"pop": 1390,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.914,
+"lng": 1.9151
+},
+"78013": {
+"nom": "Andelu",
+"dep": "78",
+"cp": [
+"78770"
+],
+"pop": 550,
+"groupes": [
+[
+"CC",
+"CC Gally Mauldre"
+]
+],
+"lat": 48.8878,
+"lng": 1.8106
+},
+"78015": {
+"nom": "Andrésy",
+"dep": "78",
+"cp": [
+"78570"
+],
+"pop": 13834,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9816,
+"lng": 2.0498
+},
+"78020": {
+"nom": "Arnouville-lès-Mantes",
+"dep": "78",
+"cp": [
+"78790"
+],
+"pop": 951,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9108,
+"lng": 1.7202
+},
+"78029": {
+"nom": "Aubergenville",
+"dep": "78",
+"cp": [
+"78410"
+],
+"pop": 12723,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9628,
+"lng": 1.8495
+},
+"78030": {
+"nom": "Auffargis",
+"dep": "78",
+"cp": [
+"78610"
+],
+"pop": 1963,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.6842,
+"lng": 1.9029
+},
+"78031": {
+"nom": "Auffreville-Brasseuil",
+"dep": "78",
+"cp": [
+"78930"
+],
+"pop": 671,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9545,
+"lng": 1.7051
+},
+"78033": {
+"nom": "Aulnay-sur-Mauldre",
+"dep": "78",
+"cp": [
+"78126"
+],
+"pop": 1180,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9284,
+"lng": 1.8408
+},
+"78034": {
+"nom": "Auteuil",
+"dep": "78",
+"cp": [
+"78770"
+],
+"pop": 1020,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8397,
+"lng": 1.8197
+},
+"78036": {
+"nom": "Autouillet",
+"dep": "78",
+"cp": [
+"78770"
+],
+"pop": 665,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8441,
+"lng": 1.797
+},
+"78043": {
+"nom": "Bailly",
+"dep": "78",
+"cp": [
+"78870"
+],
+"pop": 3731,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.8369,
+"lng": 2.0804
+},
+"78048": {
+"nom": "Bazainville",
+"dep": "78",
+"cp": [
+"78550"
+],
+"pop": 1469,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.807,
+"lng": 1.6672
+},
+"78049": {
+"nom": "Bazemont",
+"dep": "78",
+"cp": [
+"78580"
+],
+"pop": 1727,
+"groupes": [
+[
+"CC",
+"CC Gally Mauldre"
+]
+],
+"lat": 48.9319,
+"lng": 1.874
+},
+"78050": {
+"nom": "Bazoches-sur-Guyonne",
+"dep": "78",
+"cp": [
+"78490"
+],
+"pop": 721,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.7737,
+"lng": 1.8518
+},
+"78053": {
+"nom": "Béhoust",
+"dep": "78",
+"cp": [
+"78910"
+],
+"pop": 533,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8323,
+"lng": 1.7247
+},
+"78057": {
+"nom": "Bennecourt",
+"dep": "78",
+"cp": [
+"78270"
+],
+"pop": 1747,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 49.0479,
+"lng": 1.5717
+},
+"78062": {
+"nom": "Beynes",
+"dep": "78",
+"cp": [
+"78650"
+],
+"pop": 7704,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8546,
+"lng": 1.8698
+},
+"78068": {
+"nom": "Blaru",
+"dep": "78",
+"cp": [
+"78270"
+],
+"pop": 907,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 49.041,
+"lng": 1.4808
+},
+"78070": {
+"nom": "Boinville-en-Mantois",
+"dep": "78",
+"cp": [
+"78930"
+],
+"pop": 285,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9283,
+"lng": 1.7488
+},
+"78071": {
+"nom": "Boinville-le-Gaillard",
+"dep": "78",
+"cp": [
+"78660"
+],
+"pop": 597,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.496,
+"lng": 1.8711
+},
+"78072": {
+"nom": "Boinvilliers",
+"dep": "78",
+"cp": [
+"78200"
+],
+"pop": 243,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.9205,
+"lng": 1.6631
+},
+"78073": {
+"nom": "Bois-d'Arcy",
+"dep": "78",
+"cp": [
+"78390"
+],
+"pop": 16586,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.8046,
+"lng": 2.0179
+},
+"78076": {
+"nom": "Boissets",
+"dep": "78",
+"cp": [
+"78910"
+],
+"pop": 301,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.8589,
+"lng": 1.588
+},
+"78077": {
+"nom": "La Boissière-École",
+"dep": "78",
+"cp": [
+"78125"
+],
+"pop": 747,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.6899,
+"lng": 1.6678
+},
+"78082": {
+"nom": "Boissy-Mauvoisin",
+"dep": "78",
+"cp": [
+"78200"
+],
+"pop": 615,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 48.9663,
+"lng": 1.5816
+},
+"78084": {
+"nom": "Boissy-sans-Avoir",
+"dep": "78",
+"cp": [
+"78490"
+],
+"pop": 616,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8212,
+"lng": 1.7979
+},
+"78087": {
+"nom": "Bonnelles",
+"dep": "78",
+"cp": [
+"78830"
+],
+"pop": 2165,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.6189,
+"lng": 2.0299
+},
+"78089": {
+"nom": "Bonnières-sur-Seine",
+"dep": "78",
+"cp": [
+"78270"
+],
+"pop": 5064,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 49.0206,
+"lng": 1.5709
+},
+"78090": {
+"nom": "Bouafle",
+"dep": "78",
+"cp": [
+"78410"
+],
+"pop": 2234,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9602,
+"lng": 1.8974
+},
+"78092": {
+"nom": "Bougival",
+"dep": "78",
+"cp": [
+"78380"
+],
+"pop": 9134,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.8635,
+"lng": 2.1375
+},
+"78096": {
+"nom": "Bourdonné",
+"dep": "78",
+"cp": [
+"78113"
+],
+"pop": 506,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.7545,
+"lng": 1.6532
+},
+"78104": {
+"nom": "Breuil-Bois-Robert",
+"dep": "78",
+"cp": [
+"78930"
+],
+"pop": 764,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9436,
+"lng": 1.7145
+},
+"78107": {
+"nom": "Bréval",
+"dep": "78",
+"cp": [
+"78980"
+],
+"pop": 2151,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 48.9552,
+"lng": 1.5413
+},
+"78108": {
+"nom": "Les Bréviaires",
+"dep": "78",
+"cp": [
+"78610"
+],
+"pop": 1302,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.7213,
+"lng": 1.8165
+},
+"78113": {
+"nom": "Brueil-en-Vexin",
+"dep": "78",
+"cp": [
+"78440"
+],
+"pop": 652,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.026,
+"lng": 1.8127
+},
+"78117": {
+"nom": "Buc",
+"dep": "78",
+"cp": [
+"78530"
+],
+"pop": 5816,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.7726,
+"lng": 2.1249
+},
+"78118": {
+"nom": "Buchelay",
+"dep": "78",
+"cp": [
+"78200"
+],
+"pop": 3360,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9842,
+"lng": 1.6738
+},
+"78120": {
+"nom": "Bullion",
+"dep": "78",
+"cp": [
+"78830"
+],
+"pop": 1916,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.6241,
+"lng": 1.9833
+},
+"78123": {
+"nom": "Carrières-sous-Poissy",
+"dep": "78",
+"cp": [
+"78955"
+],
+"pop": 20825,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9456,
+"lng": 2.0286
+},
+"78124": {
+"nom": "Carrières-sur-Seine",
+"dep": "78",
+"cp": [
+"78420"
+],
+"pop": 14791,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.9116,
+"lng": 2.1788
+},
+"78125": {
+"nom": "La Celle-les-Bordes",
+"dep": "78",
+"cp": [
+"78720"
+],
+"pop": 840,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.642,
+"lng": 1.9456
+},
+"78126": {
+"nom": "La Celle-Saint-Cloud",
+"dep": "78",
+"cp": [
+"78170"
+],
+"pop": 20460,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.8468,
+"lng": 2.1344
+},
+"78128": {
+"nom": "Cernay-la-Ville",
+"dep": "78",
+"cp": [
+"78720"
+],
+"pop": 1516,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.6697,
+"lng": 1.9607
+},
+"78133": {
+"nom": "Chambourcy",
+"dep": "78",
+"cp": [
+"78240"
+],
+"pop": 5847,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.8965,
+"lng": 2.0328
+},
+"78138": {
+"nom": "Chanteloup-les-Vignes",
+"dep": "78",
+"cp": [
+"78570"
+],
+"pop": 10861,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9758,
+"lng": 2.0322
+},
+"78140": {
+"nom": "Chapet",
+"dep": "78",
+"cp": [
+"78130"
+],
+"pop": 1331,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9683,
+"lng": 1.939
+},
+"78143": {
+"nom": "Châteaufort",
+"dep": "78",
+"cp": [
+"78117"
+],
+"pop": 1564,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.7391,
+"lng": 2.0952
+},
+"78146": {
+"nom": "Chatou",
+"dep": "78",
+"cp": [
+"78400"
+],
+"pop": 30598,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.8964,
+"lng": 2.1536
+},
+"78147": {
+"nom": "Chaufour-lès-Bonnières",
+"dep": "78",
+"cp": [
+"78270"
+],
+"pop": 442,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 49.016,
+"lng": 1.4853
+},
+"78152": {
+"nom": "Chavenay",
+"dep": "78",
+"cp": [
+"78450"
+],
+"pop": 1723,
+"groupes": [
+[
+"CC",
+"CC Gally Mauldre"
+]
+],
+"lat": 48.8484,
+"lng": 1.9827
+},
+"78158": {
+"nom": "Le Chesnay-Rocquencourt",
+"dep": "78",
+"cp": [
+"78150"
+],
+"pop": 30689,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.8267,
+"lng": 2.1298
+},
+"78160": {
+"nom": "Chevreuse",
+"dep": "78",
+"cp": [
+"78460"
+],
+"pop": 5502,
+"groupes": [
+[
+"CC",
+"CC de la Haute Vallée de Chevreuse"
+]
+],
+"lat": 48.7071,
+"lng": 2.0374
+},
+"78162": {
+"nom": "Choisel",
+"dep": "78",
+"cp": [
+"78460"
+],
+"pop": 540,
+"groupes": [
+[
+"CC",
+"CC de la Haute Vallée de Chevreuse"
+]
+],
+"lat": 48.6742,
+"lng": 2.0153
+},
+"78163": {
+"nom": "Civry-la-Forêt",
+"dep": "78",
+"cp": [
+"78910"
+],
+"pop": 373,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.8643,
+"lng": 1.6171
+},
+"78164": {
+"nom": "Clairefontaine-en-Yvelines",
+"dep": "78",
+"cp": [
+"78120"
+],
+"pop": 850,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.6164,
+"lng": 1.9065
+},
+"78165": {
+"nom": "Les Clayes-sous-Bois",
+"dep": "78",
+"cp": [
+"78340"
+],
+"pop": 16804,
+"groupes": [
+[
+"CA",
+"CA de Saint Quentin en Yvelines"
+]
+],
+"lat": 48.8188,
+"lng": 1.9837
+},
+"78168": {
+"nom": "Coignières",
+"dep": "78",
+"cp": [
+"78310"
+],
+"pop": 4321,
+"groupes": [
+[
+"CA",
+"CA de Saint Quentin en Yvelines"
+]
+],
+"lat": 48.75,
+"lng": 1.9139
+},
+"78171": {
+"nom": "Condé-sur-Vesgre",
+"dep": "78",
+"cp": [
+"78113"
+],
+"pop": 1279,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.7325,
+"lng": 1.6735
+},
+"78172": {
+"nom": "Conflans-Sainte-Honorine",
+"dep": "78",
+"cp": [
+"78700"
+],
+"pop": 36958,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0,
+"lng": 2.099
+},
+"78185": {
+"nom": "Courgent",
+"dep": "78",
+"cp": [
+"78790"
+],
+"pop": 414,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.8956,
+"lng": 1.6596
+},
+"78188": {
+"nom": "Cravent",
+"dep": "78",
+"cp": [
+"78270"
+],
+"pop": 438,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 48.9891,
+"lng": 1.4846
+},
+"78189": {
+"nom": "Crespières",
+"dep": "78",
+"cp": [
+"78121"
+],
+"pop": 1719,
+"groupes": [
+[
+"CC",
+"CC Gally Mauldre"
+]
+],
+"lat": 48.8821,
+"lng": 1.921
+},
+"78190": {
+"nom": "Croissy-sur-Seine",
+"dep": "78",
+"cp": [
+"78290"
+],
+"pop": 11013,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.8784,
+"lng": 2.1361
+},
+"78192": {
+"nom": "Dammartin-en-Serve",
+"dep": "78",
+"cp": [
+"78111"
+],
+"pop": 1441,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.911,
+"lng": 1.6183
+},
+"78193": {
+"nom": "Dampierre-en-Yvelines",
+"dep": "78",
+"cp": [
+"78720"
+],
+"pop": 1008,
+"groupes": [
+[
+"CC",
+"CC de la Haute Vallée de Chevreuse"
+]
+],
+"lat": 48.7038,
+"lng": 1.9733
+},
+"78194": {
+"nom": "Dannemarie",
+"dep": "78",
+"cp": [
+"78550"
+],
+"pop": 229,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.7641,
+"lng": 1.6082
+},
+"78196": {
+"nom": "Davron",
+"dep": "78",
+"cp": [
+"78810"
+],
+"pop": 295,
+"groupes": [
+[
+"CC",
+"CC Gally Mauldre"
+]
+],
+"lat": 48.8638,
+"lng": 1.9476
+},
+"78202": {
+"nom": "Drocourt",
+"dep": "78",
+"cp": [
+"78440"
+],
+"pop": 554,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0521,
+"lng": 1.7679
+},
+"78206": {
+"nom": "Ecquevilly",
+"dep": "78",
+"cp": [
+"78920"
+],
+"pop": 4279,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9459,
+"lng": 1.9208
+},
+"78208": {
+"nom": "Élancourt",
+"dep": "78",
+"cp": [
+"78990"
+],
+"pop": 26365,
+"groupes": [
+[
+"CA",
+"CA de Saint Quentin en Yvelines"
+]
+],
+"lat": 48.7783,
+"lng": 1.9611
+},
+"78209": {
+"nom": "Émancé",
+"dep": "78",
+"cp": [
+"78125"
+],
+"pop": 872,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.591,
+"lng": 1.7339
+},
+"78217": {
+"nom": "Épône",
+"dep": "78",
+"cp": [
+"78680"
+],
+"pop": 7031,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.948,
+"lng": 1.8134
+},
+"78220": {
+"nom": "Les Essarts-le-Roi",
+"dep": "78",
+"cp": [
+"78690"
+],
+"pop": 6831,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.7162,
+"lng": 1.8954
+},
+"78224": {
+"nom": "L'Étang-la-Ville",
+"dep": "78",
+"cp": [
+"78620"
+],
+"pop": 5157,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.8674,
+"lng": 2.0601
+},
+"78227": {
+"nom": "Évecquemont",
+"dep": "78",
+"cp": [
+"78740"
+],
+"pop": 754,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0172,
+"lng": 1.9427
+},
+"78230": {
+"nom": "La Falaise",
+"dep": "78",
+"cp": [
+"78410"
+],
+"pop": 609,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9371,
+"lng": 1.8253
+},
+"78231": {
+"nom": "Favrieux",
+"dep": "78",
+"cp": [
+"78200"
+],
+"pop": 157,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9446,
+"lng": 1.6423
+},
+"78233": {
+"nom": "Feucherolles",
+"dep": "78",
+"cp": [
+"78810"
+],
+"pop": 3043,
+"groupes": [
+[
+"CC",
+"CC Gally Mauldre"
+]
+],
+"lat": 48.8802,
+"lng": 1.9794
+},
+"78234": {
+"nom": "Flacourt",
+"dep": "78",
+"cp": [
+"78200"
+],
+"pop": 184,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9321,
+"lng": 1.6425
+},
+"78236": {
+"nom": "Flexanville",
+"dep": "78",
+"cp": [
+"78910"
+],
+"pop": 576,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8553,
+"lng": 1.7429
+},
+"78237": {
+"nom": "Flins-Neuve-Église",
+"dep": "78",
+"cp": [
+"78790"
+],
+"pop": 162,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.8924,
+"lng": 1.5767
+},
+"78238": {
+"nom": "Flins-sur-Seine",
+"dep": "78",
+"cp": [
+"78410"
+],
+"pop": 2447,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9677,
+"lng": 1.8731
+},
+"78239": {
+"nom": "Follainville-Dennemont",
+"dep": "78",
+"cp": [
+"78520"
+],
+"pop": 2184,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0233,
+"lng": 1.7085
+},
+"78242": {
+"nom": "Fontenay-le-Fleury",
+"dep": "78",
+"cp": [
+"78330"
+],
+"pop": 13680,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.8174,
+"lng": 2.0465
+},
+"78245": {
+"nom": "Fontenay-Mauvoisin",
+"dep": "78",
+"cp": [
+"78200"
+],
+"pop": 460,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9607,
+"lng": 1.6475
+},
+"78246": {
+"nom": "Fontenay-Saint-Père",
+"dep": "78",
+"cp": [
+"78440"
+],
+"pop": 949,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0282,
+"lng": 1.7541
+},
+"78255": {
+"nom": "Freneuse",
+"dep": "78",
+"cp": [
+"78840"
+],
+"pop": 4505,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 49.0493,
+"lng": 1.6101
+},
+"78261": {
+"nom": "Gaillon-sur-Montcient",
+"dep": "78",
+"cp": [
+"78250"
+],
+"pop": 689,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0297,
+"lng": 1.8978
+},
+"78262": {
+"nom": "Galluis",
+"dep": "78",
+"cp": [
+"78490"
+],
+"pop": 1298,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.7982,
+"lng": 1.7924
+},
+"78263": {
+"nom": "Gambais",
+"dep": "78",
+"cp": [
+"78950"
+],
+"pop": 2574,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.7795,
+"lng": 1.6769
+},
+"78264": {
+"nom": "Gambaiseuil",
+"dep": "78",
+"cp": [
+"78490"
+],
+"pop": 64,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.7565,
+"lng": 1.725
+},
+"78265": {
+"nom": "Garancières",
+"dep": "78",
+"cp": [
+"78890"
+],
+"pop": 2621,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8235,
+"lng": 1.7587
+},
+"78267": {
+"nom": "Gargenville",
+"dep": "78",
+"cp": [
+"78440"
+],
+"pop": 7869,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9926,
+"lng": 1.811
+},
+"78269": {
+"nom": "Gazeran",
+"dep": "78",
+"cp": [
+"78125"
+],
+"pop": 1492,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.6338,
+"lng": 1.7777
+},
+"78276": {
+"nom": "Gommecourt",
+"dep": "78",
+"cp": [
+"78270"
+],
+"pop": 613,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 49.0713,
+"lng": 1.5943
+},
+"78278": {
+"nom": "Goupillières",
+"dep": "78",
+"cp": [
+"78770"
+],
+"pop": 570,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8807,
+"lng": 1.7672
+},
+"78281": {
+"nom": "Goussonville",
+"dep": "78",
+"cp": [
+"78930"
+],
+"pop": 650,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9233,
+"lng": 1.7667
+},
+"78283": {
+"nom": "Grandchamp",
+"dep": "78",
+"cp": [
+"78113"
+],
+"pop": 300,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.7195,
+"lng": 1.6144
+},
+"78285": {
+"nom": "Gressey",
+"dep": "78",
+"cp": [
+"78550"
+],
+"pop": 533,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.8322,
+"lng": 1.6033
+},
+"78289": {
+"nom": "Grosrouvre",
+"dep": "78",
+"cp": [
+"78490"
+],
+"pop": 902,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.7803,
+"lng": 1.7568
+},
+"78290": {
+"nom": "Guernes",
+"dep": "78",
+"cp": [
+"78520"
+],
+"pop": 1085,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0153,
+"lng": 1.6419
+},
+"78291": {
+"nom": "Guerville",
+"dep": "78",
+"cp": [
+"78930"
+],
+"pop": 2052,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9523,
+"lng": 1.7405
+},
+"78296": {
+"nom": "Guitrancourt",
+"dep": "78",
+"cp": [
+"78440"
+],
+"pop": 646,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0076,
+"lng": 1.7795
+},
+"78297": {
+"nom": "Guyancourt",
+"dep": "78",
+"cp": [
+"78280"
+],
+"pop": 29778,
+"groupes": [
+[
+"CA",
+"CA de Saint Quentin en Yvelines"
+]
+],
+"lat": 48.7731,
+"lng": 2.0759
+},
+"78299": {
+"nom": "Hardricourt",
+"dep": "78",
+"cp": [
+"78250"
+],
+"pop": 2599,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.011,
+"lng": 1.8884
+},
+"78300": {
+"nom": "Hargeville",
+"dep": "78",
+"cp": [
+"78790"
+],
+"pop": 418,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.8951,
+"lng": 1.7467
+},
+"78302": {
+"nom": "La Hauteville",
+"dep": "78",
+"cp": [
+"78113"
+],
+"pop": 157,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.7046,
+"lng": 1.6271
+},
+"78305": {
+"nom": "Herbeville",
+"dep": "78",
+"cp": [
+"78580"
+],
+"pop": 228,
+"groupes": [
+[
+"CC",
+"CC Gally Mauldre"
+]
+],
+"lat": 48.9029,
+"lng": 1.8904
+},
+"78307": {
+"nom": "Hermeray",
+"dep": "78",
+"cp": [
+"78125"
+],
+"pop": 1007,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.6537,
+"lng": 1.6883
+},
+"78310": {
+"nom": "Houdan",
+"dep": "78",
+"cp": [
+"78550"
+],
+"pop": 3721,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.7981,
+"lng": 1.5966
+},
+"78311": {
+"nom": "Houilles",
+"dep": "78",
+"cp": [
+"78800"
+],
+"pop": 33983,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.9265,
+"lng": 2.1871
+},
+"78314": {
+"nom": "Issou",
+"dep": "78",
+"cp": [
+"78440"
+],
+"pop": 4060,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9869,
+"lng": 1.7891
+},
+"78317": {
+"nom": "Jambville",
+"dep": "78",
+"cp": [
+"78440"
+],
+"pop": 793,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0481,
+"lng": 1.8494
+},
+"78320": {
+"nom": "Notre-Dame-de-la-Mer",
+"dep": "78",
+"cp": [
+"78270"
+],
+"pop": 742,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 49.0347,
+"lng": 1.5369
+},
+"78321": {
+"nom": "Jouars-Pontchartrain",
+"dep": "78",
+"cp": [
+"78760"
+],
+"pop": 6039,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.7907,
+"lng": 1.908
+},
+"78322": {
+"nom": "Jouy-en-Josas",
+"dep": "78",
+"cp": [
+"78350"
+],
+"pop": 7981,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.7659,
+"lng": 2.1635
+},
+"78324": {
+"nom": "Jouy-Mauvoisin",
+"dep": "78",
+"cp": [
+"78200"
+],
+"pop": 554,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9741,
+"lng": 1.6467
+},
+"78325": {
+"nom": "Jumeauville",
+"dep": "78",
+"cp": [
+"78580"
+],
+"pop": 638,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.907,
+"lng": 1.7839
+},
+"78327": {
+"nom": "Juziers",
+"dep": "78",
+"cp": [
+"78820"
+],
+"pop": 4065,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0005,
+"lng": 1.8407
+},
+"78329": {
+"nom": "Lainville-en-Vexin",
+"dep": "78",
+"cp": [
+"78440"
+],
+"pop": 805,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0625,
+"lng": 1.8171
+},
+"78334": {
+"nom": "Lévis-Saint-Nom",
+"dep": "78",
+"cp": [
+"78320"
+],
+"pop": 1603,
+"groupes": [
+[
+"CC",
+"CC de la Haute Vallée de Chevreuse"
+]
+],
+"lat": 48.7269,
+"lng": 1.9359
+},
+"78335": {
+"nom": "Limay",
+"dep": "78",
+"cp": [
+"78520"
+],
+"pop": 17885,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9945,
+"lng": 1.7401
+},
+"78337": {
+"nom": "Limetz-Villez",
+"dep": "78",
+"cp": [
+"78270"
+],
+"pop": 2110,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 49.0601,
+"lng": 1.55
+},
+"78343": {
+"nom": "Les Loges-en-Josas",
+"dep": "78",
+"cp": [
+"78350"
+],
+"pop": 1645,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.7623,
+"lng": 2.1397
+},
+"78344": {
+"nom": "Lommoye",
+"dep": "78",
+"cp": [
+"78270"
+],
+"pop": 639,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 48.9974,
+"lng": 1.5166
+},
+"78346": {
+"nom": "Longnes",
+"dep": "78",
+"cp": [
+"78980"
+],
+"pop": 1601,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.9229,
+"lng": 1.5799
+},
+"78349": {
+"nom": "Longvilliers",
+"dep": "78",
+"cp": [
+"78730"
+],
+"pop": 496,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.574,
+"lng": 1.9991
+},
+"78350": {
+"nom": "Louveciennes",
+"dep": "78",
+"cp": [
+"78430"
+],
+"pop": 7990,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.8592,
+"lng": 2.1135
+},
+"78354": {
+"nom": "Magnanville",
+"dep": "78",
+"cp": [
+"78200"
+],
+"pop": 6383,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9686,
+"lng": 1.6856
+},
+"78356": {
+"nom": "Magny-les-Hameaux",
+"dep": "78",
+"cp": [
+"78114"
+],
+"pop": 9386,
+"groupes": [
+[
+"CA",
+"CA de Saint Quentin en Yvelines"
+]
+],
+"lat": 48.741,
+"lng": 2.0522
+},
+"78358": {
+"nom": "Maisons-Laffitte",
+"dep": "78",
+"cp": [
+"78600"
+],
+"pop": 23093,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.9525,
+"lng": 2.1523
+},
+"78361": {
+"nom": "Mantes-la-Jolie",
+"dep": "78",
+"cp": [
+"78200"
+],
+"pop": 43526,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9983,
+"lng": 1.6941
+},
+"78362": {
+"nom": "Mantes-la-Ville",
+"dep": "78",
+"cp": [
+"78711"
+],
+"pop": 22332,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9747,
+"lng": 1.7122
+},
+"78364": {
+"nom": "Marcq",
+"dep": "78",
+"cp": [
+"78770"
+],
+"pop": 802,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8641,
+"lng": 1.8238
+},
+"78366": {
+"nom": "Mareil-le-Guyon",
+"dep": "78",
+"cp": [
+"78490"
+],
+"pop": 420,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.7906,
+"lng": 1.8516
+},
+"78367": {
+"nom": "Mareil-Marly",
+"dep": "78",
+"cp": [
+"78750"
+],
+"pop": 4141,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.8806,
+"lng": 2.0766
+},
+"78368": {
+"nom": "Mareil-sur-Mauldre",
+"dep": "78",
+"cp": [
+"78124"
+],
+"pop": 1776,
+"groupes": [
+[
+"CC",
+"CC Gally Mauldre"
+]
+],
+"lat": 48.8892,
+"lng": 1.8747
+},
+"78372": {
+"nom": "Marly-le-Roi",
+"dep": "78",
+"cp": [
+"78160"
+],
+"pop": 16756,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.865,
+"lng": 2.0915
+},
+"78380": {
+"nom": "Maule",
+"dep": "78",
+"cp": [
+"78580"
+],
+"pop": 6083,
+"groupes": [
+[
+"CC",
+"CC Gally Mauldre"
+]
+],
+"lat": 48.9076,
+"lng": 1.8387
+},
+"78381": {
+"nom": "Maulette",
+"dep": "78",
+"cp": [
+"78550"
+],
+"pop": 1088,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.7836,
+"lng": 1.616
+},
+"78382": {
+"nom": "Maurecourt",
+"dep": "78",
+"cp": [
+"78780"
+],
+"pop": 4454,
+"groupes": [
+[
+"CA",
+"CA de Cergy-Pontoise"
+]
+],
+"lat": 48.9987,
+"lng": 2.0528
+},
+"78383": {
+"nom": "Maurepas",
+"dep": "78",
+"cp": [
+"78310"
+],
+"pop": 20629,
+"groupes": [
+[
+"CA",
+"CA de Saint Quentin en Yvelines"
+]
+],
+"lat": 48.7702,
+"lng": 1.9238
+},
+"78384": {
+"nom": "Médan",
+"dep": "78",
+"cp": [
+"78670"
+],
+"pop": 1289,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9547,
+"lng": 1.9874
+},
+"78385": {
+"nom": "Ménerville",
+"dep": "78",
+"cp": [
+"78200"
+],
+"pop": 216,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 48.9568,
+"lng": 1.5966
+},
+"78389": {
+"nom": "Méré",
+"dep": "78",
+"cp": [
+"78490"
+],
+"pop": 1731,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.7958,
+"lng": 1.8206
+},
+"78391": {
+"nom": "Méricourt",
+"dep": "78",
+"cp": [
+"78270"
+],
+"pop": 383,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0373,
+"lng": 1.6232
+},
+"78396": {
+"nom": "Le Mesnil-le-Roi",
+"dep": "78",
+"cp": [
+"78600"
+],
+"pop": 6332,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.9269,
+"lng": 2.1224
+},
+"78397": {
+"nom": "Le Mesnil-Saint-Denis",
+"dep": "78",
+"cp": [
+"78320"
+],
+"pop": 7276,
+"groupes": [
+[
+"CC",
+"CC de la Haute Vallée de Chevreuse"
+]
+],
+"lat": 48.7407,
+"lng": 1.9659
+},
+"78398": {
+"nom": "Les Mesnuls",
+"dep": "78",
+"cp": [
+"78490"
+],
+"pop": 910,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.7544,
+"lng": 1.8344
+},
+"78401": {
+"nom": "Meulan-en-Yvelines",
+"dep": "78",
+"cp": [
+"78250"
+],
+"pop": 8950,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0065,
+"lng": 1.9131
+},
+"78402": {
+"nom": "Mézières-sur-Seine",
+"dep": "78",
+"cp": [
+"78970"
+],
+"pop": 3923,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.953,
+"lng": 1.7829
+},
+"78403": {
+"nom": "Mézy-sur-Seine",
+"dep": "78",
+"cp": [
+"78250"
+],
+"pop": 2242,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0038,
+"lng": 1.8699
+},
+"78404": {
+"nom": "Millemont",
+"dep": "78",
+"cp": [
+"78940"
+],
+"pop": 272,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.808,
+"lng": 1.7259
+},
+"78406": {
+"nom": "Milon-la-Chapelle",
+"dep": "78",
+"cp": [
+"78470"
+],
+"pop": 295,
+"groupes": [
+[
+"CC",
+"CC de la Haute Vallée de Chevreuse"
+]
+],
+"lat": 48.7285,
+"lng": 2.0468
+},
+"78407": {
+"nom": "Mittainville",
+"dep": "78",
+"cp": [
+"78125"
+],
+"pop": 659,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.6627,
+"lng": 1.6356
+},
+"78410": {
+"nom": "Moisson",
+"dep": "78",
+"cp": [
+"78840"
+],
+"pop": 902,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 49.0685,
+"lng": 1.6638
+},
+"78413": {
+"nom": "Mondreville",
+"dep": "78",
+"cp": [
+"78980"
+],
+"pop": 381,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.9039,
+"lng": 1.5573
+},
+"78415": {
+"nom": "Montainville",
+"dep": "78",
+"cp": [
+"78124"
+],
+"pop": 589,
+"groupes": [
+[
+"CC",
+"CC Gally Mauldre"
+]
+],
+"lat": 48.8802,
+"lng": 1.8522
+},
+"78416": {
+"nom": "Montalet-le-Bois",
+"dep": "78",
+"cp": [
+"78440"
+],
+"pop": 322,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0484,
+"lng": 1.8299
+},
+"78417": {
+"nom": "Montchauvet",
+"dep": "78",
+"cp": [
+"78790"
+],
+"pop": 275,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.8915,
+"lng": 1.6264
+},
+"78418": {
+"nom": "Montesson",
+"dep": "78",
+"cp": [
+"78360"
+],
+"pop": 14549,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.9173,
+"lng": 2.1398
+},
+"78420": {
+"nom": "Montfort-l'Amaury",
+"dep": "78",
+"cp": [
+"78490"
+],
+"pop": 2779,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.7717,
+"lng": 1.8083
+},
+"78423": {
+"nom": "Montigny-le-Bretonneux",
+"dep": "78",
+"cp": [
+"78180"
+],
+"pop": 32465,
+"groupes": [
+[
+"CA",
+"CA de Saint Quentin en Yvelines"
+]
+],
+"lat": 48.7799,
+"lng": 2.0299
+},
+"78431": {
+"nom": "Morainvilliers",
+"dep": "78",
+"cp": [
+"78630"
+],
+"pop": 3120,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9333,
+"lng": 1.9452
+},
+"78437": {
+"nom": "Mousseaux-sur-Seine",
+"dep": "78",
+"cp": [
+"78270"
+],
+"pop": 689,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0512,
+"lng": 1.65
+},
+"78439": {
+"nom": "Mulcent",
+"dep": "78",
+"cp": [
+"78790"
+],
+"pop": 128,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.8786,
+"lng": 1.652
+},
+"78440": {
+"nom": "Les Mureaux",
+"dep": "78",
+"cp": [
+"78130"
+],
+"pop": 34632,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9893,
+"lng": 1.9139
+},
+"78442": {
+"nom": "Neauphle-le-Château",
+"dep": "78",
+"cp": [
+"78640"
+],
+"pop": 3250,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8125,
+"lng": 1.905
+},
+"78443": {
+"nom": "Neauphle-le-Vieux",
+"dep": "78",
+"cp": [
+"78640"
+],
+"pop": 937,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8157,
+"lng": 1.8587
+},
+"78444": {
+"nom": "Neauphlette",
+"dep": "78",
+"cp": [
+"78980"
+],
+"pop": 871,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 48.9355,
+"lng": 1.5428
+},
+"78451": {
+"nom": "Nézel",
+"dep": "78",
+"cp": [
+"78410"
+],
+"pop": 1139,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9425,
+"lng": 1.8393
+},
+"78455": {
+"nom": "Noisy-le-Roi",
+"dep": "78",
+"cp": [
+"78590"
+],
+"pop": 7713,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.8463,
+"lng": 2.0549
+},
+"78460": {
+"nom": "Oinville-sur-Montcient",
+"dep": "78",
+"cp": [
+"78250"
+],
+"pop": 1131,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0257,
+"lng": 1.8464
+},
+"78464": {
+"nom": "Orcemont",
+"dep": "78",
+"cp": [
+"78125"
+],
+"pop": 985,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.5971,
+"lng": 1.8098
+},
+"78465": {
+"nom": "Orgerus",
+"dep": "78",
+"cp": [
+"78910"
+],
+"pop": 2489,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.8372,
+"lng": 1.6965
+},
+"78466": {
+"nom": "Orgeval",
+"dep": "78",
+"cp": [
+"78630"
+],
+"pop": 7252,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9165,
+"lng": 1.9695
+},
+"78470": {
+"nom": "Orphin",
+"dep": "78",
+"cp": [
+"78125"
+],
+"pop": 875,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.5764,
+"lng": 1.7832
+},
+"78472": {
+"nom": "Orsonville",
+"dep": "78",
+"cp": [
+"78660"
+],
+"pop": 325,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.4776,
+"lng": 1.8269
+},
+"78474": {
+"nom": "Orvilliers",
+"dep": "78",
+"cp": [
+"78910"
+],
+"pop": 925,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.8547,
+"lng": 1.6424
+},
+"78475": {
+"nom": "Osmoy",
+"dep": "78",
+"cp": [
+"78910"
+],
+"pop": 413,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.864,
+"lng": 1.7172
+},
+"78478": {
+"nom": "Paray-Douaville",
+"dep": "78",
+"cp": [
+"78660"
+],
+"pop": 218,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.4599,
+"lng": 1.8633
+},
+"78481": {
+"nom": "Le Pecq",
+"dep": "78",
+"cp": [
+"78230"
+],
+"pop": 16059,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.8937,
+"lng": 2.1051
+},
+"78484": {
+"nom": "Perdreauville",
+"dep": "78",
+"cp": [
+"78200"
+],
+"pop": 701,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9706,
+"lng": 1.6135
+},
+"78486": {
+"nom": "Le Perray-en-Yvelines",
+"dep": "78",
+"cp": [
+"78610"
+],
+"pop": 6480,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.6962,
+"lng": 1.8434
+},
+"78490": {
+"nom": "Plaisir",
+"dep": "78",
+"cp": [
+"78370"
+],
+"pop": 31811,
+"groupes": [
+[
+"CA",
+"CA de Saint Quentin en Yvelines"
+]
+],
+"lat": 48.8126,
+"lng": 1.9469
+},
+"78497": {
+"nom": "Poigny-la-Forêt",
+"dep": "78",
+"cp": [
+"78125"
+],
+"pop": 957,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.683,
+"lng": 1.7541
+},
+"78498": {
+"nom": "Poissy",
+"dep": "78",
+"cp": [
+"78300"
+],
+"pop": 40983,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9236,
+"lng": 2.0276
+},
+"78499": {
+"nom": "Ponthévrard",
+"dep": "78",
+"cp": [
+"78730"
+],
+"pop": 693,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.55,
+"lng": 1.9078
+},
+"78501": {
+"nom": "Porcheville",
+"dep": "78",
+"cp": [
+"78440"
+],
+"pop": 3382,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9758,
+"lng": 1.7685
+},
+"78502": {
+"nom": "Le Port-Marly",
+"dep": "78",
+"cp": [
+"78560"
+],
+"pop": 5559,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.8805,
+"lng": 2.1092
+},
+"78505": {
+"nom": "Prunay-le-Temple",
+"dep": "78",
+"cp": [
+"78910"
+],
+"pop": 409,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.8592,
+"lng": 1.6717
+},
+"78506": {
+"nom": "Prunay-en-Yvelines",
+"dep": "78",
+"cp": [
+"78660"
+],
+"pop": 808,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.5263,
+"lng": 1.8051
+},
+"78513": {
+"nom": "La Queue-les-Yvelines",
+"dep": "78",
+"cp": [
+"78940"
+],
+"pop": 2629,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8024,
+"lng": 1.7683
+},
+"78516": {
+"nom": "Raizeux",
+"dep": "78",
+"cp": [
+"78125"
+],
+"pop": 970,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.6365,
+"lng": 1.6892
+},
+"78517": {
+"nom": "Rambouillet",
+"dep": "78",
+"cp": [
+"78120"
+],
+"pop": 27724,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.6535,
+"lng": 1.8264
+},
+"78518": {
+"nom": "Rennemoulin",
+"dep": "78",
+"cp": [
+"78590"
+],
+"pop": 116,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.833,
+"lng": 2.0423
+},
+"78520": {
+"nom": "Richebourg",
+"dep": "78",
+"cp": [
+"78550"
+],
+"pop": 1570,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.8248,
+"lng": 1.6348
+},
+"78522": {
+"nom": "Rochefort-en-Yvelines",
+"dep": "78",
+"cp": [
+"78730"
+],
+"pop": 910,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.592,
+"lng": 1.9794
+},
+"78528": {
+"nom": "Rolleboise",
+"dep": "78",
+"cp": [
+"78270"
+],
+"pop": 346,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0194,
+"lng": 1.6017
+},
+"78530": {
+"nom": "Rosay",
+"dep": "78",
+"cp": [
+"78790"
+],
+"pop": 387,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.9109,
+"lng": 1.6839
+},
+"78531": {
+"nom": "Rosny-sur-Seine",
+"dep": "78",
+"cp": [
+"78710"
+],
+"pop": 7328,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9964,
+"lng": 1.6079
+},
+"78536": {
+"nom": "Sailly",
+"dep": "78",
+"cp": [
+"78440"
+],
+"pop": 354,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0429,
+"lng": 1.7937
+},
+"78537": {
+"nom": "Saint-Arnoult-en-Yvelines",
+"dep": "78",
+"cp": [
+"78730"
+],
+"pop": 5875,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.5727,
+"lng": 1.9342
+},
+"78545": {
+"nom": "Saint-Cyr-l'École",
+"dep": "78",
+"cp": [
+"78210"
+],
+"pop": 21268,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.8065,
+"lng": 2.0656
+},
+"78548": {
+"nom": "Saint-Forget",
+"dep": "78",
+"cp": [
+"78720"
+],
+"pop": 436,
+"groupes": [
+[
+"CC",
+"CC de la Haute Vallée de Chevreuse"
+]
+],
+"lat": 48.7129,
+"lng": 1.9971
+},
+"78550": {
+"nom": "Saint-Germain-de-la-Grange",
+"dep": "78",
+"cp": [
+"78640"
+],
+"pop": 1847,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8327,
+"lng": 1.9023
+},
+"78551": {
+"nom": "Saint-Germain-en-Laye",
+"dep": "78",
+"cp": [
+"78100",
+"78112"
+],
+"pop": 45931,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.9411,
+"lng": 2.0993
+},
+"78557": {
+"nom": "Saint-Hilarion",
+"dep": "78",
+"cp": [
+"78125"
+],
+"pop": 999,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.6227,
+"lng": 1.7287
+},
+"78558": {
+"nom": "Saint-Illiers-la-Ville",
+"dep": "78",
+"cp": [
+"78980"
+],
+"pop": 350,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 48.9778,
+"lng": 1.5441
+},
+"78559": {
+"nom": "Saint-Illiers-le-Bois",
+"dep": "78",
+"cp": [
+"78980"
+],
+"pop": 449,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 48.965,
+"lng": 1.5105
+},
+"78561": {
+"nom": "Saint-Lambert",
+"dep": "78",
+"cp": [
+"78470"
+],
+"pop": 447,
+"groupes": [
+[
+"CC",
+"CC de la Haute Vallée de Chevreuse"
+]
+],
+"lat": 48.7339,
+"lng": 2.0065
+},
+"78562": {
+"nom": "Saint-Léger-en-Yvelines",
+"dep": "78",
+"cp": [
+"78610"
+],
+"pop": 1468,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.7301,
+"lng": 1.7599
+},
+"78564": {
+"nom": "Saint-Martin-de-Bréthencourt",
+"dep": "78",
+"cp": [
+"78660"
+],
+"pop": 690,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.5148,
+"lng": 1.9154
+},
+"78565": {
+"nom": "Saint-Martin-des-Champs",
+"dep": "78",
+"cp": [
+"78790"
+],
+"pop": 304,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.878,
+"lng": 1.7194
+},
+"78567": {
+"nom": "Saint-Martin-la-Garenne",
+"dep": "78",
+"cp": [
+"78520"
+],
+"pop": 942,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.036,
+"lng": 1.6771
+},
+"78569": {
+"nom": "Sainte-Mesme",
+"dep": "78",
+"cp": [
+"78730"
+],
+"pop": 904,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.5357,
+"lng": 1.9411
+},
+"78571": {
+"nom": "Saint-Nom-la-Bretèche",
+"dep": "78",
+"cp": [
+"78860"
+],
+"pop": 4965,
+"groupes": [
+[
+"CC",
+"CC Gally Mauldre"
+]
+],
+"lat": 48.8632,
+"lng": 2.019
+},
+"78575": {
+"nom": "Saint-Rémy-lès-Chevreuse",
+"dep": "78",
+"cp": [
+"78470"
+],
+"pop": 7747,
+"groupes": [
+[
+"CC",
+"CC de la Haute Vallée de Chevreuse"
+]
+],
+"lat": 48.7041,
+"lng": 2.0793
+},
+"78576": {
+"nom": "Saint-Rémy-l'Honoré",
+"dep": "78",
+"cp": [
+"78690"
+],
+"pop": 1689,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.7486,
+"lng": 1.8758
+},
+"78586": {
+"nom": "Sartrouville",
+"dep": "78",
+"cp": [
+"78500"
+],
+"pop": 52763,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.9397,
+"lng": 2.1744
+},
+"78588": {
+"nom": "Saulx-Marchais",
+"dep": "78",
+"cp": [
+"78650"
+],
+"pop": 950,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8461,
+"lng": 1.837
+},
+"78590": {
+"nom": "Senlisse",
+"dep": "78",
+"cp": [
+"78720"
+],
+"pop": 511,
+"groupes": [
+[
+"CC",
+"CC de la Haute Vallée de Chevreuse"
+]
+],
+"lat": 48.6854,
+"lng": 1.9719
+},
+"78591": {
+"nom": "Septeuil",
+"dep": "78",
+"cp": [
+"78790"
+],
+"pop": 2264,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.8879,
+"lng": 1.6842
+},
+"78597": {
+"nom": "Soindres",
+"dep": "78",
+"cp": [
+"78200"
+],
+"pop": 757,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9537,
+"lng": 1.6714
+},
+"78601": {
+"nom": "Sonchamp",
+"dep": "78",
+"cp": [
+"78120"
+],
+"pop": 1678,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.588,
+"lng": 1.8687
+},
+"78605": {
+"nom": "Tacoignières",
+"dep": "78",
+"cp": [
+"78910"
+],
+"pop": 1219,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.8327,
+"lng": 1.6653
+},
+"78606": {
+"nom": "Le Tartre-Gaudran",
+"dep": "78",
+"cp": [
+"78113"
+],
+"pop": 37,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.6968,
+"lng": 1.6036
+},
+"78608": {
+"nom": "Le Tertre-Saint-Denis",
+"dep": "78",
+"cp": [
+"78980"
+],
+"pop": 137,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9427,
+"lng": 1.6075
+},
+"78609": {
+"nom": "Tessancourt-sur-Aubette",
+"dep": "78",
+"cp": [
+"78250"
+],
+"pop": 966,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0255,
+"lng": 1.9188
+},
+"78615": {
+"nom": "Thiverval-Grignon",
+"dep": "78",
+"cp": [
+"78850"
+],
+"pop": 1023,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8442,
+"lng": 1.9327
+},
+"78616": {
+"nom": "Thoiry",
+"dep": "78",
+"cp": [
+"78770"
+],
+"pop": 1434,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8725,
+"lng": 1.7982
+},
+"78618": {
+"nom": "Tilly",
+"dep": "78",
+"cp": [
+"78790"
+],
+"pop": 530,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.8776,
+"lng": 1.5751
+},
+"78620": {
+"nom": "Toussus-le-Noble",
+"dep": "78",
+"cp": [
+"78117"
+],
+"pop": 1172,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.747,
+"lng": 2.1179
+},
+"78621": {
+"nom": "Trappes",
+"dep": "78",
+"cp": [
+"78190"
+],
+"pop": 34689,
+"groupes": [
+[
+"CA",
+"CA de Saint Quentin en Yvelines"
+]
+],
+"lat": 48.7757,
+"lng": 1.994
+},
+"78623": {
+"nom": "Le Tremblay-sur-Mauldre",
+"dep": "78",
+"cp": [
+"78490"
+],
+"pop": 930,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.7831,
+"lng": 1.8776
+},
+"78624": {
+"nom": "Triel-sur-Seine",
+"dep": "78",
+"cp": [
+"78510"
+],
+"pop": 12206,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9784,
+"lng": 2.0084
+},
+"78638": {
+"nom": "Vaux-sur-Seine",
+"dep": "78",
+"cp": [
+"78740"
+],
+"pop": 5202,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 49.0097,
+"lng": 1.9742
+},
+"78640": {
+"nom": "Vélizy-Villacoublay",
+"dep": "78",
+"cp": [
+"78140"
+],
+"pop": 23011,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.7838,
+"lng": 2.1973
+},
+"78642": {
+"nom": "Verneuil-sur-Seine",
+"dep": "78",
+"cp": [
+"78480"
+],
+"pop": 16280,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.987,
+"lng": 1.9631
+},
+"78643": {
+"nom": "Vernouillet",
+"dep": "78",
+"cp": [
+"78540"
+],
+"pop": 9699,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9651,
+"lng": 1.9746
+},
+"78644": {
+"nom": "La Verrière",
+"dep": "78",
+"cp": [
+"78320"
+],
+"pop": 5994,
+"groupes": [
+[
+"CA",
+"CA de Saint Quentin en Yvelines"
+]
+],
+"lat": 48.7539,
+"lng": 1.9508
+},
+"78646": {
+"nom": "Versailles",
+"dep": "78",
+"cp": [
+"78000"
+],
+"pop": 84095,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.8023,
+"lng": 2.1175
+},
+"78647": {
+"nom": "Vert",
+"dep": "78",
+"cp": [
+"78930"
+],
+"pop": 852,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9405,
+"lng": 1.6829
+},
+"78650": {
+"nom": "Le Vésinet",
+"dep": "78",
+"cp": [
+"78110"
+],
+"pop": 15554,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.8936,
+"lng": 2.1302
+},
+"78653": {
+"nom": "Vicq",
+"dep": "78",
+"cp": [
+"78490"
+],
+"pop": 389,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8217,
+"lng": 1.8274
+},
+"78655": {
+"nom": "Vieille-Église-en-Yvelines",
+"dep": "78",
+"cp": [
+"78125"
+],
+"pop": 652,
+"groupes": [
+[
+"CA",
+"CA Rambouillet Territoires"
+]
+],
+"lat": 48.6701,
+"lng": 1.8743
+},
+"78668": {
+"nom": "La Villeneuve-en-Chevrie",
+"dep": "78",
+"cp": [
+"78270"
+],
+"pop": 665,
+"groupes": [
+[
+"CC",
+"CC Les Portes de l'Ile de France"
+]
+],
+"lat": 49.0168,
+"lng": 1.5309
+},
+"78672": {
+"nom": "Villennes-sur-Seine",
+"dep": "78",
+"cp": [
+"78670"
+],
+"pop": 5952,
+"groupes": [
+[
+"CU",
+"CU Grand Paris Seine et Oise"
+]
+],
+"lat": 48.9367,
+"lng": 1.9959
+},
+"78674": {
+"nom": "Villepreux",
+"dep": "78",
+"cp": [
+"78450"
+],
+"pop": 11931,
+"groupes": [
+[
+"CA",
+"CA de Saint Quentin en Yvelines"
+]
+],
+"lat": 48.8311,
+"lng": 2.0125
+},
+"78677": {
+"nom": "Villette",
+"dep": "78",
+"cp": [
+"78930"
+],
+"pop": 524,
+"groupes": [
+[
+"CC",
+"CC du Pays Houdanais (CCPH)"
+]
+],
+"lat": 48.9265,
+"lng": 1.6937
+},
+"78681": {
+"nom": "Villiers-le-Mahieu",
+"dep": "78",
+"cp": [
+"78770"
+],
+"pop": 888,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8537,
+"lng": 1.7738
+},
+"78683": {
+"nom": "Villiers-Saint-Frédéric",
+"dep": "78",
+"cp": [
+"78640"
+],
+"pop": 3395,
+"groupes": [
+[
+"CC",
+"CC Coeur d'Yvelines"
+]
+],
+"lat": 48.8204,
+"lng": 1.8828
+},
+"78686": {
+"nom": "Viroflay",
+"dep": "78",
+"cp": [
+"78220"
+],
+"pop": 17237,
+"groupes": [
+[
+"CA",
+"CA Versailles Grand Parc (CAVGP)"
+]
+],
+"lat": 48.8027,
+"lng": 2.1713
+},
+"78688": {
+"nom": "Voisins-le-Bretonneux",
+"dep": "78",
+"cp": [
+"78960"
+],
+"pop": 10624,
+"groupes": [
+[
+"CA",
+"CA de Saint Quentin en Yvelines"
+]
+],
+"lat": 48.7589,
+"lng": 2.0485
+},
+"95002": {
+"nom": "Ableiges",
+"dep": "95",
+"cp": [
+"95450"
+],
+"pop": 1108,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.0853,
+"lng": 1.9747
+},
+"95008": {
+"nom": "Aincourt",
+"dep": "95",
+"cp": [
+"95510"
+],
+"pop": 854,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.0725,
+"lng": 1.7737
+},
+"95011": {
+"nom": "Ambleville",
+"dep": "95",
+"cp": [
+"95420",
+"95710"
+],
+"pop": 388,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.1506,
+"lng": 1.6947
+},
+"95012": {
+"nom": "Amenucourt",
+"dep": "95",
+"cp": [
+"95510"
+],
+"pop": 212,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.1101,
+"lng": 1.6496
+},
+"95014": {
+"nom": "Andilly",
+"dep": "95",
+"cp": [
+"95580"
+],
+"pop": 2742,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 49.0081,
+"lng": 2.3031
+},
+"95018": {
+"nom": "Argenteuil",
+"dep": "95",
+"cp": [
+"95100"
+],
+"pop": 106130,
+"groupes": [
+[
+"METRO",
+"Métropole du Grand Paris"
+],
+[
+"EPT",
+"Boucle Nord de Seine"
+]
+],
+"lat": 48.9515,
+"lng": 2.2403
+},
+"95019": {
+"nom": "Arnouville",
+"dep": "95",
+"cp": [
+"95400"
+],
+"pop": 15023,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 48.9861,
+"lng": 2.417
+},
+"95023": {
+"nom": "Arronville",
+"dep": "95",
+"cp": [
+"95810"
+],
+"pop": 618,
+"groupes": [
+[
+"CC",
+"CC Sausseron Impressionnistes"
+]
+],
+"lat": 49.1745,
+"lng": 2.1136
+},
+"95024": {
+"nom": "Arthies",
+"dep": "95",
+"cp": [
+"95420"
+],
+"pop": 265,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.0951,
+"lng": 1.7971
+},
+"95026": {
+"nom": "Asnières-sur-Oise",
+"dep": "95",
+"cp": [
+"95270"
+],
+"pop": 3127,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.1408,
+"lng": 2.3796
+},
+"95028": {
+"nom": "Attainville",
+"dep": "95",
+"cp": [
+"95570"
+],
+"pop": 1904,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 49.0603,
+"lng": 2.3508
+},
+"95039": {
+"nom": "Auvers-sur-Oise",
+"dep": "95",
+"cp": [
+"95430"
+],
+"pop": 6863,
+"groupes": [
+[
+"CC",
+"CC Sausseron Impressionnistes"
+]
+],
+"lat": 49.0807,
+"lng": 2.1545
+},
+"95040": {
+"nom": "Avernes",
+"dep": "95",
+"cp": [
+"95450"
+],
+"pop": 871,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.0914,
+"lng": 1.8668
+},
+"95042": {
+"nom": "Baillet-en-France",
+"dep": "95",
+"cp": [
+"95560"
+],
+"pop": 2021,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.0586,
+"lng": 2.3026
+},
+"95046": {
+"nom": "Banthelu",
+"dep": "95",
+"cp": [
+"95420"
+],
+"pop": 146,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.126,
+"lng": 1.8152
+},
+"95051": {
+"nom": "Beauchamp",
+"dep": "95",
+"cp": [
+"95250"
+],
+"pop": 9849,
+"groupes": [
+[
+"CA",
+"CA Val Parisis"
+]
+],
+"lat": 49.0151,
+"lng": 2.1917
+},
+"95052": {
+"nom": "Beaumont-sur-Oise",
+"dep": "95",
+"cp": [
+"95260"
+],
+"pop": 10232,
+"groupes": [
+[
+"CC",
+"CC du Haut Val d'Oise"
+]
+],
+"lat": 49.1403,
+"lng": 2.3003
+},
+"95054": {
+"nom": "Le Bellay-en-Vexin",
+"dep": "95",
+"cp": [
+"95750"
+],
+"pop": 224,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1496,
+"lng": 1.8777
+},
+"95055": {
+"nom": "Bellefontaine",
+"dep": "95",
+"cp": [
+"95270"
+],
+"pop": 474,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.0926,
+"lng": 2.4697
+},
+"95056": {
+"nom": "Belloy-en-France",
+"dep": "95",
+"cp": [
+"95270"
+],
+"pop": 2250,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.0922,
+"lng": 2.3714
+},
+"95058": {
+"nom": "Bernes-sur-Oise",
+"dep": "95",
+"cp": [
+"95340"
+],
+"pop": 2684,
+"groupes": [
+[
+"CC",
+"CC du Haut Val d'Oise"
+]
+],
+"lat": 49.1655,
+"lng": 2.3019
+},
+"95059": {
+"nom": "Berville",
+"dep": "95",
+"cp": [
+"95810"
+],
+"pop": 374,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1923,
+"lng": 2.0702
+},
+"95060": {
+"nom": "Bessancourt",
+"dep": "95",
+"cp": [
+"95550"
+],
+"pop": 8869,
+"groupes": [
+[
+"CA",
+"CA Val Parisis"
+]
+],
+"lat": 49.0375,
+"lng": 2.1989
+},
+"95061": {
+"nom": "Béthemont-la-Forêt",
+"dep": "95",
+"cp": [
+"95840"
+],
+"pop": 435,
+"groupes": [
+[
+"CC",
+"CC de la Vallée de l'Oise et des Trois Forêts"
+]
+],
+"lat": 49.0544,
+"lng": 2.2513
+},
+"95063": {
+"nom": "Bezons",
+"dep": "95",
+"cp": [
+"95870"
+],
+"pop": 36434,
+"groupes": [
+[
+"CA",
+"CA Saint Germain Boucles de Seine"
+]
+],
+"lat": 48.9261,
+"lng": 2.2118
+},
+"95074": {
+"nom": "Boisemont",
+"dep": "95",
+"cp": [
+"95000"
+],
+"pop": 892,
+"groupes": [
+[
+"CA",
+"CA de Cergy-Pontoise"
+]
+],
+"lat": 49.019,
+"lng": 2.0041
+},
+"95078": {
+"nom": "Boissy-l'Aillerie",
+"dep": "95",
+"cp": [
+"95650"
+],
+"pop": 2120,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.0833,
+"lng": 2.0323
+},
+"95088": {
+"nom": "Bonneuil-en-France",
+"dep": "95",
+"cp": [
+"95500"
+],
+"pop": 1185,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 48.9656,
+"lng": 2.4351
+},
+"95091": {
+"nom": "Bouffémont",
+"dep": "95",
+"cp": [
+"95570"
+],
+"pop": 6593,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 49.0415,
+"lng": 2.2983
+},
+"95094": {
+"nom": "Bouqueval",
+"dep": "95",
+"cp": [
+"95720"
+],
+"pop": 314,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0222,
+"lng": 2.4297
+},
+"95101": {
+"nom": "Bray-et-Lû",
+"dep": "95",
+"cp": [
+"95710"
+],
+"pop": 954,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.1424,
+"lng": 1.6655
+},
+"95102": {
+"nom": "Bréançon",
+"dep": "95",
+"cp": [
+"95640"
+],
+"pop": 432,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1491,
+"lng": 2.0231
+},
+"95110": {
+"nom": "Brignancourt",
+"dep": "95",
+"cp": [
+"95640"
+],
+"pop": 262,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1394,
+"lng": 1.9439
+},
+"95116": {
+"nom": "Bruyères-sur-Oise",
+"dep": "95",
+"cp": [
+"95820"
+],
+"pop": 4921,
+"groupes": [
+[
+"CC",
+"CC du Haut Val d'Oise"
+]
+],
+"lat": 49.1605,
+"lng": 2.3298
+},
+"95119": {
+"nom": "Buhy",
+"dep": "95",
+"cp": [
+"95770"
+],
+"pop": 329,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.1922,
+"lng": 1.7022
+},
+"95120": {
+"nom": "Butry-sur-Oise",
+"dep": "95",
+"cp": [
+"95430"
+],
+"pop": 2252,
+"groupes": [
+[
+"CC",
+"CC Sausseron Impressionnistes"
+]
+],
+"lat": 49.0838,
+"lng": 2.1914
+},
+"95127": {
+"nom": "Cergy",
+"dep": "95",
+"cp": [
+"95000",
+"95800"
+],
+"pop": 70906,
+"groupes": [
+[
+"CA",
+"CA de Cergy-Pontoise"
+]
+],
+"lat": 49.0399,
+"lng": 2.0512
+},
+"95134": {
+"nom": "Champagne-sur-Oise",
+"dep": "95",
+"cp": [
+"95660"
+],
+"pop": 5036,
+"groupes": [
+[
+"CC",
+"CC du Haut Val d'Oise"
+]
+],
+"lat": 49.1425,
+"lng": 2.2282
+},
+"95139": {
+"nom": "La Chapelle-en-Vexin",
+"dep": "95",
+"cp": [
+"95420"
+],
+"pop": 320,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.1841,
+"lng": 1.7283
+},
+"95141": {
+"nom": "Charmont",
+"dep": "95",
+"cp": [
+"95420"
+],
+"pop": 32,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.1377,
+"lng": 1.7904
+},
+"95142": {
+"nom": "Chars",
+"dep": "95",
+"cp": [
+"95750"
+],
+"pop": 2006,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1578,
+"lng": 1.9309
+},
+"95144": {
+"nom": "Châtenay-en-France",
+"dep": "95",
+"cp": [
+"95190"
+],
+"pop": 68,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.0648,
+"lng": 2.4631
+},
+"95149": {
+"nom": "Chaumontel",
+"dep": "95",
+"cp": [
+"95270"
+],
+"pop": 3332,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.1285,
+"lng": 2.436
+},
+"95150": {
+"nom": "Chaussy",
+"dep": "95",
+"cp": [
+"95710"
+],
+"pop": 631,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.1132,
+"lng": 1.7036
+},
+"95151": {
+"nom": "Chauvry",
+"dep": "95",
+"cp": [
+"95560"
+],
+"pop": 297,
+"groupes": [
+[
+"CC",
+"CC de la Vallée de l'Oise et des Trois Forêts"
+]
+],
+"lat": 49.0535,
+"lng": 2.2693
+},
+"95154": {
+"nom": "Chennevières-lès-Louvres",
+"dep": "95",
+"cp": [
+"95380"
+],
+"pop": 282,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0421,
+"lng": 2.5467
+},
+"95157": {
+"nom": "Chérence",
+"dep": "95",
+"cp": [
+"95510"
+],
+"pop": 137,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.0915,
+"lng": 1.6815
+},
+"95166": {
+"nom": "Cléry-en-Vexin",
+"dep": "95",
+"cp": [
+"95420"
+],
+"pop": 476,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1313,
+"lng": 1.8488
+},
+"95169": {
+"nom": "Commeny",
+"dep": "95",
+"cp": [
+"95450"
+],
+"pop": 646,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1265,
+"lng": 1.8882
+},
+"95170": {
+"nom": "Condécourt",
+"dep": "95",
+"cp": [
+"95450"
+],
+"pop": 564,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.0378,
+"lng": 1.9373
+},
+"95176": {
+"nom": "Cormeilles-en-Parisis",
+"dep": "95",
+"cp": [
+"95240"
+],
+"pop": 27292,
+"groupes": [
+[
+"CA",
+"CA Val Parisis"
+]
+],
+"lat": 48.9686,
+"lng": 2.1992
+},
+"95177": {
+"nom": "Cormeilles-en-Vexin",
+"dep": "95",
+"cp": [
+"95830"
+],
+"pop": 1297,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1134,
+"lng": 2.0193
+},
+"95181": {
+"nom": "Courcelles-sur-Viosne",
+"dep": "95",
+"cp": [
+"95650"
+],
+"pop": 310,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.0726,
+"lng": 1.9963
+},
+"95183": {
+"nom": "Courdimanche",
+"dep": "95",
+"cp": [
+"95800"
+],
+"pop": 7311,
+"groupes": [
+[
+"CA",
+"CA de Cergy-Pontoise"
+]
+],
+"lat": 49.0411,
+"lng": 1.9987
+},
+"95197": {
+"nom": "Deuil-la-Barre",
+"dep": "95",
+"cp": [
+"95170"
+],
+"pop": 23099,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 48.9717,
+"lng": 2.3265
+},
+"95199": {
+"nom": "Domont",
+"dep": "95",
+"cp": [
+"95330"
+],
+"pop": 16065,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 49.03,
+"lng": 2.3233
+},
+"95203": {
+"nom": "Eaubonne",
+"dep": "95",
+"cp": [
+"95600"
+],
+"pop": 26211,
+"groupes": [
+[
+"CA",
+"CA Val Parisis"
+]
+],
+"lat": 48.9911,
+"lng": 2.2777
+},
+"95205": {
+"nom": "Écouen",
+"dep": "95",
+"cp": [
+"95440"
+],
+"pop": 7202,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0259,
+"lng": 2.3846
+},
+"95210": {
+"nom": "Enghien-les-Bains",
+"dep": "95",
+"cp": [
+"95880"
+],
+"pop": 11432,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 48.9696,
+"lng": 2.3049
+},
+"95211": {
+"nom": "Ennery",
+"dep": "95",
+"cp": [
+"95300"
+],
+"pop": 2243,
+"groupes": [
+[
+"CC",
+"CC Sausseron Impressionnistes"
+]
+],
+"lat": 49.0778,
+"lng": 2.1091
+},
+"95212": {
+"nom": "Épiais-lès-Louvres",
+"dep": "95",
+"cp": [
+"95380"
+],
+"pop": 156,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0305,
+"lng": 2.5489
+},
+"95213": {
+"nom": "Épiais-Rhus",
+"dep": "95",
+"cp": [
+"95810"
+],
+"pop": 603,
+"groupes": [
+[
+"CC",
+"CC Sausseron Impressionnistes"
+]
+],
+"lat": 49.1237,
+"lng": 2.0733
+},
+"95214": {
+"nom": "Épinay-Champlâtreux",
+"dep": "95",
+"cp": [
+"95270"
+],
+"pop": 57,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.0905,
+"lng": 2.4065
+},
+"95218": {
+"nom": "Éragny-sur-Oise",
+"dep": "95",
+"cp": [
+"95610"
+],
+"pop": 18436,
+"groupes": [
+[
+"CA",
+"CA de Cergy-Pontoise"
+]
+],
+"lat": 49.0206,
+"lng": 2.1017
+},
+"95219": {
+"nom": "Ermont",
+"dep": "95",
+"cp": [
+"95120"
+],
+"pop": 29489,
+"groupes": [
+[
+"CA",
+"CA Val Parisis"
+]
+],
+"lat": 48.9879,
+"lng": 2.2567
+},
+"95229": {
+"nom": "Ézanville",
+"dep": "95",
+"cp": [
+"95460"
+],
+"pop": 9858,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 49.0385,
+"lng": 2.3624
+},
+"95241": {
+"nom": "Fontenay-en-Parisis",
+"dep": "95",
+"cp": [
+"95190"
+],
+"pop": 2219,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0499,
+"lng": 2.4458
+},
+"95250": {
+"nom": "Fosses",
+"dep": "95",
+"cp": [
+"95470"
+],
+"pop": 10570,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0998,
+"lng": 2.4994
+},
+"95252": {
+"nom": "Franconville",
+"dep": "95",
+"cp": [
+"95130"
+],
+"pop": 37754,
+"groupes": [
+[
+"CA",
+"CA Val Parisis"
+]
+],
+"lat": 48.9884,
+"lng": 2.2242
+},
+"95253": {
+"nom": "Frémainville",
+"dep": "95",
+"cp": [
+"95450"
+],
+"pop": 507,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.0663,
+"lng": 1.8703
+},
+"95254": {
+"nom": "Frémécourt",
+"dep": "95",
+"cp": [
+"95830"
+],
+"pop": 526,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.123,
+"lng": 1.9931
+},
+"95256": {
+"nom": "Frépillon",
+"dep": "95",
+"cp": [
+"95740"
+],
+"pop": 3317,
+"groupes": [
+[
+"CA",
+"CA Val Parisis"
+]
+],
+"lat": 49.05,
+"lng": 2.2053
+},
+"95257": {
+"nom": "La Frette-sur-Seine",
+"dep": "95",
+"cp": [
+"95530"
+],
+"pop": 4570,
+"groupes": [
+[
+"CA",
+"CA Val Parisis"
+]
+],
+"lat": 48.975,
+"lng": 2.178
+},
+"95258": {
+"nom": "Frouville",
+"dep": "95",
+"cp": [
+"95690"
+],
+"pop": 347,
+"groupes": [
+[
+"CC",
+"CC Sausseron Impressionnistes"
+]
+],
+"lat": 49.1577,
+"lng": 2.1466
+},
+"95268": {
+"nom": "Garges-lès-Gonesse",
+"dep": "95",
+"cp": [
+"95140"
+],
+"pop": 41791,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 48.9703,
+"lng": 2.4046
+},
+"95270": {
+"nom": "Genainville",
+"dep": "95",
+"cp": [
+"95420"
+],
+"pop": 522,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.117,
+"lng": 1.7545
+},
+"95271": {
+"nom": "Génicourt",
+"dep": "95",
+"cp": [
+"95650"
+],
+"pop": 514,
+"groupes": [
+[
+"CC",
+"CC Sausseron Impressionnistes"
+]
+],
+"lat": 49.095,
+"lng": 2.0605
+},
+"95277": {
+"nom": "Gonesse",
+"dep": "95",
+"cp": [
+"95500"
+],
+"pop": 27707,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 48.9863,
+"lng": 2.4576
+},
+"95280": {
+"nom": "Goussainville",
+"dep": "95",
+"cp": [
+"95190"
+],
+"pop": 31301,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0246,
+"lng": 2.4661
+},
+"95287": {
+"nom": "Grisy-les-Plâtres",
+"dep": "95",
+"cp": [
+"95810"
+],
+"pop": 709,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1332,
+"lng": 2.0482
+},
+"95288": {
+"nom": "Groslay",
+"dep": "95",
+"cp": [
+"95410"
+],
+"pop": 8453,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 48.9854,
+"lng": 2.3505
+},
+"95295": {
+"nom": "Guiry-en-Vexin",
+"dep": "95",
+"cp": [
+"95450"
+],
+"pop": 161,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1154,
+"lng": 1.8567
+},
+"95298": {
+"nom": "Haravilliers",
+"dep": "95",
+"cp": [
+"95640"
+],
+"pop": 589,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1749,
+"lng": 2.0369
+},
+"95301": {
+"nom": "Haute-Isle",
+"dep": "95",
+"cp": [
+"95780"
+],
+"pop": 293,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.0837,
+"lng": 1.6626
+},
+"95303": {
+"nom": "Le Heaulme",
+"dep": "95",
+"cp": [
+"95640"
+],
+"pop": 207,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1669,
+"lng": 2.0004
+},
+"95304": {
+"nom": "Hédouville",
+"dep": "95",
+"cp": [
+"95690"
+],
+"pop": 278,
+"groupes": [
+[
+"CC",
+"CC Sausseron Impressionnistes"
+]
+],
+"lat": 49.1579,
+"lng": 2.1771
+},
+"95306": {
+"nom": "Herblay-sur-Seine",
+"dep": "95",
+"cp": [
+"95220"
+],
+"pop": 31779,
+"groupes": [
+[
+"CA",
+"CA Val Parisis"
+]
+],
+"lat": 49.0006,
+"lng": 2.1502
+},
+"95308": {
+"nom": "Hérouville-en-Vexin",
+"dep": "95",
+"cp": [
+"95300"
+],
+"pop": 584,
+"groupes": [
+[
+"CC",
+"CC Sausseron Impressionnistes"
+]
+],
+"lat": 49.1046,
+"lng": 2.1273
+},
+"95309": {
+"nom": "Hodent",
+"dep": "95",
+"cp": [
+"95420"
+],
+"pop": 225,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.1425,
+"lng": 1.7627
+},
+"95313": {
+"nom": "L'Isle-Adam",
+"dep": "95",
+"cp": [
+"95290"
+],
+"pop": 12493,
+"groupes": [
+[
+"CC",
+"CC de la Vallée de l'Oise et des Trois Forêts"
+]
+],
+"lat": 49.1075,
+"lng": 2.2345
+},
+"95316": {
+"nom": "Jagny-sous-Bois",
+"dep": "95",
+"cp": [
+"95850"
+],
+"pop": 269,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.0811,
+"lng": 2.4437
+},
+"95323": {
+"nom": "Jouy-le-Moutier",
+"dep": "95",
+"cp": [
+"95280"
+],
+"pop": 17854,
+"groupes": [
+[
+"CA",
+"CA de Cergy-Pontoise"
+]
+],
+"lat": 49.011,
+"lng": 2.0335
+},
+"95328": {
+"nom": "Labbeville",
+"dep": "95",
+"cp": [
+"95690"
+],
+"pop": 641,
+"groupes": [
+[
+"CC",
+"CC Sausseron Impressionnistes"
+]
+],
+"lat": 49.1339,
+"lng": 2.1345
+},
+"95331": {
+"nom": "Lassy",
+"dep": "95",
+"cp": [
+"95270"
+],
+"pop": 196,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.0947,
+"lng": 2.4378
+},
+"95341": {
+"nom": "Livilliers",
+"dep": "95",
+"cp": [
+"95300"
+],
+"pop": 389,
+"groupes": [
+[
+"CC",
+"CC Sausseron Impressionnistes"
+]
+],
+"lat": 49.1001,
+"lng": 2.0939
+},
+"95348": {
+"nom": "Longuesse",
+"dep": "95",
+"cp": [
+"95450"
+],
+"pop": 496,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.0619,
+"lng": 1.927
+},
+"95351": {
+"nom": "Louvres",
+"dep": "95",
+"cp": [
+"95380"
+],
+"pop": 12560,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0422,
+"lng": 2.504
+},
+"95352": {
+"nom": "Luzarches",
+"dep": "95",
+"cp": [
+"95270"
+],
+"pop": 5008,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.1154,
+"lng": 2.4409
+},
+"95353": {
+"nom": "Maffliers",
+"dep": "95",
+"cp": [
+"95560"
+],
+"pop": 1856,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.0839,
+"lng": 2.3119
+},
+"95355": {
+"nom": "Magny-en-Vexin",
+"dep": "95",
+"cp": [
+"95420"
+],
+"pop": 5779,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.1592,
+"lng": 1.8104
+},
+"95365": {
+"nom": "Mareil-en-France",
+"dep": "95",
+"cp": [
+"95850"
+],
+"pop": 734,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.07,
+"lng": 2.4176
+},
+"95369": {
+"nom": "Margency",
+"dep": "95",
+"cp": [
+"95580"
+],
+"pop": 3012,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 49.0015,
+"lng": 2.2892
+},
+"95370": {
+"nom": "Marines",
+"dep": "95",
+"cp": [
+"95640"
+],
+"pop": 3594,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1476,
+"lng": 1.9837
+},
+"95371": {
+"nom": "Marly-la-Ville",
+"dep": "95",
+"cp": [
+"95670"
+],
+"pop": 6022,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0808,
+"lng": 2.5091
+},
+"95379": {
+"nom": "Maudétour-en-Vexin",
+"dep": "95",
+"cp": [
+"95420"
+],
+"pop": 208,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.1093,
+"lng": 1.7768
+},
+"95387": {
+"nom": "Menouville",
+"dep": "95",
+"cp": [
+"95810"
+],
+"pop": 62,
+"groupes": [
+[
+"CC",
+"CC Sausseron Impressionnistes"
+]
+],
+"lat": 49.1537,
+"lng": 2.1067
+},
+"95388": {
+"nom": "Menucourt",
+"dep": "95",
+"cp": [
+"95180"
+],
+"pop": 6184,
+"groupes": [
+[
+"CA",
+"CA de Cergy-Pontoise"
+]
+],
+"lat": 49.0275,
+"lng": 1.9757
+},
+"95392": {
+"nom": "Mériel",
+"dep": "95",
+"cp": [
+"95630"
+],
+"pop": 5347,
+"groupes": [
+[
+"CC",
+"CC de la Vallée de l'Oise et des Trois Forêts"
+]
+],
+"lat": 49.0772,
+"lng": 2.2134
+},
+"95394": {
+"nom": "Méry-sur-Oise",
+"dep": "95",
+"cp": [
+"95540"
+],
+"pop": 9983,
+"groupes": [
+[
+"CC",
+"CC de la Vallée de l'Oise et des Trois Forêts"
+]
+],
+"lat": 49.055,
+"lng": 2.1743
+},
+"95395": {
+"nom": "Le Mesnil-Aubry",
+"dep": "95",
+"cp": [
+"95720"
+],
+"pop": 914,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0538,
+"lng": 2.3921
+},
+"95409": {
+"nom": "Moisselles",
+"dep": "95",
+"cp": [
+"95570"
+],
+"pop": 1261,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 49.0459,
+"lng": 2.3377
+},
+"95422": {
+"nom": "Montgeroult",
+"dep": "95",
+"cp": [
+"95650"
+],
+"pop": 361,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.0907,
+"lng": 2.0074
+},
+"95424": {
+"nom": "Montigny-lès-Cormeilles",
+"dep": "95",
+"cp": [
+"95370"
+],
+"pop": 22457,
+"groupes": [
+[
+"CA",
+"CA Val Parisis"
+]
+],
+"lat": 48.9937,
+"lng": 2.1943
+},
+"95426": {
+"nom": "Montlignon",
+"dep": "95",
+"cp": [
+"95680"
+],
+"pop": 3038,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 49.0147,
+"lng": 2.2899
+},
+"95427": {
+"nom": "Montmagny",
+"dep": "95",
+"cp": [
+"95360"
+],
+"pop": 15105,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 48.9701,
+"lng": 2.3455
+},
+"95428": {
+"nom": "Montmorency",
+"dep": "95",
+"cp": [
+"95160"
+],
+"pop": 21763,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 48.9917,
+"lng": 2.3208
+},
+"95429": {
+"nom": "Montreuil-sur-Epte",
+"dep": "95",
+"cp": [
+"95770"
+],
+"pop": 377,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.1702,
+"lng": 1.6855
+},
+"95430": {
+"nom": "Montsoult",
+"dep": "95",
+"cp": [
+"95560"
+],
+"pop": 4023,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.0713,
+"lng": 2.3051
+},
+"95436": {
+"nom": "Mours",
+"dep": "95",
+"cp": [
+"95260"
+],
+"pop": 1693,
+"groupes": [
+[
+"CC",
+"CC du Haut Val d'Oise"
+]
+],
+"lat": 49.13,
+"lng": 2.2631
+},
+"95438": {
+"nom": "Moussy",
+"dep": "95",
+"cp": [
+"95640"
+],
+"pop": 108,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1349,
+"lng": 1.9088
+},
+"95445": {
+"nom": "Nerville-la-Forêt",
+"dep": "95",
+"cp": [
+"95590"
+],
+"pop": 756,
+"groupes": [
+[
+"CC",
+"CC de la Vallée de l'Oise et des Trois Forêts"
+]
+],
+"lat": 49.0904,
+"lng": 2.2769
+},
+"95446": {
+"nom": "Nesles-la-Vallée",
+"dep": "95",
+"cp": [
+"95690"
+],
+"pop": 1842,
+"groupes": [
+[
+"CC",
+"CC Sausseron Impressionnistes"
+]
+],
+"lat": 49.1268,
+"lng": 2.1724
+},
+"95447": {
+"nom": "Neuilly-en-Vexin",
+"dep": "95",
+"cp": [
+"95640"
+],
+"pop": 240,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1741,
+"lng": 1.9794
+},
+"95450": {
+"nom": "Neuville-sur-Oise",
+"dep": "95",
+"cp": [
+"95000"
+],
+"pop": 2058,
+"groupes": [
+[
+"CA",
+"CA de Cergy-Pontoise"
+]
+],
+"lat": 49.0173,
+"lng": 2.0623
+},
+"95452": {
+"nom": "Nointel",
+"dep": "95",
+"cp": [
+"95590"
+],
+"pop": 903,
+"groupes": [
+[
+"CC",
+"CC du Haut Val d'Oise"
+]
+],
+"lat": 49.1289,
+"lng": 2.294
+},
+"95456": {
+"nom": "Noisy-sur-Oise",
+"dep": "95",
+"cp": [
+"95270"
+],
+"pop": 549,
+"groupes": [
+[
+"CC",
+"CC du Haut Val d'Oise"
+]
+],
+"lat": 49.1344,
+"lng": 2.3281
+},
+"95459": {
+"nom": "Nucourt",
+"dep": "95",
+"cp": [
+"95420"
+],
+"pop": 719,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1593,
+"lng": 1.8556
+},
+"95462": {
+"nom": "Omerville",
+"dep": "95",
+"cp": [
+"95420"
+],
+"pop": 327,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.1427,
+"lng": 1.7223
+},
+"95476": {
+"nom": "Osny",
+"dep": "95",
+"cp": [
+"95520"
+],
+"pop": 17954,
+"groupes": [
+[
+"CA",
+"CA de Cergy-Pontoise"
+]
+],
+"lat": 49.0679,
+"lng": 2.0631
+},
+"95480": {
+"nom": "Parmain",
+"dep": "95",
+"cp": [
+"95620"
+],
+"pop": 5655,
+"groupes": [
+[
+"CC",
+"CC de la Vallée de l'Oise et des Trois Forêts"
+]
+],
+"lat": 49.1229,
+"lng": 2.2011
+},
+"95483": {
+"nom": "Le Perchay",
+"dep": "95",
+"cp": [
+"95450"
+],
+"pop": 504,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1162,
+"lng": 1.9275
+},
+"95487": {
+"nom": "Persan",
+"dep": "95",
+"cp": [
+"95340"
+],
+"pop": 14359,
+"groupes": [
+[
+"CC",
+"CC du Haut Val d'Oise"
+]
+],
+"lat": 49.1496,
+"lng": 2.2694
+},
+"95488": {
+"nom": "Pierrelaye",
+"dep": "95",
+"cp": [
+"95220",
+"95480"
+],
+"pop": 10130,
+"groupes": [
+[
+"CA",
+"CA Val Parisis"
+]
+],
+"lat": 49.0192,
+"lng": 2.1604
+},
+"95489": {
+"nom": "Piscop",
+"dep": "95",
+"cp": [
+"95350"
+],
+"pop": 768,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 49.0165,
+"lng": 2.3415
+},
+"95491": {
+"nom": "Le Plessis-Bouchard",
+"dep": "95",
+"cp": [
+"95130"
+],
+"pop": 8518,
+"groupes": [
+[
+"CA",
+"CA Val Parisis"
+]
+],
+"lat": 49.0033,
+"lng": 2.2339
+},
+"95492": {
+"nom": "Le Plessis-Gassot",
+"dep": "95",
+"cp": [
+"95720"
+],
+"pop": 102,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0359,
+"lng": 2.4151
+},
+"95493": {
+"nom": "Le Plessis-Luzarches",
+"dep": "95",
+"cp": [
+"95270"
+],
+"pop": 152,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.0961,
+"lng": 2.456
+},
+"95500": {
+"nom": "Pontoise",
+"dep": "95",
+"cp": [
+"95000",
+"95300"
+],
+"pop": 31970,
+"groupes": [
+[
+"CA",
+"CA de Cergy-Pontoise"
+]
+],
+"lat": 49.0515,
+"lng": 2.0945
+},
+"95504": {
+"nom": "Presles",
+"dep": "95",
+"cp": [
+"95590"
+],
+"pop": 4017,
+"groupes": [
+[
+"CC",
+"CC de la Vallée de l'Oise et des Trois Forêts"
+]
+],
+"lat": 49.1121,
+"lng": 2.2867
+},
+"95509": {
+"nom": "Puiseux-en-France",
+"dep": "95",
+"cp": [
+"95380"
+],
+"pop": 3765,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0668,
+"lng": 2.4887
+},
+"95510": {
+"nom": "Puiseux-Pontoise",
+"dep": "95",
+"cp": [
+"95650"
+],
+"pop": 603,
+"groupes": [
+[
+"CA",
+"CA de Cergy-Pontoise"
+]
+],
+"lat": 49.0636,
+"lng": 2.0163
+},
+"95523": {
+"nom": "La Roche-Guyon",
+"dep": "95",
+"cp": [
+"95780"
+],
+"pop": 399,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.0882,
+"lng": 1.6342
+},
+"95527": {
+"nom": "Roissy-en-France",
+"dep": "95",
+"cp": [
+"95700"
+],
+"pop": 2674,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0066,
+"lng": 2.5137
+},
+"95529": {
+"nom": "Ronquerolles",
+"dep": "95",
+"cp": [
+"95340"
+],
+"pop": 907,
+"groupes": [
+[
+"CC",
+"CC du Haut Val d'Oise"
+]
+],
+"lat": 49.1677,
+"lng": 2.2128
+},
+"95535": {
+"nom": "Sagy",
+"dep": "95",
+"cp": [
+"95450"
+],
+"pop": 1096,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.0524,
+"lng": 1.9685
+},
+"95539": {
+"nom": "Saint-Brice-sous-Forêt",
+"dep": "95",
+"cp": [
+"95350"
+],
+"pop": 15063,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 49.0019,
+"lng": 2.3497
+},
+"95541": {
+"nom": "Saint-Clair-sur-Epte",
+"dep": "95",
+"cp": [
+"95770"
+],
+"pop": 964,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.2132,
+"lng": 1.7031
+},
+"95543": {
+"nom": "Saint-Cyr-en-Arthies",
+"dep": "95",
+"cp": [
+"95510"
+],
+"pop": 236,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.0589,
+"lng": 1.7418
+},
+"95554": {
+"nom": "Saint-Gervais",
+"dep": "95",
+"cp": [
+"95420"
+],
+"pop": 878,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.1671,
+"lng": 1.762
+},
+"95555": {
+"nom": "Saint-Gratien",
+"dep": "95",
+"cp": [
+"95210"
+],
+"pop": 21336,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 48.9691,
+"lng": 2.2846
+},
+"95563": {
+"nom": "Saint-Leu-la-Forêt",
+"dep": "95",
+"cp": [
+"95320"
+],
+"pop": 16138,
+"groupes": [
+[
+"CA",
+"CA Val Parisis"
+]
+],
+"lat": 49.02,
+"lng": 2.247
+},
+"95566": {
+"nom": "Saint-Martin-du-Tertre",
+"dep": "95",
+"cp": [
+"95270"
+],
+"pop": 2689,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.1036,
+"lng": 2.3351
+},
+"95572": {
+"nom": "Saint-Ouen-l'Aumône",
+"dep": "95",
+"cp": [
+"95310"
+],
+"pop": 25578,
+"groupes": [
+[
+"CA",
+"CA de Cergy-Pontoise"
+]
+],
+"lat": 49.0445,
+"lng": 2.1291
+},
+"95574": {
+"nom": "Saint-Prix",
+"dep": "95",
+"cp": [
+"95390"
+],
+"pop": 7612,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 49.0208,
+"lng": 2.2703
+},
+"95580": {
+"nom": "Saint-Witz",
+"dep": "95",
+"cp": [
+"95470"
+],
+"pop": 2724,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0856,
+"lng": 2.5526
+},
+"95582": {
+"nom": "Sannois",
+"dep": "95",
+"cp": [
+"95110"
+],
+"pop": 26924,
+"groupes": [
+[
+"CA",
+"CA Val Parisis"
+]
+],
+"lat": 48.9719,
+"lng": 2.2528
+},
+"95584": {
+"nom": "Santeuil",
+"dep": "95",
+"cp": [
+"95640"
+],
+"pop": 658,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1292,
+"lng": 1.9578
+},
+"95585": {
+"nom": "Sarcelles",
+"dep": "95",
+"cp": [
+"95200"
+],
+"pop": 59173,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 48.9902,
+"lng": 2.3812
+},
+"95592": {
+"nom": "Seraincourt",
+"dep": "95",
+"cp": [
+"95450"
+],
+"pop": 1305,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.0416,
+"lng": 1.8789
+},
+"95594": {
+"nom": "Seugy",
+"dep": "95",
+"cp": [
+"95270"
+],
+"pop": 1044,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.1227,
+"lng": 2.394
+},
+"95598": {
+"nom": "Soisy-sous-Montmorency",
+"dep": "95",
+"cp": [
+"95230"
+],
+"pop": 18008,
+"groupes": [
+[
+"CA",
+"CA Plaine Vallée"
+]
+],
+"lat": 48.9884,
+"lng": 2.3009
+},
+"95604": {
+"nom": "Survilliers",
+"dep": "95",
+"cp": [
+"95470"
+],
+"pop": 4091,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.1062,
+"lng": 2.5441
+},
+"95607": {
+"nom": "Taverny",
+"dep": "95",
+"cp": [
+"95150"
+],
+"pop": 27593,
+"groupes": [
+[
+"CA",
+"CA Val Parisis"
+]
+],
+"lat": 49.0264,
+"lng": 2.2208
+},
+"95610": {
+"nom": "Théméricourt",
+"dep": "95",
+"cp": [
+"95450"
+],
+"pop": 283,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.0909,
+"lng": 1.905
+},
+"95611": {
+"nom": "Theuville",
+"dep": "95",
+"cp": [
+"95810"
+],
+"pop": 53,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1564,
+"lng": 2.0697
+},
+"95612": {
+"nom": "Le Thillay",
+"dep": "95",
+"cp": [
+"95500"
+],
+"pop": 4560,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0042,
+"lng": 2.47
+},
+"95625": {
+"nom": "Us",
+"dep": "95",
+"cp": [
+"95450"
+],
+"pop": 1374,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.1049,
+"lng": 1.9579
+},
+"95627": {
+"nom": "Vallangoujard",
+"dep": "95",
+"cp": [
+"95810"
+],
+"pop": 625,
+"groupes": [
+[
+"CC",
+"CC Sausseron Impressionnistes"
+]
+],
+"lat": 49.1339,
+"lng": 2.104
+},
+"95628": {
+"nom": "Valmondois",
+"dep": "95",
+"cp": [
+"95760"
+],
+"pop": 1208,
+"groupes": [
+[
+"CC",
+"CC Sausseron Impressionnistes"
+]
+],
+"lat": 49.0981,
+"lng": 2.1803
+},
+"95633": {
+"nom": "Vaudherland",
+"dep": "95",
+"cp": [
+"95500"
+],
+"pop": 104,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0004,
+"lng": 2.4864
+},
+"95637": {
+"nom": "Vauréal",
+"dep": "95",
+"cp": [
+"95490"
+],
+"pop": 16079,
+"groupes": [
+[
+"CA",
+"CA de Cergy-Pontoise"
+]
+],
+"lat": 49.0295,
+"lng": 2.0242
+},
+"95641": {
+"nom": "Vémars",
+"dep": "95",
+"cp": [
+"95470"
+],
+"pop": 3124,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0629,
+"lng": 2.5672
+},
+"95651": {
+"nom": "Vétheuil",
+"dep": "95",
+"cp": [
+"95510"
+],
+"pop": 849,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.0622,
+"lng": 1.707
+},
+"95652": {
+"nom": "Viarmes",
+"dep": "95",
+"cp": [
+"95270"
+],
+"pop": 5558,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.1235,
+"lng": 2.3786
+},
+"95656": {
+"nom": "Vienne-en-Arthies",
+"dep": "95",
+"cp": [
+"95510"
+],
+"pop": 379,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.0663,
+"lng": 1.7223
+},
+"95658": {
+"nom": "Vigny",
+"dep": "95",
+"cp": [
+"95450"
+],
+"pop": 1137,
+"groupes": [
+[
+"CC",
+"CC Vexin Centre"
+]
+],
+"lat": 49.0801,
+"lng": 1.9301
+},
+"95660": {
+"nom": "Villaines-sous-Bois",
+"dep": "95",
+"cp": [
+"95570"
+],
+"pop": 778,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.0747,
+"lng": 2.3571
+},
+"95675": {
+"nom": "Villeron",
+"dep": "95",
+"cp": [
+"95380"
+],
+"pop": 1766,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0608,
+"lng": 2.5348
+},
+"95676": {
+"nom": "Villers-en-Arthies",
+"dep": "95",
+"cp": [
+"95510"
+],
+"pop": 498,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.0861,
+"lng": 1.7306
+},
+"95678": {
+"nom": "Villiers-Adam",
+"dep": "95",
+"cp": [
+"95840"
+],
+"pop": 858,
+"groupes": [
+[
+"CC",
+"CC de la Vallée de l'Oise et des Trois Forêts"
+]
+],
+"lat": 49.0699,
+"lng": 2.2389
+},
+"95680": {
+"nom": "Villiers-le-Bel",
+"dep": "95",
+"cp": [
+"95400"
+],
+"pop": 30053,
+"groupes": [
+[
+"CA",
+"CA Roissy Pays de France"
+]
+],
+"lat": 49.0079,
+"lng": 2.4039
+},
+"95682": {
+"nom": "Villiers-le-Sec",
+"dep": "95",
+"cp": [
+"95720"
+],
+"pop": 205,
+"groupes": [
+[
+"CC",
+"CC Carnelle Pays-de-France"
+]
+],
+"lat": 49.0745,
+"lng": 2.3867
+},
+"95690": {
+"nom": "Wy-dit-Joli-Village",
+"dep": "95",
+"cp": [
+"95420"
+],
+"pop": 326,
+"groupes": [
+[
+"CC",
+"CC du Vexin-Val de Seine"
+]
+],
+"lat": 49.0959,
+"lng": 1.8244
 }
 }
