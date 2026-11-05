@@ -7961,5 +7961,457 @@
 ],
 "lat": 49.0959,
 "lng": 1.8244
+},
+"33063": {
+"nom": "Bordeaux",
+"dep": "33",
+"cp": [
+"33000",
+"33100",
+"33200",
+"33300",
+"33800"
+],
+"pop": 267991,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.8576,
+"lng": -0.5734
+},
+"33281": {
+"nom": "Mérignac",
+"dep": "33",
+"cp": [
+"33700"
+],
+"pop": 78090,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.8322,
+"lng": -0.6818
+},
+"33318": {
+"nom": "Pessac",
+"dep": "33",
+"cp": [
+"33600"
+],
+"pop": 67339,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.7916,
+"lng": -0.6764
+},
+"33522": {
+"nom": "Talence",
+"dep": "33",
+"cp": [
+"33400"
+],
+"pop": 46338,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.8059,
+"lng": -0.5912
+},
+"33550": {
+"nom": "Villenave-d'Ornon",
+"dep": "33",
+"cp": [
+"33140"
+],
+"pop": 42545,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.7733,
+"lng": -0.5583
+},
+"33449": {
+"nom": "Saint-Médard-en-Jalles",
+"dep": "33",
+"cp": [
+"33160"
+],
+"pop": 32910,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.8833,
+"lng": -0.7843
+},
+"33039": {
+"nom": "Bègles",
+"dep": "33",
+"cp": [
+"33130"
+],
+"pop": 31831,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.8019,
+"lng": -0.5483
+},
+"33119": {
+"nom": "Cenon",
+"dep": "33",
+"cp": [
+"33150"
+],
+"pop": 26834,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.8547,
+"lng": -0.5216
+},
+"33192": {
+"nom": "Gradignan",
+"dep": "33",
+"cp": [
+"33170"
+],
+"pop": 26952,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.7708,
+"lng": -0.6166
+},
+"33249": {
+"nom": "Lormont",
+"dep": "33",
+"cp": [
+"33310"
+],
+"pop": 25769,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.8764,
+"lng": -0.5195
+},
+"33162": {
+"nom": "Eysines",
+"dep": "33",
+"cp": [
+"33320"
+],
+"pop": 24825,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.8794,
+"lng": -0.6481
+},
+"33069": {
+"nom": "Le Bouscat",
+"dep": "33",
+"cp": [
+"33110"
+],
+"pop": 25081,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.8659,
+"lng": -0.6033
+},
+"33075": {
+"nom": "Bruges",
+"dep": "33",
+"cp": [
+"33520"
+],
+"pop": 20020,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.8888,
+"lng": -0.6004
+},
+"33167": {
+"nom": "Floirac",
+"dep": "33",
+"cp": [
+"33270"
+],
+"pop": 18300,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.8338,
+"lng": -0.521
+},
+"33003": {
+"nom": "Ambarès-et-Lagrave",
+"dep": "33",
+"cp": [
+"33440"
+],
+"pop": 17644,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.9443,
+"lng": -0.5008
+},
+"33056": {
+"nom": "Blanquefort",
+"dep": "33",
+"cp": [
+"33290"
+],
+"pop": 17215,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.9231,
+"lng": -0.6128
+},
+"33200": {
+"nom": "Le Haillan",
+"dep": "33",
+"cp": [
+"33185"
+],
+"pop": 11392,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.8693,
+"lng": -0.6845
+},
+"33519": {
+"nom": "Le Taillan-Médoc",
+"dep": "33",
+"cp": [
+"33320"
+],
+"pop": 11073,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.9114,
+"lng": -0.6815
+},
+"33312": {
+"nom": "Parempuyre",
+"dep": "33",
+"cp": [
+"33290"
+],
+"pop": 10672,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.9539,
+"lng": -0.5805
+},
+"33013": {
+"nom": "Artigues-près-Bordeaux",
+"dep": "33",
+"cp": [
+"33370"
+],
+"pop": 8687,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.8603,
+"lng": -0.4902
+},
+"33096": {
+"nom": "Carbon-Blanc",
+"dep": "33",
+"cp": [
+"33560"
+],
+"pop": 8331,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.9024,
+"lng": -0.5012
+},
+"33032": {
+"nom": "Bassens",
+"dep": "33",
+"cp": [
+"33530"
+],
+"pop": 8435,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.9082,
+"lng": -0.5254
+},
+"33273": {
+"nom": "Martignas-sur-Jalle",
+"dep": "33",
+"cp": [
+"33127"
+],
+"pop": 8056,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.845,
+"lng": -0.7963
+},
+"33376": {
+"nom": "Saint-Aubin-de-Médoc",
+"dep": "33",
+"cp": [
+"33160"
+],
+"pop": 7769,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.9333,
+"lng": -0.7482
+},
+"33065": {
+"nom": "Bouliac",
+"dep": "33",
+"cp": [
+"33270"
+],
+"pop": 3804,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.8167,
+"lng": -0.5042
+},
+"33004": {
+"nom": "Ambès",
+"dep": "33",
+"cp": [
+"33810"
+],
+"pop": 3313,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 45.0119,
+"lng": -0.549
+},
+"33434": {
+"nom": "Saint-Louis-de-Montferrand",
+"dep": "33",
+"cp": [
+"33440"
+],
+"pop": 2051,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.9579,
+"lng": -0.5331
+},
+"33487": {
+"nom": "Saint-Vincent-de-Paul",
+"dep": "33",
+"cp": [
+"33440"
+],
+"pop": 1067,
+"groupes": [
+[
+"METROPOLE",
+"Bordeaux Métropole"
+]
+],
+"lat": 44.9739,
+"lng": -0.4819
 }
 }

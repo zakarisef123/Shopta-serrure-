@@ -233,6 +233,8 @@ def header_for_zone(z, idx):
     name = HEADER_BY_ZONE.get(z["slug"])
     if name in HEADERS:
         return name
+    if z["dep"] == "33":  # photos parisiennes : pas sur les pages de Bordeaux
+        return None
     names = list(HEADERS)
     return names[idx % len(names)]
 
@@ -301,7 +303,8 @@ def build_zones():
                if v["dep"] == dep and "lat" in v]
         return sorted(lst, key=lambda t: slugify(t[0]))
 
-    for dep, lst in (("92", HDS), ("93", SSD), ("95", complet("95")), ("78", complet("78"))):
+    for dep, lst in (("92", HDS), ("93", SSD), ("95", complet("95")), ("78", complet("78")),
+                     ("33", complet("33"))):
         for nom, lat, lng in lst:
             code = by_name[(ALIAS.get(nom, nom), dep)]
             c = COMMUNES[code]
@@ -405,7 +408,8 @@ def ld_business(full=True):
     if full:
         # Départements desservis (la liste détaillée des communes est sur chaque page ville)
         d["areaServed"] = [{"@type": "City", "name": "Paris"}] + [
-            {"@type": "AdministrativeArea", "name": n} for n in ("Hauts-de-Seine", "Seine-Saint-Denis", "Val-d'Oise", "Yvelines")]
+            {"@type": "AdministrativeArea", "name": n} for n in ("Hauts-de-Seine", "Seine-Saint-Denis", "Val-d'Oise", "Yvelines")] + [
+            {"@type": "City", "name": "Bordeaux"}, {"@type": "AdministrativeArea", "name": "Bordeaux Métropole"}]
         d["hasOfferCatalog"] = {
             "@type": "OfferCatalog", "name": "Dépannage serrurerie",
             "itemListElement": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": s["nom"], "url": f"{URL}/depannage/{s['slug']}/"},
@@ -660,7 +664,7 @@ NAV = [("Dépannage", "/depannage/"), ("Tarifs", "/tarifs/"), ("Zones", "/villes
 
 
 # Villes mises en avant (accueil, pied de page) : signal fort pour les liens annexes de Google
-VILLES_PRIORITAIRES = ["paris", "clichy", "asnieres-sur-seine", "neuilly-sur-seine", "gennevilliers", "saint-ouen-sur-seine"]
+VILLES_PRIORITAIRES = ["paris", "clichy", "asnieres-sur-seine", "neuilly-sur-seine", "gennevilliers", "saint-ouen-sur-seine", "bordeaux"]
 
 
 def villes_strip():
@@ -680,7 +684,7 @@ def footer():
     <div class="foot-grid">
       <div>
         <a href="/" class="logo"><svg><use href="#i-logo"/></svg><span>Shopta<b>Serrure</b><small>Serrurier d'urgence</small></span></a>
-        <p>Serrurier d'urgence à Paris et en Île-de-France. Intervention rapide 24h/24 et 7j/7, prix annoncés avant déplacement, factures reconnues par les assurances.</p>
+        <p>Serrurier d'urgence à Paris, en Île-de-France et à Bordeaux. Intervention rapide 24h/24 et 7j/7, prix annoncés avant déplacement, factures reconnues par les assurances.</p>
         <p style="margin-top:14px"><a href="{TEL_HREF}" style="color:#fff;font-family:var(--head);font-weight:700;font-size:20px">{TEL}</a><br><a href="mailto:{CONFIG['email']}">{CONFIG['email']}</a></p>
         <p style="margin-top:14px"><a class="social" href="{CONFIG['instagram']}" target="_blank" rel="noopener me" aria-label="Instagram Shopta Serrure">{ico("i-insta", "")}@shoptaserrure</a>
         <a class="social" href="{CONFIG['tiktok']}" target="_blank" rel="noopener me" aria-label="TikTok Shopta Serrure">{ico("i-tiktok", "")}@shopta.serrure</a></p>
@@ -773,7 +777,7 @@ gtag('consent','default',{{ad_storage:'denied',analytics_storage:'denied',ad_use
 {SPRITE}
 <div class="topbar">
   <div class="container">
-    <div class="live"><span class="dot"></span> Serruriers disponibles maintenant<span class="full">&nbsp;— Paris & Île-de-France</span></div>
+    <div class="live"><span class="dot"></span> Serruriers disponibles maintenant<span class="full">&nbsp;— Paris, Île-de-France & Bordeaux</span></div>
     <div class="items">
       <span>{ico("i-clock", "")}24h/24 · 7j/7 · jours fériés</span>
       <span>{ico("i-shield", "")}Facture remboursable par votre assurance</span>
@@ -1013,8 +1017,8 @@ def build_home():
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">Zones d'intervention</span>
-      <h2 id="zones-title">Paris et l'Île-de-France</h2>
-      <p>Nous intervenons dans les 20 arrondissements de Paris, dans tout le Val-d'Oise, les Yvelines et les Hauts-de-Seine, ainsi qu'à Saint-Ouen-sur-Seine.</p>
+      <h2 id="zones-title">Paris, l'Île-de-France et Bordeaux</h2>
+      <p>Nous intervenons dans les 20 arrondissements de Paris, dans tout le Val-d'Oise, les Yvelines et les Hauts-de-Seine, à Saint-Ouen-sur-Seine, et désormais à Bordeaux et dans les 27 autres communes de Bordeaux Métropole.</p>
     </div>
     {zones_tabs()}
     <p class="zones-note">Votre ville n'est pas listée ? Appelez-nous : hors zone, des frais de déplacement supplémentaires peuvent s'appliquer et vous sont annoncés à l'avance.</p>
@@ -1070,12 +1074,12 @@ def build_services():
     items = "".join(f'''<div class="svc-item reveal"><div class="ic">{ico(s["icon"], "")}</div>
   <div><h3><a href="/depannage/{s["slug"]}/">{E(s["nom"])}</a></h3><p>{E(s["resume"])}</p></div>
   <div class="pr">{E(s["prix"])}<a href="/depannage/{s["slug"]}/">En savoir plus →</a></div></div>''' for s in SERVICES)
-    body = page_hero([("Dépannage", None)], "Dépannage serrurerie <em>24h/24</em> à Paris et en Île-de-France",
+    body = page_hero([("Dépannage", None)], "Dépannage serrurerie <em>24h/24</em> à Paris, en Île-de-France et à Bordeaux",
                      "Ouverture de porte, déblocage, clé cassée, changement de serrure, serrure connectée, sécurisation après effraction : toutes nos interventions, avec leurs prix de départ.")
     body += f'<section><div class="container layout"><div class="svc-list">{items}</div>{aside_card()}</div></section>'
     body += brands_block() + insurers_block() + cta_final(source="/depannage/")
     page("/depannage/", "Dépannage serrurerie 24h/24 Paris & IDF – Tous nos services | Shopta Serrure",
-         "Tous nos dépannages de serrurerie à Paris et en Île-de-France : ouverture de porte à partir de 110 €, serrure bloquée, clé cassée, changement de serrure, après effraction.",
+         "Tous nos dépannages de serrurerie à Paris, en Île-de-France et à Bordeaux : ouverture de porte à partir de 110 €, serrure bloquée, clé cassée, changement de serrure, après effraction.",
          body, [ld_business(False), ld_breadcrumb([("Dépannage", "/depannage/")])], active="/depannage/")
 
     for s in SERVICES:
@@ -1085,6 +1089,7 @@ def build_services():
         hds_links = "".join(f'<a href="{combo_url(s, z)}">{E(z["court"])}</a>' for z in ZONES if z["dep"] == "92")
         vdo_links = "".join(f'<a href="{combo_url(s, z)}">{E(z["court"])}</a>' for z in ZONES if z["dep"] == "95")
         yv_links = "".join(f'<a href="{combo_url(s, z)}">{E(z["court"])}</a>' for z in ZONES if z["dep"] == "78")
+        bx_links = "".join(f'<a href="{combo_url(s, z)}">{E(z["court"])}</a>' for z in ZONES if z["dep"] == "33")
         others = "".join(f'<a href="/depannage/{o["slug"]}/">{E(o["court"])}</a>' for o in SERVICES if o is not s)
         prix_txt = f"à partir de <strong>{s['prix_num']} € TTC</strong>" if s["prix_num"] else "<strong>sur devis gratuit</strong>"
         content = f'''<div class="prose">
@@ -1093,11 +1098,12 @@ def build_services():
   <p class="callout">Tarif : {prix_txt}. Le prix exact vous est annoncé au téléphone avant le déplacement et confirmé par un devis écrit avant toute intervention. <a href="/tarifs/">Voir la grille tarifaire jour, soir et nuit</a>.</p>
   {secs}
   <h2>{E(s["court"])} : où intervenons-nous ?</h2>
-  <p>Nous intervenons pour ce service dans tout Paris, les Hauts-de-Seine, le Val-d'Oise et les Yvelines, 24h/24 et 7j/7.</p>
+  <p>Nous intervenons pour ce service dans tout Paris, les Hauts-de-Seine, le Val-d'Oise, les Yvelines et à Bordeaux Métropole, 24h/24 et 7j/7.</p>
   <h3>Paris</h3><div class="link-grid">{arr_links}</div>
   <h3>Hauts-de-Seine (92)</h3><div class="link-grid">{hds_links}</div>
   <h3>Val-d'Oise (95)</h3><div class="link-grid">{vdo_links}</div>
   <h3>Yvelines (78)</h3><div class="link-grid">{yv_links}</div>
+  <h3>Bordeaux et alentours (33)</h3><div class="link-grid">{bx_links}</div>
   <h2>Questions fréquentes</h2>
   {faq_html(s["faq"])}
   <h2>Nos autres dépannages</h2><div class="link-grid">{others}</div>
@@ -1113,7 +1119,7 @@ def build_services():
         desc = f'{s["nom"]} à Paris et en Île-de-France, 24h/24 et 7j/7. {s["resume"]} Prix annoncé avant déplacement.'
         ld = [ld_business(False), ld_breadcrumb([("Dépannage", "/depannage/"), (s["court"], path)]), ld_faq(s["faq"]),
               {"@context": "https://schema.org", "@type": "Service", "name": s["nom"], "serviceType": s["nom"], "url": URL + path,
-               "provider": {"@id": BUSINESS_ID}, "areaServed": [{"@type": "City", "name": "Paris"}, {"@type": "AdministrativeArea", "name": "Hauts-de-Seine"}, {"@type": "AdministrativeArea", "name": "Val-d'Oise"}, {"@type": "AdministrativeArea", "name": "Yvelines"}],
+               "provider": {"@id": BUSINESS_ID}, "areaServed": [{"@type": "City", "name": "Paris"}, {"@type": "AdministrativeArea", "name": "Hauts-de-Seine"}, {"@type": "AdministrativeArea", "name": "Val-d'Oise"}, {"@type": "AdministrativeArea", "name": "Yvelines"}, {"@type": "City", "name": "Bordeaux"}, {"@type": "AdministrativeArea", "name": "Bordeaux Métropole"}],
                **({"offers": {"@type": "Offer", "priceSpecification": {"@type": "PriceSpecification", "minPrice": s["prix_num"], "priceCurrency": "EUR"}}} if s["prix_num"] else {})}]
         page(path, title, desc, body, ld, active="/depannage/")
 
@@ -1157,12 +1163,12 @@ def build_zones_pages():
         lst = [z for z in ZONES if z["dep"] == dep]
         links = "".join(f'<a href="{z["url"]}">Serrurier {E(z["court"])}</a>' for z in lst)
         blocks += f'<h2>{E(label)}</h2><div class="link-grid">{links}</div>'
-    body = page_hero([("Zones d'intervention", None)], "Nos zones d'intervention <em>en Île-de-France</em>",
-                     f"Shopta Serrure intervient 24h/24 dans {len(ZONES) - 1} communes et arrondissements : Paris, Hauts-de-Seine, Saint-Ouen, Val-d'Oise et Yvelines.")
+    body = page_hero([("Zones d'intervention", None)], "Nos zones d'intervention <em>en Île-de-France et à Bordeaux</em>",
+                     f"Shopta Serrure intervient 24h/24 dans {len(ZONES) - 1} communes et arrondissements : Paris, Hauts-de-Seine, Saint-Ouen, Val-d'Oise, Yvelines et Bordeaux Métropole.")
     body += f'<section><div class="container layout"><div class="prose">{blocks}<p class="callout">Votre ville n\'est pas listée ? Appelez-nous au {TEL} : hors zone, des frais de déplacement supplémentaires peuvent s\'appliquer et vous sont annoncés à l\'avance.</p></div>{aside_card()}</div></section>'
     body += reviews_section(soft=True) + cta_final(source="/villes/")
-    page("/villes/", "Zones d'intervention – Serrurier Paris, 92 et 95 | Shopta Serrure",
-         "Liste des villes et arrondissements où Shopta Serrure intervient 24h/24 : Paris 1 à 20, Hauts-de-Seine (92), Val-d'Oise (95) et Yvelines (78).",
+    page("/villes/", "Zones d'intervention – Serrurier Paris, IDF et Bordeaux | Shopta Serrure",
+         "Liste des villes où Shopta Serrure intervient 24h/24 : Paris 1 à 20, Hauts-de-Seine (92), Val-d'Oise (95), Yvelines (78), Saint-Ouen (93) et Bordeaux Métropole (33).",
          body, [ld_business(False), ld_breadcrumb([("Zones d'intervention", "/villes/")])], active="/villes/")
 
     for idx, z in enumerate(ZONES):
@@ -1190,12 +1196,17 @@ def build_zones_pages():
             intro = INTROS_VILLE[idx % 4].format(a=z["a"], cp=cp, voisins=vtxt, nom=z["nom"], pop=fmt_int(z["pop"]))
             grp = [g[1] for g in z["groupes"]]
             grp_txt = f" La commune fait partie de l'intercommunalité <strong>{E(grp[0])}</strong>." if grp else ""
-            local = (f"<h2>Serrurier {E(z['nom'])} et alentours</h2><p>{E(z['nom'])} ({cp}) est une commune du département {E(dep_label)} "
+            local = (f"<h2>Serrurier {E(z['nom'])} et alentours</h2><p>{E(z['nom'])} ({cp}) est une commune du département {E("Gironde (33)" if z["dep"] == "33" else dep_label)} "
                      f"qui compte {fmt_int(z['pop'])} habitants.{grp_txt} Nos serruriers y interviennent pour les particuliers, les syndics, "
                      f"les propriétaires bailleurs et les commerçants, ainsi que dans les communes voisines : "
                      + ", ".join(f'<a href="{v["url"]}">{E(v["court"])}</a>' for v in voisins) + ".</p>")
+            if z["slug"] == "bordeaux":
+                local += ("<h2>Bordeaux Métropole : toutes nos communes</h2><p>Nous intervenons à Bordeaux et dans les 27 autres communes "
+                          "de Bordeaux Métropole, rive gauche comme rive droite.</p><div class=\"link-grid\">"
+                          + "".join(f'<a href="{o["url"]}">Serrurier {E(o["court"])}</a>' for o in ZONES if o["dep"] == "33" and o is not z)
+                          + "</div>")
         facts = f'''<div class="facts">
-  <div class="fact"><small>Code postal</small><strong>{E(cp if len(z["cp"]) < 3 else z["cp"][0] + "…")}</strong></div>
+  <div class="fact"><small>Code postal</small><strong>{E(cp if len(z["cp"]) < 3 else z["cp"][0] + " à " + z["cp"][-1])}</strong></div>
   <div class="fact"><small>Disponibilité</small><strong>24h/24 · 7j/7</strong></div>
   <div class="fact"><small>Ouverture de porte</small><strong>à partir de 110 € TTC</strong></div>
   <div class="fact"><small>Délai</small><strong>{"~30 min en moyenne" if z["proche"] else "annoncé au téléphone"}</strong></div>
@@ -1374,7 +1385,7 @@ def build_combo_pages():
             etapes = "".join(f"<li><strong>{E(t)}</strong> : {E(d.format(a=z['a']))}</li>" for t, d in ETAPES)
             facts = f'''<div class="facts">
   <div class="fact"><small>Tarif</small><strong>{E(s["prix"].replace(" TTC", ""))}</strong></div>
-  <div class="fact"><small>Code postal</small><strong>{E(cp if len(z["cp"]) < 3 else z["cp"][0] + "…")}</strong></div>
+  <div class="fact"><small>Code postal</small><strong>{E(cp if len(z["cp"]) < 3 else z["cp"][0] + " à " + z["cp"][-1])}</strong></div>
   <div class="fact"><small>Disponibilité</small><strong>24h/24 · 7j/7</strong></div>
   <div class="fact"><small>Délai</small><strong>{"~30 min en moyenne" if z["proche"] else "annoncé au téléphone"}</strong></div>
 </div>'''
@@ -1493,12 +1504,12 @@ def build_static():
     body += f'''<section class="soft"><div class="container contact">
     <div class="contact-info reveal">
       <h2>Shopta Serrure</h2>
-      <p>Serrurier d'urgence à Paris et en Île-de-France, 24h/24 et 7j/7.</p>
+      <p>Serrurier d'urgence à Paris, en Île-de-France et à Bordeaux, 24h/24 et 7j/7.</p>
       <div class="c-line"><span class="ic">{ico("i-phone", "")}</span><div><small>Téléphone 24h/24</small><strong><a href="{TEL_HREF}">{TEL}</a></strong></div></div>
       <div class="c-line"><span class="ic">{ico("i-mail", "")}</span><div><small>E-mail</small><strong><a href="mailto:{CONFIG['email']}">{CONFIG['email']}</a></strong></div></div>
       <div class="c-line"><span class="ic">{ico("i-insta", "")}</span><div><small>Instagram</small><strong><a href="{CONFIG['instagram']}" target="_blank" rel="noopener me">@shoptaserrure</a></strong></div></div>
       <div class="c-line"><span class="ic">{ico("i-tiktok", "")}</span><div><small>TikTok</small><strong><a href="{CONFIG['tiktok']}" target="_blank" rel="noopener me">@shopta.serrure</a></strong></div></div>
-      <div class="c-line"><span class="ic">{ico("i-pin", "")}</span><div><small>Zone d'intervention</small><strong>Paris, 92, 93, Val-d'Oise et Yvelines</strong></div></div>
+      <div class="c-line"><span class="ic">{ico("i-pin", "")}</span><div><small>Zone d'intervention</small><strong>Paris, 92, 93, Val-d'Oise, Yvelines et Bordeaux Métropole</strong></div></div>
       {btn_call("Appeler maintenant", cls="btn btn-call btn-lg", track="call_contact")}
     </div>
     {form}
@@ -1678,7 +1689,7 @@ def build_seo_files():
     note = (f"- Note Google : {AVIS['note']}/5 sur {AVIS['nombre']} avis\n" if AVIS.get("note") else "")
     write("llms.txt", f"""# Shopta Serrure
 
-> Serrurier d'urgence à Paris et en Île-de-France (Paris 75, Hauts-de-Seine 92, Saint-Ouen 93, Val-d'Oise 95, Yvelines 78), disponible 24h/24 et 7j/7. Ouverture de porte claquée à partir de 110 € TTC, prix annoncé au téléphone avant le déplacement, devis écrit signé avant toute intervention, facture détaillée reconnue par les assureurs habitation.
+> Serrurier d'urgence à Paris et en Île-de-France (Paris 75, Hauts-de-Seine 92, Saint-Ouen 93, Val-d'Oise 95, Yvelines 78) et à Bordeaux (Bordeaux Métropole, Gironde 33), disponible 24h/24 et 7j/7. Ouverture de porte claquée à partir de 110 € TTC, prix annoncé au téléphone avant le déplacement, devis écrit signé avant toute intervention, facture détaillée reconnue par les assureurs habitation.
 
 ## Informations clés
 - Nom : Shopta Serrure (fiche Google : « Serrurier - Shopta serrure »)
@@ -1722,7 +1733,7 @@ Chaque service a une page dédiée pour chacune des {len(ZONES)} zones, au forma
 
     def txt(h):
         return html.unescape(re.sub(r"<[^>]+>", "", h))
-    full = [f"# Shopta Serrure – informations complètes\n\n> Serrurier d'urgence 24h/24 et 7j/7 à Paris (75), dans les Hauts-de-Seine (92), à Saint-Ouen (93), dans le Val-d'Oise (95) et les Yvelines (78). "
+    full = [f"# Shopta Serrure – informations complètes\n\n> Serrurier d'urgence 24h/24 et 7j/7 à Paris (75), dans les Hauts-de-Seine (92), à Saint-Ouen (93), dans le Val-d'Oise (95), les Yvelines (78) et à Bordeaux Métropole (33). "
             f"Téléphone : {TEL}. Site : {URL}/. Fiche Google : {MAPS}\n"]
     full.append("## Engagements\n- Prix annoncé au téléphone avant le déplacement\n- Devis écrit gratuit, signé avant toute intervention\n"
                 "- Ouverture sans dégât dans la grande majorité des cas\n- Facture détaillée reconnue par les assureurs habitation, remboursable selon le contrat "

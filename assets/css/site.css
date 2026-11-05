@@ -625,3 +625,5 @@ footer .social + .social{margin-left:8px}
   .consent-actions{display:grid;grid-template-columns:1fr 1fr}
   .consent-btn{min-width:0;padding:12px 10px}
 }
+.topbar .items svg,.topbar .live .dot{flex:none}
+@media (max-width:1400px){.topbar .items span:last-child{display:none}}

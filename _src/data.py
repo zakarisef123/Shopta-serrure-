@@ -205,6 +205,7 @@ DEPTS = {
     "93": ("Seine-Saint-Denis", "Seine-Saint-Denis (93)"),
     "95": ("Val-d'Oise", "Val-d'Oise (95)"),
     "78": ("Yvelines", "Yvelines (78)"),
+    "33": ("Gironde", "Bordeaux et alentours (33)"),
 }
 
 # ---------------------------------------------------------------------------
