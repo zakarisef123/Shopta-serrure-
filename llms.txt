@@ -1,6 +1,6 @@
 # Shopta Serrure
 
-> Serrurier d'urgence à Paris et en Île-de-France (Paris 75, Hauts-de-Seine 92, Saint-Ouen 93, Val-d'Oise 95, Yvelines 78), disponible 24h/24 et 7j/7. Ouverture de porte claquée à partir de 110 € TTC, prix annoncé au téléphone avant le déplacement, devis écrit signé avant toute intervention, facture détaillée reconnue par les assureurs habitation.
+> Serrurier d'urgence à Paris et en Île-de-France (Paris 75, Hauts-de-Seine 92, Saint-Ouen 93, Val-d'Oise 95, Yvelines 78) et à Bordeaux (Bordeaux Métropole, Gironde 33), disponible 24h/24 et 7j/7. Ouverture de porte claquée à partir de 110 € TTC, prix annoncé au téléphone avant le déplacement, devis écrit signé avant toute intervention, facture détaillée reconnue par les assureurs habitation.
 
 ## Informations clés
 - Nom : Shopta Serrure (fiche Google : « Serrurier - Shopta serrure »)
@@ -546,8 +546,38 @@
 - [Serrurier Viroflay](https://shopta-serrure.fr/villes/viroflay/)
 - [Serrurier Voisins-le-Bretonneux](https://shopta-serrure.fr/villes/voisins-le-bretonneux/)
 
+### Bordeaux et alentours (33)
+- [Serrurier Ambarès-et-Lagrave](https://shopta-serrure.fr/villes/ambares-et-lagrave/)
+- [Serrurier Ambès](https://shopta-serrure.fr/villes/ambes/)
+- [Serrurier Artigues-près-Bordeaux](https://shopta-serrure.fr/villes/artigues-pres-bordeaux/)
+- [Serrurier Bassens](https://shopta-serrure.fr/villes/bassens/)
+- [Serrurier Bègles](https://shopta-serrure.fr/villes/begles/)
+- [Serrurier Blanquefort](https://shopta-serrure.fr/villes/blanquefort/)
+- [Serrurier Bordeaux](https://shopta-serrure.fr/villes/bordeaux/)
+- [Serrurier Bouliac](https://shopta-serrure.fr/villes/bouliac/)
+- [Serrurier Bruges](https://shopta-serrure.fr/villes/bruges/)
+- [Serrurier Carbon-Blanc](https://shopta-serrure.fr/villes/carbon-blanc/)
+- [Serrurier Cenon](https://shopta-serrure.fr/villes/cenon/)
+- [Serrurier Eysines](https://shopta-serrure.fr/villes/eysines/)
+- [Serrurier Floirac](https://shopta-serrure.fr/villes/floirac/)
+- [Serrurier Gradignan](https://shopta-serrure.fr/villes/gradignan/)
+- [Serrurier Le Bouscat](https://shopta-serrure.fr/villes/le-bouscat/)
+- [Serrurier Le Haillan](https://shopta-serrure.fr/villes/le-haillan/)
+- [Serrurier Le Taillan-Médoc](https://shopta-serrure.fr/villes/le-taillan-medoc/)
+- [Serrurier Lormont](https://shopta-serrure.fr/villes/lormont/)
+- [Serrurier Martignas-sur-Jalle](https://shopta-serrure.fr/villes/martignas-sur-jalle/)
+- [Serrurier Mérignac](https://shopta-serrure.fr/villes/merignac/)
+- [Serrurier Parempuyre](https://shopta-serrure.fr/villes/parempuyre/)
+- [Serrurier Pessac](https://shopta-serrure.fr/villes/pessac/)
+- [Serrurier Saint-Aubin-de-Médoc](https://shopta-serrure.fr/villes/saint-aubin-de-medoc/)
+- [Serrurier Saint-Louis-de-Montferrand](https://shopta-serrure.fr/villes/saint-louis-de-montferrand/)
+- [Serrurier Saint-Médard-en-Jalles](https://shopta-serrure.fr/villes/saint-medard-en-jalles/)
+- [Serrurier Saint-Vincent-de-Paul](https://shopta-serrure.fr/villes/saint-vincent-de-paul/)
+- [Serrurier Talence](https://shopta-serrure.fr/villes/talence/)
+- [Serrurier Villenave-d'Ornon](https://shopta-serrure.fr/villes/villenave-d-ornon/)
+
 ## Chaque service dans chaque ville
-Chaque service a une page dédiée pour chacune des 500 zones, au format https://shopta-serrure.fr/depannage/<service>/<ville>/ (ex. https://shopta-serrure.fr/depannage/porte-claquee/boulogne-billancourt/). Liste complète des 3000 pages : https://shopta-serrure.fr/llms-full.txt
+Chaque service a une page dédiée pour chacune des 528 zones, au format https://shopta-serrure.fr/depannage/<service>/<ville>/ (ex. https://shopta-serrure.fr/depannage/porte-claquee/boulogne-billancourt/). Liste complète des 3168 pages : https://shopta-serrure.fr/llms-full.txt
 - Ouverture de porte claquée : [Paris 1er](https://shopta-serrure.fr/depannage/porte-claquee/paris-1/), [Paris 2e](https://shopta-serrure.fr/depannage/porte-claquee/paris-2/), [Paris 3e](https://shopta-serrure.fr/depannage/porte-claquee/paris-3/), [Paris 4e](https://shopta-serrure.fr/depannage/porte-claquee/paris-4/), [Paris 5e](https://shopta-serrure.fr/depannage/porte-claquee/paris-5/), [Paris 6e](https://shopta-serrure.fr/depannage/porte-claquee/paris-6/), [Paris 7e](https://shopta-serrure.fr/depannage/porte-claquee/paris-7/), [Paris 8e](https://shopta-serrure.fr/depannage/porte-claquee/paris-8/), [Paris 9e](https://shopta-serrure.fr/depannage/porte-claquee/paris-9/), [Paris 10e](https://shopta-serrure.fr/depannage/porte-claquee/paris-10/), [Paris 11e](https://shopta-serrure.fr/depannage/porte-claquee/paris-11/), [Paris 12e](https://shopta-serrure.fr/depannage/porte-claquee/paris-12/), [Paris 13e](https://shopta-serrure.fr/depannage/porte-claquee/paris-13/), [Paris 14e](https://shopta-serrure.fr/depannage/porte-claquee/paris-14/), [Paris 15e](https://shopta-serrure.fr/depannage/porte-claquee/paris-15/), [Paris 16e](https://shopta-serrure.fr/depannage/porte-claquee/paris-16/), [Paris 17e](https://shopta-serrure.fr/depannage/porte-claquee/paris-17/), [Paris 18e](https://shopta-serrure.fr/depannage/porte-claquee/paris-18/), [Paris 19e](https://shopta-serrure.fr/depannage/porte-claquee/paris-19/), [Paris 20e](https://shopta-serrure.fr/depannage/porte-claquee/paris-20/)
 
 ## Pages utiles
