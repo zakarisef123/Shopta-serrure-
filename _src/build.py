@@ -732,6 +732,20 @@ def footer():
 </footer>'''
 
 
+def nav_dropdown(active):
+    """« Dépannage » + menu déroulant des services (survol ou clavier, sans JavaScript)."""
+    cur = ' aria-current="page"' if active == "/depannage/" else ""
+    items = "".join(f'<a href="/depannage/{s["slug"]}/"><span class="ic">{ico(s["icon"], "")}</span>'
+                    f'<span><strong>{E(s["court"])}</strong><small>{E(s["prix"])}</small></span></a>' for s in SERVICES)
+    return (f'<div class="dd"><a href="/depannage/"{cur} aria-haspopup="true">Dépannage<svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></a>'
+            f'<div class="dd-menu"><div class="dd-grid">{items}</div><a class="dd-all" href="/depannage/">Tous nos dépannages →</a></div></div>')
+
+
+def mnav_services():
+    items = "".join(f'<a href="/depannage/{s["slug"]}/">{E(s["court"])}<small>{E(s["prix"])}</small></a>' for s in SERVICES)
+    return f'<details class="m-dd"><summary>Dépannage</summary>{items}<a href="/depannage/">Tous nos dépannages</a></details>'
+
+
 def asset_v(rel):
     """Empreinte du fichier : change à chaque modification, force le rechargement chez les visiteurs."""
     import hashlib
@@ -744,8 +758,8 @@ def asset_v(rel):
 
 def page(path, title, desc, body, ld=(), active=None, robots="index, follow", og_type="website"):
     canonical = URL + path
-    nav = "".join(f'<a href="{u}"{" aria-current=\"page\"" if u == active else ""}>{E(l)}</a>' for l, u in NAV)
-    mnav = "".join(f'<a href="{u}">{E(l)}</a>' for l, u in [("Accueil", "/")] + NAV)
+    nav = "".join(nav_dropdown(active) if u == "/depannage/" else f'<a href="{u}"{" aria-current=\"page\"" if u == active else ""}>{E(l)}</a>' for l, u in NAV)
+    mnav = "".join(mnav_services() if u == "/depannage/" else f'<a href="{u}">{E(l)}</a>' for l, u in [("Accueil", "/")] + NAV)
     ld_html = "".join(f'<script type="application/ld+json">{json.dumps(d, ensure_ascii=False)}</script>\n' for d in ld)
     ga = CONFIG["ga_id"]
     ads = CONFIG["ads_id"]
@@ -1126,8 +1140,8 @@ def build_services():
   <p>{s["intro"]}</p>
   {fig(s["slug"])}
   <p class="callout">Tarif : {prix_txt}. Le prix exact vous est annoncé au téléphone avant le déplacement et confirmé par un devis écrit avant toute intervention. <a href="/tarifs/">Voir la grille tarifaire jour, soir et nuit</a>.</p>
-  {secs}
   {galerie(s["slug"])}
+  {secs}
   <h2>{E(s["court"])} : où intervenons-nous ?</h2>
   <p>Nous intervenons pour ce service dans tout Paris, les Hauts-de-Seine, le Val-d'Oise, les Yvelines et à Bordeaux Métropole, 24h/24 et 7j/7.</p>
   <h3>Paris</h3><div class="link-grid">{arr_links}</div>
@@ -1429,6 +1443,7 @@ def build_combo_pages():
   {facts}
   {fig(s["slug"], f"{s['nom']} {z['a']}")}
   <p class="callout">Tarif : {"à partir de <strong>%d € TTC</strong>" % s["prix_num"] if s["prix_num"] else "<strong>sur devis gratuit</strong>"}. Prix annoncé au téléphone avant le déplacement, confirmé par un devis signé avant toute intervention. Aucuns frais cachés.</p>
+  {galerie(s["slug"])}
   {local}
   <h2>{E(t1)}</h2><p>{c1}</p>
   <h2>Comment se déroule l'intervention {E(z["a"])} ?</h2>
