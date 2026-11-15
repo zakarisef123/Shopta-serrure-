@@ -14,7 +14,21 @@ les optimise et les convertit en WebP. ✅ = déjà présent, ❌ = à fournir.
 | `changement-cylindre.jpg` | Changement de serrure (pose d'un cylindre) | ✅ |
 | `serrurier-conseil-clients.jpg` | Smart Lock + « Notre façon de travailler » (serrurier avec un couple) | ✅ |
 | `porte-effraction.jpg` | Après effraction (porte fracturée) | ✅ |
-| `porte-rouge.jpg` | Article « sécuriser sa porte d'entrée » (porte rouge) | ❌ |
+| `porte-rouge.jpg` | Réserve (porte rouge) — l'article « sécuriser sa porte d'entrée » utilise désormais `protege-cylindre-porte-entree.jpg` | ❌ |
+| `pose-serrure-porte-blindee.jpg` | Changement de serrure, galerie « Nos interventions en images » (pose d'un boîtier multipoints) | ✅ |
+| `serrure-multipoints-porte-blindee.jpg` | Article « choisir une serrure haute sécurité » + galerie Changement de serrure | ✅ |
+| `protege-cylindre-porte-entree.jpg` | Article « sécuriser sa porte d'entrée » (rosace de protection du cylindre) | ✅ |
+
+## Vidéos : `assets/video/`
+
+Les vidéos ne sont pas retraitées au déploiement : déposez-les déjà compressées (MP4 H.264, ~1 Mo, sans son) avec une affiche
+`<nom>.jpg`, puis déclarez-les dans `VIDEOS` et `GALERIES` de `_src/data.py`.
+
+| Fichier | Où elle apparaît |
+|---|---|
+| `pose-serrure-3-points-applique.mp4` | Changement de serrure, galerie « Nos interventions en images » |
+| `essai-cles-nouveau-cylindre.mp4` | Changement de serrure, galerie « Nos interventions en images » |
+| `porte-vitree-hall-immeuble.mp4` | Après effraction, galerie « Nos interventions en images » |
 
 ## Logos d'assureurs : `_src/images/assureurs/`
 

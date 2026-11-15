@@ -13,7 +13,7 @@ import re
 import shutil
 import unicodedata
 
-from data import ARTICLE_PHOTOS, ARTICLES, BRANDS, DEPTS, HDS, INSURERS, PARIS_ARR, PHOTOS, SERVICES, SSD, TARIFS
+from data import ARTICLE_PHOTOS, ARTICLES, BRANDS, DEPTS, GALERIES, HDS, INSURERS, PARIS_ARR, PHOTOS, SERVICES, SSD, TARIFS, VIDEOS
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "_src")
@@ -269,6 +269,36 @@ def picture(key, cls="", sizes="(max-width: 720px) 100vw, 600px", eager=False):
     load = 'fetchpriority="high"' if eager else 'loading="lazy"'
     return (f'<picture class="{cls}"><source type="image/webp" srcset="{p["src"]}.webp">'
             f'<img src="{p["src"]}.jpg" alt="{E(p["alt"])}" width="{p["w"]}" height="{p["h"]}" {load} decoding="async"></picture>')
+
+
+def galerie(slug):
+    """Photos et vidéos de nos chantiers pour une page de dépannage."""
+    tiles = []
+    for kind, key in GALERIES.get(slug, []):
+        if kind == "photo" and key in PHOTO:
+            tiles.append(f'<figure>{picture(key, "", "(max-width: 720px) 50vw, 250px")}'
+                         f'<figcaption>{E(PHOTOS[key][1])}</figcaption></figure>')
+        elif kind == "video" and os.path.exists(os.path.join(ROOT, "assets", "video", VIDEOS[key]["file"] + ".mp4")):
+            v, src = VIDEOS[key], "/assets/video/" + VIDEOS[key]["file"]
+            tiles.append(f'<figure class="is-video"><video controls playsinline preload="none" poster="{src}.jpg" '
+                         f'width="{v["w"]}" height="{v["h"]}" aria-label="{E(v["titre"])}"><source src="{src}.mp4" type="video/mp4"></video>'
+                         f'<figcaption><strong>Vidéo</strong> · {E(v["desc"])}</figcaption></figure>')
+    if not tiles:
+        return ""
+    return ('<h2>Nos interventions en images</h2><p>Photos et vidéos prises par nos serruriers lors de leurs interventions.</p>'
+            f'<div class="media-grid">{"".join(tiles)}</div>')
+
+
+def ld_videos(slug):
+    out = []
+    for kind, key in GALERIES.get(slug, []):
+        if kind != "video" or not os.path.exists(os.path.join(ROOT, "assets", "video", VIDEOS[key]["file"] + ".mp4")):
+            continue
+        v, src = VIDEOS[key], URL + "/assets/video/" + VIDEOS[key]["file"]
+        out.append({"@context": "https://schema.org", "@type": "VideoObject", "name": v["titre"], "description": v["desc"],
+                    "thumbnailUrl": src + ".jpg", "contentUrl": src + ".mp4", "uploadDate": v["date"], "duration": v["duree"],
+                    "publisher": {"@id": BUSINESS_ID}})
+    return out
 
 
 # ---------------------------------------------------------------------------
@@ -1097,6 +1127,7 @@ def build_services():
   {fig(s["slug"])}
   <p class="callout">Tarif : {prix_txt}. Le prix exact vous est annoncé au téléphone avant le déplacement et confirmé par un devis écrit avant toute intervention. <a href="/tarifs/">Voir la grille tarifaire jour, soir et nuit</a>.</p>
   {secs}
+  {galerie(s["slug"])}
   <h2>{E(s["court"])} : où intervenons-nous ?</h2>
   <p>Nous intervenons pour ce service dans tout Paris, les Hauts-de-Seine, le Val-d'Oise, les Yvelines et à Bordeaux Métropole, 24h/24 et 7j/7.</p>
   <h3>Paris</h3><div class="link-grid">{arr_links}</div>
@@ -1121,6 +1152,7 @@ def build_services():
               {"@context": "https://schema.org", "@type": "Service", "name": s["nom"], "serviceType": s["nom"], "url": URL + path,
                "provider": {"@id": BUSINESS_ID}, "areaServed": [{"@type": "City", "name": "Paris"}, {"@type": "AdministrativeArea", "name": "Hauts-de-Seine"}, {"@type": "AdministrativeArea", "name": "Val-d'Oise"}, {"@type": "AdministrativeArea", "name": "Yvelines"}, {"@type": "City", "name": "Bordeaux"}, {"@type": "AdministrativeArea", "name": "Bordeaux Métropole"}],
                **({"offers": {"@type": "Offer", "priceSpecification": {"@type": "PriceSpecification", "minPrice": s["prix_num"], "priceCurrency": "EUR"}}} if s["prix_num"] else {})}]
+        ld += ld_videos(s["slug"])
         page(path, title, desc, body, ld, active="/depannage/")
 
 

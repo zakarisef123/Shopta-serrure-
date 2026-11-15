@@ -334,15 +334,37 @@ PHOTOS = {
     "serrure-connectee": ("serrurier-conseil-clients", "Serrurier conseillant des clients devant une serrure connectée"),
     "effraction": ("porte-effraction", "Porte d'entrée endommagée après une tentative d'effraction"),
     "porte-rouge": ("porte-rouge", "Porte d'entrée rouge avec serrure et poignée en laiton"),
+    # Photos de nos chantiers
+    "pose-serrure": ("pose-serrure-porte-blindee", "Pose d'une serrure multipoints : boîtier encastré dans le chant d'une porte blindée ouverte"),
+    "haute-securite": ("serrure-multipoints-porte-blindee", "Serrure multipoints à 5 pênes sur le chant d'une porte blindée"),
+    "protege-cylindre": ("protege-cylindre-porte-entree", "Porte d'entrée équipée d'un bouton fixe et d'une rosace de protection du cylindre"),
 }
 # Photo d'illustration par article de blog
 ARTICLE_PHOTOS = {
     "porte-claquee-que-faire": "porte-claquee",
     "eviter-arnaques-serrurier": "serrure-connectee",
-    "securiser-porte-entree": "porte-rouge",
+    "securiser-porte-entree": "protege-cylindre",
     "cle-cassee-dans-la-serrure": "cle-cassee",
     "entretien-serrure": "changement-serrure",
-    "choisir-serrure-haute-securite": "serrure-bloquee",
+    "choisir-serrure-haute-securite": "haute-securite",
+}
+
+# Vidéos de nos interventions, déjà optimisées dans assets/video/<nom>.mp4 (+ affiche <nom>.jpg)
+VIDEOS = {
+    "pose-3-points": {"file": "pose-serrure-3-points-applique", "date": "2026-11-13", "w": 540, "h": 960, "duree": "PT29S",
+                      "titre": "Pose d'une serrure 3 points en applique",
+                      "desc": "Serrure 3 points en applique posée : contrôle des tringles haute et basse, puis essai à la clé depuis le palier."},
+    "essai-cles": {"file": "essai-cles-nouveau-cylindre", "date": "2026-11-06", "w": 480, "h": 854, "duree": "PT11S",
+                   "titre": "Essai des clés après changement de cylindre",
+                   "desc": "Après la pose du nouveau cylindre, essai des clés neuves : la serrure verrouille et déverrouille sans forcer."},
+    "porte-vitree": {"file": "porte-vitree-hall-immeuble", "date": "2026-11-13", "w": 540, "h": 960, "duree": "PT11S",
+                     "titre": "Porte vitrée de hall remise en état après effraction",
+                     "desc": "Porte vitrée de hall d'immeuble remise en état après effraction : contrôle de la fermeture, du bas de porte et de la barre anti-panique."},
+}
+# Photos et vidéos de chantier affichées sur les pages de dépannage (« Nos interventions en images »)
+GALERIES = {
+    "changement-serrure": [("video", "pose-3-points"), ("photo", "pose-serrure"), ("photo", "haute-securite"), ("video", "essai-cles")],
+    "effraction": [("video", "porte-vitree")],
 }
 
 # ---------------------------------------------------------------------------

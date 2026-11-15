@@ -30,6 +30,12 @@
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
 
+# Vidéos d'interventions : mises en cache une semaine
+[[headers]]
+  for = "/assets/video/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
 [[headers]]
   for = "/*"
   [headers.values]
