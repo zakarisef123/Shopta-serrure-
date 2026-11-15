@@ -17,6 +17,8 @@ les optimise et les convertit en WebP. ✅ = déjà présent, ❌ = à fournir.
 | `porte-rouge.jpg` | Réserve (porte rouge) — l'article « sécuriser sa porte d'entrée » utilise désormais `protege-cylindre-porte-entree.jpg` | ❌ |
 | `pose-serrure-porte-blindee.jpg` | Changement de serrure, galerie « Nos interventions en images » (pose d'un boîtier multipoints) | ✅ |
 | `serrure-multipoints-porte-blindee.jpg` | Article « choisir une serrure haute sécurité » + galerie Changement de serrure | ✅ |
+| `porte-vitree-mise-en-securite.jpg` | Après effraction, galerie (panneau bois posé de nuit) | ✅ |
+| `porte-vitree-reparee.jpg` | Après effraction, galerie (porte réparée) | ✅ |
 | `protege-cylindre-porte-entree.jpg` | Article « sécuriser sa porte d'entrée » (rosace de protection du cylindre) | ✅ |
 
 ## Vidéos : `assets/video/`

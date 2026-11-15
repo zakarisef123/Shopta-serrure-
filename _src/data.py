@@ -337,6 +337,8 @@ PHOTOS = {
     # Photos de nos chantiers
     "pose-serrure": ("pose-serrure-porte-blindee", "Pose d'une serrure multipoints : boîtier encastré dans le chant d'une porte blindée ouverte"),
     "haute-securite": ("serrure-multipoints-porte-blindee", "Serrure multipoints à 5 pênes sur le chant d'une porte blindée"),
+    "vitree-securite": ("porte-vitree-mise-en-securite", "Mise en sécurité de nuit d'une porte vitrée après effraction : vitrage cassé remplacé par un panneau bois"),
+    "vitree-reparee": ("porte-vitree-reparee", "Porte vitrée de hall réparée après effraction : vitrage neuf et barre anti-panique"),
     "protege-cylindre": ("protege-cylindre-porte-entree", "Porte d'entrée équipée d'un bouton fixe et d'une rosace de protection du cylindre"),
 }
 # Photo d'illustration par article de blog
@@ -364,7 +366,7 @@ VIDEOS = {
 # Photos et vidéos de chantier affichées sur les pages de dépannage (« Nos interventions en images »)
 GALERIES = {
     "changement-serrure": [("video", "pose-3-points"), ("photo", "pose-serrure"), ("photo", "haute-securite"), ("video", "essai-cles")],
-    "effraction": [("video", "porte-vitree")],
+    "effraction": [("photo", "vitree-securite"), ("photo", "vitree-reparee"), ("video", "porte-vitree")],
 }
 
 # ---------------------------------------------------------------------------
