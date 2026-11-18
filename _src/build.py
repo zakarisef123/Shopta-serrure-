@@ -42,8 +42,10 @@ CONFIG = {
     "ga_id": "G-0VFWJ86Y1C",
     # Google Ads : ID du compte (AW-XXXXXXXXX) et libellés des conversions (Outils > Conversions > « Configurer la balise »)
     "ads_id": "AW-17849171320",
-    # « Contact Site Web » = clic sur un numéro ; « Contact » = envoi du formulaire
-    "ads_conv": {"call": "-hooCL7vn6cdEPj6kr9C", "wa": "", "form": "RoynCK_QoacdEPj6kr9C"},
+    # Conversions envoyées directement par le site : laisser vide. « Contact Site Web » (clic sur un
+    # numéro, -hooCL7vn6cdEPj6kr9C) et « Contact » (formulaire, RoynCK_QoacdEPj6kr9C) sont envoyées par
+    # GTM-T4FWXLV4 sur les événements clic_appel et envoi_formulaire. Remplir ici les compterait deux fois.
+    "ads_conv": {"call": "", "wa": "", "form": ""},
     "indexnow_key": "8f3c1a6e2b7d4f90a5c3e1b2d4f6a8c0",
     # Mentions légales
     "raison_sociale": "Shopta Serrure",
@@ -1604,6 +1606,8 @@ def build_merci():
     if CONFIG["ads_id"] and conv:
         # Page de secours (envoi classique du formulaire) : conversion « Contact »
         body += (f"<script>gtag('event','conversion',{{'send_to':'{CONFIG['ads_id']}/{conv}','value':1.0,'currency':'EUR'}});</script>")
+    # Envoi classique (sans JavaScript) : même événement que site.js, capté par GTM
+    body += "<script>window.dataLayer=window.dataLayer||[];dataLayer.push({event:'envoi_formulaire',emplacement:'merci'});</script>"
     page("/merci/", "Demande envoyée | Shopta Serrure", "Votre demande a bien été envoyée.", body, robots="noindex, nofollow")
 
 
